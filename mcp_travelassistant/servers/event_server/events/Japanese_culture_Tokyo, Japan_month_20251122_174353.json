@@ -1,0 +1,24 @@
+{
+  "search_metadata": {
+    "search_id": "Japanese_culture_Tokyo, Japan_month_20251122_174353",
+    "query": "Japanese culture",
+    "location": "Tokyo, Japan",
+    "date_filter": "month",
+    "event_type": null,
+    "language": "en",
+    "country": "jp",
+    "search_timestamp": "2025-11-22T17:43:53.234167",
+    "total_results": 0
+  },
+  "search_parameters": {
+    "q": "Japanese culture in Tokyo, Japan",
+    "engine": "google_events",
+    "htichips": "date:month",
+    "hl": "en",
+    "gl": "jp"
+  },
+  "search_information": {
+    "events_results_state": "Fully empty"
+  },
+  "events_results": []
+}

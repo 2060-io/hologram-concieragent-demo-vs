@@ -1,0 +1,3250 @@
+{
+  "search_metadata": {
+    "search_id": "Tokyo,_Japan_2025-12-20_2025-12-27_20251122_174351",
+    "location": "Tokyo, Japan",
+    "check_in_date": "2025-12-20",
+    "check_out_date": "2025-12-27",
+    "guests": {
+      "adults": 2,
+      "children": 0,
+      "children_ages": null
+    },
+    "search_type": "hotels",
+    "currency": "USD",
+    "filters": {
+      "sort_by": 3,
+      "hotel_class": null,
+      "amenities": null,
+      "property_types": null,
+      "brands": null,
+      "free_cancellation": false,
+      "special_offers": false,
+      "bedrooms": null
+    },
+    "search_timestamp": "2025-11-22T17:43:51.025432"
+  },
+  "search_information": {
+    "total_results": 4578
+  },
+  "properties": [
+    {
+      "type": "hotel",
+      "name": "Yawp! Backpackers",
+      "description": "Simple mixed-gender dorms in a relaxed hostel offering a TV lounge & a communal kitchenette.",
+      "link": "http://www.yawp.tokyo/",
+      "property_token": "ChkIr6z_5_S0hMZHGg0vZy8xMWI3cF9nbmh4EAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChkIr6z_5_S0hMZHGg0vZy8xMWI3cF9nbmh4EAE&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.7528846,
+        "longitude": 139.86919659999998
+      },
+      "check_in_time": "2:00\u202fPM",
+      "check_out_time": "12:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$28",
+        "extracted_lowest": 28,
+        "before_taxes_fees": "$26",
+        "extracted_before_taxes_fees": 26
+      },
+      "total_rate": {
+        "lowest": "$198",
+        "extracted_lowest": 198,
+        "before_taxes_fees": "$180",
+        "extracted_before_taxes_fees": 180
+      },
+      "nearby_places": [
+        {
+          "name": "Takasago 8 Chome Higashi",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "1 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "38 min"
+            }
+          ]
+        },
+        {
+          "name": "Trattoria Takichi",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "3 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "1-star hotel",
+      "extracted_hotel_class": 1,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/xZlueLfJN1-c2YcNoFub5NvlXZvM2gcQ-5n9y24Sr2UREkbg4p_3cl1RFV1ZE77b5TwLsERaNzVpkdWU6O7qZS4JJNPdn6GVcH_nxbNf1g0kdt3AAoKYdME80TJQAmMw19z2OoAXapYUitcULQZp4y10XqKSxsc=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/5f/ab/5faba6adf8ed60f2852fb67a815efc3546287d9b.JPEG"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/togwqSgswJFO8LZUei2Ycl3wtWdVkit2fPMPXb__tiO4zjgaPrORW6gff-sMnCQbvP0sFNWCA5_kWLDj4OJHsnlt8v8TF-U-3dYx40hYcJK5O9tLPsFjSTQN2UsVjfb4uzJ_haFB7CrngmjnSFS22kP9_JWUfg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/80/800567/800567a_hb_a_007.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/BM5NpIlxrAQVzE-6mkZ9kkibE2dj-V5Mbu-PT4Kv4asmnViIth6jUbGVUc5VoAbHqwks02lSJB1DlDjic9pKZXxyTTydcQ7ivMzxkLCurXNbnvdaXkG6uw3l82DUytSn-Dlw_jvS5UuPaRodzaY8QwjQax8DHw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/80/800567/800567a_hb_ba_013.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/0a-Gef0wnC97PzgBfIIigB0RsLzrQ9Np_YIdJKPsouVoE1vV7m6HF1QauGmedXqbsxDUFi78ikTHX7l-Xa6mj4htVkx09s_XJmZy2U2anAyktNTxGM4-o07fiQ8FhT5uxa5l4bDohN5srC_LvHZVUaGiIjOk5A=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/80/800567/800567a_hb_w_018.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/cGXHvayMd5UMi1SLg_JEChO86nvB1tQcZPHr32K-jY8Go1mwJ1MbacHLCiNBVsXJZopmI4gOo7jP2B4kkZGNVAOpPesHmpUOtGTKdPsWnqH4_pX-AnEgDZkWUrX9ktyYUiy_LPncgPRcXIlxAYi6BgYeRUeIEZg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/20000000/19240000/19231900/19231810/9782196b_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/AZ4mafhqfXHL6yspOJlWV4uJaVvv91pQNIWvYLTbIZSxl8YbawJN-7jcl808iD04MWqapQvBxDPh83l192aHZOwWk8A32GiGJ16LNAkxfmEkfdj1IIf9eEoXHMOO4fT86p_gI0e05N7LEptKDumIVZ5n2Ao80rA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/80/800567/800567a_hb_w_007.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/mueJ3gv63b2NTbzvAYOfwz-NpQg44Ip5AMPD0xfH6kFzoFJUSXD62JmsIY_Vke2jAtvrmeVYIWZML_Gkec3YvnftnNQ71Eyu4bsmbCrOmw2DQ8ND76QHNVKMmcLqyrHnKtZFRzCysNZp4bnH5_H4rYvoGLbbzn4=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/80/800567/800567a_hb_w_019.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/BL4jcmgMQHc4TavBa_Y6TE9ffK30ZD4G4cOOxtTusEuIkbUN5S1DgpfmIiEoD22iUQv610Xnu-Sf38dGdb7ADje_oY1E5__sLGyVzpvELhTeLpkUiEUBj_DOmDt05HlQub7ib51cVY_rbXQ0wLws0XuBXTB4qQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/80/800567/800567a_hb_f_008.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/h0aNe2OSWvxUPbLk1j36a_5DrDWlfAfRDGZg35kfRLpL5IguT1RPy_xDn5I5rLcPsvGCy07KCRXKr5MU7OBTbNjdyX4VQoWRsXem-Os5sXJUPa3OT5i4J2fv00MahuNUrlh_BgP5Y8XycCSjC-wqFMLQ5mo_0A=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/80/800567/800567a_hb_a_009.jpg"
+        }
+      ],
+      "overall_rating": 3.9,
+      "reviews": 77,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 43
+        },
+        {
+          "stars": 4,
+          "count": 15
+        },
+        {
+          "stars": 3,
+          "count": 4
+        },
+        {
+          "stars": 2,
+          "count": 2
+        },
+        {
+          "stars": 1,
+          "count": 13
+        }
+      ],
+      "location_rating": 3.1,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 25,
+          "positive": 18,
+          "negative": 5,
+          "neutral": 2
+        },
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 11,
+          "positive": 8,
+          "negative": 3,
+          "neutral": 0
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 18,
+          "positive": 13,
+          "negative": 4,
+          "neutral": 1
+        },
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 5,
+          "positive": 0,
+          "negative": 5,
+          "neutral": 0
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 10,
+          "positive": 4,
+          "negative": 5,
+          "neutral": 1
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 10,
+          "positive": 8,
+          "negative": 2,
+          "neutral": 0
+        }
+      ],
+      "amenities": [
+        "Free Wi-Fi",
+        "Restaurant",
+        "Kid-friendly"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Dormitory Kinshu\uff08\u30c9\u30df\u30c8\u30ea\u30fc\u9326\u7e4d\uff09",
+      "property_token": "ChkIzcmb5fyq6-0HGg0vZy8xMXcyZ3JkdjZuEAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChkIzcmb5fyq6-0HGg0vZy8xMXcyZ3JkdjZuEAE&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.695197199999996,
+        "longitude": 139.81744609999998
+      },
+      "check_in_time": "12:00\u202fAM",
+      "check_out_time": "10:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$33",
+        "extracted_lowest": 33,
+        "before_taxes_fees": "$30",
+        "extracted_before_taxes_fees": 30
+      },
+      "total_rate": {
+        "lowest": "$234",
+        "extracted_lowest": 234,
+        "before_taxes_fees": "$213",
+        "extracted_before_taxes_fees": 213
+      },
+      "nearby_places": [
+        {
+          "name": "Tokyo Skytree",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "9 min"
+            }
+          ]
+        },
+        {
+          "name": "K\u014dt\u014d-Shako",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "2 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "25 min"
+            }
+          ]
+        },
+        {
+          "name": "\u30c7\u30a3\u30c3\u30b7\u30e3\u30fc\u30ba\u9326\u7cf8\u753a\u697d\u5929\u5730\u30d3\u30eb\u5e97 \u30cf\u30f3\u30d0\u30fc\u30b0",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "4 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx0LHjLrmqKm9s5_4TUx9LS7xMX3ueRjcHQgwfiTtAwVJ-EpN8o9ZBwzBtbfjOc5OaDNzWzr447JFc-puix7vlRjdAfWIdLmr9D5ZpAmZb2giLLrwgG11BN8j5fXLwiYSbZ1HZVJ5WONiSm=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIABIhADydER5C1nfmfz8xIAB5De=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxhCuWuVEilxxIllSN6nBC7m953IBJ7XzpUXKvn-lYVTfsKk03W7CDt6-1NtYvAS34GdN9BHxYTnY-Syf33OrnvRezMGeMM7INZJBlLQZ4iUO3wUGrhSc5SWl0MEnx84mCyA3QW=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEMmYn8eZnL2rYA=s10000"
+        },
+        {
+          "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=C504Ba7kKpUqdWIA4afbQw&cb_client=search.estubs.gps&w=287&h=192&yaw=178.4332&pitch=0&thumbfov=100&scale=2",
+          "original_image": "https://lh5.googleusercontent.com/p/C504Ba7kKpUqdWIA4afbQw=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxulkQOGC_OwPrSurHcvpgL9NMKA_0a0CugDl25GAOMO6BYmwpXl1KuqjdOwK2jvA95MgICx94xGxIXlaWn9_uHw5jguaZ_KA-1hbLqwDd1irOzivCxBNeF4lxBmEhRBXrlnracnw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgID_zp6vzgE=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSysBO1kOfZzRSTGCJM46J8iJIaeGWvgY8Y1a3yE7-sTOjBnsXPuPN4WfWsPIYte3VHgNGoT19vt-6cY97nPOnqOBoCBe0P_BQAevPksWqDVgW7SUlsIb0iplLskf1Tpoim-Kp8=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEKTuodT2iICeUQ=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzPrpA85gyerosGjdVkGWwfPiezpLsDGsr9dtSsbNF_Z_ktfLVtlh8XXpdjj5vg60LD01yLX3ySoaiaiD7ukxGpUD3-R0tkcqcuXNuy0SNnQIwot6tYTK2KpYHAbqliZ42m70J8C-9_PsbI=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIABIhAGbzaqQSdmOmgMdgEAA4NE=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyy1xljlXLMXEpmX0VNPqzJVyK0zsMxkvE3g_8oG6370odmgjwh8iBPhWDX8ZuVVhb7CfzgNfndZPF4wz4hBshWE8iurHdM1TlVykB-FDeQsWmGf4E9mgQ2mn05vMbmTQqB4U8=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEPGh0fj99-WdWw=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyT1-C7L8dwnF71x6MTAjo70rcPZGgQVbI1hMNUupbw7qvkNlIhiJ_adfms0tk26XbxMjOGNqn5rbO85YTF9FuYeeaZW7_5v_21313LLvGXVFB1IZKANTdJDy-TYlNRrGH-GYQiLg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgID_geyv_wE=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyn1LD5rNAItPkkdN8ooeDxqpVXUYTwkm1eMEO0b7P7hk_iEZsZcYVdw8mCsmnzllqjGld7uj2uv0nnIRVnxDJkDwwbIAAUJLeQ9mz2t2-Q9PGhGn47FoVvj2jUAEt6ZdCf-SU=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKELzpksnfkJCGXg=s10000"
+        }
+      ],
+      "overall_rating": 2.4,
+      "reviews": 38,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 7
+        },
+        {
+          "stars": 4,
+          "count": 3
+        },
+        {
+          "stars": 3,
+          "count": 6
+        },
+        {
+          "stars": 2,
+          "count": 4
+        },
+        {
+          "stars": 1,
+          "count": 18
+        }
+      ],
+      "location_rating": 3.8,
+      "reviews_breakdown": [
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 8,
+          "positive": 3,
+          "negative": 4,
+          "neutral": 1
+        },
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 7,
+          "positive": 3,
+          "negative": 3,
+          "neutral": 1
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 5,
+          "positive": 2,
+          "negative": 1,
+          "neutral": 2
+        }
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "LodgingTokyoUeno",
+      "link": "https://www.ltgroup.jp/",
+      "property_token": "ChoIm6-UjvCYhd-HARoNL2cvMTFrcGQ3bjMzMRAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoIm6-UjvCYhd-HARoNL2cvMTFrcGQ3bjMzMRAB&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.717623599999996,
+        "longitude": 139.7851905
+      },
+      "check_in_time": "2:00\u202fPM",
+      "check_out_time": "10:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$30",
+        "extracted_lowest": 30,
+        "before_taxes_fees": "$27",
+        "extracted_before_taxes_fees": 27
+      },
+      "total_rate": {
+        "lowest": "$209",
+        "extracted_lowest": 209,
+        "before_taxes_fees": "$188",
+        "extracted_before_taxes_fees": 188
+      },
+      "nearby_places": [
+        {
+          "name": "Akihabara Electric Town",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "9 min"
+            }
+          ]
+        },
+        {
+          "name": "\u325b \u5317\u4e0a\u91ce",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "1 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "26 min"
+            }
+          ]
+        },
+        {
+          "name": "ALBA",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "3 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz3lsvSbYJUkZwAFPU_E8VVO9ogOWpJf52FX8ZEU6xXMPfZHXC-XRGj40Hbu8nPj2OL-A3_fw1eKoIZ1IADwzYHFySQagWCZbQivrURlrli8jZlXU_KJ2iPup0LW8m2Lc0RKAEx=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgICjoqT2ag=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyb-Hvxa3HQwt1t6iJQ0bta_dIqRb-rhGfPAxKVTetRFXIt0hri-itgQMggbNeSrvCyHXbiZ42pmnoW6mWvEv40zjlHn30NLUKH98SYF9HMshuir-k2MW-71EythzVdIHdq7hAtjlpo6Jqx=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIABIhD-AYIpy-nqRFAWuxSTVJ-l=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzj3fepQfMycKfRQ7ajvaqbqis37uPXkBkr0RPulcUOkdyk4q1_Qsh3agMb-dbr9pDSX1MFHsgF2--_ia0y9n7UxZNbgqQTefzCaxYAIq6gP3VKDWGnG3q7QcE3Qs-kvv48pQuFXA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgIC318rUwgE=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzurcom7D0UkuECH787hj4GdbBU9HCU7wn_u_ceDE-UGWqXP9DL7Dsf9VcTqDeDVhFFojeKMc3LaB9dDn1Cf-smWBGtUXy1Xy1PfyxZ6MDqvvgHmLMSD6qjArf7MCLam96osc3IPA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgIDZjZfWoQE=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSziQrw9MI1YEfY453ETPyJdB54ci0jTRYLjndpMJSU45geSjuFTPvYI1hH8C82nVBHlVJkos2zOZVUPwtK5UXPyW_vwjC7AdX_AQzLJguyKWOPTEFIYaBNyWJbg47--XwstldY=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgIDZjZfWAQ=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzkVJt0t2c2a87JAdLLHWTD-OnhlPd2NlovwMtcuBb7Uug6DizKlYluJGMAl3WAfrd4XW6Xc7almZ2i9rdV2ith53qzlOyWa335e4Q-pjkBNiT6NDN2PWy-W5ByQ3_rC8NJBa-Uo3W9xBM=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIABIhDuENwLVuvkqmmU9iDupXND=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxa7NW0d-8K0bjQBNIhhP8zusnjVMrB-3KFvzAnhRpjFs5HjYuR4ym40F8M2WKH4x8IV8O6Jbk9qUEwAJb9xXMNmTz19XUaukYG78YUlitk48gdesYa39wze7DE13ey46cI6fQ4=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgMCAl9CIKA=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzUpk4PVvMWLElEHIVauS6RUpxGhPKds2APRYGOl7Do-Hjv9GGaL5RbVWeSN01GVJWfHztttToLAkvxF3j2xcvw_jBwxLg0wntWuX3hLrjDlGjwH_GsVk9fqKVCg6jmKOd3DsRshRzMeoAa=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIABIhDNOIKVZsCfwYZcJjgFT2bp=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzXR51yFsfTXgu12RYpPsVszH6eeK39pt7q0nqIwLJ574JGS1RcF6RJ766FrFv4CvYc5waDiJJG_gEYV2CQ2-Brvhf0qOBmQurAy3E8Yq1CQvKEAKiYT09rl46vHK78JEPgpeE=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgID9-Lm2ZA=s10000"
+        }
+      ],
+      "overall_rating": 2.9,
+      "reviews": 146,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 36
+        },
+        {
+          "stars": 4,
+          "count": 26
+        },
+        {
+          "stars": 3,
+          "count": 20
+        },
+        {
+          "stars": 2,
+          "count": 21
+        },
+        {
+          "stars": 1,
+          "count": 43
+        }
+      ],
+      "location_rating": 3.9,
+      "reviews_breakdown": [
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 45,
+          "positive": 8,
+          "negative": 29,
+          "neutral": 8
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 30,
+          "positive": 11,
+          "negative": 18,
+          "neutral": 1
+        },
+        {
+          "name": "Safety",
+          "description": "Safety",
+          "total_mentioned": 11,
+          "positive": 3,
+          "negative": 7,
+          "neutral": 1
+        },
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 22,
+          "positive": 12,
+          "negative": 7,
+          "neutral": 3
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 24,
+          "positive": 7,
+          "negative": 16,
+          "neutral": 1
+        },
+        {
+          "name": "Kitchen",
+          "description": "Kitchen",
+          "total_mentioned": 11,
+          "positive": 5,
+          "negative": 3,
+          "neutral": 3
+        }
+      ],
+      "amenities": [
+        "Free Wi-Fi"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Hotel Livemax Budget Sagamihara",
+      "description": "Snug rooms in a laid-back lodging featuring a casual restaurant & complimentary Wi-Fi.",
+      "link": "http://www.hotel-livemax.com/",
+      "property_token": "ChcI3tPLtNaJwch3GgsvZy8xdzl5MTRiNhAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChcI3tPLtNaJwch3GgsvZy8xdzl5MTRiNhAB&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.5695623,
+        "longitude": 139.3960614
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "10:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$33",
+        "extracted_lowest": 33,
+        "before_taxes_fees": "$30",
+        "extracted_before_taxes_fees": 30
+      },
+      "total_rate": {
+        "lowest": "$232",
+        "extracted_lowest": 232,
+        "before_taxes_fees": "$210",
+        "extracted_before_taxes_fees": 210
+      },
+      "nearby_places": [
+        {
+          "name": "\u5e78\u753a\uff3b\u76f8\u6a21\u539f\u5e02\uff3d\uff08\u30d0\u30b9\uff09",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "3 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "59 min"
+            }
+          ]
+        },
+        {
+          "name": "Pizza Restaurant OH! GOD",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "1 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "2-star hotel",
+      "extracted_hotel_class": 2,
+      "images": [
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/6I_9cFluiaBXzlGitYDUv95lsMa7XGszlQpgZn1kibuiH6d6hXGdQ0fBzw9LrLKqG8d85ZVd4CC_tAR7jsv4Gt-tALJjuhvhHFK08rTzGM2fBtkdakDkzUYglRbYK-a5X1pY93QuY4JmUxhS0B7bLe7ybj-FFfs=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/5000000/4580000/4575300/4575205/833b7309_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/HTeoS9CZntiOavj8m7Gfs7r_tGst5_BjwP6issly8fTLCF3dERR8RkQBeA-IkYeLTGWhCJKX_MkPyJd2cfYI52zsFv10EjIP5fmYPI5Q_V4trUNxzTSDAY-u4bQ3gcJ4QBvmeh44_ei9rk7UPiLg4GXkINyJmg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/5000000/4580000/4575300/4575205/25b655b9_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSykk2ybg28Fp-kOA8GoV_AwXMq3BIRsldPgJPEdcUhAGNlDGMLvwqsUrHgv68MG4qwrfzoYocm2PO1MhnYolkRqtqhrH2sZTUpHD86CwGalQUi2M1PyC4w5dwhv_oV037z76ZAqDmYQ3ias=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIABIhBpX5jiWe3byu7eREWV4eel=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/OpaIOLb_fz94FTy7QH9jV960AuvXsPVYS2I2TFrXhx1eQGDcnyiBKGnE297QIC75gFrczK0eftKcM1of3ib1N-CxKsJ_Ng97EAp-AELFyEJolbJdkGn50voL6cWJ56EvIZdZUFHkiCzBYALTY34xauJk_ojFLw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/5000000/4580000/4575300/4575205/23c48728_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipP-apWft4QC-Woa0UBMYB1VAFHa5Yjb_lzekrzU=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipP-apWft4QC-Woa0UBMYB1VAFHa5Yjb_lzekrzU=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/lNJxNBib1agXXHj9sC5aFLmNnrnvaOskIVxLbi_ZeQIlbwkCTkF3o4eJEcgzNQMKjeG7T7QSybKg7TSUTxgGwQunz9hHSrlQvSDgZNZv7gNdvbVr-Fa7XwhgLL20gdQ35rwRfwylZKMUAypPHc0JxrUlXIed2kA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/ac/10/ac102a46b86668283415da15d300fd0d46b45d29.JPEG"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/WWRLHHlvUpqjKYMacVPP8hj-1JIywnoSK3GqBWgpu64XYvHJBwZCg55FkB4T4igIX7hI6-3hVVh__ZL3HgZKq15IVhf5hvlteZ5fsIRBJz8XkopUzAdqxnkMhex-pNCCIvI_ScEgEDn__WC9C9WU5KtOVp7f5ho=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/21/217117/217117a_hb_w_001.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMP0kG919m6tGcyZS4qb_ZwOY5Xbt739LiyBrrN=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMP0kG919m6tGcyZS4qb_ZwOY5Xbt739LiyBrrN=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPPkDM3T52SJON2sFm1DKhfR6u0F8b199DcPbb8=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPPkDM3T52SJON2sFm1DKhfR6u0F8b199DcPbb8=s10000"
+        }
+      ],
+      "overall_rating": 2.9,
+      "reviews": 367,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 50
+        },
+        {
+          "stars": 4,
+          "count": 69
+        },
+        {
+          "stars": 3,
+          "count": 117
+        },
+        {
+          "stars": 2,
+          "count": 54
+        },
+        {
+          "stars": 1,
+          "count": 77
+        }
+      ],
+      "location_rating": 3.7,
+      "reviews_breakdown": [
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 26,
+          "positive": 3,
+          "negative": 20,
+          "neutral": 3
+        },
+        {
+          "name": "Transit",
+          "description": "Public transit",
+          "total_mentioned": 22,
+          "positive": 14,
+          "negative": 1,
+          "neutral": 7
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 25,
+          "positive": 15,
+          "negative": 2,
+          "neutral": 8
+        },
+        {
+          "name": "Kitchen",
+          "description": "Kitchen",
+          "total_mentioned": 10,
+          "positive": 5,
+          "negative": 3,
+          "neutral": 2
+        },
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 18,
+          "positive": 1,
+          "negative": 14,
+          "neutral": 3
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 21,
+          "positive": 4,
+          "negative": 13,
+          "neutral": 4
+        }
+      ],
+      "amenities": [
+        "Free Wi-Fi",
+        "Parking ($)",
+        "Restaurant"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Hotel LiveMax Sagamihara Ekimae",
+      "description": "Snug rooms with microwaves in a casual hotel offering a coffee shop & a free breakfast buffet.",
+      "link": "http://www.hotel-livemax.com/",
+      "property_token": "ChkIzeDz4tL2waRAGg0vZy8xMWY0d3ZjZ20wEAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChkIzeDz4tL2waRAGg0vZy8xMWY0d3ZjZ20wEAE&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.577218699999996,
+        "longitude": 139.3685349
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "10:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$33",
+        "extracted_lowest": 33,
+        "before_taxes_fees": "$30",
+        "extracted_before_taxes_fees": 30
+      },
+      "total_rate": {
+        "lowest": "$234",
+        "extracted_lowest": 234,
+        "before_taxes_fees": "$210",
+        "extracted_before_taxes_fees": 210
+      },
+      "nearby_places": [
+        {
+          "name": "\u3055\u304c\u307f\u5922\u5927\u901a\u308a\uff08\u30d0\u30b9\uff09",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "1 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "1 hr 3 min"
+            }
+          ]
+        },
+        {
+          "name": "\u805a\u7e01\u95a3",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "6 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "2-star hotel",
+      "extracted_hotel_class": 2,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNlqyhVmsI1XVbWntbpdRv1lN7ephb5LyRKaEWo=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNlqyhVmsI1XVbWntbpdRv1lN7ephb5LyRKaEWo=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOUllII9FQa5BajEmNpvTRZN6OLioLY6hUV_XWT=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOUllII9FQa5BajEmNpvTRZN6OLioLY6hUV_XWT=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMfD3FizDoFrURIpx31zAYtduVkUdSSvLRh6nOu=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMfD3FizDoFrURIpx31zAYtduVkUdSSvLRh6nOu=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyFniMthlaAhCOZpq6EvMYwUo7s2URA9n7A7H00V_hMMaI-dXPLDZVHQJgwaYF0fU0F46u__r2z9mh8ZfBdAGNBjg9mV7gBxYyeJpGfFORiWc0-iCYjr-3jDOzExITB7OkuK5hD=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgIDe06PBTA=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN37irzoU6gWpWjkdQ6VAOfCshxyzGK5dEBbUVl=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN37irzoU6gWpWjkdQ6VAOfCshxyzGK5dEBbUVl=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/LHFeuS8CFk8JXSrOvfgTXtyQQazATaXb6Vp4FM50XWPOxtd0BngHzjLYcYg9NfZ3keDuGDFNzvpaLFnHFfTXYeODX_vxlXo0DeoROLifiuIF14UHU3CEAKdLnJ6mLJxYhEmmkRfA7OFBPKm9MKaICK0tG_89QDQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/81/87/8187973a59bfb97fee5572e2478917a4332e01fe.jpeg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/kjH_4au1FT4c5adxGGVP59NosuoY7lBkRbnzSHxC1h8pGcTgFikNUZWjR-jHKkjBgkGE3ENA_Rx7nIBgeF6rJMO2gug7TwAgNw7xn6pXRsvoCxeZCGMLDGTa5aeIHfKnxkWarrDtReiZngw9D9MnaVJUbIg50-Q=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/19000000/18390000/18386500/18386423/198c743a_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN3Pr2yyMcfsEqhM9DonNOAJgTEEIlREu0PdG7a=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN3Pr2yyMcfsEqhM9DonNOAJgTEEIlREu0PdG7a=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNFeagk2sOJYj6FL7eNqm9TOJwYVc8pEG4T-aXW=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNFeagk2sOJYj6FL7eNqm9TOJwYVc8pEG4T-aXW=s10000"
+        }
+      ],
+      "overall_rating": 3.5,
+      "reviews": 239,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 44
+        },
+        {
+          "stars": 4,
+          "count": 91
+        },
+        {
+          "stars": 3,
+          "count": 68
+        },
+        {
+          "stars": 2,
+          "count": 24
+        },
+        {
+          "stars": 1,
+          "count": 12
+        }
+      ],
+      "location_rating": 4.1,
+      "reviews_breakdown": [
+        {
+          "name": "Kitchen",
+          "description": "Kitchen",
+          "total_mentioned": 8,
+          "positive": 4,
+          "negative": 4,
+          "neutral": 0
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 13,
+          "positive": 6,
+          "negative": 5,
+          "neutral": 2
+        },
+        {
+          "name": "Transit",
+          "description": "Public transit",
+          "total_mentioned": 9,
+          "positive": 6,
+          "negative": 1,
+          "neutral": 2
+        },
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 9,
+          "positive": 4,
+          "negative": 4,
+          "neutral": 1
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 13,
+          "positive": 5,
+          "negative": 7,
+          "neutral": 1
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 11,
+          "positive": 5,
+          "negative": 2,
+          "neutral": 4
+        }
+      ],
+      "amenities": [
+        "Free Wi-Fi"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "54JourneyAkasaka",
+      "property_token": "ChoIluiuqPPYvIqhARoNL2cvMTFyaHFrMHkyOBAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoIluiuqPPYvIqhARoNL2cvMTFyaHFrMHkyOBAB&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.6720061,
+        "longitude": 139.7385183
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "10:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$38",
+        "extracted_lowest": 38,
+        "before_taxes_fees": "$34",
+        "extracted_before_taxes_fees": 34
+      },
+      "total_rate": {
+        "lowest": "$263",
+        "extracted_lowest": 263,
+        "before_taxes_fees": "$239",
+        "extracted_before_taxes_fees": 239
+      },
+      "deal": "47% less than usual",
+      "deal_description": "Great Deal",
+      "nearby_places": [
+        {
+          "name": "Tameike-sann\u014d Sta.",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "5 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "29 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "3 hr 57 min"
+            }
+          ]
+        },
+        {
+          "name": "\u9999\u6e2f\u697c \u8d64\u5742\u5e97",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "1 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipP2EuNxT2A06Qbad8o0Jpi_kV-VXhGBNIOOP4Cw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipP2EuNxT2A06Qbad8o0Jpi_kV-VXhGBNIOOP4Cw=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNly-65b5Y-O9ZrPH5wB5BAaV-kp-3Le-_2wMsd=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNly-65b5Y-O9ZrPH5wB5BAaV-kp-3Le-_2wMsd=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMEydsDTqedPFZZIB084oNZQ2uM9fFTkse6rAFF=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMEydsDTqedPFZZIB084oNZQ2uM9fFTkse6rAFF=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN-2iXC56gCGEb06yUU-xJGzk3uY9vBpc3u6MD8=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN-2iXC56gCGEb06yUU-xJGzk3uY9vBpc3u6MD8=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN9ofsie1kwh2MrY4smv4Jk7m1RjwwtYELkrxvM=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN9ofsie1kwh2MrY4smv4Jk7m1RjwwtYELkrxvM=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOSaW24YhTCvTT1QgEs1wP_uRws7DK5ECjPrBu3=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOSaW24YhTCvTT1QgEs1wP_uRws7DK5ECjPrBu3=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMr06FGHJKMngGwzt9rDHGAkAWFTSSCCSkn6BZL=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMr06FGHJKMngGwzt9rDHGAkAWFTSSCCSkn6BZL=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNfUMkQaRwqqXkstu0xWYurYdUeXjpHlIlalyJ4=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNfUMkQaRwqqXkstu0xWYurYdUeXjpHlIlalyJ4=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwZYpIUTY-5SInabyc0ZcWDB7tEzWGBprhXOztzh26_rd0bxogRQTe-nZcVaTOb-0j5KWXYOmTk3QyfCyTOUr32sbSVneOE_G_Yi7Eh0_MRkurFtVXBig2GGUF5Mfk2pNEYgyMh=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgICWiImpCg=s10000"
+        }
+      ],
+      "overall_rating": 2.4,
+      "reviews": 30,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 4
+        },
+        {
+          "stars": 4,
+          "count": 2
+        },
+        {
+          "stars": 3,
+          "count": 8
+        },
+        {
+          "stars": 2,
+          "count": 5
+        },
+        {
+          "stars": 1,
+          "count": 11
+        }
+      ],
+      "location_rating": 4.4,
+      "reviews_breakdown": [
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 12,
+          "positive": 2,
+          "negative": 9,
+          "neutral": 1
+        },
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 10,
+          "positive": 0,
+          "negative": 9,
+          "neutral": 1
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 11,
+          "positive": 2,
+          "negative": 8,
+          "neutral": 1
+        },
+        {
+          "name": "Room",
+          "description": "Room amenities",
+          "total_mentioned": 6,
+          "positive": 0,
+          "negative": 5,
+          "neutral": 1
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 6,
+          "positive": 0,
+          "negative": 5,
+          "neutral": 1
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 5,
+          "positive": 2,
+          "negative": 2,
+          "neutral": 1
+        }
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Keys House",
+      "description": "Basic dorms & private rooms in a modest hostel offering complimentary Wi-Fi, plus a shared kitchen.",
+      "link": "https://keiping898.wixsite.com/keyshouse",
+      "property_token": "ChoIm8_WxPfXw-PxARoNL2cvMTFjMHBxZmd2MxAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoIm8_WxPfXw-PxARoNL2cvMTFjMHBxZmd2MxAB&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.7445391,
+        "longitude": 139.8515798
+      },
+      "check_in_time": "5:00\u202fPM",
+      "check_out_time": "10:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$35",
+        "extracted_lowest": 35,
+        "before_taxes_fees": "$32",
+        "extracted_before_taxes_fees": 32
+      },
+      "total_rate": {
+        "lowest": "$248",
+        "extracted_lowest": 248,
+        "before_taxes_fees": "$223",
+        "extracted_before_taxes_fees": 223
+      },
+      "nearby_places": [
+        {
+          "name": "Bunka Kaikan Katsushika Symphony",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "3 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "33 min"
+            }
+          ]
+        },
+        {
+          "name": "#Katsushika Shokudo",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "6 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "1-star hotel",
+      "extracted_hotel_class": 1,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx44J7TG0CI4z-3ZCZZBj-va7ECIRJWhpAwJxAoD4-tCnW2WQmD9-vkEXKBZ6VZUmYQBw_LhurFaDV2MQejmVYSfWJ0DeZY5X_rkMo_iyCqaUDBhqcGNMmPllxINRjavhYLETPhR6u53hD1=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIABIhDCz9i2aDVO7UocQIws6otx=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/Zj-c9SukEcdP_0r-1fDnyztVFQlfGWz37DZyYlaK_qfx5W0TzyuQa2DEQCUklDXoU99EHNp7D3Kt7BWVaMFVHl18hqNq1UCKYj2JxUY10T7I80arH5EeQaasd7K115Mdzf6oPdeRuGRcE1DX9T4CLgZRe1ToeA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://xx.bstatic.com/xdata/w/hotel/840x460_watermarked_standard_bluecom/Ul3GFXIqlsbzoUMMsfjWhZrlSB6STLewaXx8Avy9D-QntJ92lUGd1UjxJb-M_yNMBn3kdEC_dkWUN77ixc713ZNR62Z77xzI816RWDpcpBL1ChfGSjIbY-wPlsv2s0c=.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/y7-vrH5FIn7dwc2vzS5KXX364gL2udEF79-1r1QzDT_WN0ey-UnWEUSNzt-bQbdVf00MweANQDP1Bc4qCTdiYralhkd-PpGm3__34WPnfn4TbtmJPkkStABy7_l_lqZM9lNtLUfNPs5DRGGKKwREtwGP4rk_Fw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://xx.bstatic.com/xdata/w/hotel/840x460_watermarked_standard_bluecom/Ul3RZtdYX2eZQpn38GJTppseL8MpiJ2BwEL7JNUFTvWhzr-pyVQaAqPJKP6F103oCK-F_bAAWa9rkj1gABngubjYdzeDIJMhCrERN6_fqbGY8LcBnM1q1KEzSylIHVk=.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwcKenNdxdKBJaSTR8b5yF8Mu3Z7k_uRcosqCtWXkJDmR8U8wUVTp6OMYUsx-9xZezFwQXHeSn9Kkrz41unzhcD1y-XgJ6RiE0ON66juDg_n1KJn0szniFEubY1IfP6BFHA3Ij0uxIYKBn6=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIABIhD7lc3j4OP7ZSOJrPHdWwGh=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/Y1Cst-O01YacoO0GXOsFFagj5XciuHhyGKIxc3BDDKRZfk0WIwugYYjkf8ehIwoESVx9zXjx6KEDEmuLm4HPKgYJh_25cOJP8Rj8xE7BmMCNTRbli2WaVojkvaEsISfbA-JzP9QZLAIeNCQF6dIPoSrn6-DGVQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://xx.bstatic.com/xdata/w/hotel/840x460_watermarked_standard_bluecom/Ul7RZtdYX2eZQuYZSUXIk1DBmb8MIFOLozr9HFdYWMqTjEeYW3M3yki2CRMZh980RnQk-TwqtKRh6MpyI0g85fcGTTDrE8wpIpvKbKaK8szCcHKC8-lz2Z_aTkFVHS5E.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/n2thZIML4NdrvV8Lo6N2nOexm_QJdFdRKF3Dj0ABAN6w7iWgs01KBPYvO8H_JDyP9o5Oubjo2x_2KGCv7l2KWOnWQ5AbyHgpVifPssIoCbk8EOmZdn2Hz-x_F4UWFox1Pxk9v2R6pEMpBhU_5Pv99Gs26azgEg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://xx.bstatic.com/xdata/w/hotel/840x460_watermarked_standard_bluecom/Ul3RZtdYX2eZQgNsM8fVfIlvmc0el8xGSpGQ7BZQMblkAaGq0jjvVHMt-Qw7EkQHHkDeusbdJPNFVg2MerOsxA5EJcLRkr9E3vcl_Ju57ci522UQ8SEqD0TcY8CNDEk=.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/TNMMAy_cwtm49--LUneGYq7yQfu3967gw1ovDeAUZwij-N27t-EkpKaYIrLt3jml4YI3GRRLuq7MRh708lSl6VoCRXg8a7kF9NRPr7sOTqPH2A_NT80ZaYGz1k1McKPU2QXiIIFdNnmDWx-uf4pAWT-95DGrGA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/7e/ba/7eba485b7d60846efda1a42eb99861c30844b04b.JPEG"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/muUDeEG4Q2Zf0bBvmUAvz4L7rUPdmG_V7aEfi2R37BN7jur0szWtyD_JNIjRwA7KW-ChLbnvMjIzyM1wrpLJYv3K7Eytj-DaqEffeTAT10aL5qLkj53Ei7Pp7zWbsox7Ye7NC-bVHEo-xHAxvGXNIk02kiFx2Zs=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/61/f8/61f8d39edb55b9e0e6aa2ad0b204d34cf2495753.jpeg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/Uj4vs_hNSTMnXxxCgRkUCwcLkcsf8gSIjI81qru3dUEanb6_ERthfBseJNLMoSt3nIC0Chy1a5k5C1iu2BOSe01VLMw-f2YmFLSp5_v56PNhSdqDmrXtD08XApqCidC1PMr249WE_m-aoL4SsWZHbSZmxPtY0Ds=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/d4/fe/d4fe8f1bead3c4c3db1fa13414b6bdbb5c472ae8.JPEG"
+        }
+      ],
+      "overall_rating": 4.3,
+      "reviews": 44,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 29
+        },
+        {
+          "stars": 4,
+          "count": 5
+        },
+        {
+          "stars": 3,
+          "count": 6
+        },
+        {
+          "stars": 2,
+          "count": 2
+        },
+        {
+          "stars": 1,
+          "count": 2
+        }
+      ],
+      "location_rating": 3.1,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 12,
+          "positive": 9,
+          "negative": 2,
+          "neutral": 1
+        },
+        {
+          "name": "Transit",
+          "description": "Public transit",
+          "total_mentioned": 8,
+          "positive": 7,
+          "negative": 1,
+          "neutral": 0
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 9,
+          "positive": 7,
+          "negative": 1,
+          "neutral": 1
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 8,
+          "positive": 7,
+          "negative": 1,
+          "neutral": 0
+        },
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 5,
+          "positive": 0,
+          "negative": 3,
+          "neutral": 2
+        }
+      ],
+      "amenities": [
+        "Free Wi-Fi"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Nice Hostel Yahiro",
+      "link": "https://nicehostel.jp/plan/yahiroplan.html",
+      "property_token": "ChoIv7a8vf_yq5K1ARoNL2cvMTFoNHRyXzludBAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoIv7a8vf_yq5K1ARoNL2cvMTFoNHRyXzludBAB&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.7241254,
+        "longitude": 139.8270032
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "11:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$36",
+        "extracted_lowest": 36,
+        "before_taxes_fees": "$32",
+        "extracted_before_taxes_fees": 32
+      },
+      "total_rate": {
+        "lowest": "$250",
+        "extracted_lowest": 250,
+        "before_taxes_fees": "$224",
+        "extracted_before_taxes_fees": 224
+      },
+      "nearby_places": [
+        {
+          "name": "Tokyo Skytree",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "8 min"
+            }
+          ]
+        },
+        {
+          "name": "\u516b\u5e83\u56db\u4e01\u76ee\u897f\uff08\u30d0\u30b9\uff09",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "1 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "31 min"
+            }
+          ]
+        },
+        {
+          "name": "50Ban",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "5 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "1-star hotel",
+      "extracted_hotel_class": 1,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPQ6kyo3mqLyYp_s4A0vsBSeHWKTv3o6fPp2dcy=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPQ6kyo3mqLyYp_s4A0vsBSeHWKTv3o6fPp2dcy=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOU6fHcYxEBb2gPBdC86rqr6CfT7S3bpmvp-H5Q=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOU6fHcYxEBb2gPBdC86rqr6CfT7S3bpmvp-H5Q=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNEQRbw6un1rwNlFVVTvGp8_eTzCWEZWM6lZabW=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNEQRbw6un1rwNlFVVTvGp8_eTzCWEZWM6lZabW=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN4fuPQIhciPzw21PxYI7opqCDPfK7pI9r14_sL=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN4fuPQIhciPzw21PxYI7opqCDPfK7pI9r14_sL=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOBCE6iDYhjyqvtK4VATeF_w1LkjGcz38uinkbD=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOBCE6iDYhjyqvtK4VATeF_w1LkjGcz38uinkbD=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMGiUQ3N7zhYa2WGG5A_vF83z3U8evpvBdDw62r=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMGiUQ3N7zhYa2WGG5A_vF83z3U8evpvBdDw62r=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMTgmOZXeml5gfWjS9uiPzTiKnPd-2xp-CWH95W=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMTgmOZXeml5gfWjS9uiPzTiKnPd-2xp-CWH95W=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNWqHmBVAC715kIUC-HwWMAYqzUpIRgM9Ld_pHQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNWqHmBVAC715kIUC-HwWMAYqzUpIRgM9Ld_pHQ=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/zet-dxx_sxV2AaSRUEvLH5F9AUqTLMM7pUq-X006pbqpYqBQyu1qqVoT7PvFTtRwNXQQ3b-cb0feA-mlFG_UT0mazqpDy9XH6Qs2eB_Q5n-Sqg-1LSW44DCvPKOQyb0MkYSWyQZ_Sbx6eOyxRVK_NiiBnqRF_hc=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/eb/1f/eb1f74ad303b4c38ea1588701212bcb26fcf1df3.jpeg"
+        }
+      ],
+      "overall_rating": 2.3,
+      "reviews": 26,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 3
+        },
+        {
+          "stars": 4,
+          "count": 0
+        },
+        {
+          "stars": 3,
+          "count": 10
+        },
+        {
+          "stars": 2,
+          "count": 3
+        },
+        {
+          "stars": 1,
+          "count": 10
+        }
+      ],
+      "location_rating": 3.0,
+      "reviews_breakdown": [
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 9,
+          "positive": 1,
+          "negative": 6,
+          "neutral": 2
+        },
+        {
+          "name": "Kitchen",
+          "description": "Kitchen",
+          "total_mentioned": 6,
+          "positive": 0,
+          "negative": 3,
+          "neutral": 3
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 7,
+          "positive": 5,
+          "negative": 2,
+          "neutral": 0
+        },
+        {
+          "name": "Transit",
+          "description": "Public transit",
+          "total_mentioned": 5,
+          "positive": 3,
+          "negative": 2,
+          "neutral": 0
+        },
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 6,
+          "positive": 1,
+          "negative": 5,
+          "neutral": 0
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 6,
+          "positive": 1,
+          "negative": 5,
+          "neutral": 0
+        }
+      ],
+      "amenities": [
+        "Free Wi-Fi"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "BEE-HIVE\u5de3\u9d28 \u3010\u7537\u6027\u5c02\u7528\u30fbMale Only\u3011",
+      "property_token": "ChoIo4-J9YmLpovdARoNL2cvMTFxOXJyNXlrMBAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoIo4-J9YmLpovdARoNL2cvMTFxOXJyNXlrMBAB&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.7338587,
+        "longitude": 139.7398663
+      },
+      "check_in_time": "2:00\u202fPM",
+      "rate_per_night": {
+        "lowest": "$38",
+        "extracted_lowest": 38,
+        "before_taxes_fees": "$35",
+        "extracted_before_taxes_fees": 35
+      },
+      "total_rate": {
+        "lowest": "$269",
+        "extracted_lowest": 269,
+        "before_taxes_fees": "$243",
+        "extracted_before_taxes_fees": 243
+      },
+      "nearby_places": [
+        {
+          "name": "Sugamo Sta.",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "3 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "36 min"
+            }
+          ]
+        },
+        {
+          "name": "\u548c\u98df\u304a\u98df\u4e8b\u51e6 \u306b\u3057\u5c71",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "4 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOM_ZlCUwqvcKgm_D7BWHQCMoRtgT_TTD_cBCTo=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOM_ZlCUwqvcKgm_D7BWHQCMoRtgT_TTD_cBCTo=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipM550gx8oU-s2UKF9q9MNVZkxPBdlMC_un0uWMH=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipM550gx8oU-s2UKF9q9MNVZkxPBdlMC_un0uWMH=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipP7jpIncK2P7rab0EoTu-NOSiyAI2Lqu0OtAiRu=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipP7jpIncK2P7rab0EoTu-NOSiyAI2Lqu0OtAiRu=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN8t5N50PwnYWlnm63SLH5tozHG5bTBL8Qbexs-=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN8t5N50PwnYWlnm63SLH5tozHG5bTBL8Qbexs-=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzJNnLUuiwR0DGt1j3_tCt4YzhDxPIo9dIMDLPzLtSqkdsfST8VibAU66d9tvaufXIfbx82GQf8e1s9741p2SKGJEnUk-wbsmDCUgddP8we3QAptxnrA6a8exJyYW10rVVBkFLFQHscFOKc=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIABIhByIC9LGOQ9w9xtGexeua-S=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPE5ijbeGOuOfVwaQlMco3JzB52k4Ak1D0F0R-l=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPE5ijbeGOuOfVwaQlMco3JzB52k4Ak1D0F0R-l=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNWReJQns-C1hQ9JJ3OWtDrdBaR0FNlzJ47z3uB=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNWReJQns-C1hQ9JJ3OWtDrdBaR0FNlzJ47z3uB=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOc98nJx9U8CNYr9cvrJQWxoq9vGQ35w8MeBtBm=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOc98nJx9U8CNYr9cvrJQWxoq9vGQ35w8MeBtBm=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOEiGOYTe_FFSUgibcHjKchX7VltHSjMMY-IB_T=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOEiGOYTe_FFSUgibcHjKchX7VltHSjMMY-IB_T=s10000"
+        }
+      ],
+      "overall_rating": 2.5,
+      "reviews": 63,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 14
+        },
+        {
+          "stars": 4,
+          "count": 6
+        },
+        {
+          "stars": 3,
+          "count": 8
+        },
+        {
+          "stars": 2,
+          "count": 5
+        },
+        {
+          "stars": 1,
+          "count": 30
+        }
+      ],
+      "location_rating": 3.9,
+      "reviews_breakdown": [
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 15,
+          "positive": 2,
+          "negative": 12,
+          "neutral": 1
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 13,
+          "positive": 2,
+          "negative": 10,
+          "neutral": 1
+        },
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 7,
+          "positive": 1,
+          "negative": 6,
+          "neutral": 0
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 11,
+          "positive": 3,
+          "negative": 6,
+          "neutral": 2
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 5,
+          "positive": 1,
+          "negative": 4,
+          "neutral": 0
+        },
+        {
+          "name": "Room",
+          "description": "Room amenities",
+          "total_mentioned": 5,
+          "positive": 1,
+          "negative": 4,
+          "neutral": 0
+        }
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Hotel Livemax Hachioji Ekimae",
+      "description": "Simply furnished rooms with flat-screen TVs in a laid-back business hotel offering free Wi-Fi.",
+      "link": "https://www.hotel-livemax.com/tokyo/hachiojist/",
+      "property_token": "ChoI7aS2wtP2qJXrARoNL2cvMTFmNXE4aGRqdBAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoI7aS2wtP2qJXrARoNL2cvMTFmNXE4aGRqdBAB&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.65379,
+        "longitude": 139.34184199999999
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "10:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$42",
+        "extracted_lowest": 42,
+        "before_taxes_fees": "$38",
+        "extracted_before_taxes_fees": 38
+      },
+      "total_rate": {
+        "lowest": "$294",
+        "extracted_lowest": 294,
+        "before_taxes_fees": "$269",
+        "extracted_before_taxes_fees": 269
+      },
+      "deal": "29% less than usual",
+      "deal_description": "Great Deal",
+      "nearby_places": [
+        {
+          "name": "Hachioji Sta. South",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "6 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "1 hr 4 min"
+            }
+          ]
+        },
+        {
+          "name": "\u3051\u3044\u306e\u5bb6 \u516b\u738b\u5b50\u672c\u5e97",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "6 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "3-star hotel",
+      "extracted_hotel_class": 3,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNwFTenVBIbgRNIn7W3QGodobALBSQQVoGmmlU6=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNwFTenVBIbgRNIn7W3QGodobALBSQQVoGmmlU6=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipM3syM5FUFSrxhDSwo2IGYGmKdZACuiaR_1KqVs=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipM3syM5FUFSrxhDSwo2IGYGmKdZACuiaR_1KqVs=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN938qq8kYmX1pdTtF_uVFkXBlaWy8aSqJikjzQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN938qq8kYmX1pdTtF_uVFkXBlaWy8aSqJikjzQ=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN9d_ZaZBNCFxkrv5sFy1s3U1ouImhCcoCslvth=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN9d_ZaZBNCFxkrv5sFy1s3U1ouImhCcoCslvth=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/bJ93Vcyg0PbCrs5lBqYdtBRLAQ-A-qJWUEwZCvIUzZDRn5GVR87Jpd2FeAaAr0CxFlmagTbWzWnHPf7kkaw05hhM3Z-eI4q96H3lq-THcjqCJlpXikuacgoZHT6G_187j3H4Dj9SEZjuDBpwXCHa4ilIleDa5Wo=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/8f/04/8f0473291b728ce5a617146cfe3f87a18f42fa0f.jpeg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipM_QbmdnicGMyMTyFCKIW-iad48Jtw946jiLlit=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipM_QbmdnicGMyMTyFCKIW-iad48Jtw946jiLlit=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/z1vot70T32uF2k3aCUuRb2Aeh4f71Rq9qldUTkk3d24Y4cCUM1FKo_Z2erbZfPTkdl2d4W2VSDLxa960W2ElJ348nP7ocMQu0EXODFvhglCx7iNypDPvYAdpUGyr8tDDYhqOzVpszqhhK5eaymjyYvxSt_niKP0=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/84/848043/848043a_hb_a_002.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipO6rQA1e3WhIdmmJxoREysdKExk5nYpWilf-sGu=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipO6rQA1e3WhIdmmJxoREysdKExk5nYpWilf-sGu=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNLzb1QePp9dwjdIS_tkw75Ftbbvf0_ORaJlNGw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNLzb1QePp9dwjdIS_tkw75Ftbbvf0_ORaJlNGw=s10000"
+        }
+      ],
+      "overall_rating": 3.3,
+      "reviews": 318,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 67
+        },
+        {
+          "stars": 4,
+          "count": 106
+        },
+        {
+          "stars": 3,
+          "count": 62
+        },
+        {
+          "stars": 2,
+          "count": 32
+        },
+        {
+          "stars": 1,
+          "count": 51
+        }
+      ],
+      "location_rating": 4.2,
+      "reviews_breakdown": [
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 28,
+          "positive": 13,
+          "negative": 13,
+          "neutral": 2
+        },
+        {
+          "name": "Kitchen",
+          "description": "Kitchen",
+          "total_mentioned": 11,
+          "positive": 3,
+          "negative": 6,
+          "neutral": 2
+        },
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 17,
+          "positive": 5,
+          "negative": 11,
+          "neutral": 1
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 17,
+          "positive": 6,
+          "negative": 8,
+          "neutral": 3
+        },
+        {
+          "name": "Room",
+          "description": "Room amenities",
+          "total_mentioned": 10,
+          "positive": 2,
+          "negative": 5,
+          "neutral": 3
+        },
+        {
+          "name": "Transit",
+          "description": "Public transit",
+          "total_mentioned": 12,
+          "positive": 6,
+          "negative": 3,
+          "neutral": 3
+        }
+      ],
+      "amenities": [
+        "Free Wi-Fi",
+        "Restaurant"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Flex Stay Inn Kawasaki Kaizuka",
+      "description": "Snug rooms with kitchenettes in an unpretentious hotel offering complimentary Wi-Fi.",
+      "link": "https://iconia.co.jp/hotel-flexstay-inn-kawasaki-kaizuka-kanagawa/?utm_source=google&utm_medium=GBP&utm_campaign=FSIKawasakiKaizuka",
+      "property_token": "ChgI17CPwv_t7_nyARoLL2cvMXRmZHl0el8QAQ",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChgI17CPwv_t7_nyARoLL2cvMXRmZHl0el8QAQ&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.5259338,
+        "longitude": 139.7036403
+      },
+      "check_in_time": "2:00\u202fPM",
+      "check_out_time": "10:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$39",
+        "extracted_lowest": 39,
+        "before_taxes_fees": "$35",
+        "extracted_before_taxes_fees": 35
+      },
+      "total_rate": {
+        "lowest": "$276",
+        "extracted_lowest": 276,
+        "before_taxes_fees": "$248",
+        "extracted_before_taxes_fees": 248
+      },
+      "nearby_places": [
+        {
+          "name": "Kaizuka",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "2 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "24 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "58 min"
+            }
+          ]
+        },
+        {
+          "name": "\u4e2d\u56fd\u6599\u7406 \u9673\u56db\u6d77 (\u3061\u3093\u3057\u304b\u3044)",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "5 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "2-star hotel",
+      "extracted_hotel_class": 2,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMQ7Zi45DjhZuL4PBiZIdZOi6pBV4rUfhfb2oD2=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMQ7Zi45DjhZuL4PBiZIdZOi6pBV4rUfhfb2oD2=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOv1NzBnB6CfF1cZBi8FvtUy2-oXH5uufr8Wxyz=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOv1NzBnB6CfF1cZBi8FvtUy2-oXH5uufr8Wxyz=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN0GWze740svW0qfD0krmzfIgBvN07tpqM7vaW_=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN0GWze740svW0qfD0krmzfIgBvN07tpqM7vaW_=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMlilEFts5ijd1FWArBnoQBzZiHgzgoSp8XmxQO=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMlilEFts5ijd1FWArBnoQBzZiHgzgoSp8XmxQO=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN9kxInDxD0gc3jFp6ld4q67445HTw21wrKHQxb=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN9kxInDxD0gc3jFp6ld4q67445HTw21wrKHQxb=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/yyUUqoUl9RX6BQW--sdlBN4--WXwK8FRV7TnKpjLoePZYbeIDOKMZCJc2KmZEe3t8rL563d8pw7UJn7bN1RxpbK0tjl5jPGkImLsTGHa8dI_0Zm82Chhv1AragdqyDxFzSzNSwL8TGbEjwr7ybqYQpKpvI9udf8=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/9000000/8490000/8482700/8482616/cf6034ea_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/S42mm5ZL3igiPpjBZOX0yEjjqnNcBH6hmWew5mrHjXtndkZiw3--tnT95rwTWf30vGzmOLnwS6g4X07_vNzd5z7kgggvkxDCwRg2ABm0SRgzjoof3SQccX6mQCRaZY8u4Cgtqvj7Xx4FjNjao5aFPY1ZjeF10Zo=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/38/94/d9/caption.jpg?w=2100&h=1400&s=1"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPHLzcGNrlZ-VZOhYxfvZ6E6ePLI-08QJNN7s2C=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPHLzcGNrlZ-VZOhYxfvZ6E6ePLI-08QJNN7s2C=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/ue6R0-Zc5bNknN5AXIBVH8nZdrEU0nqV1HjUgYY29kbdS0f6OI1bbMgVRbFPr9tKotkOBGbH4gxzEltrtgDtUvJ2izE8POJes1LQGe7fRqdWNaC_F7pyATwgmmRqXHZNdhM0btTYgi7lCOrWHjLES29N8mdxmQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/44/441416/441416a_hb_a_009.jpg"
+        }
+      ],
+      "overall_rating": 3.8,
+      "reviews": 104,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 35
+        },
+        {
+          "stars": 4,
+          "count": 28
+        },
+        {
+          "stars": 3,
+          "count": 29
+        },
+        {
+          "stars": 2,
+          "count": 8
+        },
+        {
+          "stars": 1,
+          "count": 4
+        }
+      ],
+      "location_rating": 3.5,
+      "reviews_breakdown": [
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 11,
+          "positive": 10,
+          "negative": 0,
+          "neutral": 1
+        },
+        {
+          "name": "Transit",
+          "description": "Public transit",
+          "total_mentioned": 7,
+          "positive": 3,
+          "negative": 2,
+          "neutral": 2
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 6,
+          "positive": 4,
+          "negative": 1,
+          "neutral": 1
+        }
+      ],
+      "amenities": [
+        "Free Wi-Fi",
+        "Kitchen"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Tokyo Guest House Ouji Music Lounge",
+      "description": "Plain dorms & private rooms in an unfussy hostel featuring a down-to-earth cafe/bar.",
+      "link": "http://www.oji-music-lounge.tokyo/",
+      "property_token": "ChkI15aDuY3LxJlUGg0vZy8xMWY0d3NzejJxEAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChkI15aDuY3LxJlUGg0vZy8xMWY0d3NzejJxEAE&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.751878999999995,
+        "longitude": 139.736125
+      },
+      "check_in_time": "2:00\u202fPM",
+      "check_out_time": "10:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$40",
+        "extracted_lowest": 40,
+        "before_taxes_fees": "$36",
+        "extracted_before_taxes_fees": 36
+      },
+      "total_rate": {
+        "lowest": "$279",
+        "extracted_lowest": 279,
+        "before_taxes_fees": "$251",
+        "extracted_before_taxes_fees": 251
+      },
+      "nearby_places": [
+        {
+          "name": "Rikugien Gardens",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "8 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "38 min"
+            }
+          ]
+        },
+        {
+          "name": "\u53e4\u5ddd\u5c4b",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "2 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "2-star hotel",
+      "extracted_hotel_class": 2,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNooMgWr5qEkW0yhMcyVqOptTSm1vx1btm_Jc-9=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNooMgWr5qEkW0yhMcyVqOptTSm1vx1btm_Jc-9=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/W9g06gDpn--xtnJR0xArnvFI15SxbYsC7WQ4XWJtGAjdzOb_gCBOXIyoVEcBLp2g2Yh-XizSO8uS2Wwb3eV-W14pZQQWjiDeS-yzc4UJpfFjQ27LFIMVIK-Y5ijV7Gj35V9wqfem6Srjkwda7tG04rDXeq0Vvw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/21000000/20020000/20016000/20015913/b2d464c3_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPS_C3vFEJmxqGtbqjM8TNSUTvOnPSlvwufHa38=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPS_C3vFEJmxqGtbqjM8TNSUTvOnPSlvwufHa38=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/5IfZz6vwcTVXPQvVLIUrEXcgp06RpcmvXeRGJjUmLZ8TRia70AB9MRyAqO_bSeS1hiWoySi2NjCmuu0MWPrrwDxFuv1yc_yHXp0ELmN1bgV9Hoxj-SAngTAbB2V1MFzl7HK2Oh905NMLcYumdAaZZJH0hySxOQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/c7/b0/d4/4b-room.jpg?w=2100&h=1400&s=1"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/HhDCwwy5fYvYJxlxLMI2mr_kTm6kH8djA5ma1sWuYQ5iIv0xDr0hV-105OrBprAXMZJBmWDjq4ZDr9-wqmPQwj7ylAShgkzks0bP2undIs348goHqOTif0voj3JZNmkOylM6vcAVshGH1_Nyzt5vVbBuQJOZlw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/c7/b0/0b/dormitoryroom.jpg?w=2100&h=1400&s=1"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/_hDycrpPJW6E-OOPpWqErvHZVFs_QNWvFHMAJIH-XbVx9VuhuAeyB496x8lriDFPgoFrMCDIuz7Wm1sn4Uz3Oz3kelbET_pzmHWKoEBXoYnZcvKX7u8Mu4qH_-8e9-5APPHVcjy95OX9RuwOc-_uw-GCRobMrw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/e2/c9/e2c970ada3898cc2a1e81347922a2d99f3b313c4.jpeg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/9AMphOG-IiDDthvok3YHL7F1kRuR06PN8XdfWFqzCLKy_LClalzVdXeSIIY5kwZOmTbzA7X5QDKgwGHJhkDJ5pPOx7VmO0Y_ovm_dRG_QiAa5NigjqO8-N8w0jyQB4aaDaYMkClP97zxptdC5ur4qZ8sROAh4Q=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/c7/b2/60/privateroom.jpg?w=2100&h=1400&s=1"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNiAwsBatM4RPOrXtSNrwlegMGrEMU5bIJXCM4j=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNiAwsBatM4RPOrXtSNrwlegMGrEMU5bIJXCM4j=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx6QI6BNScdCibT4Qs3DM2TZO5HK00BjaZ3eFNj_ZVz7NGZ36J1q-ygQLTtoZ1kgDctnJZww4zaQM8wyMxb8GaJYz1mMOSniyw7aldDgpuDDGH4gLGuAvrkyQ5TbTcfyPh7lFHH3g=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgIDUrd-j9wE=s10000"
+        }
+      ],
+      "overall_rating": 4.1,
+      "reviews": 521,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 254
+        },
+        {
+          "stars": 4,
+          "count": 158
+        },
+        {
+          "stars": 3,
+          "count": 59
+        },
+        {
+          "stars": 2,
+          "count": 25
+        },
+        {
+          "stars": 1,
+          "count": 25
+        }
+      ],
+      "location_rating": 2.8,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 73,
+          "positive": 58,
+          "negative": 12,
+          "neutral": 3
+        },
+        {
+          "name": "Nightlife",
+          "description": "Nightlife",
+          "total_mentioned": 18,
+          "positive": 15,
+          "negative": 2,
+          "neutral": 1
+        },
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 36,
+          "positive": 19,
+          "negative": 11,
+          "neutral": 6
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 72,
+          "positive": 50,
+          "negative": 14,
+          "neutral": 8
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 57,
+          "positive": 45,
+          "negative": 4,
+          "neutral": 8
+        },
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 32,
+          "positive": 14,
+          "negative": 11,
+          "neutral": 7
+        }
+      ],
+      "amenities": [
+        "Free Wi-Fi",
+        "Restaurant",
+        "Kid-friendly"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Owl House Shinagawa",
+      "property_token": "ChoIncSx-aGH_6ytARoNL2cvMTF2XzBmNnFicBAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoIncSx-aGH_6ytARoNL2cvMTF2XzBmNnFicBAB&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.593789699999995,
+        "longitude": 139.7382319
+      },
+      "check_out_time": "11:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$44",
+        "extracted_lowest": 44,
+        "before_taxes_fees": "$40",
+        "extracted_before_taxes_fees": 40
+      },
+      "total_rate": {
+        "lowest": "$306",
+        "extracted_lowest": 306,
+        "before_taxes_fees": "$278",
+        "extracted_before_taxes_fees": 278
+      },
+      "nearby_places": [
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "15 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "56 min"
+            }
+          ]
+        },
+        {
+          "name": "Ribes",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "5 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=3bfCcctZOnfPb36PMukYJw&cb_client=search.estubs.gps&w=287&h=192&yaw=172.8414&pitch=0&thumbfov=100&scale=2",
+          "original_image": "https://lh5.googleusercontent.com/p/3bfCcctZOnfPb36PMukYJw=s10000"
+        }
+      ],
+      "overall_rating": 2.6,
+      "reviews": 10,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 1
+        },
+        {
+          "stars": 4,
+          "count": 2
+        },
+        {
+          "stars": 3,
+          "count": 2
+        },
+        {
+          "stars": 2,
+          "count": 2
+        },
+        {
+          "stars": 1,
+          "count": 3
+        }
+      ],
+      "location_rating": 2.8,
+      "reviews_breakdown": [
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 6,
+          "positive": 1,
+          "negative": 5,
+          "neutral": 0
+        }
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "AN HOTEL",
+      "link": "https://an-hotel-itabashi.com/",
+      "property_token": "ChkIzdyMxLrpn5hWGg0vZy8xMXQ3Y245a19fEAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChkIzdyMxLrpn5hWGg0vZy8xMXQ3Y245a19fEAE&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.7486381,
+        "longitude": 139.71896890000002
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "11:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$45",
+        "extracted_lowest": 45,
+        "before_taxes_fees": "$41",
+        "extracted_before_taxes_fees": 41
+      },
+      "total_rate": {
+        "lowest": "$314",
+        "extracted_lowest": 314,
+        "before_taxes_fees": "$284",
+        "extracted_before_taxes_fees": 284
+      },
+      "nearby_places": [
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "35 min"
+            }
+          ]
+        },
+        {
+          "name": "\u6d0b\u98df\uff21\uff29\uff24\uff21",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "1 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "1-star hotel",
+      "extracted_hotel_class": 1,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNGZwGvzx9076csqaWhhyFlVhR4h3U9udyCrjo=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNGZwGvzx9076csqaWhhyFlVhR4h3U9udyCrjo=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipO5fge57-QwIay_OPXpf3qqRGyacDvelz8p1W4=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipO5fge57-QwIay_OPXpf3qqRGyacDvelz8p1W4=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzBxCiX-S_9dJHReLViLOub6OJSMNGVqncFv4ZR5nN_btwW471sTKV-4AX_TVEYPyGWrIfDU76I0ew4bGueQ1FTsX0rJwbPss1kO5CV3FA782eeZz_syt1CRl_u36-faa1FrcoFyQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgICuxt66zAE=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMM92N0kWyi0FTuxGa2pH3B4Dw_eM78b4OUQ3I=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMM92N0kWyi0FTuxGa2pH3B4Dw_eM78b4OUQ3I=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMOO3HKkvHa3yY-m0NT6BrgWRUYhBQqWFYl5SM=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMOO3HKkvHa3yY-m0NT6BrgWRUYhBQqWFYl5SM=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNYnHxfg4SnHirlcRZsuuwQb5XFHeH8nZVMeOs=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNYnHxfg4SnHirlcRZsuuwQb5XFHeH8nZVMeOs=s10000"
+        },
+        {
+          "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=jNQFzeDM3Ah-6d1E0acMLw&cb_client=search.estubs.gps&w=287&h=192&yaw=103.63821&pitch=0&thumbfov=100&scale=2",
+          "original_image": "https://lh5.googleusercontent.com/p/jNQFzeDM3Ah-6d1E0acMLw=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx7AqFaRDHAxFRqX0hdqq_I9JDfRcmdQIK99fhQ9LQo0iz-tjcq3uSe_UgVWSZZz-nKabDCGP_dbTiU54WwUvKPgTPGkC0r0DB6kODfIQts8naa03BE07Bk9f9dBZxrmyM6JopA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgIDpq5rzrAE=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyw8JKrqH-FKipwJSDeNPHgdiFGoD_kTJJVIFts9xzwri-25husXv7Rr47-IzIdMoizWCdkjm0JmWHFV4_4JgjhgGqqbj9HM52XuIzA2Qe7RC-50yxqc3ZhsCmtYLc9mjLrSVTD=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgIC_gKj3cQ=s10000"
+        }
+      ],
+      "overall_rating": 1.9,
+      "reviews": 38,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 7
+        },
+        {
+          "stars": 4,
+          "count": 0
+        },
+        {
+          "stars": 3,
+          "count": 1
+        },
+        {
+          "stars": 2,
+          "count": 3
+        },
+        {
+          "stars": 1,
+          "count": 27
+        }
+      ],
+      "location_rating": 2.8,
+      "reviews_breakdown": [
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 9,
+          "positive": 0,
+          "negative": 8,
+          "neutral": 1
+        },
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 8,
+          "positive": 1,
+          "negative": 6,
+          "neutral": 1
+        },
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 6,
+          "positive": 0,
+          "negative": 6,
+          "neutral": 0
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 5,
+          "positive": 1,
+          "negative": 4,
+          "neutral": 0
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 5,
+          "positive": 1,
+          "negative": 4,
+          "neutral": 0
+        }
+      ],
+      "amenities": [
+        "Free Wi-Fi"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Hotel Livemax Budget Tokyo Hamura Station",
+      "description": "Compact rooms with free Wi-Fi in a modest hotel offering coin-operated laundry facilities.",
+      "link": "https://www.hotel-livemax.com/tokyo/hamurast/",
+      "property_token": "ChkIvJXE99nivtLcARoML2cvMXlnYmI2eXZ0EAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChkIvJXE99nivtLcARoML2cvMXlnYmI2eXZ0EAE&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.760171,
+        "longitude": 139.31539899999999
+      },
+      "check_in_time": "10:30\u202fPM",
+      "check_out_time": "10:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$47",
+        "extracted_lowest": 47,
+        "before_taxes_fees": "$42",
+        "extracted_before_taxes_fees": 42
+      },
+      "total_rate": {
+        "lowest": "$326",
+        "extracted_lowest": 326,
+        "before_taxes_fees": "$295",
+        "extracted_before_taxes_fees": 295
+      },
+      "nearby_places": [
+        {
+          "name": "HAMURA EKI HIGASHIGUCHI",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "2 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "1 hr 19 min"
+            }
+          ]
+        },
+        {
+          "name": "\u30a2\u30e1\u30ea\u30ab\u30f3\u30c0\u30a4\u30ca\u30fc \u30e9\u30fb\u30d6\u30fc\u30e0",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "2 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "2-star hotel",
+      "extracted_hotel_class": 2,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMvTOn3CbOspisD-X2v6L3larPvwpS9-bJLFBqg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMvTOn3CbOspisD-X2v6L3larPvwpS9-bJLFBqg=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNnhKaKT9vX9N1tt_qbQZo2g8W7QllgXna-ZnN4=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNnhKaKT9vX9N1tt_qbQZo2g8W7QllgXna-ZnN4=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/Yee3bWezTByW8zNhGbdsgoSekbT31yK_3arrQDJQkEm9X5mTRtuxrc52z8gqwED-C5kBhlnvAO-U_umIiBv4li9vS0FkkmUydhmYMsgkVXqAQNlVYYzAOR2thEiMEUm2aapLXtGG9JWYhjmGtLtiZuePaXI8YGU=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/7000000/6650000/6649600/6649532/fbf693c6_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/Nklj28dbgNRD3k-YPLVvP_HIJzqvqTmgzVYpOd5npCl1A5siG66Dyt7aKuD9p11GNi3snrJ_9kKc6OzIZoVtGoCPpg-VVxEDyFij3gdatMzaxWFNePG0uiWi06QJRlz8bfGjCivWHXeRjk1BxROXqihogDTUifU=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/7000000/6650000/6649600/6649532/42986504_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSym_jwiK1ySkofTeROfl2tUgveIolN-rd_T9ThyS_N90PTu-eQRsCn4NgZvIvTuwO7zNJPYankx4G1CjZSW9wmKXIGBDo1rsoZ_ObMJYwTqrTLfJyaW1vd1R6Glf8aVnac7dPQn=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgIDZ2JfcmQE=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPTUbyoAhSboGOElZU716uAmD6c44B_V6_PrQmm=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPTUbyoAhSboGOElZU716uAmD6c44B_V6_PrQmm=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPUxCMJ0QCyUtMdA9E6D99JuH7WR4IojnVQrRYN=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPUxCMJ0QCyUtMdA9E6D99JuH7WR4IojnVQrRYN=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPyrYb7otNSaaMcQzpIFqJqkmeHjctiw2ioSXpv=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPyrYb7otNSaaMcQzpIFqJqkmeHjctiw2ioSXpv=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxW83BSVyvuvvK8POng4r5AvgNcjkXQHdQcGdc25qmnpn31LZPwaF4xcVG0nNBHBBlqA5zXXNitQcefvYW12sw6AHKskDaeTAhJk4WiCOLocEFrw-RpWxyigyhlvGVxtTFjyLJ9iA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgMCIlvicigE=s10000"
+        }
+      ],
+      "overall_rating": 2.8,
+      "reviews": 308,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 32
+        },
+        {
+          "stars": 4,
+          "count": 56
+        },
+        {
+          "stars": 3,
+          "count": 104
+        },
+        {
+          "stars": 2,
+          "count": 58
+        },
+        {
+          "stars": 1,
+          "count": 58
+        }
+      ],
+      "location_rating": 3.7,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 25,
+          "positive": 8,
+          "negative": 15,
+          "neutral": 2
+        },
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 17,
+          "positive": 3,
+          "negative": 12,
+          "neutral": 2
+        },
+        {
+          "name": "Air Conditioning",
+          "description": "Air conditioning",
+          "total_mentioned": 5,
+          "positive": 0,
+          "negative": 5,
+          "neutral": 0
+        },
+        {
+          "name": "Kitchen",
+          "description": "Kitchen",
+          "total_mentioned": 11,
+          "positive": 2,
+          "negative": 7,
+          "neutral": 2
+        },
+        {
+          "name": "Transit",
+          "description": "Public transit",
+          "total_mentioned": 8,
+          "positive": 5,
+          "negative": 3,
+          "neutral": 0
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 8,
+          "positive": 4,
+          "negative": 3,
+          "neutral": 1
+        }
+      ],
+      "amenities": [
+        "Free Wi-Fi",
+        "Restaurant"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Joe Backpackers in Tokyo",
+      "link": "https://backpackers-tokyo.com/",
+      "property_token": "ChoI0dDP9fjX17PXARoNL2cvMTF4Nnk2NXg2cBAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoI0dDP9fjX17PXARoNL2cvMTF4Nnk2NXg2cBAB&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.7286761,
+        "longitude": 139.8006582
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "11:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$43",
+        "extracted_lowest": 43,
+        "before_taxes_fees": "$38",
+        "extracted_before_taxes_fees": 38
+      },
+      "total_rate": {
+        "lowest": "$299",
+        "extracted_lowest": 299,
+        "before_taxes_fees": "$269",
+        "extracted_before_taxes_fees": 269
+      },
+      "nearby_places": [
+        {
+          "name": "Tokyo Skytree",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "10 min"
+            }
+          ]
+        },
+        {
+          "name": "Namidabashi",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "4 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "31 min"
+            }
+          ]
+        },
+        {
+          "name": "B.S. Kitchen - Indian, Nepali Dining & Bar",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "3 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPBO2RnxFsoYh1XUojy75p8IWNvNZd07D1y1uUw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPBO2RnxFsoYh1XUojy75p8IWNvNZd07D1y1uUw=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOpchqh2Z1A-3YiLl_91lWPpdhRX1KvxIphKNRu=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOpchqh2Z1A-3YiLl_91lWPpdhRX1KvxIphKNRu=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwzjvrtH826j6nE4Is0lt0dGVVlTiExjpFrnWGQTq4jdrge63SwChfnBSIlCw9htMFtPmoMyLBbZ8VeEsmE7P13rmKgH-Rl9IJxmPSOIIcqnhNhoQOhXreUe8Xr8NDM6deIUeelJK9-RhMB=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIABIhAB3adS2OyXsqnG7xryuEFu=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPResPXXKPeDrIneZGT83YBbCJPp2b4jTl_tB9r=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPResPXXKPeDrIneZGT83YBbCJPp2b4jTl_tB9r=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN88TbYuYG38ckP9rCjxIvMAlQl9CQhnCmacxuq=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN88TbYuYG38ckP9rCjxIvMAlQl9CQhnCmacxuq=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPD-sO1VZ5uXvzJenCmSaIFZaEOx8LVVNchKlBV=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPD-sO1VZ5uXvzJenCmSaIFZaEOx8LVVNchKlBV=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMNSc9tb76Iy0yBwkgBf3BXWhs-DoFmzJwdC1Lu=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMNSc9tb76Iy0yBwkgBf3BXWhs-DoFmzJwdC1Lu=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOlpwPciMauyWDVLt8lafgoi7BMsHHXq_IAKMc7=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOlpwPciMauyWDVLt8lafgoi7BMsHHXq_IAKMc7=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMGo8VcAi_PcSr_-9cyN7EM8RNS5iMKuhUVUQ5F=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMGo8VcAi_PcSr_-9cyN7EM8RNS5iMKuhUVUQ5F=s10000"
+        }
+      ],
+      "overall_rating": 4.7,
+      "reviews": 22,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 19
+        },
+        {
+          "stars": 4,
+          "count": 2
+        },
+        {
+          "stars": 3,
+          "count": 0
+        },
+        {
+          "stars": 2,
+          "count": 0
+        },
+        {
+          "stars": 1,
+          "count": 1
+        }
+      ],
+      "location_rating": 3.2,
+      "reviews_breakdown": [
+        {
+          "name": "Kitchen",
+          "description": "Kitchen",
+          "total_mentioned": 7,
+          "positive": 6,
+          "negative": 0,
+          "neutral": 1
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 14,
+          "positive": 12,
+          "negative": 1,
+          "neutral": 1
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 10,
+          "positive": 9,
+          "negative": 1,
+          "neutral": 0
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 9,
+          "positive": 9,
+          "negative": 0,
+          "neutral": 0
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 8,
+          "positive": 7,
+          "negative": 0,
+          "neutral": 1
+        },
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 5,
+          "positive": 3,
+          "negative": 1,
+          "neutral": 1
+        }
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Hostel Wasabi Asakusa",
+      "link": "https://guesthousejp.com/asakusa/",
+      "property_token": "ChkIu5HWppSx0OU5Gg0vZy8xMXZtMWtiYl83EAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChkIu5HWppSx0OU5Gg0vZy8xMXZtMWtiYl83EAE&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.7200594,
+        "longitude": 139.7935502
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "10:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$43",
+        "extracted_lowest": 43,
+        "before_taxes_fees": "$38",
+        "extracted_before_taxes_fees": 38
+      },
+      "total_rate": {
+        "lowest": "$299",
+        "extracted_lowest": 299,
+        "before_taxes_fees": "$269",
+        "extracted_before_taxes_fees": 269
+      },
+      "nearby_places": [
+        {
+          "name": "Sens\u014d-ji",
+          "transportations": [
+            {
+              "type": "Public transport",
+              "duration": "9 min"
+            }
+          ]
+        },
+        {
+          "name": "\u2471 \u5343\u675f\u5c0f\u5b66\u6821\u524d",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "1 min"
+            }
+          ]
+        },
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "29 min"
+            }
+          ]
+        },
+        {
+          "name": "ODETTER",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "4 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNYf5taTAAt_jB44FfLLawjxcH9sBX1yoP8FLpX=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNYf5taTAAt_jB44FfLLawjxcH9sBX1yoP8FLpX=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/3v6MHTPz1wtxaxg0rXDRWbWnI-GjTfez5-I5oM_E6dGtrf61VVOctwX-e0T5AX6tTVD1Ocl3pTyGlOYJX-hjXVWoTvS3OBhu9-A5FhnCTKhhDKbgldG3YGPY1H-lKwKCkL1Qwjj3R5OItnEG_ZeIRKJAXIu_vw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/100000000/99930000/99925700/99925602/68ce2afc_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwZxBgzpKJkxcPPffISxlEQgs4w1hlwhg2QPjpg34onPuFkd2sv6XY4OhvKoG4n1NwUakC2eyG7COZtxOF2ttnPlXS_FsCzoGG0b68pQnMB4fHtk8kQWoul_jI-NTjrTWRI9UeZ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgIDH3tmRYA=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/lOXLlJRJ0v9hWsafy2ijxB2dIbSu36Lz2jkWeF3w-qfq9M9WlOEkV7Yu2NSSmixqe54xElOmgU-MpEQRj1ttOjDt7uq-lb0tJTZa-yXTm6WtdEct3y8J_m9EBEHX5UEqFnVwkzyU0xhROcUXjYy5gqZN-YKD5Q=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/100000000/99930000/99925700/99925602/6f8adf6f_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/4Z1ri11x9W6mocPugEQzC0xVy3FOH_OvSB8cbvXZSLE7TSCReAhVR0WTDJ1sAQ-uZZvTjzDRfVrzbCCYB-ZCO7Zxq1v8t0-KVfsr0iailuRBbjUdbFXQ6TtwDfMoudYM4Wu_MHfKJjjLbMUt5CCnOpvxrMM-IQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/b0/ea/b0eadb8d589fe1c492124552b96f252da715fc70.JPEG"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/66YvQN2cR34EJKJ7wEs1BzWR7lnfUn30RbjKSDhZ9rcTTUGOhYQRhPrk6l_Wi6841xOGSkzaqjP6dyyG0RmNjLu4FPqdkuIeCMwoFaL5ZmoYBsVokxcgQvesHEUnzLoWAI-66flKTmDeZ84U6t2yADsSEXpHQY8=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/100000000/99930000/99925700/99925602/0aba5f75_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxgb363q-YvrG2h_GME0rXAuG7sW0b1zUfkeePRytb1uCe0cV7K6ZU2HrOMY7L8mi4kUV8rtiwDFWCU9zWZQfzK1aHcoXDtm0T_nkocJjIQ3IAqJyPdLmDTqcmYoxWTB5KX3smm=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgIDvz9juKA=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/uj8asJ1rFfcPBfzznTlC9vzNpSvSKd5oskaPPbikm1oZVlJSftyfFHUAq74bBJVcRUeL7DU_OgkSp6rXjVdy92T4zUTaVOnZDH5H6VXYCiJWVKP9QUS8hxoCG8p_pdH0OuEVkKiLF3HR97M3QOeWbRMp_SOPwA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/100000000/99930000/99925700/99925602/43c9bad4_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwxLly6H61ZBhBnm_B-nIkL9Itb9F_3Oe3tpNRs8P0Tk91s_q_tFfxj-_WCAKjjhTYfG4WcTJSAK9W0WXNW_Vxj2P76ZkbCnhkX1FRL-P8D0wQck0jGhHk6oLVEWMlOPj3aiOk=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgIC9qJOALg=s10000"
+        }
+      ],
+      "overall_rating": 4.3,
+      "reviews": 75,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 45
+        },
+        {
+          "stars": 4,
+          "count": 17
+        },
+        {
+          "stars": 3,
+          "count": 7
+        },
+        {
+          "stars": 2,
+          "count": 3
+        },
+        {
+          "stars": 1,
+          "count": 3
+        }
+      ],
+      "location_rating": 3.8,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 19,
+          "positive": 17,
+          "negative": 1,
+          "neutral": 1
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 20,
+          "positive": 17,
+          "negative": 0,
+          "neutral": 3
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 16,
+          "positive": 11,
+          "negative": 2,
+          "neutral": 3
+        },
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 9,
+          "positive": 5,
+          "negative": 3,
+          "neutral": 1
+        },
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 10,
+          "positive": 4,
+          "negative": 5,
+          "neutral": 1
+        },
+        {
+          "name": "Transit",
+          "description": "Public transit",
+          "total_mentioned": 8,
+          "positive": 5,
+          "negative": 2,
+          "neutral": 1
+        }
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Zeus Ikegami",
+      "property_token": "ChoIr9TJlcPD-I23ARoNL2cvMTFoOXBtNXl4OBAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoIr9TJlcPD-I23ARoNL2cvMTFoOXBtNXl4OBAB&q=Tokyo%2C+Japan&sort_by=3",
+      "gps_coordinates": {
+        "latitude": 35.5674005,
+        "longitude": 139.7064164
+      },
+      "check_in_time": "4:00\u202fPM",
+      "check_out_time": "11:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$45",
+        "extracted_lowest": 45,
+        "before_taxes_fees": "$40",
+        "extracted_before_taxes_fees": 40
+      },
+      "total_rate": {
+        "lowest": "$314",
+        "extracted_lowest": 314,
+        "before_taxes_fees": "$283",
+        "extracted_before_taxes_fees": 283
+      },
+      "nearby_places": [
+        {
+          "name": "Haneda Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "27 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "45 min"
+            }
+          ]
+        },
+        {
+          "name": "Chinese cuisine Kaen Kamata shop",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "7 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "3-star hotel",
+      "extracted_hotel_class": 3,
+      "images": [
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/4E7qNTM0Dwwbqr-x0VgH0j2azlkW54eVXwfwjksU2pdORrecE41IBE6aT-yrDZgWMWj3yvEgoDiQgPC-Ja6CN5WgN9KBenBz6ihH5L3XAn6EzSYT-QD-lOFIN_VgNxhYtNhleSSWXMya11gHj590ErXaetk2K8I=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/61/0b/610b14cf9c11ff7861f610adc17ec556b58cd48f.jpeg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/oDMcoFVGnWf0XmQrXpkO9htkfa4aK1tQuX9y6DW2ynLRs70PLBcEhqDrP2ATRMatqn04QQ5_zQs9rCVF__lPKRitY_DKlgL2FzRapZoxyg79u0NMEPphtOYJDzNiYcwwCSn4F-QLHfKTX91ls6T1m-JjXNMGJA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/c8/eb/c8eb476c95f09e06a3f1746c89a47570ebde0f62.jpeg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/2Vel06keqjTZ5lqK6ucxTDsK39tsGAi8lXDmGVooYOCiKyTcC8M-5QnRxg4nv_2XimOswGOhC74KyY1GSoFPaeLnlVjI7wMrHEDA__WJ4DEOYNhWFXAiAztX94svvwEvqGnTyfsA3aHAkh2Q0rX3eUJaHLb-ZA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/c6/a6/c6a65e3cccc66e9960a65f9588131656021c27c8.jpeg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/ayVdNx4nXRYpB85a47Edzt-8mW2uT9z2ZG9G9c5X7QdXOwlmCCGhdL5N8kP3qvYgFWdkgHNlIu5EF9pWuhVfCUPl6kYZ84pP6r_Bvs17h3IkBonshZq6lYhjU1OYc4NGhCoDV5ZemkR4oaPeM9w18bNdeir6Y04=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/bb/37/bb37d104fa62f78362c9f701f560134beea425b3.jpeg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/miGBIytByjk_FoSVXJG-r3-EFIyZd99ILcFyzaCs9ntnAAaIZE0th0lxLgqmyMwQw1s6WQtK_dW2M3t2uoj_uJO7BHAvVo21WU7CLWG_Xsi9xgqPfDgvPERU9PJLCOsANS9p0P-6wwVgxQNPuLQLDigA9gD9kdU=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/fc/7a/fc7a4f1c9cee163eee42d0230122aa54923e1dae.jpeg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/JCQvjqqKODx6EWPZZBqCjQJMkVjm35lSIIcphGzY3Cbzk_cAUEUo7Nqsx0rRRgzwBHcGBnvuvegb48-HPDrL7WQZ0KJGuN4q3mFsI1F10sah22gc7eXyvpoSSvMd5naZdy28YW8chQ4B2XqylhbOgpYHQMaRlZA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/b6/9a/b69ae7fecec43ecd638bb2e9ce40e520bcfdb7a0.jpeg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/Ey9jQJP9tHhkeWYFC1jBfbZbFJdmLy3BQaRT-cJ438X3bTZ-ydjzrM5FxdA_LCM1iO-hPvGx1Z4q6RmEweZ2AXWPRQ5coX1BOCaCJaRV3ymxpDW6z4I38JhA6JaCwIHBI6CIJC6BK-6omf96F0lB_1ifRSaVwrg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/69/50/69505ae26fddecd9b05019fe9ff7b7369b94829c.jpeg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/T5f0iX4Lq5w9W7xUFgi-dIkGa5F2X9-I_ezHWwWE6IGA5CFtWLCJfuh3MCcG-d_GU49UWhY3c2gRFW_CQaqO1AGQW5Sfv3HroAq6_5SA0nCfE57j9KSDpbqPUhXfrbFwnwuKo_OwI5X8wlSQoJ7-dBfpdzK5cw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/08/6a/086a0a101041f977f280ef431ff1e4b3f815b400.jpeg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/i41mk0ZaBW59szQiqkArpuXAuaB5yvkoOyELit3jjbzJjnhon4OUdcoTHtzOSytWo-dY_DyW5jchAWoSpnBZDbrZBLyr3mTsh2eirEFtkj4Xh_YKH9Hku4B0z9Z92_klP2vxQQ_nqnfPyHNxoOizqUHw5gtScA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/3b/2e/3b2eef1717c841e6cd18479ddfbee8734130c894.jpeg"
+        }
+      ],
+      "overall_rating": 1.3,
+      "reviews": 4,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 0
+        },
+        {
+          "stars": 4,
+          "count": 0
+        },
+        {
+          "stars": 3,
+          "count": 0
+        },
+        {
+          "stars": 2,
+          "count": 1
+        },
+        {
+          "stars": 1,
+          "count": 3
+        }
+      ],
+      "location_rating": 2.7
+    }
+  ],
+  "brands": [
+    {
+      "id": 33,
+      "name": "Accor Live Limitless",
+      "children": [
+        {
+          "id": 8,
+          "name": "Fairmont Hotels and Resorts"
+        },
+        {
+          "id": 103,
+          "name": "Ibis Styles"
+        },
+        {
+          "id": 91,
+          "name": "Mercure"
+        },
+        {
+          "id": 90,
+          "name": "Pullman Hotels and Resorts"
+        }
+      ]
+    },
+    {
+      "id": 356,
+      "name": "APA Group",
+      "children": [
+        {
+          "id": 357,
+          "name": "APA Hotels"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Best Western International",
+      "children": [
+        {
+          "id": 155,
+          "name": "Best Western"
+        }
+      ]
+    },
+    {
+      "id": 258,
+      "name": "Bvlgari"
+    },
+    {
+      "id": 20,
+      "name": "Choice Hotels",
+      "children": [
+        {
+          "id": 27,
+          "name": "Comfort"
+        }
+      ]
+    },
+    {
+      "id": 358,
+      "name": "Dormy Inn Group",
+      "children": [
+        {
+          "id": 362,
+          "name": "Dormy Inn Express"
+        },
+        {
+          "id": 360,
+          "name": "Dormy Inn Premium"
+        },
+        {
+          "id": 361,
+          "name": "Onyado Nono"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "Four Seasons"
+    },
+    {
+      "id": 28,
+      "name": "Hilton Honors",
+      "children": [
+        {
+          "id": 7,
+          "name": "Conrad"
+        },
+        {
+          "id": 81,
+          "name": "DoubleTree by Hilton"
+        },
+        {
+          "id": 54,
+          "name": "Hilton Hotels & Resorts"
+        }
+      ]
+    },
+    {
+      "id": 197,
+      "name": "Hoshino Resorts",
+      "children": [
+        {
+          "id": 198,
+          "name": "Hoshinoya"
+        },
+        {
+          "id": 299,
+          "name": "OMO"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Hyatt",
+      "children": [
+        {
+          "id": 116,
+          "name": "Andaz"
+        },
+        {
+          "id": 117,
+          "name": "Grand Hyatt"
+        },
+        {
+          "id": 288,
+          "name": "Hyatt"
+        },
+        {
+          "id": 119,
+          "name": "Hyatt Centric"
+        },
+        {
+          "id": 120,
+          "name": "Hyatt House"
+        },
+        {
+          "id": 122,
+          "name": "Hyatt Regency"
+        },
+        {
+          "id": 118,
+          "name": "Park Hyatt"
+        },
+        {
+          "id": 262,
+          "name": "Unbound Collection"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "IHG Hotels & Resorts",
+      "children": [
+        {
+          "id": 64,
+          "name": "Holiday Inn"
+        },
+        {
+          "id": 87,
+          "name": "Hotel Indigo"
+        },
+        {
+          "id": 2,
+          "name": "InterContinental Hotels & Resorts"
+        },
+        {
+          "id": 127,
+          "name": "Kimpton Hotels & Restaurants"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Marriott Bonvoy",
+      "children": [
+        {
+          "id": 128,
+          "name": "AC Hotels"
+        },
+        {
+          "id": 60,
+          "name": "Aloft Hotels"
+        },
+        {
+          "id": 59,
+          "name": "Autograph Collection"
+        },
+        {
+          "id": 86,
+          "name": "Courtyard by Marriott"
+        },
+        {
+          "id": 256,
+          "name": "Edition"
+        },
+        {
+          "id": 415,
+          "name": "Four Points Flex by Sheraton"
+        },
+        {
+          "id": 26,
+          "name": "JW Marriott Hotels"
+        },
+        {
+          "id": 61,
+          "name": "Marriott Hotels & Resorts"
+        },
+        {
+          "id": 129,
+          "name": "Moxy"
+        },
+        {
+          "id": 3,
+          "name": "Ritz-Carlton Hotel Company"
+        },
+        {
+          "id": 12,
+          "name": "Sheraton Hotels and Resorts"
+        },
+        {
+          "id": 39,
+          "name": "Westin Hotels & Resorts"
+        }
+      ]
+    },
+    {
+      "id": 453,
+      "name": "MyStays Hotel Group",
+      "children": [
+        {
+          "id": 458,
+          "name": "Flexstay Inn"
+        },
+        {
+          "id": 454,
+          "name": "Kamenoi Hotels"
+        },
+        {
+          "id": 456,
+          "name": "MyStays Hotels"
+        }
+      ]
+    },
+    {
+      "id": 345,
+      "name": "Red Roof Inn",
+      "children": [
+        {
+          "id": 4,
+          "name": "Red Roof"
+        }
+      ]
+    },
+    {
+      "id": 192,
+      "name": "Route Inn Hotel Group",
+      "children": [
+        {
+          "id": 193,
+          "name": "Route Inn"
+        }
+      ]
+    },
+    {
+      "id": 363,
+      "name": "Seibu Prince Hotels & Resorts",
+      "children": [
+        {
+          "id": 367,
+          "name": "Prince Hotel"
+        },
+        {
+          "id": 459,
+          "name": "Prince Smart Inn"
+        },
+        {
+          "id": 366,
+          "name": "The Prince"
+        }
+      ]
+    },
+    {
+      "id": 201,
+      "name": "Super Hotel"
+    },
+    {
+      "id": 162,
+      "name": "Toyoko Inn"
+    }
+  ],
+  "serpapi_pagination": {
+    "current_from": 1,
+    "current_to": 18,
+    "next_page_token": "CBI=",
+    "next": "https://serpapi.com/search.json?adults=2&check_in_date=2025-12-20&check_out_date=2025-12-27&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&next_page_token=CBI%3D&q=Tokyo%2C+Japan&sort_by=3"
+  }
+}

@@ -1,0 +1,130 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# Concieragent Helm Chart Values
+# Default configuration for the AI Travel Assistant
+# ═══════════════════════════════════════════════════════════════════════════
+
+global:
+  domain: demos.2060.io
+
+# ───────────────────────────────────────────────────────────────────────────
+# Application Configuration
+# ───────────────────────────────────────────────────────────────────────────
+name: concieragent
+replicas: 1
+containerPort: 4001
+
+image:
+  repository: io2060/concieragent
+  tag: "" # Set by CI/CD, defaults to Chart.appVersion
+  pullPolicy: Always
+
+# ───────────────────────────────────────────────────────────────────────────
+# Ingress Configuration
+# ───────────────────────────────────────────────────────────────────────────
+ingress:
+  enabled: true
+  className: nginx
+  host: "{{ .Values.name }}.{{ .Values.global.domain }}"
+  tlsSecret: "public.{{ .Values.name }}.{{ .Values.global.domain }}-cert"
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+
+# ───────────────────────────────────────────────────────────────────────────
+# Environment Variables
+# ───────────────────────────────────────────────────────────────────────────
+env:
+  # VS Agent connection (internal Kubernetes service)
+  vsAgentUrl: http://concieragent-vsa:3000
+  
+  # LLM Provider configuration
+  llmProvider: openai
+  # openaiModel: gpt-4o
+  # claudeModel: claude-sonnet-4-20250514
+  # ollamaBaseUrl: http://ollama:11434
+  # ollamaModel: llama3.1
+
+# Secrets - these should be set via Kubernetes secrets or CI/CD
+secrets:
+  # LLM API Keys (at least one required)
+  openaiApiKey: ""
+  anthropicApiKey: ""
+  
+  # MCP Server API Keys
+  serpapiKey: ""
+  openweatherApiKey: ""
+
+# Use existing Kubernetes secret instead of creating one
+existingSecret: ""
+
+# ───────────────────────────────────────────────────────────────────────────
+# Resource Limits
+# ───────────────────────────────────────────────────────────────────────────
+resources:
+  requests:
+    memory: "512Mi"
+    cpu: "250m"
+  limits:
+    memory: "2Gi"
+    cpu: "1000m"
+
+# ───────────────────────────────────────────────────────────────────────────
+# Health Checks
+# ───────────────────────────────────────────────────────────────────────────
+livenessProbe:
+  httpGet:
+    path: /health
+    port: 4001
+  initialDelaySeconds: 60
+  periodSeconds: 30
+  timeoutSeconds: 10
+  failureThreshold: 3
+
+readinessProbe:
+  httpGet:
+    path: /health
+    port: 4001
+  initialDelaySeconds: 30
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 3
+
+# ───────────────────────────────────────────────────────────────────────────
+# VS Agent Sidecar Configuration
+# ───────────────────────────────────────────────────────────────────────────
+vs-agent-chart:
+  enabled: true
+  name: concieragent-vsa
+  
+  # DIDComm/Hologram configuration
+  didcommLabel: "Concieragent"
+  eventsBaseUrl: "http://concieragent:4001"
+  didcommInvitationImageUrl: "https://raw.githubusercontent.com/AirKyzzZ/concieragent-hologram-demo/refs/heads/feat-mcp-travel-assistant/logo.png"
+  
+  # Ingress for VS Agent (DIDComm endpoint)
+  ingress:
+    host: "dm.{{ .Values.name }}.{{ .Values.global.domain }}"
+    tlsSecret: "public.{{ .Values.name }}.{{ .Values.global.domain }}-cert"
+    private:
+      whitelistSourceRange: "0.0.0.0/0"  # Adjust for security
+      host: "admin.{{ .Values.name }}.{{ .Values.global.domain }}"
+  
+  # Extra environment variables for VS Agent
+  extraEnv:
+    - name: AGENT_WALLET_ID
+      value: "Concieragent"
+    - name: AGENT_WALLET_KEY
+      value: "Concieragent"
+    - name: SELF_ISSUED_VTC_ORG_TYPE
+      value: "PRIVATE"
+    - name: SELF_ISSUED_VTC_ORG_COUNTRYCODE
+      value: "EE"
+    - name: SELF_ISSUED_VTC_ORG_ADDRESS
+      value: "Ahtri tn 13 10152 Tallinn"
+    - name: SELF_ISSUED_VTC_SERVICE_TYPE
+      value: "Travel Assistant"
+    - name: SELF_ISSUED_VTC_SERVICE_DESCRIPTION
+      value: "AI-powered travel concierge for flight, hotel, and event planning"
+    - name: SELF_ISSUED_VTC_SERVICE_MINIMUMAGEREQUIRED
+      value: "1"
+    - name: USE_CORS
+      value: "true"

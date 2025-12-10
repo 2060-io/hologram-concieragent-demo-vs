@@ -1,0 +1,24 @@
+{
+  "search_metadata": {
+    "search_id": "_Tokyo_week_20251122_174453",
+    "query": "",
+    "location": "Tokyo",
+    "date_filter": "week",
+    "event_type": null,
+    "language": "en",
+    "country": "jp",
+    "search_timestamp": "2025-11-22T17:44:53.460721",
+    "total_results": 0
+  },
+  "search_parameters": {
+    "q": " in Tokyo",
+    "engine": "google_events",
+    "htichips": "date:week",
+    "hl": "en",
+    "gl": "jp"
+  },
+  "search_information": {
+    "events_results_state": "Fully empty"
+  },
+  "events_results": []
+}

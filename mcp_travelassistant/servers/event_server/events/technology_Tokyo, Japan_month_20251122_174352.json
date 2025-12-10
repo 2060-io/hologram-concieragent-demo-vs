@@ -1,0 +1,139 @@
+{
+  "search_metadata": {
+    "search_id": "technology_Tokyo, Japan_month_20251122_174352",
+    "query": "technology",
+    "location": "Tokyo, Japan",
+    "date_filter": "month",
+    "event_type": null,
+    "language": "en",
+    "country": "jp",
+    "search_timestamp": "2025-11-22T17:43:52.387679",
+    "total_results": 3
+  },
+  "search_parameters": {
+    "q": "technology in Tokyo, Japan",
+    "engine": "google_events",
+    "htichips": "date:month",
+    "hl": "en",
+    "gl": "jp"
+  },
+  "search_information": {
+    "events_results_state": "Results for exact spelling"
+  },
+  "events_results": [
+    {
+      "title": "International Conference on Environmental Informatics",
+      "date": {
+        "start_date": "Nov 22",
+        "when": "Sat, Nov 22, 9:00 \u2013 Mon, Nov 24, 9:00"
+      },
+      "address": [
+        "Sophia University Yotsuya Campus, 7-1 Kioicho",
+        "Chiyoda City, Tokyo"
+      ],
+      "link": "https://conferenceindex.org/event/international-conference-on-environmental-informatics-2025-november-tokyo-jp",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=ku0qNJeWM-cy3tG31HLDr9w2ffexEjJZMpmBVCiAMi1WM1NIR66xaHMNd79Pgjr43F5ZXQqtdJVzZA-9VcGTYgktwAYHE3YWR-2UKBU05SNDpCtZKaY",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x60188c629eb7437b:0xd59d9eba882319b6?sa=X&ved=2ahUKEwjG7b6UmoaRAxUfRzABHZw6CsoQ9eIBegQIAxAA&hl=en&gl=jp",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x60188c629eb7437b%3A0xd59d9eba882319b6&engine=google_maps&gl=jp&google_domain=google.com&hl=en&q=technology+in+Tokyo%2C+Japan&type=place"
+      },
+      "description": "ICEI 205 information: 1.Accepted papers will be published in the Conference Proceedings, which will be submitted to EI Compendex, Scopus for indexing. 2.Prof. Gordon Huang from University of...",
+      "ticket_info": [
+        {
+          "source": "Clocate.com",
+          "link": "https://www.clocate.com/international-conference-on-environmental-informatics-icei/89052/",
+          "link_type": "tickets"
+        },
+        {
+          "source": "Conference Index",
+          "link": "https://conferenceindex.org/event/international-conference-on-environmental-informatics-2025-november-tokyo-jp",
+          "link_type": "more info"
+        },
+        {
+          "source": "10Times",
+          "link": "https://10times.com/e11h-sffg-p8k1-7",
+          "link_type": "more info"
+        }
+      ],
+      "venue": {
+        "name": "Sophia University Yotsuya Campus",
+        "rating": 4.3,
+        "reviews": 560,
+        "link": "https://www.google.com/search?sca_esv=326a9b3488e82af6&gl=jp&hl=en&q=Sophia+University+Yotsuya+Campus&ludocid=15392633625407330742&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ95AXq-WixbPGfcB67QHUDu5CqEFQqluItM-LM8f-16-WU-_hON6WivDI&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMkUCsFtJm0_r8UqIEAvbRCNOIi60wGKLe4Cb1BoUXVC863RK6uGHYvy9eTI&s=10"
+    },
+    {
+      "title": "Tokyo Tech Talk #1 \u2013 Platform Engineering (Powered by Treasure Data)",
+      "date": {
+        "start_date": "Nov 26",
+        "when": "Wed, Nov 26, 19:00 \u2013 21:00"
+      },
+      "address": [
+        "Azabudai Hills, 1 Chome Azabudai",
+        "Minato City, Tokyo"
+      ],
+      "link": "https://luma.com/5yvt8zbr",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=WFhi9GPZRRXUoNrgE2i_ahEUR9T8xC9m2bne1NNGzRhO8QGmWco01J0QEIU7fVtkCoKKzpafZXuijECxbSsQnKJIImtYouEEJ1lkeUva0jr4jO_o3Mk",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x60188b2e40342225:0x3f9a1673138a69c1?sa=X&ved=2ahUKEwjG7b6UmoaRAxUfRzABHZw6CsoQ9eIBegQICxAA&hl=en&gl=jp",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x60188b2e40342225%3A0x3f9a1673138a69c1&engine=google_maps&gl=jp&google_domain=google.com&hl=en&q=technology+in+Tokyo%2C+Japan&type=place"
+      },
+      "description": "Tokyo Tech Talk #1 \u2013 Platform Engineering (Powered by Treasure Data) Tokyo Tech Talk is a community-driven evening event that brings together engineers from leading tech companies to share...",
+      "ticket_info": [
+        {
+          "source": "Luma",
+          "link": "https://luma.com/5yvt8zbr",
+          "link_type": "more info"
+        }
+      ],
+      "venue": {
+        "name": "Azabudai Hills",
+        "rating": 4.4,
+        "reviews": 5564,
+        "link": "https://www.google.com/search?sca_esv=326a9b3488e82af6&gl=jp&hl=en&q=Azabudai+Hills&ludocid=4583000254307789249&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2BjIT7Xaah-l9lDPWCV9WdmwWoJvDEktudl-3ALmbXYCfthEt1sNxuiE&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN-rDKBlYyka6KmPZrETAjsaeu9CEKCq4bzoXAh6LxdsJQXtXkNp2tCDwc5w&s=10"
+    },
+    {
+      "title": "Mass-Trans Innovation Japan",
+      "date": {
+        "start_date": "Nov 26",
+        "when": "Wed, Nov 26, 10:00 \u2013 Sat, Nov 29, 16:00"
+      },
+      "address": [
+        "Makuhari Messe, 2 Chome-1 Nakase, Mihama Ward",
+        "Chiba"
+      ],
+      "link": "https://10times.com/e1rr-r0z5-p4d0",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=jZZsKCL-Lr3XOUeiqYYhT9tBNbAKfUaztmk5ngOtZNZMRcspZ-gSHfHwdFqf2uLiUCCtBoMFz8Sj4kGXZ0RsPSbhRSfBn1GdC_e_Lc0t5Jjj3KAWt24",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x6022821fd52ebfdf:0xcec0c09c4bed45e0?sa=X&ved=2ahUKEwjG7b6UmoaRAxUfRzABHZw6CsoQ9eIBegQIExAA&hl=en&gl=jp",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x6022821fd52ebfdf%3A0xcec0c09c4bed45e0&engine=google_maps&gl=jp&google_domain=google.com&hl=en&q=technology+in+Tokyo%2C+Japan&type=place"
+      },
+      "description": "The Social Infrastructure Structure Monitoring, Maintenance and Management Bridge/Tunnel Technology Exhibition will take place from November 26 to November 29, 2025, at the renowned Makuhari Messe...",
+      "ticket_info": [
+        {
+          "source": "10Times",
+          "link": "https://10times.com/mtij",
+          "link_type": "more info"
+        },
+        {
+          "source": "CNS Travel Solutions",
+          "link": "https://en.cns.travel/venue-industry/mahukari-messe/city-municipal-and-public-transport",
+          "link_type": "more info"
+        }
+      ],
+      "venue": {
+        "name": "Makuhari Messe",
+        "rating": 3.9,
+        "reviews": 25765,
+        "link": "https://www.google.com/search?sca_esv=326a9b3488e82af6&gl=jp&hl=en&q=Makuhari+Messe&ludocid=14898119344862873056&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRg2Xx7zqPBgfd70nViuw54lFDZMvPHmlmj_iR9DjezKX3eXQJitrm1UQ&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4q04RswQd3PIAe1JJ7_A5Q30LcuYXwLXTRzekhdzBOGqMHilzzqD4VnS8RSU&s=10"
+    }
+  ]
+}

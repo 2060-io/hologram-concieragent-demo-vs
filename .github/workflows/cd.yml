@@ -1,0 +1,294 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# Continuous Deployment Workflow
+# Builds, tags, and pushes Docker images on main/develop pushes
+# Deploys to Kubernetes via Helm
+# ═══════════════════════════════════════════════════════════════════════════
+
+name: CD - Build & Deploy
+
+env:
+  DH_USERNAME: ${{ secrets.DOCKER_HUB_LOGIN }}
+  DH_TOKEN: ${{ secrets.DOCKER_HUB_PWD }}
+  IMAGE_NAME: concieragent
+  REGISTRY: docker.io
+
+on:
+  push:
+    branches: [main, develop]
+  workflow_dispatch:
+    inputs:
+      deploy_only:
+        description: 'Skip build and only deploy'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  # ─────────────────────────────────────────────────────────────────────────
+  # Build and Push Docker Image
+  # ─────────────────────────────────────────────────────────────────────────
+  build:
+    name: Build & Push Docker Image
+    runs-on: ubuntu-latest
+    if: github.event.inputs.deploy_only != 'true'
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      image_tag: ${{ steps.version.outputs.image_tag }}
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      # ─────────────────────────────────────────────────────────────────────
+      # Semantic Versioning
+      # ─────────────────────────────────────────────────────────────────────
+      - name: Semantic Release
+        uses: codfish/semantic-release-action@v3
+        id: semantic
+        with:
+          branches: |
+            [
+              'main',
+              {
+                name: 'develop',
+                prerelease: 'dev'
+              }
+            ]
+          plugins: |
+            [
+              [
+                "@semantic-release/commit-analyzer",
+                {
+                  "preset": "angular",
+                  "releaseRules": [
+                    { "type": "feat", "release": "minor" },
+                    { "type": "fix", "release": "patch" },
+                    { "type": "refactor", "release": "patch" },
+                    { "type": "perf", "release": "patch" },
+                    { "type": "docs", "release": false },
+                    { "type": "style", "release": false },
+                    { "type": "test", "release": false },
+                    { "type": "chore", "release": false }
+                  ]
+                }
+              ],
+              [
+                "@semantic-release/npm",
+                { "npmPublish": false }
+              ],
+              "@semantic-release/release-notes-generator",
+              "@semantic-release/github"
+            ]
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Determine Version
+        id: version
+        run: |
+          if [ "${{ steps.semantic.outputs.new-release-published }}" == "true" ]; then
+            VERSION="${{ steps.semantic.outputs.release-version }}"
+            echo "Using semantic release version: $VERSION"
+          else
+            # Fallback to commit SHA if no new release
+            VERSION="0.0.0-$(echo ${{ github.sha }} | cut -c1-7)"
+            echo "Using commit SHA version: $VERSION"
+          fi
+          
+          # Determine image tag based on branch
+          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
+            IMAGE_TAG="latest"
+          else
+            IMAGE_TAG="dev"
+          fi
+          
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "image_tag=$IMAGE_TAG" >> $GITHUB_OUTPUT
+          echo "📦 Version: $VERSION"
+          echo "🏷️ Image Tag: $IMAGE_TAG"
+
+      # ─────────────────────────────────────────────────────────────────────
+      # Docker Build & Push
+      # ─────────────────────────────────────────────────────────────────────
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_HUB_LOGIN }}
+          password: ${{ secrets.DOCKER_HUB_PWD }}
+
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: |
+            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ steps.version.outputs.image_tag }}
+            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:v${{ steps.version.outputs.version }}
+            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          labels: |
+            org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
+            org.opencontainers.image.revision=${{ github.sha }}
+            org.opencontainers.image.version=${{ steps.version.outputs.version }}
+
+      - name: Docker Image Summary
+        run: |
+          echo "### 🐳 Docker Image Published" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Tag | Image |" >> $GITHUB_STEP_SUMMARY
+          echo "|-----|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| \`${{ steps.version.outputs.image_tag }}\` | \`${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ steps.version.outputs.image_tag }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| \`v${{ steps.version.outputs.version }}\` | \`${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:v${{ steps.version.outputs.version }}\` |" >> $GITHUB_STEP_SUMMARY
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Build and Push Helm Chart
+  # ─────────────────────────────────────────────────────────────────────────
+  helm:
+    name: Build & Push Helm Chart
+    runs-on: ubuntu-latest
+    needs: build
+    if: always() && (needs.build.result == 'success' || github.event.inputs.deploy_only == 'true')
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Helm
+        uses: azure/setup-helm@v3
+        with:
+          version: 'v3.14.0'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update Chart Version
+        run: |
+          VERSION="${{ needs.build.outputs.version || '0.1.0' }}"
+          sed -i "s/^version:.*/version: v$VERSION/" ./charts/Chart.yaml
+          sed -i "s/^appVersion:.*/appVersion: \"$VERSION\"/" ./charts/Chart.yaml
+          echo "📋 Updated Chart.yaml with version: v$VERSION"
+          cat ./charts/Chart.yaml
+
+      - name: Log in to Docker Hub Helm Registry
+        run: |
+          echo "${{ secrets.DOCKER_HUB_PWD }}" | helm registry login -u "${{ secrets.DOCKER_HUB_LOGIN }}" --password-stdin docker.io
+
+      - name: Package and Push Helm Chart
+        run: |
+          VERSION="${{ needs.build.outputs.version || '0.1.0' }}"
+          CHART_NAME=$(grep '^name:' ./charts/Chart.yaml | awk '{print $2}')
+          
+          # Update dependencies
+          helm dependency update ./charts 2>/dev/null || true
+          
+          # Package chart
+          helm package ./charts -d ./charts
+          
+          # Push to OCI registry
+          helm push ./charts/$CHART_NAME-v$VERSION.tgz oci://docker.io/${{ secrets.DOCKER_HUB_LOGIN }}
+          
+          echo "### 📦 Helm Chart Published" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "\`oci://docker.io/${{ secrets.DOCKER_HUB_LOGIN }}/$CHART_NAME:v$VERSION\`" >> $GITHUB_STEP_SUMMARY
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Deploy to Kubernetes
+  # ─────────────────────────────────────────────────────────────────────────
+  deploy:
+    name: Deploy to Kubernetes
+    runs-on: ubuntu-latest
+    needs: [build, helm]
+    if: always() && needs.helm.result == 'success'
+    environment: ${{ github.ref_name == 'main' && 'production' || 'development' }}
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Kubernetes
+        uses: 2060-io/devops/actions/setup-kube@main
+        with:
+          kubeconfig: ${{ secrets.KUBECONFIG }}
+
+      - name: Verify Kubernetes Connection
+        run: |
+          echo "🔌 Verifying Kubernetes connection..."
+          kubectl version --client
+          kubectl cluster-info
+          kubectl get namespaces
+
+      - name: Setup Helm
+        uses: azure/setup-helm@v3
+        with:
+          version: 'v3.14.0'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy with Helm
+        run: |
+          VERSION="${{ needs.build.outputs.version || '0.1.0' }}"
+          NAMESPACE="demos"
+          RELEASE_NAME="concieragent"
+          
+          # Determine environment-specific values
+          if [ "${{ github.ref_name }}" == "main" ]; then
+            DOMAIN="${{ vars.DOMAIN }}"
+            REPLICAS=2
+          else
+            DOMAIN="${{ vars.DOMAIN_DEV || vars.DOMAIN }}"
+            REPLICAS=1
+          fi
+          
+          echo "🚀 Deploying Concieragent..."
+          echo "   Version: v$VERSION"
+          echo "   Namespace: $NAMESPACE"
+          echo "   Domain: $DOMAIN"
+          echo "   Replicas: $REPLICAS"
+          
+          # Upgrade or install
+          helm upgrade --install $RELEASE_NAME ./charts \
+            --namespace $NAMESPACE \
+            --create-namespace \
+            --set global.domain=$DOMAIN \
+            --set image.tag=v$VERSION \
+            --set replicas=$REPLICAS \
+            --set existingSecret=concieragent-api-keys \
+            --wait \
+            --timeout 10m
+          
+          echo "### 🚀 Deployment Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Setting | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|---------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Environment | \`${{ github.ref_name == 'main' && 'production' || 'development' }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Version | \`v$VERSION\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Namespace | \`$NAMESPACE\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Domain | \`$DOMAIN\` |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Invitation URL:** \`https://concieragent.$DOMAIN/invitation\`" >> $GITHUB_STEP_SUMMARY
+
+      - name: Verify Deployment
+        run: |
+          echo "🔍 Verifying deployment..."
+          kubectl get pods -n demos -l app=concieragent
+          kubectl get pods -n demos -l app=concieragent-vsa
+          kubectl get ingress -n demos | grep concieragent || true
+          
+          # Wait for pods to be ready
+          kubectl wait --for=condition=ready pod -l app=concieragent -n demos --timeout=300s || true

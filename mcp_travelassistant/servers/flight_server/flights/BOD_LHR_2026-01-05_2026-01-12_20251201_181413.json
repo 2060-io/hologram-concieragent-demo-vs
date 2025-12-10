@@ -1,0 +1,1199 @@
+{
+  "search_metadata": {
+    "search_id": "BOD_LHR_2026-01-05_2026-01-12_20251201_181413",
+    "departure": "BOD",
+    "arrival": "LHR",
+    "outbound_date": "2026-01-05",
+    "return_date": "2026-01-12",
+    "trip_type": "Round trip",
+    "passengers": {
+      "adults": 1,
+      "children": 0,
+      "infants_in_seat": 0,
+      "infants_on_lap": 0
+    },
+    "travel_class": "Economy",
+    "currency": "USD",
+    "search_timestamp": "2025-12-01T18:14:13.966261"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Bordeaux A\u00e9roport",
+            "id": "BOD",
+            "time": "2026-01-05 12:30"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-01-05 14:20"
+          },
+          "duration": 110,
+          "airplane": "Embraer 190",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1442",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Carbon emissions estimate: 127 kg"
+          ],
+          "plane_and_crew_by": "Air France Hop"
+        },
+        {
+          "departure_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-01-05 15:45"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-01-05 16:05"
+          },
+          "duration": 80,
+          "airplane": "Embraer 195 E2",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1011",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 52 kg"
+          ],
+          "plane_and_crew_by": "KLM Cityhopper"
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 85,
+          "name": "Amsterdam Airport Schiphol",
+          "id": "AMS"
+        }
+      ],
+      "total_duration": 275,
+      "carbon_emissions": {
+        "this_flight": 180000,
+        "typical_for_this_route": 80000,
+        "difference_percent": 125
+      },
+      "price": 367,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference",
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "departure_token": "WyJDalJJVXpsek9EQmhaRWQwYURCQlVVRXRTa0ZDUnkwdExTMHRMUzB0TFhaM1ltVjFOVUZCUVVGQlIydDBlazlWUzBWS05VTkJFZzFMVERFME5ESjhTMHd4TURFeEdnc0l0cDRDRUFJYUExVlRSRGdjY0xhZUFnPT0iLFtbIkJPRCIsIjIwMjYtMDEtMDUiLCJBTVMiLG51bGwsIktMIiwiMTQ0MiJdLFsiQU1TIiwiMjAyNi0wMS0wNSIsIkxIUiIsbnVsbCwiS0wiLCIxMDExIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Bordeaux A\u00e9roport",
+            "id": "BOD",
+            "time": "2026-01-05 06:00"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-01-05 07:50"
+          },
+          "duration": 110,
+          "airplane": "Embraer 190",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1440",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Carbon emissions estimate: 127 kg"
+          ],
+          "plane_and_crew_by": "Air France Hop"
+        },
+        {
+          "departure_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-01-05 10:20"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-01-05 10:45"
+          },
+          "duration": 85,
+          "airplane": "Airbus A321neo",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1005",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 38 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 150,
+          "name": "Amsterdam Airport Schiphol",
+          "id": "AMS"
+        }
+      ],
+      "total_duration": 345,
+      "carbon_emissions": {
+        "this_flight": 166000,
+        "typical_for_this_route": 80000,
+        "difference_percent": 108
+      },
+      "price": 397,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference",
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "departure_token": "WyJDalJJVXpsek9EQmhaRWQwYURCQlVVRXRTa0ZDUnkwdExTMHRMUzB0TFhaM1ltVjFOVUZCUVVGQlIydDBlazlWUzBWS05VTkJFZzFMVERFME5EQjhTMHd4TURBMUdnc0locllDRUFJYUExVlRSRGdjY0lhMkFnPT0iLFtbIkJPRCIsIjIwMjYtMDEtMDUiLCJBTVMiLG51bGwsIktMIiwiMTQ0MCJdLFsiQU1TIiwiMjAyNi0wMS0wNSIsIkxIUiIsbnVsbCwiS0wiLCIxMDA1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Bordeaux A\u00e9roport",
+            "id": "BOD",
+            "time": "2026-01-05 18:35"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-01-05 20:00"
+          },
+          "duration": 85,
+          "airplane": "Airbus A320",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 7439",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 69 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-01-05 21:00"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-01-05 21:25"
+          },
+          "duration": 85,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1380",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 54 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 60,
+          "name": "Paris Charles de Gaulle Airport",
+          "id": "CDG"
+        }
+      ],
+      "total_duration": 230,
+      "carbon_emissions": {
+        "this_flight": 124000,
+        "typical_for_this_route": 80000,
+        "difference_percent": 55
+      },
+      "price": 466,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference",
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "departure_token": "WyJDalJJVXpsek9EQmhaRWQwYURCQlVVRXRTa0ZDUnkwdExTMHRMUzB0TFhaM1ltVjFOVUZCUVVGQlIydDBlazlWUzBWS05VTkJFZzFCUmpjME16bDhRVVl4TXpnd0dnc0lyT3NDRUFJYUExVlRSRGdjY0t6ckFnPT0iLFtbIkJPRCIsIjIwMjYtMDEtMDUiLCJDREciLG51bGwsIkFGIiwiNzQzOSJdLFsiQ0RHIiwiMjAyNi0wMS0wNSIsIkxIUiIsbnVsbCwiQUYiLCIxMzgwIl1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Bordeaux A\u00e9roport",
+            "id": "BOD",
+            "time": "2026-01-05 18:35"
+          },
+          "arrival_airport": {
+            "name": "Josep Tarradellas Barcelona-El Prat Airport",
+            "id": "BCN",
+            "time": "2026-01-05 19:45"
+          },
+          "duration": 70,
+          "airplane": "Airbus A320",
+          "airline": "Vueling",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+          "travel_class": "Economy",
+          "flight_number": "VY 2913",
+          "ticket_also_sold_by": [
+            "Iberia"
+          ],
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 58 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Josep Tarradellas Barcelona-El Prat Airport",
+            "id": "BCN",
+            "time": "2026-01-06 07:30"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-01-06 09:10"
+          },
+          "duration": 160,
+          "airplane": "Airbus A320",
+          "airline": "Vueling",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+          "travel_class": "Economy",
+          "flight_number": "VY 6650",
+          "ticket_also_sold_by": [
+            "Iberia"
+          ],
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 105 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 705,
+          "name": "Josep Tarradellas Barcelona-El Prat Airport",
+          "id": "BCN",
+          "overnight": true
+        }
+      ],
+      "total_duration": 935,
+      "carbon_emissions": {
+        "this_flight": 164000,
+        "typical_for_this_route": 80000,
+        "difference_percent": 105
+      },
+      "price": 347,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference",
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "departure_token": "WyJDalJJVXpsek9EQmhaRWQwYURCQlVVRXRTa0ZDUnkwdExTMHRMUzB0TFhaM1ltVjFOVUZCUVVGQlIydDBlazlWUzBWS05VTkJFZzFXV1RJNU1UTjhWbGsyTmpVd0dnc0k1WTRDRUFJYUExVlRSRGdjY09XT0FnPT0iLFtbIkJPRCIsIjIwMjYtMDEtMDUiLCJCQ04iLG51bGwsIlZZIiwiMjkxMyJdLFsiQkNOIiwiMjAyNi0wMS0wNiIsIkxIUiIsbnVsbCwiVlkiLCI2NjUwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Bordeaux A\u00e9roport",
+            "id": "BOD",
+            "time": "2026-01-05 12:30"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-01-05 14:20"
+          },
+          "duration": 110,
+          "airplane": "Embraer 190",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1442",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Carbon emissions estimate: 127 kg"
+          ],
+          "plane_and_crew_by": "Air France Hop"
+        },
+        {
+          "departure_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-01-05 20:35"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-01-05 20:50"
+          },
+          "duration": 75,
+          "airplane": "Airbus A321neo",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1017",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 38 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 375,
+          "name": "Amsterdam Airport Schiphol",
+          "id": "AMS"
+        }
+      ],
+      "total_duration": 560,
+      "carbon_emissions": {
+        "this_flight": 166000,
+        "typical_for_this_route": 80000,
+        "difference_percent": 108
+      },
+      "price": 357,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference",
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "departure_token": "WyJDalJJVXpsek9EQmhaRWQwYURCQlVVRXRTa0ZDUnkwdExTMHRMUzB0TFhaM1ltVjFOVUZCUVVGQlIydDBlazlWUzBWS05VTkJFZzFMVERFME5ESjhTMHd4TURFM0dnc0luNVlDRUFJYUExVlRSRGdjY0orV0FnPT0iLFtbIkJPRCIsIjIwMjYtMDEtMDUiLCJBTVMiLG51bGwsIktMIiwiMTQ0MiJdLFsiQU1TIiwiMjAyNi0wMS0wNSIsIkxIUiIsbnVsbCwiS0wiLCIxMDE3Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Bordeaux A\u00e9roport",
+            "id": "BOD",
+            "time": "2026-01-05 18:05"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-01-05 19:55"
+          },
+          "duration": 110,
+          "airplane": "Embraer 190",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1446",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Carbon emissions estimate: 127 kg"
+          ],
+          "plane_and_crew_by": "Air France Hop"
+        },
+        {
+          "departure_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-01-06 08:35"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-01-06 09:00"
+          },
+          "duration": 85,
+          "airplane": "Airbus A321neo",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1003",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 38 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 760,
+          "name": "Amsterdam Airport Schiphol",
+          "id": "AMS",
+          "overnight": true
+        }
+      ],
+      "total_duration": 955,
+      "carbon_emissions": {
+        "this_flight": 166000,
+        "typical_for_this_route": 80000,
+        "difference_percent": 108
+      },
+      "price": 367,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference",
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "departure_token": "WyJDalJJVXpsek9EQmhaRWQwYURCQlVVRXRTa0ZDUnkwdExTMHRMUzB0TFhaM1ltVjFOVUZCUVVGQlIydDBlazlWUzBWS05VTkJFZzFMVERFME5EWjhTMHd4TURBekdnc0l0cDRDRUFJYUExVlRSRGdjY0xhZUFnPT0iLFtbIkJPRCIsIjIwMjYtMDEtMDUiLCJBTVMiLG51bGwsIktMIiwiMTQ0NiJdLFsiQU1TIiwiMjAyNi0wMS0wNiIsIkxIUiIsbnVsbCwiS0wiLCIxMDAzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Bordeaux A\u00e9roport",
+            "id": "BOD",
+            "time": "2026-01-05 20:10"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-01-05 21:35"
+          },
+          "duration": 85,
+          "airplane": "Airbus A320",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 7443",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 69 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-01-06 07:35"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-01-06 08:00"
+          },
+          "duration": 85,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1680",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 54 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 600,
+          "name": "Paris Charles de Gaulle Airport",
+          "id": "CDG",
+          "overnight": true
+        }
+      ],
+      "total_duration": 770,
+      "carbon_emissions": {
+        "this_flight": 124000,
+        "typical_for_this_route": 80000,
+        "difference_percent": 55
+      },
+      "price": 461,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference",
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "departure_token": "WyJDalJJVXpsek9EQmhaRWQwYURCQlVVRXRTa0ZDUnkwdExTMHRMUzB0TFhaM1ltVjFOVUZCUVVGQlIydDBlazlWUzBWS05VTkJFZzFCUmpjME5ETjhRVVl4Tmpnd0dnc0kzT2NDRUFJYUExVlRSRGdjY056bkFnPT0iLFtbIkJPRCIsIjIwMjYtMDEtMDUiLCJDREciLG51bGwsIkFGIiwiNzQ0MyJdLFsiQ0RHIiwiMjAyNi0wMS0wNiIsIkxIUiIsbnVsbCwiQUYiLCIxNjgwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Bordeaux A\u00e9roport",
+            "id": "BOD",
+            "time": "2026-01-05 11:50"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-01-05 13:15"
+          },
+          "duration": 85,
+          "airplane": "Airbus A320",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 7437",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 69 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-01-05 16:10"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-01-05 16:35"
+          },
+          "duration": 85,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1280",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 54 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 175,
+          "name": "Paris Charles de Gaulle Airport",
+          "id": "CDG"
+        }
+      ],
+      "total_duration": 345,
+      "carbon_emissions": {
+        "this_flight": 124000,
+        "typical_for_this_route": 80000,
+        "difference_percent": 55
+      },
+      "price": 528,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference",
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "departure_token": "WyJDalJJVXpsek9EQmhaRWQwYURCQlVVRXRTa0ZDUnkwdExTMHRMUzB0TFhaM1ltVjFOVUZCUVVGQlIydDBlazlWUzBWS05VTkJFZzFCUmpjME16ZDhRVVl4TWpnd0dnc0l0WndERUFJYUExVlRSRGdjY0xXY0F3PT0iLFtbIkJPRCIsIjIwMjYtMDEtMDUiLCJDREciLG51bGwsIkFGIiwiNzQzNyJdLFsiQ0RHIiwiMjAyNi0wMS0wNSIsIkxIUiIsbnVsbCwiQUYiLCIxMjgwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Bordeaux A\u00e9roport",
+            "id": "BOD",
+            "time": "2026-01-05 20:10"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-01-05 21:35"
+          },
+          "duration": 85,
+          "airplane": "Airbus A320",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 7443",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 69 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-01-06 07:30"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-01-06 07:55"
+          },
+          "duration": 85,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1334",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 54 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 595,
+          "name": "Paris Charles de Gaulle Airport",
+          "id": "CDG",
+          "overnight": true
+        }
+      ],
+      "total_duration": 765,
+      "carbon_emissions": {
+        "this_flight": 124000,
+        "typical_for_this_route": 80000,
+        "difference_percent": 55
+      },
+      "price": 528,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference",
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "departure_token": "WyJDalJJVXpsek9EQmhaRWQwYURCQlVVRXRTa0ZDUnkwdExTMHRMUzB0TFhaM1ltVjFOVUZCUVVGQlIydDBlazlWUzBWS05VTkJFZzFCUmpjME5ETjhRVVl4TXpNMEdnc0l0WndERUFJYUExVlRSRGdjY0xXY0F3PT0iLFtbIkJPRCIsIjIwMjYtMDEtMDUiLCJDREciLG51bGwsIkFGIiwiNzQ0MyJdLFsiQ0RHIiwiMjAyNi0wMS0wNiIsIkxIUiIsbnVsbCwiQUYiLCIxMzM0Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Bordeaux A\u00e9roport",
+            "id": "BOD",
+            "time": "2026-01-05 17:55"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-01-05 23:45"
+          },
+          "duration": 230,
+          "airplane": "Boeing 737MAX 9 Passenger",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1392",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 195 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-01-06 08:50"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-01-06 09:55"
+          },
+          "duration": 245,
+          "airplane": "Airbus A330",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1979",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 184 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 545,
+          "name": "Istanbul Airport",
+          "id": "IST",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1020,
+      "carbon_emissions": {
+        "this_flight": 380000,
+        "typical_for_this_route": 80000,
+        "difference_percent": 375
+      },
+      "price": 597,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "extensions": [
+        "1 checked bag up to 30 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference",
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "departure_token": "WyJDalJJVXpsek9EQmhaRWQwYURCQlVVRXRTa0ZDUnkwdExTMHRMUzB0TFhaM1ltVjFOVUZCUVVGQlIydDBlazlWUzBWS05VTkJFZzFVU3pFek9USjhWRXN4T1RjNUdnc0lrTklERUFJYUExVlRSRGdjY0pEU0F3PT0iLFtbIkJPRCIsIjIwMjYtMDEtMDUiLCJJU1QiLG51bGwsIlRLIiwiMTM5MiJdLFsiSVNUIiwiMjAyNi0wMS0wNiIsIkxIUiIsbnVsbCwiVEsiLCIxOTc5Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Bordeaux A\u00e9roport",
+            "id": "BOD",
+            "time": "2026-01-05 09:55"
+          },
+          "arrival_airport": {
+            "name": "Josep Tarradellas Barcelona-El Prat Airport",
+            "id": "BCN",
+            "time": "2026-01-05 11:10"
+          },
+          "duration": 75,
+          "airplane": "Airbus A320",
+          "airline": "Vueling",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+          "travel_class": "Economy",
+          "flight_number": "VY 2915",
+          "ticket_also_sold_by": [
+            "Iberia"
+          ],
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 58 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Josep Tarradellas Barcelona-El Prat Airport",
+            "id": "BCN",
+            "time": "2026-01-05 16:25"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-01-05 18:00"
+          },
+          "duration": 155,
+          "airplane": "Airbus A320",
+          "airline": "Vueling",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+          "travel_class": "Economy",
+          "flight_number": "VY 6652",
+          "ticket_also_sold_by": [
+            "Iberia"
+          ],
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 105 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 315,
+          "name": "Josep Tarradellas Barcelona-El Prat Airport",
+          "id": "BCN"
+        }
+      ],
+      "total_duration": 545,
+      "carbon_emissions": {
+        "this_flight": 164000,
+        "typical_for_this_route": 80000,
+        "difference_percent": 105
+      },
+      "price": 611,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference",
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "departure_token": "WyJDalJJVXpsek9EQmhaRWQwYURCQlVVRXRTa0ZDUnkwdExTMHRMUzB0TFhaM1ltVjFOVUZCUVVGQlIydDBlazlWUzBWS05VTkJFZzFXV1RJNU1UVjhWbGsyTmpVeUdnc0kwTndERUFJYUExVlRSRGdjY05EY0F3PT0iLFtbIkJPRCIsIjIwMjYtMDEtMDUiLCJCQ04iLG51bGwsIlZZIiwiMjkxNSJdLFsiQkNOIiwiMjAyNi0wMS0wNSIsIkxIUiIsbnVsbCwiVlkiLCI2NjUyIl1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 347,
+    "price_level": "typical",
+    "typical_price_range": [
+      215,
+      385
+    ],
+    "price_history": [
+      [
+        1759356000,
+        274
+      ],
+      [
+        1759442400,
+        274
+      ],
+      [
+        1759528800,
+        274
+      ],
+      [
+        1759615200,
+        274
+      ],
+      [
+        1759701600,
+        274
+      ],
+      [
+        1759788000,
+        273
+      ],
+      [
+        1759874400,
+        273
+      ],
+      [
+        1759960800,
+        272
+      ],
+      [
+        1760047200,
+        257
+      ],
+      [
+        1760133600,
+        263
+      ],
+      [
+        1760220000,
+        264
+      ],
+      [
+        1760306400,
+        264
+      ],
+      [
+        1760392800,
+        271
+      ],
+      [
+        1760479200,
+        256
+      ],
+      [
+        1760565600,
+        257
+      ],
+      [
+        1760652000,
+        285
+      ],
+      [
+        1760738400,
+        286
+      ],
+      [
+        1760824800,
+        285
+      ],
+      [
+        1760911200,
+        285
+      ],
+      [
+        1760997600,
+        285
+      ],
+      [
+        1761084000,
+        285
+      ],
+      [
+        1761170400,
+        284
+      ],
+      [
+        1761256800,
+        284
+      ],
+      [
+        1761343200,
+        284
+      ],
+      [
+        1761429600,
+        284
+      ],
+      [
+        1761519600,
+        284
+      ],
+      [
+        1761606000,
+        283
+      ],
+      [
+        1761692400,
+        284
+      ],
+      [
+        1761778800,
+        311
+      ],
+      [
+        1761865200,
+        309
+      ],
+      [
+        1761951600,
+        308
+      ],
+      [
+        1762038000,
+        309
+      ],
+      [
+        1762124400,
+        309
+      ],
+      [
+        1762210800,
+        307
+      ],
+      [
+        1762297200,
+        307
+      ],
+      [
+        1762383600,
+        306
+      ],
+      [
+        1762470000,
+        322
+      ],
+      [
+        1762556400,
+        331
+      ],
+      [
+        1762642800,
+        330
+      ],
+      [
+        1762729200,
+        330
+      ],
+      [
+        1762815600,
+        322
+      ],
+      [
+        1762902000,
+        286
+      ],
+      [
+        1762988400,
+        268
+      ],
+      [
+        1763074800,
+        269
+      ],
+      [
+        1763161200,
+        275
+      ],
+      [
+        1763247600,
+        299
+      ],
+      [
+        1763334000,
+        299
+      ],
+      [
+        1763420400,
+        303
+      ],
+      [
+        1763506800,
+        303
+      ],
+      [
+        1763593200,
+        302
+      ],
+      [
+        1763679600,
+        296
+      ],
+      [
+        1763766000,
+        297
+      ],
+      [
+        1763852400,
+        302
+      ],
+      [
+        1763938800,
+        301
+      ],
+      [
+        1764025200,
+        308
+      ],
+      [
+        1764111600,
+        344
+      ],
+      [
+        1764198000,
+        345
+      ],
+      [
+        1764284400,
+        323
+      ],
+      [
+        1764370800,
+        323
+      ],
+      [
+        1764457200,
+        325
+      ],
+      [
+        1764543600,
+        347
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "BOD",
+            "name": "Bordeaux A\u00e9roport"
+          },
+          "city": "Bordeaux",
+          "country": "France",
+          "country_code": "FR",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPwpSVF3SALVaZ_pfu-qwc8J_AmxhfVA2PLKado_Z_h_gKxATSU8HT5kEwJZ9LZK4cek0GzKnFNfuaCQ",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR8FOKEMPTTMQMq4bLeXK3l3Sz3CNkgT12tLBXY3CMZpvgf1sg2pC5WN79VL8Q-zRMA9wWPxY0BnmK0Gb5fEZQvxvYiBJAPVOpM-aabHo"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "LHR",
+            "name": "Heathrow Airport"
+          },
+          "city": "London",
+          "country": "United Kingdom",
+          "country_code": "GB",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpN9RbtOSTDqKIPxWc_D6rdSysaWVh6d-NW7yz7yFXKRwh5RN5BpNIoXEwH1XVcFdLWqn6Sm8_Y_zmeg",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYH83YXny8hR4M7k5BMFq4vUT6LNtVABQzgs2pg-hcpSZq3oMBOQK3xh591AAJv2Qx4uvFZUGqOVt4kuoCUOklISunmndJleOoSef_7QE"
+        }
+      ]
+    },
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "LHR",
+            "name": "Heathrow Airport"
+          },
+          "city": "London",
+          "country": "United Kingdom",
+          "country_code": "GB",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpN9RbtOSTDqKIPxWc_D6rdSysaWVh6d-NW7yz7yFXKRwh5RN5BpNIoXEwH1XVcFdLWqn6Sm8_Y_zmeg",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYH83YXny8hR4M7k5BMFq4vUT6LNtVABQzgs2pg-hcpSZq3oMBOQK3xh591AAJv2Qx4uvFZUGqOVt4kuoCUOklISunmndJleOoSef_7QE"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "BOD",
+            "name": "Bordeaux A\u00e9roport"
+          },
+          "city": "Bordeaux",
+          "country": "France",
+          "country_code": "FR",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPwpSVF3SALVaZ_pfu-qwc8J_AmxhfVA2PLKado_Z_h_gKxATSU8HT5kEwJZ9LZK4cek0GzKnFNfuaCQ",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR8FOKEMPTTMQMq4bLeXK3l3Sz3CNkgT12tLBXY3CMZpvgf1sg2pC5WN79VL8Q-zRMA9wWPxY0BnmK0Gb5fEZQvxvYiBJAPVOpM-aabHo"
+        }
+      ]
+    }
+  ]
+}
