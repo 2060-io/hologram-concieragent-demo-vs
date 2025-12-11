@@ -147,10 +147,10 @@ jobs:
 
       - name: Update Chart Version
         run: |
-          VERSION="${{ needs.build.outputs.version || '0.1.0' }}"
-          sed -i "s/^version:.*/version: v$VERSION/" ./charts/Chart.yaml
+          VERSION="${{ needs.resolve-version.outputs.release-version || '0.1.0' }}"
+          sed -i "s/^version:.*/version: $VERSION/" ./charts/Chart.yaml
           sed -i "s/^appVersion:.*/appVersion: \"$VERSION\"/" ./charts/Chart.yaml
-          echo "📋 Updated Chart.yaml with version: v$VERSION"
+          echo "📋 Updated Chart.yaml with version: $VERSION"
           cat ./charts/Chart.yaml
 
       - name: Log in to Docker Hub Helm Registry
@@ -159,7 +159,7 @@ jobs:
 
       - name: Package and Push Helm Chart
         run: |
-          VERSION="${{ needs.build.outputs.version || '0.1.0' }}"
+          VERSION="${{ needs.resolve-version.outputs.release-version || '0.1.0' }}"
           CHART_NAME=$(grep '^name:' ./charts/Chart.yaml | awk '{print $2}')
           
           # Update dependencies
@@ -169,11 +169,11 @@ jobs:
           helm package ./charts -d ./charts
           
           # Push to OCI registry
-          helm push ./charts/$CHART_NAME-v$VERSION.tgz oci://docker.io/${{ secrets.DOCKER_HUB_LOGIN }}
+          helm push ./charts/$CHART_NAME-$VERSION.tgz oci://docker.io/${{ secrets.DOCKER_HUB_LOGIN }}
           
           echo "### 📦 Helm Chart Published" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "\`oci://docker.io/${{ secrets.DOCKER_HUB_LOGIN }}/$CHART_NAME:v$VERSION\`" >> $GITHUB_STEP_SUMMARY
+          echo "\`oci://docker.io/${{ secrets.DOCKER_HUB_LOGIN }}/$CHART_NAME:$VERSION\`" >> $GITHUB_STEP_SUMMARY
 
   # ─────────────────────────────────────────────────────────────────────────
   # Deploy to Kubernetes
