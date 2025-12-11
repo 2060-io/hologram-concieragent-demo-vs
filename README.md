@@ -23,7 +23,7 @@
 
 🇬🇧 English • 🇪🇸 Español • 🇫🇷 Français
 
-[Features](#-features) • [Quick Start](#-quick-start) • [Configuration](#%EF%B8%8F-configuration) • [Architecture](#-architecture) • [API Reference](#-api-reference)
+[Features](#-features) • [Quick Start](#-quick-start) • [Configuration](#%EF%B8%8F-configuration) • [Architecture](#-architecture) • [Deployment](#-deployment-environments) • [API Reference](#-api-reference)
 
 </div>
 
@@ -314,6 +314,40 @@ ollama serve
 | Tools | MCP Protocol | External service integration |
 | Servers | Python 3.12 + FastMCP | 6 specialized MCP servers |
 
+### Kubernetes Deployment Architecture
+
+While Kubernetes is not mandatory, here's an example architecture for production deployments:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    Kubernetes Cluster                            │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │                    demos namespace                       │    │
+│  │  ┌─────────────┐         ┌─────────────┐                │    │
+│  │  │ Concieragent│◀────────│  VS Agent   │                │    │
+│  │  │   (Bot)     │  HTTP   │  (DIDComm)  │                │    │
+│  │  │  Port 4001  │         │  Port 3000  │                │    │
+│  │  └─────────────┘         └─────────────┘                │    │
+│  │        │                        │                        │    │
+│  │        │     ┌──────────────────┘                       │    │
+│  │        ▼     ▼                                           │    │
+│  │  ┌─────────────────────────────────────────────┐        │    │
+│  │  │              Ingress (nginx)                 │        │    │
+│  │  │  concieragent.domain.com                    │        │    │
+│  │  │  concieragent.domain.com/invitation         │        │    │
+│  │  └─────────────────────────────────────────────┘        │    │
+│  └─────────────────────────────────────────────────────────┘    │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+                    ┌──────────────┐
+                    │   Hologram   │
+                    │   Mobile App │
+                    └──────────────┘
+```
+
+For Kubernetes deployment, use the provided Helm charts in the `charts/` directory. See [docs/deployment.md](docs/deployment.md) for detailed deployment instructions.
+
 ---
 
 ## 📡 API Reference
@@ -516,6 +550,107 @@ OPENWEATHER_API_KEY=your-key  # Get from openweathermap.org
 SERPAPI_KEY=your-key          # Get from serpapi.com
 ```
 </details>
+
+---
+
+## 🚀 Deployment Environments
+
+### Local Development
+
+```bash
+# 1. Install dependencies
+npm install
+
+# 2. Set up environment
+cp .env.example .env
+# Edit .env with your API keys
+
+# 3. Install MCP server dependencies
+for server in flight hotel event geocoder weather finance; do
+  cd mcp_travelassistant/servers/${server}_server && uv sync && cd ../../..
+done
+
+# 4. Start ngrok (in separate terminal)
+ngrok http 3001
+
+# 5. Start bot server
+npm run dev
+
+# 6. Start VS Agent
+./docker-run.sh your-ngrok-url
+```
+
+### Docker Local Testing
+
+```bash
+# Build image
+npm run docker:build
+
+# Run with environment file
+npm run docker:run
+
+# Or with explicit env vars
+docker run -p 4001:4001 \
+  -e OPENAI_API_KEY=sk-xxx \
+  -e SERPAPI_KEY=xxx \
+  -e OPENWEATHER_API_KEY=xxx \
+  concieragent:local
+```
+
+### Kubernetes Deployment
+
+For production deployments, use the provided Helm charts:
+
+```bash
+# Dry run
+helm template concieragent ./charts \
+  --set global.domain=your-domain.com
+
+# Install
+helm upgrade --install concieragent ./charts \
+  --namespace demos \
+  --create-namespace \
+  --set global.domain=your-domain.com \
+  --set existingSecret=concieragent-api-keys
+```
+
+See [docs/deployment.md](docs/deployment.md) for detailed API documentation and deployment instructions.
+
+---
+
+## 🌐 Accessing Your Deployment
+
+### URLs
+
+After successful deployment:
+
+| URL | Purpose |
+|-----|---------|
+| `https://concieragent.{domain}/invitation` | QR code for Hologram connection |
+| `https://concieragent.{domain}/health` | Health check endpoint |
+| `https://concieragent.{domain}/welcome` | Welcome message API |
+
+### Connecting with Hologram
+
+1. Open your browser to `https://concieragent.{domain}/invitation`
+2. Open the Hologram app on your phone
+3. Scan the QR code
+4. Start chatting!
+
+### Checking Deployment Status
+
+```bash
+# View pods (Kubernetes)
+kubectl get pods -n demos -l app=concieragent
+kubectl get pods -n demos -l app=concieragent-vsa
+
+# View logs
+kubectl logs -n demos -l app=concieragent -f
+kubectl logs -n demos -l app=concieragent-vsa -f
+
+# View ingress
+kubectl get ingress -n demos | grep concieragent
+```
 
 ---
 
