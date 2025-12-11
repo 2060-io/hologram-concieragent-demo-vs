@@ -27,6 +27,6 @@ maintainers:
 # Dependencies - VS Agent chart for DIDComm/Hologram protocol handling
 dependencies:
   - name: vs-agent-chart
-    version: ">=1.0.0"
+    version: ">=1.5.5"
     repository: "oci://registry-1.docker.io/io2060"
     condition: vs-agent-chart.enabled
