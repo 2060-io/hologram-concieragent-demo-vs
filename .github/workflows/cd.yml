@@ -7,14 +7,11 @@
 name: CD - Build & Deploy
 
 env:
-  DH_USERNAME: ${{ secrets.DOCKER_HUB_LOGIN }}
-  DH_TOKEN: ${{ secrets.DOCKER_HUB_PWD }}
   IMAGE_NAME: concieragent
-  REGISTRY: docker.io
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main]
   workflow_dispatch:
     inputs:
       deploy_only:
@@ -25,14 +22,25 @@ on:
 
 jobs:
   # ─────────────────────────────────────────────────────────────────────────
+  # Create Stable and Dev tags
+  # ─────────────────────────────────────────────────────────────────────────
+  resolve-version:
+      uses: 2060-io/organization/.github/workflows/resolve-version-call.yml@main
+
+  # ─────────────────────────────────────────────────────────────────────────
   # Build and Push Docker Image
   # ─────────────────────────────────────────────────────────────────────────
   build:
     name: Build & Push Docker Image
     runs-on: ubuntu-latest
     if: github.event.inputs.deploy_only != 'true'
+    env:
+      RELEASE_TYPE: ${{ needs.resolve-version.outputs.release-type }}
+      RELEASE_VERSION: ${{ needs.resolve-version.outputs.release-version }}
+      RELEASE_MAJOR: ${{ needs.resolve-version.outputs.release-major }}
+      RELEASE_MINOR: ${{ needs.resolve-version.outputs.release-minor }}
+      RELEASE_PATCH: ${{ needs.resolve-version.outputs.release-patch }}
     outputs:
-      version: ${{ steps.version.outputs.version }}
       image_tag: ${{ steps.version.outputs.image_tag }}
 
     steps:
@@ -41,80 +49,20 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          cache: 'npm'
-
-      - name: Install Dependencies
-        run: npm ci
-
-      # ─────────────────────────────────────────────────────────────────────
-      # Semantic Versioning
-      # ─────────────────────────────────────────────────────────────────────
-      - name: Semantic Release
-        uses: codfish/semantic-release-action@v3
-        id: semantic
-        with:
-          branches: |
-            [
-              'main',
-              {
-                name: 'develop',
-                prerelease: 'dev'
-              }
-            ]
-          plugins: |
-            [
-              [
-                "@semantic-release/commit-analyzer",
-                {
-                  "preset": "angular",
-                  "releaseRules": [
-                    { "type": "feat", "release": "minor" },
-                    { "type": "fix", "release": "patch" },
-                    { "type": "refactor", "release": "patch" },
-                    { "type": "perf", "release": "patch" },
-                    { "type": "docs", "release": false },
-                    { "type": "style", "release": false },
-                    { "type": "test", "release": false },
-                    { "type": "chore", "release": false }
-                  ]
-                }
-              ],
-              [
-                "@semantic-release/npm",
-                { "npmPublish": false }
-              ],
-              "@semantic-release/release-notes-generator",
-              "@semantic-release/github"
-            ]
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Determine Version
         id: version
         run: |
-          if [ "${{ steps.semantic.outputs.new-release-published }}" == "true" ]; then
-            VERSION="${{ steps.semantic.outputs.release-version }}"
-            echo "Using semantic release version: $VERSION"
+          if [ "$RELEASE_TYPE" = "stable" ]; then
+            echo "IMAGE_TAG=latest" >> $GITHUB_ENV
+            echo "SUFFIX=" >> $GITHUB_ENV
           else
-            # Fallback to commit SHA if no new release
-            VERSION="0.0.0-$(echo ${{ github.sha }} | cut -c1-7)"
-            echo "Using commit SHA version: $VERSION"
+            echo "IMAGE_TAG=dev" >> $GITHUB_ENV
+            echo "SUFFIX=-dev" >> $GITHUB_ENV
+            echo "RELEASE_PATCH_SHORT=${RELEASE_PATCH:0:1}" >> $GITHUB_ENV
           fi
-          
-          # Determine image tag based on branch
-          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
-            IMAGE_TAG="latest"
-          else
-            IMAGE_TAG="dev"
-          fi
-          
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
           echo "image_tag=$IMAGE_TAG" >> $GITHUB_OUTPUT
-          echo "📦 Version: $VERSION"
+          echo "📦 Version: $RELEASE_VERSION"
           echo "🏷️ Image Tag: $IMAGE_TAG"
 
       # ─────────────────────────────────────────────────────────────────────
@@ -129,7 +77,8 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_LOGIN }}
           password: ${{ secrets.DOCKER_HUB_PWD }}
 
-      - name: Build and Push Docker Image
+      - name: Build and Push Docker Image (Dev)
+        if: env.RELEASE_TYPE == 'dev'
         uses: docker/build-push-action@v5
         with:
           context: .
@@ -137,14 +86,35 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ steps.version.outputs.image_tag }}
-            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:v${{ steps.version.outputs.version }}
-            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:v${{ env.RELEASE_MAJOR }}${{ env.SUFFIX }}
+            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:v${{ env.RELEASE_MAJOR }}.${{ env.RELEASE_MINOR }}${{ env.SUFFIX }}
+            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:v${{ env.RELEASE_MAJOR }}.${{ env.RELEASE_MINOR }}.${{ env.RELEASE_PATCH_SHORT }}${{ env.SUFFIX }}
+            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ needs.resolve-version.outputs.release-version }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
           labels: |
             org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
             org.opencontainers.image.revision=${{ github.sha }}
-            org.opencontainers.image.version=${{ steps.version.outputs.version }}
+            org.opencontainers.image.version=${{ needs.resolve-version.outputs.release-version }}
+
+      - name: Build and Push Docker Image (Stable)
+        if: env.RELEASE_TYPE == 'stable'
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: |
+            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ steps.version.outputs.image_tag }}
+            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:v${{ env.RELEASE_MAJOR }}
+            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:v${{ env.RELEASE_MAJOR }}.${{ env.RELEASE_MINOR }}
+            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ needs.resolve-version.outputs.release-version }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          labels: |
+            org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
+            org.opencontainers.image.revision=${{ github.sha }}
+            org.opencontainers.image.version=${{ needs.resolve-version.outputs.release-version }}
 
       - name: Docker Image Summary
         run: |
@@ -153,7 +123,7 @@ jobs:
           echo "| Tag | Image |" >> $GITHUB_STEP_SUMMARY
           echo "|-----|-------|" >> $GITHUB_STEP_SUMMARY
           echo "| \`${{ steps.version.outputs.image_tag }}\` | \`${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ steps.version.outputs.image_tag }}\` |" >> $GITHUB_STEP_SUMMARY
-          echo "| \`v${{ steps.version.outputs.version }}\` | \`${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:v${{ steps.version.outputs.version }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| \`${{ needs.resolve-version.outputs.release-version }}\` | \`${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ needs.resolve-version.outputs.release-version }}\` |" >> $GITHUB_STEP_SUMMARY
 
   # ─────────────────────────────────────────────────────────────────────────
   # Build and Push Helm Chart
