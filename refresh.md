@@ -66,12 +66,12 @@ Forwarding  https://abc123.ngrok-free.app -> http://localhost:3001
 Run the docker script with your current ngrok URL:
 
 ```bash
-./docker-run.sh <your-ngrok-url>
+./scripts/docker-run.sh <your-ngrok-url>
 ```
 
 **Example:**
 ```bash
-./docker-run.sh abc123.ngrok-free.app
+./scripts/docker-run.sh abc123.ngrok-free.app
 ```
 
 **You should see:**
@@ -137,7 +137,7 @@ Use this checklist to ensure everything is updated:
 
 - [ ] VS Agent container stopped and restarted
 - [ ] Bot server restarted (`npm start` shows "✅ Travel Agent ready!")
-- [ ] Current ngrok URL used in `./docker-run.sh`
+- [ ] Current ngrok URL used in `./scripts/docker-run.sh`
 - [ ] Logo accessible: `https://<ngrok-url>/logo.png` returns 200
 - [ ] New QR code scanned in Hologram app
 - [ ] Bot name shows as "Concieragent" in Hologram app
@@ -189,7 +189,7 @@ Use this checklist to ensure everything is updated:
 3. **Restart VS Agent** with correct configuration:
    ```bash
    docker stop vs-agent && docker rm vs-agent
-   ./docker-run.sh <your-ngrok-url>
+   ./scripts/docker-run.sh <your-ngrok-url>
    ```
 
 ### ngrok URL Changed
@@ -201,7 +201,7 @@ Use this checklist to ensure everything is updated:
 2. Restart VS Agent:
    ```bash
    docker stop vs-agent && docker rm vs-agent
-   ./docker-run.sh <new-ngrok-url>
+   ./scripts/docker-run.sh <new-ngrok-url>
    ```
 
 ### Bot Not Responding
@@ -234,7 +234,7 @@ Use this checklist to ensure everything is updated:
 docker stop vs-agent && docker rm vs-agent
 
 # Start VS Agent (replace with your ngrok URL)
-./docker-run.sh <your-ngrok-url>
+./scripts/docker-run.sh <your-ngrok-url>
 
 # Check VS Agent status
 docker ps --filter name=vs-agent

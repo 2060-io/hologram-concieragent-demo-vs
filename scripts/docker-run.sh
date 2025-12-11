@@ -14,8 +14,8 @@ echo -e "${GREEN}🚀 Starting Hologram VS Agent...${NC}"
 # Check if ngrok URL is provided
 if [ -z "$1" ]; then
   echo -e "${YELLOW}⚠️  No public URL provided!${NC}"
-  echo -e "${YELLOW}Usage: ./docker-run.sh <your-ngrok-url>${NC}"
-  echo -e "${YELLOW}Example: ./docker-run.sh abc123.ngrok-free.app${NC}"
+  echo -e "${YELLOW}Usage: ./scripts/docker-run.sh <your-ngrok-url>${NC}"
+  echo -e "${YELLOW}Example: ./scripts/docker-run.sh abc123.ngrok-free.app${NC}"
   echo ""
   echo -e "${YELLOW}💡 Tip: Run 'ngrok http 3001' in another terminal to get a public URL${NC}"
   exit 1

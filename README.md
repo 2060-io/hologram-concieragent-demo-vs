@@ -175,7 +175,7 @@ npm start
 # Wait for: ✅ Travel Agent ready!
 
 # Terminal 3: Start VS Agent
-./docker-run.sh xxxxx.ngrok-free.app
+./scripts/docker-run.sh xxxxx.ngrok-free.app
 ```
 
 ### Connect & Test
@@ -535,7 +535,7 @@ docker ps
 
 # Remove old container and restart
 docker stop vs-agent && docker rm vs-agent
-./docker-run.sh your-ngrok-url
+./scripts/docker-run.sh your-ngrok-url
 ```
 </details>
 
@@ -577,7 +577,7 @@ ngrok http 3001
 npm run dev
 
 # 6. Start VS Agent
-./docker-run.sh your-ngrok-url
+./scripts/docker-run.sh your-ngrok-url
 ```
 
 ### Docker Local Testing
@@ -677,7 +677,9 @@ concieragent/
 │       ├── geocoder_server/      # 📍 Geocoding
 │       ├── weather_server/       # 🌤️ Weather
 │       └── finance_server/       # 💰 Finance
-├── 📜 docker-run.sh              # VS Agent startup
+├── 📜 scripts/
+│   ├── docker-run.sh             # VS Agent startup
+│   └── entrypoint.sh             # Docker entrypoint script
 ├── 📋 package.json               # Dependencies
 ├── ⚙️ tsconfig.json              # TypeScript config
 └── 📖 README.md                  # You are here!

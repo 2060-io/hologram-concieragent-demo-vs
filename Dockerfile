@@ -80,7 +80,7 @@ RUN cd mcp_travelassistant/servers/flight_server && uv sync --frozen && cd ../..
 # ───────────────────────────────────────────────────────────────────────────
 # Copy entrypoint script
 # ───────────────────────────────────────────────────────────────────────────
-COPY entrypoint.sh ./entrypoint.sh
+COPY scripts/entrypoint.sh ./entrypoint.sh
 RUN chmod +x /app/entrypoint.sh
 
 # ───────────────────────────────────────────────────────────────────────────
