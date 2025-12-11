@@ -1,0 +1,4009 @@
+{
+  "search_metadata": {
+    "search_id": "London_2026-01-05_2026-01-12_20251201_181500",
+    "location": "London",
+    "check_in_date": "2026-01-05",
+    "check_out_date": "2026-01-12",
+    "guests": {
+      "adults": 1,
+      "children": 0,
+      "children_ages": null
+    },
+    "search_type": "hotels",
+    "currency": "USD",
+    "filters": {
+      "sort_by": null,
+      "hotel_class": null,
+      "amenities": null,
+      "property_types": null,
+      "brands": null,
+      "free_cancellation": false,
+      "special_offers": false,
+      "bedrooms": null
+    },
+    "search_timestamp": "2025-12-01T18:15:00.229608"
+  },
+  "search_information": {
+    "total_results": 15000
+  },
+  "properties": [
+    {
+      "type": "vacation rental",
+      "name": "NOX Kensington - Double Studio",
+      "link": "https://www.bluepillow.com/search/594387707c00cb0e6434043c/168218907?dest=bkng&cat=Apartment&lat=51.49928&lng=-0.20928&language=en",
+      "property_token": "ChoQkpPbl7DszJnIARoNL2cvMTF4ZmRna3RkaxAC",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoQkpPbl7DszJnIARoNL2cvMTF4ZmRna3RkaxAC&q=London",
+      "gps_coordinates": {
+        "latitude": 51.4992790222168,
+        "longitude": -0.20927999913692474
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "11:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$88",
+        "extracted_lowest": 88,
+        "before_taxes_fees": "$73",
+        "extracted_before_taxes_fees": 73
+      },
+      "total_rate": {
+        "lowest": "$614",
+        "extracted_lowest": 614,
+        "before_taxes_fees": "$512",
+        "extracted_before_taxes_fees": 512
+      },
+      "prices": [
+        {
+          "source": "Bluepillow.com",
+          "logo": "https://www.gstatic.com/travel-hotels/branding/190ff319-d0fd-4c45-bfc8-bad6f5f395f2.png",
+          "num_guests": 1,
+          "rate_per_night": {
+            "lowest": "$88",
+            "extracted_lowest": 88,
+            "before_taxes_fees": "$73",
+            "extracted_before_taxes_fees": 73
+          }
+        }
+      ],
+      "nearby_places": [
+        {
+          "name": "Kensington (Olympia)",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "5 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "33 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "1 hr 7 min"
+            }
+          ]
+        },
+        {
+          "name": "Jacuzzi",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "5 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/nSG3ex__rH8SJFUzZqhlBIxcLgqxYhPe5_D6nMkdsPcM9BxmVbJqvPO3YjZkQy1UvYVhCCKrj5Ko1AjzPqv0ie8nHQHoAuWeTkXL2mXwAZID34QVFKCPRFTz4npfDkT6ZydzMWJQo4QXohnijp2Yea9vLpOvgw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://static.cupid.travel/hotels/69759138.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/8h3le_9Vp5r8kBPUs5uWHbucxtZ5yvsxhcxrtYIS6QFaX3WXkyxH454YS_htHGsakOgTOzFewk1bZtSA-KfYLYLGhORr6yMHhLzprGY7y9p_SzcWR9-x7MkmRFxWz7e-2mDghjvl-8EQT7x_ieSXOznWwAWfaw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://static.cupid.travel/hotels/134789311.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/lPNQmestlmtfpQzD8rtkbzie8Ln7eiSsZJksWyuS_fsYEOcUqsNe0KLhcTUjpc-5ZsMC8kfvnAaglvfuvLqjyZfscM8ze1f9jbSfSo6FdgDBxuSACTnzTBjj2u86JDa9pbyJGANkGONy6wUNz_1QXmp6OA-g6A=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://static.cupid.travel/hotels/134955986.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/Tx-R0W0bC8aZ9d49ZWTtFvHTFuEfICBiB4BhA83Fof2pmN0lT0b2Ba0PwDxfuxFLiuon8uIh-eyiorzYtnifLr_jegvNuBa_YOdRM-XFBGeslF43zN7Kz6JWEwCNM0X1tYNvJnBlzYMYNDdT0at7cPgkbY8ZcA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://static.cupid.travel/hotels/134789307.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/Gukv2cGzL0fHoE7iAr9UfJQSG-i8YqcL3amQgoLHAlirVPhIWKF2SiuUy7r5iGQqHAIK8KW-CMPoQBbGQ3bHwuiWb6maXX3ENQqnPBCVfIv8bsDLH1y3yT5LAIiI9KDgd0XMOTPfCp7a5SSczYL4Au50fR5v9g=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://static.cupid.travel/hotels/134789267.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/U0nEXQc8Q4-C15MME5BHIky53EbGWunr-LG47LEFE0TzV7Kj_R2VRABRfpassVQLem7w6cN82WVVm3_fiDbj_tKNmvVBA0QJdUe25ybXIfZcHqyobxWZ3URhYsTKWFEtsQRt9YaUb1rjmW2NNtd60ujnCW2lrEQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://static.cupid.travel/hotels/134789308.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/LQXjIIAalXiJgy4YAdM6HZtxuOubVhBnsqPJ7DxKWbvstTE8JEpYzDd15Sp5cox2D2ININCjqA3YtoBYHdRDyY03BzwyPzou9sF5C3SEIIhYp7aUT3R1Pv_m0d8c_tK0JNGYIz1RL2NSfc18078HaIhScPjryA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://static.cupid.travel/hotels/134789273.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/qjURmhTC5HBLYawAb17VDAAUjWEdq97rb-MWzxnIizjAc-hpwHFt3QT8j8yaHoOj_yZ1_bYpr8H9NTETTs7P2hPIyhyTuuVk_hEc4_8zu5hLVk-LhZRCoL2_MHGVh6XALZ3jhvK42Z7PihiXUlG0_mqYTOCXFw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://static.cupid.travel/hotels/373824505.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/T2jMQ_QcEdzcm-Okfe30uV1efGEyJRES3LwMA1FRtehXEyKMQw94wqZgRlcXAb-RMMtkZHwdWVI1aevTf-kSRhrPsZl1xz9iQqLWl-YT8J9zFmJnd_1YiS5CEuKzoMcwc9b_Q5KPFdlU3sjpKDNdmrwUYPOFHg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://q-xx.bstatic.com/xdata/images/hotel/max1024x683/665859517.jpg?k=4fa80a98fb0c7d0cc95732061eb3580fb5849ddce8e0ea187e56f2db211627bd&o="
+        }
+      ],
+      "overall_rating": 5,
+      "reviews": 8,
+      "location_rating": 3.5,
+      "amenities": [
+        "Air conditioning",
+        "Kid-friendly",
+        "Crib",
+        "Elevator",
+        "Fitness center",
+        "Heating",
+        "Ironing board",
+        "Kitchen",
+        "Microwave",
+        "Oven stove",
+        "Smoke-free",
+        "Cable TV",
+        "Washer",
+        "Wheelchair accessible",
+        "Free Wi-Fi"
+      ],
+      "excluded_amenities": [
+        "No airport shuttle",
+        "No parking"
+      ],
+      "health_and_safety": {
+        "groups": [
+          {
+            "title": "Minimized contact",
+            "list": [
+              {
+                "title": "No-contact check-in and check-out",
+                "available": true
+              }
+            ]
+          }
+        ]
+      },
+      "essential_info": [
+        "Entire apartment",
+        "Sleeps 2",
+        "57 bedrooms",
+        "1 bathroom",
+        "1 bed"
+      ]
+    },
+    {
+      "type": "vacation rental",
+      "name": "Staycity Aparthotels, London, Greenwich High Road",
+      "property_token": "ChkQj_Pzko2jpq8aGg0vZy8xMXk1emN5MjRjEAI",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChkQj_Pzko2jpq8aGg0vZy8xMXk1emN5MjRjEAI&q=London",
+      "gps_coordinates": {
+        "latitude": 51.4759521484375,
+        "longitude": -0.018744999542832375
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "11:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$95",
+        "extracted_lowest": 95,
+        "before_taxes_fees": "$79",
+        "extracted_before_taxes_fees": 79
+      },
+      "total_rate": {
+        "lowest": "$667",
+        "extracted_lowest": 667,
+        "before_taxes_fees": "$556",
+        "extracted_before_taxes_fees": 556
+      },
+      "prices": [
+        {
+          "source": "Expedia.com",
+          "logo": "https://www.gstatic.com/travel-hotels/branding/12590129945800583137.png",
+          "num_guests": 2,
+          "rate_per_night": {
+            "lowest": "$95",
+            "extracted_lowest": 95,
+            "before_taxes_fees": "$79",
+            "extracted_before_taxes_fees": 79
+          }
+        }
+      ],
+      "nearby_places": [
+        {
+          "name": "Greenwich",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "10 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Public transport",
+              "duration": "1 hr 15 min"
+            },
+            {
+              "type": "Taxi",
+              "duration": "1 hr 25 min"
+            }
+          ]
+        },
+        {
+          "name": "Sultan Sofras\u0131 Greenwich",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "5 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/iQ5tOB4EOOWovh89PxSn22qtEm9BRiPdpRIRz9cFWQkGeXkW6lgl85cFvyiaKxfOzUMd4oHQJWuy3FLd6H6cfmBr7O7x5rbJz9EgQP7hIRMJKlj5JmhQe8QEA2YC6pdtjJNFe9cDE76iVzjlWpD2DQIx_qZ8qEI=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/8000000/7070000/7065400/7065398/356bde61_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/hBOC44EvSC5rDhaCQJ_-4BGhXdYawVFjhHlXrTAwZdWp9xLsy5Xf5jUADNpHg52Jk55s3qUQe1baLyyEL32s-zqmath0zmWKhgdHlPy-HBgFbreGCZPQCpkf4ThGD_1zGvJskNfkq6ZrDi-KDQgXSWlm1XQXLQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://media.vrbo.com/lodging/8000000/7070000/7065400/7065398/345b5620.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/5PqfkuxYwJ7iUXZJ-f3JnparqUTz_qKE0Uz153oXPpobn8lbN-EBCPNPfDBHxPMCSWL5jGh3INs6cqe0_oSnXOr8F-0fAwT1k0dQr6dXOA2Mh41ZGwthuchVciZW11nzSMKCNP9JpkWa3OPvJUoYhHcZbvCGgQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://media.vrbo.com/lodging/8000000/7070000/7065400/7065398/063d3a83.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/Na2bLaJXhhNOWo5vmga-03mkEGYXJCpH0IjdYVjghzqol-Pzr8Cnf0Q7v3TTq84jkJpxNbmokpUwk7u0XJeTR0xLsBGaraPCjejATAJRaLcbVNt1R480LW3wah21T7D8IHOxp599MAbXjqFSPUJyo8hyZj9yceM=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://media.vrbo.com/lodging/8000000/7070000/7065400/7065398/d09b9a16.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/PZXjHZ79_cRmtvC4vCdhSimi9f1wMYGlktuJocypiwPWt4_ZoPXP0H8COwNTth7XO6q3vTlKtVJrBD3nliXn6OGgNGub4UhQfMb2Khp0ugyYHWRKZ0gwljrbR7OQUoYAszrcWs2DnO1rZXe4s0-2A1HFDBI2Ucw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://media.vrbo.com/lodging/8000000/7070000/7065400/7065398/b609df8a.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/CHx4bgDSkeXrtvYoJgrVHlVczhgJMVXhmqCG2ncW8RpTZozkyIoUU_HFTjTtQtxtMMajm3OsP5G_NR54k6HqDhNxcvALz61WmveMWP3paVY9u18PSLbGg-jqnXvO1WLBZhqsZ9H9Uyla-r2EPvu7W9-7JHmXz5o=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://media.vrbo.com/lodging/8000000/7070000/7065400/7065398/2504023c.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/HGbtlUzkai0WX-ytLk73qTAzxtMYytC8GjlT9hOroqr9FMsz3_OC0WAL4KN1ee-WYfPuPjKc23tENEqtYRvdn_DB_EJvpUyjesdKlk12iqH2ml9ATDP_vydFcqs0yvxLLMPHsLKO582EU-aFIaE0cZ5biGwP6Q=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/8000000/7070000/7065400/7065398/328e28ee_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/TTnMLGFUJB-HJ1mXEZLg00Y8fijCSBneTNo98NFWGBKHU9anzKX7YxO00s2gl--C378t6GO-0ZXzb_hIMqmDfKjq0_8MkuAKYuGUB6tH5hlaVfndFb2CViLIOD3eyW5tbnmMwkH8_7yqk6_s6Z20iCpP6F2eJg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://media.vrbo.com/lodging/8000000/7070000/7065400/7065398/890852b1.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/k_Z_GOcctA6_xNoE2xsfvV1SNL-0K_4Y0tAJ6rEV07TKvothccqC-TNuJMyIzPdvrACkf3SBBelBFtTPE0WBdeOvODC4X0SOOISEYPMbjAF1xqQxpNlyr6YB3T0SrcavMWrim22zSKxAHG1uEOQbraDNHOPl6Q=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/8000000/7070000/7065400/7065398/cdfcdec3_z.jpg"
+        }
+      ],
+      "overall_rating": 4.3,
+      "reviews": 2337,
+      "location_rating": 4.1,
+      "amenities": [
+        "Air conditioning",
+        "Crib",
+        "Elevator",
+        "Ironing board",
+        "Kitchen",
+        "Microwave",
+        "Smoke-free",
+        "Cable TV",
+        "Washer",
+        "Wheelchair accessible",
+        "Free Wi-Fi"
+      ],
+      "excluded_amenities": [
+        "No indoor pool",
+        "No outdoor pool",
+        "Not pet-friendly"
+      ],
+      "health_and_safety": {
+        "groups": [
+          {
+            "title": "Enhanced cleaning",
+            "list": [
+              {
+                "title": "Enhanced cleaning of the property",
+                "available": true
+              }
+            ]
+          },
+          {
+            "title": "Minimized contact",
+            "list": [
+              {
+                "title": "No-contact check-in and check-out",
+                "available": true
+              }
+            ]
+          }
+        ]
+      },
+      "essential_info": [
+        "Sleeps 3",
+        "1 bedroom",
+        "3 beds"
+      ]
+    },
+    {
+      "type": "vacation rental",
+      "name": "Kensington Gardens - Double Studio",
+      "link": "https://www.bluepillow.com/search/65e2305793553be8f5577417?dest=ago&cat=Vacation+rental+(other)&lat=51.51382&lng=-0.18986&language=en",
+      "property_token": "ChoQirnL49ye4JruARoNL2cvMTFrajVwcmtxeBAC",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoQirnL49ye4JruARoNL2cvMTFrajVwcmtxeBAC&q=London",
+      "gps_coordinates": {
+        "latitude": 51.51382064819336,
+        "longitude": -0.189860001206398
+      },
+      "rate_per_night": {
+        "lowest": "$81",
+        "extracted_lowest": 81,
+        "before_taxes_fees": "$81",
+        "extracted_before_taxes_fees": 81
+      },
+      "total_rate": {
+        "lowest": "$569",
+        "extracted_lowest": 569,
+        "before_taxes_fees": "$569",
+        "extracted_before_taxes_fees": 569
+      },
+      "prices": [
+        {
+          "source": "Bluepillow.com",
+          "logo": "https://www.gstatic.com/travel-hotels/branding/190ff319-d0fd-4c45-bfc8-bad6f5f395f2.png",
+          "num_guests": 1,
+          "rate_per_night": {
+            "lowest": "$81",
+            "extracted_lowest": 81
+          },
+          "free_cancellation": true,
+          "free_cancellation_until_date": "Dec 6"
+        }
+      ],
+      "nearby_places": [
+        {
+          "name": "Paddington",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "6 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "42 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "45 min"
+            }
+          ]
+        },
+        {
+          "name": "Halia Restaurant",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "1 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/1Sg05eDpPeBg1f7azoSEx0f5qWJd6VFThjSG8AYzPEAa_kwbrFUGVKaWiU_Qooq5Pu_mSKm-P5lGe36S6k161_dS4IYT9LE0iNdxvTYIvEEiWPA5LDlXjjSCbzUE-Xv1hQDOSKy0j_g0Kicf3kuDpaq_EYd8HuE=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://pix8.agoda.net/hotelImages/49916044/0/ca4e99b763b0b0c32fbdeda2dc1caa65.jpg?ce=0&s=312x"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/RKuRcNEc6X0x0A-xMx_g7d4PKE7ivxRhwJJI6maMjMCxV0IsbCS009tbwigbbgSX1oEMh2rQ2Z2PpChY7-RH6UAce7xKOKDtwXOUQu_0qYm6XzzTaGoKqKTL2VcWn120mvawQI-FLY_QHDrszCSQ69QRDOuZww=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://pix8.agoda.net/hotelImages/49916044/0/b34c7ef8c0b78dd7cd07ca4a369d867d.jpg?ce=0&s=312x"
+        }
+      ],
+      "location_rating": 4.6,
+      "amenities": [
+        "Ironing board",
+        "Kitchen",
+        "Cable TV",
+        "Free Wi-Fi"
+      ],
+      "excluded_amenities": [
+        "No airport shuttle",
+        "No parking"
+      ],
+      "essential_info": [
+        "Entire house",
+        "Sleeps 12",
+        "10 bedrooms",
+        "10 bathrooms",
+        "1 bed"
+      ]
+    },
+    {
+      "type": "vacation rental",
+      "name": "Single Room with Kitchenette in King's Cross",
+      "link": "https://www.goldmansgroup.uk/listings/321467?googleVR=1&utm_source=google&utm_medium=vacation_rentals",
+      "property_token": "ChoQmPfJ3L3k-e6TARoNL2cvMTF4a3pfbW1fZxAC",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoQmPfJ3L3k-e6TARoNL2cvMTF4a3pfbW1fZxAC&q=London",
+      "gps_coordinates": {
+        "latitude": 51.52958297729492,
+        "longitude": -0.12159319967031479
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "10:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$53",
+        "extracted_lowest": 53,
+        "before_taxes_fees": "$53",
+        "extracted_before_taxes_fees": 53
+      },
+      "total_rate": {
+        "lowest": "$373",
+        "extracted_lowest": 373,
+        "before_taxes_fees": "$373",
+        "extracted_before_taxes_fees": 373
+      },
+      "prices": [
+        {
+          "source": "Hostaway",
+          "logo": "https://www.gstatic.com/travel-hotels/branding/16102708821915601635.png",
+          "official": true,
+          "num_guests": 1,
+          "rate_per_night": {
+            "lowest": "$53",
+            "extracted_lowest": 53
+          },
+          "free_cancellation": true,
+          "free_cancellation_until_date": "Dec 6"
+        }
+      ],
+      "nearby_places": [
+        {
+          "name": "St Pancras International",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "10 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "1 hr"
+            },
+            {
+              "type": "Public transport",
+              "duration": "1 hr"
+            }
+          ]
+        },
+        {
+          "name": "Altonapoli",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "5 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/FQq1LStfFjg4PbKSf9YnZbY5Z2wp4N2_47gU-hFpRmXJN-U5ZrvZeMfx8nhj9fGBKeILUw8rMllZrOdfmJjMlE55PVDvWt3BMVEQtviCDJ_JYc_5-Hk7oUPugAH0xgWLvvJC6L0kNg38Cn_ZNDjRlmiHs4Vbag=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/94254-321467-ta9W3V1w1eB4qySwMVcKVyiIpeqHvShR7MW6lGHkRMU-671d1a79068d6-medium"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/LjTnoU5fH27L5bUkgxQmTB1cjCmcfONcx0rY_MFedhB0HcReLp_G_pM9GiJYTsGqRIkmKpPrA1jb4bKHbKtfJiDZOyNN4H16-8iqaWJKeXKJ-9EwOM1T9CiHpmK5A4wcJlvAvua0K6eJaigbghnwB_ImBhujZA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://gtapi.wowotrip.com/xdata/images/hotel/max1920/612665756.jpg?k=1a0e5d6d15bee6345dc9519e1d1a08d25311e524d4ef46eb87cc4674d611413f&o="
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/D6mutJL_Mdr-r1ZMoObRDMwa7eskwc_mKQIvZrZWjuNmjo2vX5tAOaJEi9vnjAOVbEQiIydDiDNF956dmi7B_7v_jz6Dw4gF-_qdQe6yluf6kGi0d8u61kruW_qfIvMIMXJRIO-sSMETzrw5b1Bp-j7nFeh2Ww=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://q-xx.bstatic.com/xdata/images/hotel/max1024x683/612666268.jpg?k=f0e3ec6d2e31086400968560b037eb071df299cace8b701f0485fff6eeb360d5&o=&s=312x"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/ezuxILGLYGyU1KftEB7BrCte0DPMRF_D7_Bg-cDgmB3NudzmHcKWXgo5XMFd-4D67byVDReV5z0fk0W81oYGwY_W2QsZxqud_yBcQeKn9D-fu0t5nJ4nWGu4XH2ni9xisTe8sQTKxJVDWQcEiAadeEB0MB3q-w=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://q-xx.bstatic.com/xdata/images/hotel/max1024x683/612665759.jpg?k=f08d17f914c5484726e206d2be4d92dafc462d62be9714839e052dee9d301f12&o=&s=312x"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/KH6_NaHCzi1sJp-pEtZ5ROmjMtrftOlC1JD7qK6eDRngnfN2NCFkTNA2soDaHdojWpmv0y0hjIpbWS_dNkBmd9aw6NLO0JBSAeSENduyVRgsdhLQTfdTY94NkyebIYYIi0pvKiQgmKC8BXD7sQ_I11KvFHoDdA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://q-xx.bstatic.com/xdata/images/hotel/max1024x683/612666269.jpg?k=ef98c938aa43adc9b63010544d7cb56f4a6215e9f07ed826ec1c79066a332e6b&o=&s=312x"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/GxHcOVe8R5EaGEAJ634KHLRSOyHA41Eq68XW9qBAuHL5QKPMw54C4b65oy2Ya_Mu76Rjz28kyWX-51uqnc_t8xme0Rx84s-BERIgfzLyxOukYAKHJmk3bbi3KipvP9st-04X4s6E3Dq5HZnSmsRobkDNT8OD40M=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://gtapi.wowotrip.com/xdata/images/hotel/max1920/612663966.jpg?k=715142c4078922591bce37d30e400eae457db4a4b2ed4d5fba17428cf93966e3&o="
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/ik6e_fR-32qD85Zx8CPdTqpziKNNb9s5TAxUFqKtL3Pq-3_tsYqeTc6wTuZSFcukGXzOfaok_MUyCRczlbnCHeASEPgX8SVQJ7Wq835W17UKUzRC4JIZ_aUCE5WhiXOte20MbFNY4xss1Ul0L0w6IhvRdMVvKg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://q-xx.bstatic.com/xdata/images/hotel/max1024x683/550460662.jpg?k=9d610fc232da91546b18c3cb3000ec1b44c0096657c6ce8e18b41d8fb5cbbffd&o=&s=312x"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/Z_7aATqW_aGNg5eJtu05w46c6E_pbIf1ATMrX_7onH8La_qU5FANr3_RJVo1QHtwqzO61ewKBIUb1KSCqomK53Y6mhx0Zj_ww0ieWM5s0W1swMFaYseaywJgUHe_-ueXLQurK06U-yjXD-XgbUvpFYxA9NjZC34=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://gtapi.wowotrip.com/xdata/images/hotel/max1920/612664208.jpg?k=5fe1a08d0842e57a3565772681d3cf2bae6a7c90181dbd88002d3d91e9c36697&o="
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/oSlebivvxVKoMs8m8ueUzAZlQ_Yz5RNoQ24gURKHVCFWAGUAmt7T40vZ9XyPjWg8oi-UHxLMmogPIBNkpn06kaGTCGwYR8skU2eQTEZDmfQSzNcGrZ4Ut4xA-tijCh7DZriDhVtB_UhLGCJaomamiG_S74sHtw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://gtapi.wowotrip.com/xdata/images/hotel/max1920/550460593.jpg?k=a7110fcd74c7e3f0692269fa41f80faeb83c0a0b664c5ae42cd913ac23357b43&o="
+        }
+      ],
+      "overall_rating": 2.360588,
+      "reviews": 85,
+      "location_rating": 4.6,
+      "amenities": [
+        "Balcony",
+        "Elevator",
+        "Heating",
+        "Ironing board",
+        "Kitchen",
+        "Microwave",
+        "Pet-friendly",
+        "Smoke-free",
+        "Washer"
+      ],
+      "excluded_amenities": [
+        "No airport shuttle",
+        "No parking",
+        "No Wi-Fi"
+      ],
+      "essential_info": [
+        "Entire apartment",
+        "Sleeps 1",
+        "1 bedroom",
+        "1 bathroom",
+        "1 bed",
+        "16 sq ft"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Premier Inn London Wembley Stadium hotel",
+      "description": "Relaxed rooms with free Wi-Fi in a contemporary budget hotel featuring a bar & grill.",
+      "link": "https://www.premierinn.com/gb/en/hotels/england/greater-london/london/london-wembley-stadium.html?cid=GLBC_LONWEM",
+      "property_token": "ChoItOq13tD2wsj7ARoNL2cvMTFmNzd2eGQ3dxAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoItOq13tD2wsj7ARoNL2cvMTFmNzd2eGQ3dxAB&q=London",
+      "gps_coordinates": {
+        "latitude": 51.555784499999994,
+        "longitude": -0.2840985
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "12:00\u202fPM",
+      "rate_per_night": {
+        "lowest": "$63",
+        "extracted_lowest": 63,
+        "before_taxes_fees": "$60",
+        "extracted_before_taxes_fees": 60
+      },
+      "total_rate": {
+        "lowest": "$440",
+        "extracted_lowest": 440,
+        "before_taxes_fees": "$419",
+        "extracted_before_taxes_fees": 419
+      },
+      "deal": "53% less than usual",
+      "deal_description": "Great Deal",
+      "nearby_places": [
+        {
+          "name": "Wembley Stadium",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "4 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "39 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "1 hr 13 min"
+            }
+          ]
+        },
+        {
+          "name": "Frankie & Benny's",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "4 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "3-star hotel",
+      "extracted_hotel_class": 3,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMcnO6ZgyG8tlCUMIuJp6w0H9JK3kCuf8t4sue_=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMcnO6ZgyG8tlCUMIuJp6w0H9JK3kCuf8t4sue_=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNCAU9Lt8SIHpUvamJbDMZy1DHt_qqtD-PsfqIc=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNCAU9Lt8SIHpUvamJbDMZy1DHt_qqtD-PsfqIc=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMJ2kNrs3gCJowm1uO0BrKx-tFHP6wwIG71MGLu=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMJ2kNrs3gCJowm1uO0BrKx-tFHP6wwIG71MGLu=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipP334nMH5TB088GAhHfMJNZRbFEZc1Ci9vKggpo=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipP334nMH5TB088GAhHfMJNZRbFEZc1Ci9vKggpo=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOuUjjRByCWAvasEpsasvy-kxHQwzrSlh7KeCgP=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOuUjjRByCWAvasEpsasvy-kxHQwzrSlh7KeCgP=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOYk01WFXY_7nDa2AXiuC5-tyxpSN_SXiIfH0c4=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOYk01WFXY_7nDa2AXiuC5-tyxpSN_SXiIfH0c4=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPEyi5DN1X0iJBBfD4eUc4rMLjxTly64YuiV0md=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPEyi5DN1X0iJBBfD4eUc4rMLjxTly64YuiV0md=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN8JLQXHOZCoYY_GJqDJPz_FvXTGBBueWZdK28l=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN8JLQXHOZCoYY_GJqDJPz_FvXTGBBueWZdK28l=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMKxPJ2dXNHJ5D5euPEfjv9O-Ju9okW2qvqc1ep=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMKxPJ2dXNHJ5D5euPEfjv9O-Ju9okW2qvqc1ep=s10000"
+        }
+      ],
+      "overall_rating": 4.4,
+      "reviews": 1725,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 1124
+        },
+        {
+          "stars": 4,
+          "count": 376
+        },
+        {
+          "stars": 3,
+          "count": 122
+        },
+        {
+          "stars": 2,
+          "count": 39
+        },
+        {
+          "stars": 1,
+          "count": 64
+        }
+      ],
+      "location_rating": 4.3,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 386,
+          "positive": 307,
+          "negative": 62,
+          "neutral": 17
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 293,
+          "positive": 251,
+          "negative": 15,
+          "neutral": 27
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 352,
+          "positive": 300,
+          "negative": 43,
+          "neutral": 9
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 260,
+          "positive": 208,
+          "negative": 44,
+          "neutral": 8
+        },
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 147,
+          "positive": 123,
+          "negative": 17,
+          "neutral": 7
+        },
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 159,
+          "positive": 109,
+          "negative": 38,
+          "neutral": 12
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Free Wi-Fi",
+        "Parking ($)",
+        "Air conditioning",
+        "Bar",
+        "Restaurant",
+        "Accessible",
+        "Kid-friendly",
+        "Smoke-free property"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Park Plaza London Riverbank",
+      "description": "Modern rooms and suites in a refined lodging offering an Asian/South American restaurant with a bar.",
+      "link": "https://www.parkplazariverbank.com/?utm_source=thirdparty&utm_medium=visitwebsite&utm_campaign=yextlisting&utm_term=website",
+      "property_token": "ChcI14iZjKLpi4clGgsvZy8xdGo1NzdwNRAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChcI14iZjKLpi4clGgsvZy8xdGo1NzdwNRAB&q=London",
+      "gps_coordinates": {
+        "latitude": 51.491478,
+        "longitude": -0.12217700000000001
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "12:00\u202fPM",
+      "rate_per_night": {
+        "lowest": "$133",
+        "extracted_lowest": 133,
+        "before_taxes_fees": "$111",
+        "extracted_before_taxes_fees": 111
+      },
+      "total_rate": {
+        "lowest": "$931",
+        "extracted_lowest": 931,
+        "before_taxes_fees": "$776",
+        "extracted_before_taxes_fees": 776
+      },
+      "deal": "26% less than usual",
+      "deal_description": "Great Deal",
+      "nearby_places": [
+        {
+          "name": "Big Ben",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "7 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "53 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "1 hr 4 min"
+            }
+          ]
+        },
+        {
+          "name": "Sapori",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "4 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "10 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "4-star hotel",
+      "extracted_hotel_class": 4,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNXhP3Gs_ylFWKEpIt-DlOm_z4ziDxfV4hE6zQd=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNXhP3Gs_ylFWKEpIt-DlOm_z4ziDxfV4hE6zQd=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzOzy1YzAI2vplddKaIVS9ub9jRaRn2Bxzk07sSWz8BdOYEYVXF5PqLU2Be0DMdh-roXGCTCoTSGrSGmY2vi7PSoWNI3dfJIn48s95nkVRMOxtypSnnClDVDmFG-1qzGZio45oipg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgICWtYKH5QE=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMEhQJq1c42j5RF219i4wB85rW78yEZLQvrkdlW=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMEhQJq1c42j5RF219i4wB85rW78yEZLQvrkdlW=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNtxn3TrUnUv5PgBzd4lrB8hIVX5Vi3fmk_-uaR=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNtxn3TrUnUv5PgBzd4lrB8hIVX5Vi3fmk_-uaR=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPNLFpAAEAToe-7rZnI6wjdREqYIYCE81NrUw0J=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPNLFpAAEAToe-7rZnI6wjdREqYIYCE81NrUw0J=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMADSrjRdz1iGTWLriM8Ywuv3jMZbMNZflYzkAm=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMADSrjRdz1iGTWLriM8Ywuv3jMZbMNZflYzkAm=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOfAtoKOscgcmmBOBHCk1_TBjT__C0IuQLJdUqc=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOfAtoKOscgcmmBOBHCk1_TBjT__C0IuQLJdUqc=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNrBv3MCXECFbngpi3_ia7B0hPwT0hUvOVaiznz=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNrBv3MCXECFbngpi3_ia7B0hPwT0hUvOVaiznz=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMtpJMy-GmHuMJdZEp5ZvwIXcOHQZf80rGQrAip=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMtpJMy-GmHuMJdZEp5ZvwIXcOHQZf80rGQrAip=s10000"
+        }
+      ],
+      "overall_rating": 4.3,
+      "reviews": 6653,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 3938
+        },
+        {
+          "stars": 4,
+          "count": 1616
+        },
+        {
+          "stars": 3,
+          "count": 543
+        },
+        {
+          "stars": 2,
+          "count": 220
+        },
+        {
+          "stars": 1,
+          "count": 336
+        }
+      ],
+      "location_rating": 3.7,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 1680,
+          "positive": 1281,
+          "negative": 324,
+          "neutral": 75
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 1638,
+          "positive": 1257,
+          "negative": 278,
+          "neutral": 103
+        },
+        {
+          "name": "Fitness",
+          "description": "Fitness",
+          "total_mentioned": 174,
+          "positive": 104,
+          "negative": 50,
+          "neutral": 20
+        },
+        {
+          "name": "Room",
+          "description": "Room amenities",
+          "total_mentioned": 698,
+          "positive": 455,
+          "negative": 170,
+          "neutral": 73
+        },
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 540,
+          "positive": 387,
+          "negative": 110,
+          "neutral": 43
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 1037,
+          "positive": 895,
+          "negative": 62,
+          "neutral": 80
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Free Wi-Fi",
+        "Parking ($)",
+        "Indoor pool",
+        "Air conditioning",
+        "Fitness center",
+        "Spa",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Kitchen in some rooms",
+        "Airport shuttle",
+        "Accessible",
+        "Business center",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "eco_certified": true
+    },
+    {
+      "type": "hotel",
+      "name": "Hilton London Hyde Park",
+      "description": "Grand 1907 hotel offering stylish rooms and suites, plus an elegant dining room.",
+      "link": "https://www.hilton.com/en/hotels/lonhphn-hilton-london-hyde-park/?SEO_id=GMB-EMEA-HN-LONHPHN",
+      "property_token": "ChYI2f3zvOjsq9ZFGgovbS8wajY2OTljEAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChYI2f3zvOjsq9ZFGgovbS8wajY2OTljEAE&q=London",
+      "gps_coordinates": {
+        "latitude": 51.510390099999995,
+        "longitude": -0.1875116
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "12:00\u202fPM",
+      "rate_per_night": {
+        "lowest": "$180",
+        "extracted_lowest": 180,
+        "before_taxes_fees": "$150",
+        "extracted_before_taxes_fees": 150
+      },
+      "total_rate": {
+        "lowest": "$1,261",
+        "extracted_lowest": 1261,
+        "before_taxes_fees": "$1,051",
+        "extracted_before_taxes_fees": 1051
+      },
+      "nearby_places": [
+        {
+          "name": "Kensington Palace",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "8 min"
+            }
+          ]
+        },
+        {
+          "name": "Paddington",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "6 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "40 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "46 min"
+            }
+          ]
+        },
+        {
+          "name": "CERU Hyde Park",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "1 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "4-star hotel",
+      "extracted_hotel_class": 4,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMW8PqfdyAyJpOesckv--3WycnWMwav4coaigXz=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMW8PqfdyAyJpOesckv--3WycnWMwav4coaigXz=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPdnDNbn3uftUMP9tkfeQDHUAOOsUXbi9WWcsLo=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPdnDNbn3uftUMP9tkfeQDHUAOOsUXbi9WWcsLo=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMbUTGgR5Lz8HCwE4emnmerJCL6wGszqvryN4FU=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMbUTGgR5Lz8HCwE4emnmerJCL6wGszqvryN4FU=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNqUdcxqMvR_z6tx-5VKICix_VesEUd7BaUbdnH=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNqUdcxqMvR_z6tx-5VKICix_VesEUd7BaUbdnH=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMVONGJNl4Wwxyb60Yloo5YK7oOMuvNL0DxKZb7=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMVONGJNl4Wwxyb60Yloo5YK7oOMuvNL0DxKZb7=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipM42jvBwkF0X85vVdB2cPVvWbh2AHhD2hXedhdC=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipM42jvBwkF0X85vVdB2cPVvWbh2AHhD2hXedhdC=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMoC2EDsq8wP4mb8CaqpaG-spS-XurtggaID0yF=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMoC2EDsq8wP4mb8CaqpaG-spS-XurtggaID0yF=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/Ubzu2qr0N_aiVq22Pf7WAJ7jIPLNFo6ero4jFA-wNACFWHfgsy0afJDPH-k9J1hQFPoYea5LengcX3KY40Rc_-LK6eQlIRzvjG2ln1yUAMJ1wuIRJQmKIr6xYID8CFfMOoQe49u36eJyjkslTAmRGA0G1EJzCgk=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/00/007566/007566a_hb_r_071.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/k3PkTzQZcYqe5wFppafzjYhQ5omB8ntKOrCnOuCtZCEn2-0jPO2RJ01h8DwIT1qZepv_8DhcDrVdKA1jL2uOX-AdjJ8R5kZqOsxzBQ2CeqhAWU6XHyxmz467LYA8Wc6StwiMsStINieJsAxlho7BMCeNbzP2Fg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/00/007566/007566a_hb_ro_056.jpg"
+        }
+      ],
+      "overall_rating": 4.2,
+      "reviews": 1779,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 1013
+        },
+        {
+          "stars": 4,
+          "count": 396
+        },
+        {
+          "stars": 3,
+          "count": 173
+        },
+        {
+          "stars": 2,
+          "count": 86
+        },
+        {
+          "stars": 1,
+          "count": 111
+        }
+      ],
+      "location_rating": 4.7,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 471,
+          "positive": 354,
+          "negative": 97,
+          "neutral": 20
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 399,
+          "positive": 338,
+          "negative": 32,
+          "neutral": 29
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 456,
+          "positive": 288,
+          "negative": 128,
+          "neutral": 40
+        },
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 137,
+          "positive": 98,
+          "negative": 30,
+          "neutral": 9
+        },
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 118,
+          "positive": 28,
+          "negative": 80,
+          "neutral": 10
+        },
+        {
+          "name": "Transit",
+          "description": "Public transit",
+          "total_mentioned": 110,
+          "positive": 90,
+          "negative": 4,
+          "neutral": 16
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Free Wi-Fi",
+        "Air conditioning",
+        "Pet-friendly",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Full-service laundry",
+        "Accessible",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "eco_certified": true
+    },
+    {
+      "type": "hotel",
+      "name": "Premier Inn London Canary Wharf (Westferry) hotel",
+      "description": "Unassuming hotel featuring straightforward rooms, a casual restaurant/bar & breakfast.",
+      "link": "https://www.premierinn.com/gb/en/hotels/england/greater-london/london/london-canary-wharf-westferry.html?cid=GLBC_LONCWW",
+      "property_token": "ChoIjcf5wIm2hJ2TARoNL2cvMTFqeWdxX2d2MxAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoIjcf5wIm2hJ2TARoNL2cvMTFqeWdxX2d2MxAB&q=London",
+      "gps_coordinates": {
+        "latitude": 51.5097798,
+        "longitude": -0.026620599999999998
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "12:00\u202fPM",
+      "rate_per_night": {
+        "lowest": "$80",
+        "extracted_lowest": 80,
+        "before_taxes_fees": "$66",
+        "extracted_before_taxes_fees": 66
+      },
+      "total_rate": {
+        "lowest": "$559",
+        "extracted_lowest": 559,
+        "before_taxes_fees": "$465",
+        "extracted_before_taxes_fees": 465
+      },
+      "deal": "30% less than usual",
+      "deal_description": "Great Deal",
+      "nearby_places": [
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Public transport",
+              "duration": "59 min"
+            },
+            {
+              "type": "Taxi",
+              "duration": "1 hr 17 min"
+            }
+          ]
+        },
+        {
+          "name": "Noodle Street",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "5 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "3-star hotel",
+      "extracted_hotel_class": 3,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipP1plXWW-u7TmFEUB3a4Ik5bvYJXeh2_DNxN2aZ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipP1plXWW-u7TmFEUB3a4Ik5bvYJXeh2_DNxN2aZ=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/DKJf_GNEOdbCK5o6HBx9dmk8kM-y1qDn8-30g1kifAWJV9QaUquVEFEsXQhiBKKvNP_mV7Wwsv1kIGnLOybn-jvbcGyQS-i4aZEIvm0FWK00CQm5XshJLBKXcYbzFdvL5V-iHTWJzmXhMLPFqw6oxGR4UCHnOA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/7/0/160/760/81/Premier_Inn_Westferry_October_2022_S.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNGLpiokhSbK6VXrrPwIPlt6fqWsNlawkw9Mi7m=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNGLpiokhSbK6VXrrPwIPlt6fqWsNlawkw9Mi7m=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/gO3DyLMynflrnMpd-l6M8TuY9BShVLT4DBO60BCccDcCxiqxlN66cvs1wWV818J1gvVSnlB5giSvVOUytrJZaSupcWdz-bZDg8EwFO1p47QrBVDwQGcleMnawHCN9L-pDvdprxkZrUtEhMpk8ueiNxme8n4pFQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/84000000/83450000/83443000/83442908/0c4e1b22_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPKtGFrhjsCUX6JZjD6teB-OJPNbe7Rp5acl_js=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPKtGFrhjsCUX6JZjD6teB-OJPNbe7Rp5acl_js=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/ZjDty2-e9NpQ6NIYIcEDMVLEpvFe0s2NXP31fQv_AXREFlaP8H5PPJYUDW5wkOtmMrnsMqIuONtqF0hqy_j4YWxMAO4bRPA49By0CAhwGQwRXB1thmrYTr6W_mwye4Cegxyjov13xl08hFm1sQB0Xcm5no5J3cw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/84000000/83450000/83443000/83442908/86d91179_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPMzgqxbFR_qm8zajFe0pvM2NC69DbXtdnODSrZ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPMzgqxbFR_qm8zajFe0pvM2NC69DbXtdnODSrZ=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNQW5TCTEeuiR03HiPYm0fONV4o2jrs9pB5bPIy=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNQW5TCTEeuiR03HiPYm0fONV4o2jrs9pB5bPIy=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN11KHDFGeiVNehFHmDuWo4dOMxU1Kr8EyGCXHh=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN11KHDFGeiVNehFHmDuWo4dOMxU1Kr8EyGCXHh=s10000"
+        }
+      ],
+      "overall_rating": 4.4,
+      "reviews": 1060,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 687
+        },
+        {
+          "stars": 4,
+          "count": 219
+        },
+        {
+          "stars": 3,
+          "count": 66
+        },
+        {
+          "stars": 2,
+          "count": 33
+        },
+        {
+          "stars": 1,
+          "count": 55
+        }
+      ],
+      "location_rating": 4.0,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 337,
+          "positive": 262,
+          "negative": 59,
+          "neutral": 16
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 300,
+          "positive": 261,
+          "negative": 11,
+          "neutral": 28
+        },
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 158,
+          "positive": 131,
+          "negative": 19,
+          "neutral": 8
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 310,
+          "positive": 245,
+          "negative": 42,
+          "neutral": 23
+        },
+        {
+          "name": "Room",
+          "description": "Room amenities",
+          "total_mentioned": 160,
+          "positive": 94,
+          "negative": 46,
+          "neutral": 20
+        },
+        {
+          "name": "Transit",
+          "description": "Public transit",
+          "total_mentioned": 135,
+          "positive": 99,
+          "negative": 8,
+          "neutral": 28
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Free Wi-Fi",
+        "Bar",
+        "Restaurant",
+        "Smoke-free property"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "London Marriott Hotel Maida Vale",
+      "description": "Elegant property offering an Italian restaurant & a bar, plus free health club access.",
+      "link": "https://www.marriott.com/en-us/hotels/lonwh-london-marriott-hotel-maida-vale/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0",
+      "property_token": "ChgI2tGritvB4K2VARoLL2cvMXRka2czcHgQAQ",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChgI2tGritvB4K2VARoLL2cvMXRka2czcHgQAQ&q=London",
+      "gps_coordinates": {
+        "latitude": 51.535705199999995,
+        "longitude": -0.1902585
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "11:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$181",
+        "extracted_lowest": 181,
+        "before_taxes_fees": "$151",
+        "extracted_before_taxes_fees": 151
+      },
+      "total_rate": {
+        "lowest": "$1,268",
+        "extracted_lowest": 1268,
+        "before_taxes_fees": "$1,057",
+        "extracted_before_taxes_fees": 1057
+      },
+      "deal": "28% less than usual",
+      "deal_description": "Great Deal",
+      "nearby_places": [
+        {
+          "name": "The Regent's Park",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "8 min"
+            }
+          ]
+        },
+        {
+          "name": "Kilburn Park",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "6 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Public transport",
+              "duration": "47 min"
+            },
+            {
+              "type": "Taxi",
+              "duration": "48 min"
+            }
+          ]
+        },
+        {
+          "name": "Kish Persian Restaurant",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "2 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "4-star hotel",
+      "extracted_hotel_class": 4,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMQaKqee9woXNV4Kvm_n-ENsSch37iNxZNz3ISs=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMQaKqee9woXNV4Kvm_n-ENsSch37iNxZNz3ISs=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNZboXtHgSrte7C0Cjvmlx5dOesH3XUv9thQkVI=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNZboXtHgSrte7C0Cjvmlx5dOesH3XUv9thQkVI=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOCUCwGYyyhfxAbtIkUG2P-ExqyBEVs-YvlJiPn=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOCUCwGYyyhfxAbtIkUG2P-ExqyBEVs-YvlJiPn=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNIeVJ0OhRy4bjCKng-By7rCpVqn__mws_J8Su9=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNIeVJ0OhRy4bjCKng-By7rCpVqn__mws_J8Su9=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPG8xnF43XsDUsBHvY-JumKJzFNtrf6rq0ts3Z2=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPG8xnF43XsDUsBHvY-JumKJzFNtrf6rq0ts3Z2=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipM3WiRsPtQ14RZvSzijOYbqXUmyxb0V8Et1yuzt=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipM3WiRsPtQ14RZvSzijOYbqXUmyxb0V8Et1yuzt=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNjvgDeIU_ZRHvQLbus9NRuxMqIvzeylWabMzOj=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNjvgDeIU_ZRHvQLbus9NRuxMqIvzeylWabMzOj=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPAjGf8tOtIiWuX57xY1VydawpNtseuNKD7Gv6X=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPAjGf8tOtIiWuX57xY1VydawpNtseuNKD7Gv6X=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMDCPaTftReMTHCpOzBPufvc1ORhgGelR3kI2Aj=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMDCPaTftReMTHCpOzBPufvc1ORhgGelR3kI2Aj=s10000"
+        }
+      ],
+      "overall_rating": 4.3,
+      "reviews": 2008,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 1135
+        },
+        {
+          "stars": 4,
+          "count": 570
+        },
+        {
+          "stars": 3,
+          "count": 155
+        },
+        {
+          "stars": 2,
+          "count": 61
+        },
+        {
+          "stars": 1,
+          "count": 87
+        }
+      ],
+      "location_rating": 3.3,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 413,
+          "positive": 329,
+          "negative": 69,
+          "neutral": 15
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 434,
+          "positive": 362,
+          "negative": 50,
+          "neutral": 22
+        },
+        {
+          "name": "Fitness",
+          "description": "Fitness",
+          "total_mentioned": 47,
+          "positive": 16,
+          "negative": 22,
+          "neutral": 9
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 275,
+          "positive": 222,
+          "negative": 21,
+          "neutral": 32
+        },
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 138,
+          "positive": 106,
+          "negative": 23,
+          "neutral": 9
+        },
+        {
+          "name": "Bar",
+          "description": "Bar or lounge",
+          "total_mentioned": 97,
+          "positive": 63,
+          "negative": 22,
+          "neutral": 12
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Wi-Fi ($)",
+        "Parking ($)",
+        "Indoor pool",
+        "Air conditioning",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Accessible",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "eco_certified": true
+    },
+    {
+      "type": "hotel",
+      "name": "easyHotel London South Kensington",
+      "description": "Humble budget hotel in a townhouse featuring compact, no-frills rooms, some without windows.",
+      "link": "https://www.easyhotel.com/hotels/united-kingdom/london/south-kensington?utm_source=google&utm_medium=organic&utm_campaign=GMB-franchised-london-south-kensington",
+      "property_token": "ChcItpXxpqWb0adjGgsvZy8xdGh2eHJwahAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChcItpXxpqWb0adjGgsvZy8xdGh2eHJwahAB&q=London",
+      "gps_coordinates": {
+        "latitude": 51.4953757,
+        "longitude": -0.1894409
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "10:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$49",
+        "extracted_lowest": 49,
+        "before_taxes_fees": "$49",
+        "extracted_before_taxes_fees": 49
+      },
+      "total_rate": {
+        "lowest": "$340",
+        "extracted_lowest": 340,
+        "before_taxes_fees": "$340",
+        "extracted_before_taxes_fees": 340
+      },
+      "deal": "31% less than usual",
+      "deal_description": "Great Deal",
+      "nearby_places": [
+        {
+          "name": "Natural History Museum",
+          "transportations": [
+            {
+              "type": "Public transport",
+              "duration": "9 min"
+            }
+          ]
+        },
+        {
+          "name": "Gloucester Road",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "9 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "37 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "46 min"
+            }
+          ]
+        },
+        {
+          "name": "Cempaka",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "1 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "3-star hotel",
+      "extracted_hotel_class": 3,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOV3RSaMsM3yGwF9zqWuK2edLKRiC-NFhsTE_WO=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOV3RSaMsM3yGwF9zqWuK2edLKRiC-NFhsTE_WO=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/6srCnjCajd4pT5EqG8-a1VxMWapD59PQdE8qCdz06UCaz9hYzuDCJJdi4X8eqF0H2XqDvQdsdLBvuUVKDN4RUEGwqPXvAV_DwANAMKHZQ2pq_ez7UHNIx2kNVwakEsIIBjXrFuTUEq6dp-PMp2FEIWW61LiavQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/62/623393/623393a_hb_l_001.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPPvY09Mvt9xH8E_yieCqyfCVrDVja1FL22hBh8=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPPvY09Mvt9xH8E_yieCqyfCVrDVja1FL22hBh8=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/C1Ny04sNmPdC7zjZtU1HzJvE9pyTMTKBM_dB2TWJ7CKxc6Qrk7yO7P4y8z6BbtVroypkydPjAprFSYiicDezZlNA5AcqhLBxyaMYMyknJ8JL-Kbo8p0GbDLVL5rN-JkXG2Mz3Ji650MWeHgfjn3hprw2kuhbUw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/62/623393/623393a_hb_a_002.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMhOvU3gET6QnV4TbBNC_D3-GAKHPs-H4wxFyjH=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMhOvU3gET6QnV4TbBNC_D3-GAKHPs-H4wxFyjH=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/fmQyJfGSuCpz8xWaBo8aIdUJvV8TFX1XTAwGJNOdn73U9tV3sf8Dpgl3v4CXp0tW2sm6KVRo2PkabeAsL067NCHFvWOOrgWqqQKcli5I623vuuT79Vx_TLhh8yUm4W1lWO1VeVaRd_tHQe4yV7mlnJ9IaTHMQLI=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/21000000/20530000/20521000/20520932/00184387_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNOmh0lAWsEGeda4dfa4Q0xtU4bcO0YrfKFVyxL=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNOmh0lAWsEGeda4dfa4Q0xtU4bcO0YrfKFVyxL=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/5JOvJN6UwGoImfXPQGiezQbQINQQSW6U9YhqUoMl__HV0B7yz7mVsQn9IzbGvuym0lBrLKLrLFPpIuzpl7nsHcbsPYRxHfleKyiJ-slE06uB-JkAPUvG67JopXMTKYkLcKfB4hok95G6Xtk3zMocutFX0Sp9bYs=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/62/623393/623393a_hb_a_001.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/SNJZLd0OEiF4THpYpAplbjZ-HDM5DzDv-npT3_-SpIHrgBaPn4Sq5irP4g5EzCZ42U4Uij6ix_o7no_HCHb70ptq90aQTmC8-cw0B-9GY0raqNJR4omqrmNdJ9TpoMqvJOfbP7Clbmy0JgU96Q71LAJf_jdisV8=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/21000000/20530000/20521000/20520932/4655a67d_z.jpg"
+        }
+      ],
+      "overall_rating": 3.3,
+      "reviews": 679,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 225
+        },
+        {
+          "stars": 4,
+          "count": 116
+        },
+        {
+          "stars": 3,
+          "count": 124
+        },
+        {
+          "stars": 2,
+          "count": 67
+        },
+        {
+          "stars": 1,
+          "count": 147
+        }
+      ],
+      "location_rating": 4.4,
+      "reviews_breakdown": [
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 138,
+          "positive": 56,
+          "negative": 60,
+          "neutral": 22
+        },
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 117,
+          "positive": 31,
+          "negative": 77,
+          "neutral": 9
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 186,
+          "positive": 135,
+          "negative": 40,
+          "neutral": 11
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 211,
+          "positive": 89,
+          "negative": 97,
+          "neutral": 25
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 124,
+          "positive": 77,
+          "negative": 32,
+          "neutral": 15
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 133,
+          "positive": 101,
+          "negative": 17,
+          "neutral": 15
+        }
+      ],
+      "amenities": [
+        "Free Wi-Fi",
+        "Air conditioning",
+        "Kid-friendly",
+        "Smoke-free property"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Holiday Inn Express London - Hammersmith by IHG",
+      "description": "Straightforward rooms in an laid-back hotel offering Wi-Fi & a lobby lounge area.",
+      "link": "https://www.ihg.com/holidayinnexpress/hotels/gb/en/london/lonhs/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-GB-_-LONHS",
+      "property_token": "ChcI14rWxOuavYBaGgsvZy8xdGRtano2cxAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChcI14rWxOuavYBaGgsvZy8xdGRtano2cxAB&q=London",
+      "gps_coordinates": {
+        "latitude": 51.493197099999996,
+        "longitude": -0.23154829999999998
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "11:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$108",
+        "extracted_lowest": 108,
+        "before_taxes_fees": "$90",
+        "extracted_before_taxes_fees": 90
+      },
+      "total_rate": {
+        "lowest": "$756",
+        "extracted_lowest": 756,
+        "before_taxes_fees": "$630",
+        "extracted_before_taxes_fees": 630
+      },
+      "deal": "19% less than usual",
+      "deal_description": "Deal",
+      "nearby_places": [
+        {
+          "name": "Ravenscourt Park",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "7 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "30 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "42 min"
+            }
+          ]
+        },
+        {
+          "name": "La Petite Bretagne",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "8 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "3-star hotel",
+      "extracted_hotel_class": 3,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPqMzex_Zc1yzSIgSFJ2N9F3l3NvnsW318_EKVp=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPqMzex_Zc1yzSIgSFJ2N9F3l3NvnsW318_EKVp=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMLun2Wk_dgiKaV8qSwThn57Zn85A-Oi3FqkX_a=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMLun2Wk_dgiKaV8qSwThn57Zn85A-Oi3FqkX_a=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPBy_2r3mxfE-EkknmF2JLWY6tJUQVglTudCiR5=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPBy_2r3mxfE-EkknmF2JLWY6tJUQVglTudCiR5=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMt4cDVb3zDy9I4725c4gxqS8h9IknBAJHk3T1F=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMt4cDVb3zDy9I4725c4gxqS8h9IknBAJHk3T1F=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMdt8lhfkzpvfTwIxdBxE0MV5HtJqZg93b1CFDB=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMdt8lhfkzpvfTwIxdBxE0MV5HtJqZg93b1CFDB=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPs11TasMkSt5p_h6IlBvNqdzEjWrIaWIUN2lAo=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPs11TasMkSt5p_h6IlBvNqdzEjWrIaWIUN2lAo=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNVZ_DLvmMHIZ24wvIBIiok6pm0G1dzz0r1olfN=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNVZ_DLvmMHIZ24wvIBIiok6pm0G1dzz0r1olfN=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMi1YRHC2Ws3cBJcdJpUlI-bKxRL_PVSO8FRVd1=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMi1YRHC2Ws3cBJcdJpUlI-bKxRL_PVSO8FRVd1=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMxfxPOqDuCF7f9417lAzh908Qns0Ex49fF32SN=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMxfxPOqDuCF7f9417lAzh908Qns0Ex49fF32SN=s10000"
+        }
+      ],
+      "overall_rating": 4.1,
+      "reviews": 1944,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 873
+        },
+        {
+          "stars": 4,
+          "count": 680
+        },
+        {
+          "stars": 3,
+          "count": 243
+        },
+        {
+          "stars": 2,
+          "count": 69
+        },
+        {
+          "stars": 1,
+          "count": 79
+        }
+      ],
+      "location_rating": 3.7,
+      "reviews_breakdown": [
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 313,
+          "positive": 205,
+          "negative": 69,
+          "neutral": 39
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 402,
+          "positive": 317,
+          "negative": 58,
+          "neutral": 27
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 339,
+          "positive": 280,
+          "negative": 16,
+          "neutral": 43
+        },
+        {
+          "name": "Restaurant",
+          "description": "Restaurant",
+          "total_mentioned": 145,
+          "positive": 88,
+          "negative": 34,
+          "neutral": 23
+        },
+        {
+          "name": "Parking",
+          "description": "Parking",
+          "total_mentioned": 42,
+          "positive": 15,
+          "negative": 18,
+          "neutral": 9
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 273,
+          "positive": 212,
+          "negative": 38,
+          "neutral": 23
+        }
+      ],
+      "amenities": [
+        "Free breakfast",
+        "Free Wi-Fi",
+        "Parking ($)",
+        "Air conditioning",
+        "Pet-friendly",
+        "Bar",
+        "Accessible",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "eco_certified": true
+    },
+    {
+      "type": "hotel",
+      "name": "DoubleTree by Hilton London - Tower of London",
+      "description": "Modern hotel offering relaxed rooms and suites, plus a gym and a hip rooftop bar with city views.",
+      "link": "https://www.hilton.com/en/hotels/lontldi-doubletree-london-tower-of-london/?SEO_id=GMB-EMEA-DI-LONTLDI",
+      "property_token": "ChgInoqQlfTa0JyBARoLL2cvMXRmajJuMWQQAQ",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChgInoqQlfTa0JyBARoLL2cvMXRmajJuMWQQAQ&q=London",
+      "gps_coordinates": {
+        "latitude": 51.5108822,
+        "longitude": -0.0781026
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "12:00\u202fPM",
+      "rate_per_night": {
+        "lowest": "$175",
+        "extracted_lowest": 175,
+        "before_taxes_fees": "$146",
+        "extracted_before_taxes_fees": 146
+      },
+      "total_rate": {
+        "lowest": "$1,225",
+        "extracted_lowest": 1225,
+        "before_taxes_fees": "$1,021",
+        "extracted_before_taxes_fees": 1021
+      },
+      "nearby_places": [
+        {
+          "name": "Tower of London",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "6 min"
+            }
+          ]
+        },
+        {
+          "name": "Tower Hill",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "2 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Public transport",
+              "duration": "54 min"
+            },
+            {
+              "type": "Taxi",
+              "duration": "1 hr 7 min"
+            }
+          ]
+        },
+        {
+          "name": "Cento Alla Torre",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "4 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "4-star hotel",
+      "extracted_hotel_class": 4,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMWMIgnTHYi5StmvdJg7RPi6-lhVIGRigioISZ4=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMWMIgnTHYi5StmvdJg7RPi6-lhVIGRigioISZ4=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMJMkKy66GJB6VbxsWpiwUCz2URbUupV8ANm7X-=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMJMkKy66GJB6VbxsWpiwUCz2URbUupV8ANm7X-=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMO_HEf0L_XEIj6qsCoTJ95_Cl7vbymtM7UMBjF=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMO_HEf0L_XEIj6qsCoTJ95_Cl7vbymtM7UMBjF=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipO9uT6g01dIjLgnlukO52Czo7OgoxclU9zU6urc=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipO9uT6g01dIjLgnlukO52Czo7OgoxclU9zU6urc=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/dU6AhsJeG3Wq_fP30inJJCVgOs2cxdSoMZXwGKuUryMiULZ3U3qviaEx-UFz41kjuc98-md8MiPr1ZYw3tyvW6xER2A_Qm27Vl_Tt8WM3gsjsgdFfG7p6PxYnc2G7BK7QCtrV4KMYCkcw9OaIU_5mnFW89cV9gM=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://i.giatamedia.com/m.php?m=AQABAAAAla4KAL_kMQcFABkXXd8DalqEPCVX50szGE8"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPr4ARe52lJAV2cN8Kt3ypKPl9YgGwUzgZScFmS=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPr4ARe52lJAV2cN8Kt3ypKPl9YgGwUzgZScFmS=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOAVpiPBnQ4NPzkOUmfByNir4QkeFTfnLeEQj2W=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOAVpiPBnQ4NPzkOUmfByNir4QkeFTfnLeEQj2W=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPgyyg1UrCY1qAgdD_2SUyGl023rLh28AtyLqvl=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPgyyg1UrCY1qAgdD_2SUyGl023rLh28AtyLqvl=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNM3ea-nKe1Wyc36P0QBSDDrfZLKVbl3XjYx50G=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNM3ea-nKe1Wyc36P0QBSDDrfZLKVbl3XjYx50G=s10000"
+        }
+      ],
+      "overall_rating": 4.2,
+      "reviews": 5902,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 3174
+        },
+        {
+          "stars": 4,
+          "count": 1695
+        },
+        {
+          "stars": 3,
+          "count": 553
+        },
+        {
+          "stars": 2,
+          "count": 216
+        },
+        {
+          "stars": 1,
+          "count": 264
+        }
+      ],
+      "location_rating": 4.7,
+      "reviews_breakdown": [
+        {
+          "name": "Bar",
+          "description": "Bar or lounge",
+          "total_mentioned": 630,
+          "positive": 447,
+          "negative": 132,
+          "neutral": 51
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 1295,
+          "positive": 997,
+          "negative": 248,
+          "neutral": 50
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 1049,
+          "positive": 920,
+          "negative": 57,
+          "neutral": 72
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 1271,
+          "positive": 875,
+          "negative": 291,
+          "neutral": 105
+        },
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 483,
+          "positive": 347,
+          "negative": 100,
+          "neutral": 36
+        },
+        {
+          "name": "Dining",
+          "description": "Food and Beverage",
+          "total_mentioned": 408,
+          "positive": 276,
+          "negative": 96,
+          "neutral": 36
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Free Wi-Fi",
+        "Parking ($)",
+        "Air conditioning",
+        "Pet-friendly",
+        "Fitness center",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Full-service laundry",
+        "Accessible"
+      ],
+      "eco_certified": true
+    },
+    {
+      "type": "vacation rental",
+      "name": "Park Royal Hububb Stay (Adults Only)",
+      "link": "https://www.spacest.com/travel/travel-listing/68054839?utm_source=google_vacation_rental_hs&utm_campaign=hotel_hs",
+      "property_token": "ChoQja3oq_nuldGHARoNL2cvMTF4aDRxbHMydBAC",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoQja3oq_nuldGHARoNL2cvMTF4aDRxbHMydBAC&q=London",
+      "gps_coordinates": {
+        "latitude": 51.51882553100586,
+        "longitude": -0.2697339951992035
+      },
+      "rate_per_night": {
+        "lowest": "$61",
+        "extracted_lowest": 61,
+        "before_taxes_fees": "$61",
+        "extracted_before_taxes_fees": 61
+      },
+      "total_rate": {
+        "lowest": "$424",
+        "extracted_lowest": 424,
+        "before_taxes_fees": "$424",
+        "extracted_before_taxes_fees": 424
+      },
+      "prices": [
+        {
+          "source": "Spacest.com",
+          "logo": "https://www.gstatic.com/travel-hotels/branding/16532824064881749414.png",
+          "num_guests": 1,
+          "rate_per_night": {
+            "lowest": "$61",
+            "extracted_lowest": 61
+          }
+        }
+      ],
+      "nearby_places": [
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "35 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "35 min"
+            }
+          ]
+        },
+        {
+          "name": "Miod Malina Restaurant",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "10 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/0EM9H_H4MM5ePw6iKfU7wgFpRmMPTxMnvGUUAeZuNYyH8cD5hUBgThKzY0q6fLsBssntuzoJN89unrPbxBs1aY_YvYyu66J8zDJMTb9VfL3vk2H0w5LdoXUYBLdVY6EyGYp-y3CP60LLyYw1LcxS25O7LTC0nD4=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/http://api-img.hotelston.com/resources/hotel/images/6/8/0/5/4/8/3/9/939612720.jpg=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/lTG5iqkTvEtS0RncXQ3F1ShA6FYA-CxhNmfuTCEl4tSAe8oQltyG0hbIs3i_T4hTs8RmhHb0jerPFI4WAJ3eqvybOj5bDX_9ayWkWwCnomYLA5jfMo3SF0krC9L1WmaNLy9Nkz5bQ-NwIVTj1SAUMRH1NDozpEo=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/http://api-img.hotelston.com/resources/hotel/images/6/8/0/5/4/8/3/9/939612721.jpg=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/oTquoD-w9e7Qm3ylhaMZsB3cdSX0H04p9rhS-phtU16A6QnvvA7CyzVYVcBpHnG6Y6B2f8RAeDbLPH7IXtgAUL9CcpJoIjelwqDWo3D7Cyz7-ZtJOvDP69T4ko2fb84623Na-atuNMsY_pMEqF2czGX54yiOug=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/http://api-img.hotelston.com/resources/hotel/images/6/8/0/5/4/8/3/9/939612717.jpg=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/K72N-dqj_J22SxSYj-1iUKbJAcTZZsQuI9eDtAArF5PDfmGmXpcF5CBjou0kugIrxnc8e9NikeNxEkbUDPPoYaeOu0sgtldJACKWm5eHmAf-FZlKkl9_g4G5Bbu87KzFpzeIhGXFfC8hyOPbDzd53eFdKPIj8w=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/http://api-img.hotelston.com/resources/hotel/images/6/8/0/5/4/8/3/9/939612726.jpg=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/lXeHk6SXnH3aByTy8L9zglM2CndCPg8WukqPtM1jFUm0fugPVr4MiYZvhKFHWQbElYKAK8ltN9GrvlHDsKywwypQPepTlrAxq0C0OEs7ddEyCy-6lsRVdfhCCljBj1HEW2KLjZaIksnYZyfYsnf7zlk5EHbhDg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/http://api-img.hotelston.com/resources/hotel/images/6/8/0/5/4/8/3/9/939612711.jpg=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/JuVFAhsHJTGPHQzyx-AEmoJWoxDrBm9kPR0aytlsj_AsgzeWtFabGF4GjwZHFuE7j9k2GHgexpd19T0hS1ZgQHDukFbXj8MuzGHZBP6I7q9bdxKnVpSCN2gJZTVKheZj3UnOi5llosZdmBH7Fj1JZO3rWfBK6IE=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/http://api-img.hotelston.com/resources/hotel/images/6/8/0/5/4/8/3/9/939612718.jpg=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/OX2ungh7CXZ6X0xPn77E0s6kyg_oMxNUr7UbhAk_orB1_2UYQejpHVJag3Lc8azW6m0yQOSoRehqTbIAxDLbAd-XV7hpEnKguSZ2q_djtaSvv9cirVfPW3u8gSXUM8LDwIJsQSKtU2MaebyE9mW192k0gFvcQw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/http://api-img.hotelston.com/resources/hotel/images/6/8/0/5/4/8/3/9/939612705.jpg=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/6EN7SJPmUkDopY04C-eZgGmB9-Wx5xZ_GZuKdt7CThp9oEaVk48e4kshOAGrSOnBmnBdF3yIpGUZC9LKBNAVZX4Z3d4t7krzGtWORxthupEKIE_qhEkaC90G6Q1lntuLDMwvCiHXOShy2ruk5TZPPyvqA_Z6I2I=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/http://api-img.hotelston.com/resources/hotel/images/6/8/0/5/4/8/3/9/939612725.jpg=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/Di-dVSiQS9oBCwSSFAnkXoyqzHMkdQHV94OQgrPIKfkqGiaKs59KUyNIalEeT8a5HYU0bsuJcbAFImZ6Dl9U5f5cRPane1dOR5FMVUvhD6Vh5JTJsXqHYhEVv6rqRW7M_EflWLhEErC8jW1QvgXCsK3yvcg_T3E=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/http://api-img.hotelston.com/resources/hotel/images/6/8/0/5/4/8/3/9/939612732.jpg=s10000"
+        }
+      ],
+      "location_rating": 3.2,
+      "amenities": [
+        "Heating"
+      ],
+      "health_and_safety": {
+        "groups": [
+          {
+            "title": "Enhanced cleaning",
+            "list": [
+              {
+                "title": "Enhanced cleaning of the property",
+                "available": true
+              }
+            ]
+          }
+        ]
+      },
+      "essential_info": [
+        "Entire apartment",
+        "Sleeps 4"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "Notting Hill Gate Hotel",
+      "description": "Basic 19th-century townhouse hotel with cosy rooms, plus free Wi-Fi & continental breakfast.",
+      "link": "http://www.nottinghillgatehotel.co.uk/",
+      "property_token": "ChgIgcyH_fiZmNvpARoLL2cvMXRsN241dnoQAQ",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChgIgcyH_fiZmNvpARoLL2cvMXRsN241dnoQAQ&q=London",
+      "gps_coordinates": {
+        "latitude": 51.5101801,
+        "longitude": -0.19306430000000002
+      },
+      "check_in_time": "2:00\u202fPM",
+      "check_out_time": "11:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$89",
+        "extracted_lowest": 89,
+        "before_taxes_fees": "$74",
+        "extracted_before_taxes_fees": 74
+      },
+      "total_rate": {
+        "lowest": "$626",
+        "extracted_lowest": 626,
+        "before_taxes_fees": "$521",
+        "extracted_before_taxes_fees": 521
+      },
+      "deal": "16% less than usual",
+      "deal_description": "Deal",
+      "nearby_places": [
+        {
+          "name": "Natural History Museum",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "10 min"
+            }
+          ]
+        },
+        {
+          "name": "Notting Hill Gate",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "4 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "40 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "49 min"
+            }
+          ]
+        },
+        {
+          "name": "Cherry on",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "5 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "3-star hotel",
+      "extracted_hotel_class": 3,
+      "images": [
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/m3cpCl2dBTNq5jqSG1fUzE2ws70EmU_ZnH1vxzdDW7kbaYy2PEIOf6opOjXyDhO1k4fZi4At5zHNr8zKOBUyvW2c3E6XdIn8CH5S7laKuT_cND9ruWVJClfxcqa2SD20k7rjXBAkcdZxbw15zNFfqBIoj0qLWhM=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/3000000/2540000/2539500/2539421/51a92627_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/YFWqdirjkt_z4Hnv3WSKQqH2WS-IRAhNDzj9VPoftGmcpeaJplsI6mFw9p4QIEtmefd3WVLlWhMYzheGpR6GnMBvWYBnCQJPeVaM7bFBPiCMkGlNuaWVobBazvUWCKS_n5bD-H3s2L-m-EWedPyY66k4lzlb2A=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/31/311692/311692a_hb_r_005.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyVW6Ba2OqpCDiitWOaXLkytk0D5eOEybU9Rs5niR6sNd7bbR7A17saq7BO8dyfRjs_R92md29ovQxQGeyoP3v64LNv23bJ5pvjfWxKBlCCIGI14jxvoqaOrvawmSh6-YAlUXSN=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgIDem5GbbQ=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/cdebdn3Q8ckTOSSSLRS4Ia4yPkhiCxrKzNQ9D4HNTUQ69EAbB4Vru6RmQbkH1TcDPGYVTpHjh6t1IgWAVtczQIx6VI5jaoz9J-pgV1kv1SkNaETZKU0ei2k5XGzYs5sHsa3vaWjbvZ23tpkrSl3v9R8G_NYzGBU=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/7/0/109/229/718/Room_7_O.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/tqO8rUwjaIjdjknOz2oLLXkus3UJ6BfvkbvPjshE0NpmPqTF83PEbvSw45zEd9UUNUID_oz6qPfAtDatSCCPWw0p6HNcEwXWuMpfar4-G1IC58hx1Nbx5wloXyGpK7KRMpPl9UhlCKV_LmgtpwiHkVS3VOWfDg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/7/0/109/229/638/Hall_O.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/xP9e9fHhXx39vWnFbMl5JI8AITBWqBOSTgfJkgzzrplH1LBN1Yq3d93l8jbvOtqcPRya56hCduUCbMcaHWVAgkj3zmZ8pHYe1nbjOHA8wCq2-f39F4PE3EWZlkTkW0t3CVrhtfQG4J2mD-0QdMpK9uKgICsc3A=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/31/311692/311692a_hb_r_004.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/rz68rT9HeA1HiZ5n_3LOdBK4xxYJ_JUJNrTpe-QykVdTyBbJAwZGM1kqNiMjv38L792ybVqZF_K4XKUBV84ZcLXNmKL67LPkrK0ryIEdeYmqmsSuJPE3bFJFGkzpet--sekYAn3ThcpCzXZeTpy-rMkd9C0m9A=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/3000000/2540000/2539500/2539421/67ccaab0_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/_LcNbGWA2ClyqPOYyEfsHBZZxU0qY-I6wmteRUiQhSCpr2TGbnxzNHUgQYCxR8XeZbKCqvb5QUzn7JNGCMxL4LAL4YE6m2SZZY8nKTDqtggGOGZTTCVYELcoC4zeJE_ty4-G_PXOyn21XlQ1o6q0DOK7vPQn8g=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/7/0/109/229/683/Room_5_O.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/rMXPWW6hZkHHIIcJreqxKJBOprnRAUq7yXCYWwn2mfo0Mg6hZgN9T1MclIn0_g9OeRtQBK4uv93FjWQE4JbLbMKzUQ7AWMujXj-SKOfKTTkI53AEIOYVpkvvzcoAOTvj6MAu-fANdyG2odKqqiKff2pbnvJVUA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/7/0/109/229/702/Room_6_O.jpg"
+        }
+      ],
+      "overall_rating": 3.7,
+      "reviews": 754,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 311
+        },
+        {
+          "stars": 4,
+          "count": 141
+        },
+        {
+          "stars": 3,
+          "count": 138
+        },
+        {
+          "stars": 2,
+          "count": 64
+        },
+        {
+          "stars": 1,
+          "count": 100
+        }
+      ],
+      "location_rating": 4.7,
+      "reviews_breakdown": [
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 143,
+          "positive": 74,
+          "negative": 54,
+          "neutral": 15
+        },
+        {
+          "name": "Accessibility",
+          "description": "Accessibility",
+          "total_mentioned": 47,
+          "positive": 4,
+          "negative": 40,
+          "neutral": 3
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 103,
+          "positive": 77,
+          "negative": 12,
+          "neutral": 14
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 116,
+          "positive": 74,
+          "negative": 32,
+          "neutral": 10
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 88,
+          "positive": 58,
+          "negative": 23,
+          "neutral": 7
+        },
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 53,
+          "positive": 12,
+          "negative": 35,
+          "neutral": 6
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Free Wi-Fi",
+        "Restaurant",
+        "Kid-friendly",
+        "Smoke-free property"
+      ]
+    },
+    {
+      "type": "hotel",
+      "name": "DoubleTree by Hilton London - Hyde Park",
+      "description": "Contemporary lodging offering a chic restaurant and an exercise room, plus free Wi-Fi.",
+      "link": "https://www.hilton.com/en/hotels/lonhydi-doubletree-london-hyde-park/?SEO_id=GMB-EMEA-DI-LONHYDI",
+      "property_token": "ChkIlquYhfjF7dWLARoML2cvMWhoanI2bDMzEAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChkIlquYhfjF7dWLARoML2cvMWhoanI2bDMzEAE&q=London",
+      "gps_coordinates": {
+        "latitude": 51.510390099999995,
+        "longitude": -0.19054640000000003
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "12:00\u202fPM",
+      "rate_per_night": {
+        "lowest": "$134",
+        "extracted_lowest": 134,
+        "before_taxes_fees": "$112",
+        "extracted_before_taxes_fees": 112
+      },
+      "total_rate": {
+        "lowest": "$938",
+        "extracted_lowest": 938,
+        "before_taxes_fees": "$782",
+        "extracted_before_taxes_fees": 782
+      },
+      "nearby_places": [
+        {
+          "name": "Kensington Palace",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "9 min"
+            }
+          ]
+        },
+        {
+          "name": "Bayswater",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "7 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "40 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "46 min"
+            }
+          ]
+        },
+        {
+          "name": "Mandarin Kitchen",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "5 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "4-star hotel",
+      "extracted_hotel_class": 4,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPZAlSoRjwhb87ZP8x5ZoF3kZ8CnwJ-Jhob0gXT=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPZAlSoRjwhb87ZP8x5ZoF3kZ8CnwJ-Jhob0gXT=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNa21NEmsBSGfepsqvRs1azMpyI4xOza1f2BFa2=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNa21NEmsBSGfepsqvRs1azMpyI4xOza1f2BFa2=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMlgK9E4IsUNPK16Mhs5F_WEaXemqpYR9dsFvjR=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMlgK9E4IsUNPK16Mhs5F_WEaXemqpYR9dsFvjR=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipO-Jv21VfGe0qXjfJxxmD5YPJJQAmu4bYXlqIlT=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipO-Jv21VfGe0qXjfJxxmD5YPJJQAmu4bYXlqIlT=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPSJ2QMOosMknehY-Fvl99zV7TO8ALlW_N7-S8l=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPSJ2QMOosMknehY-Fvl99zV7TO8ALlW_N7-S8l=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPg6CO2r0RoMgFnBNHameojISyGJ77mgSd5CPhE=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPg6CO2r0RoMgFnBNHameojISyGJ77mgSd5CPhE=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipP0ySbzKqsCsPi0EuelLTbLEMe7vKHxxQlU78G8=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipP0ySbzKqsCsPi0EuelLTbLEMe7vKHxxQlU78G8=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN7Sub6prP64uhO__INq3aNH3ULGYQzjnT-abuH=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN7Sub6prP64uhO__INq3aNH3ULGYQzjnT-abuH=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/6tQJWw22m5m-SrqNYsq5cni0Xpb1iMZeZ6MWA5uOMbWPipyamG2ihOgaYan51UN4EKw_oeX8LeVK2phrpN0F09zxGeKIcA7ZQhiM4_fTbMO577F1UgKz_ARFOYGFmsbozqNha9kICIx893ZzRHEaMMA_hy2qOmE=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/17/172420/172420a_hb_w_078.jpg"
+        }
+      ],
+      "overall_rating": 4,
+      "reviews": 2216,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 1009
+        },
+        {
+          "stars": 4,
+          "count": 684
+        },
+        {
+          "stars": 3,
+          "count": 238
+        },
+        {
+          "stars": 2,
+          "count": 122
+        },
+        {
+          "stars": 1,
+          "count": 163
+        }
+      ],
+      "location_rating": 4.7,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 632,
+          "positive": 473,
+          "negative": 131,
+          "neutral": 28
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 482,
+          "positive": 411,
+          "negative": 38,
+          "neutral": 33
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 485,
+          "positive": 302,
+          "negative": 133,
+          "neutral": 50
+        },
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 196,
+          "positive": 138,
+          "negative": 44,
+          "neutral": 14
+        },
+        {
+          "name": "Room",
+          "description": "Room amenities",
+          "total_mentioned": 174,
+          "positive": 65,
+          "negative": 94,
+          "neutral": 15
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 246,
+          "positive": 151,
+          "negative": 81,
+          "neutral": 14
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Free Wi-Fi",
+        "Parking ($)",
+        "Air conditioning",
+        "Fitness center",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Full-service laundry",
+        "Accessible",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "eco_certified": true
+    },
+    {
+      "type": "hotel",
+      "name": "Residence Inn by Marriott London Kensington",
+      "description": "Chic 1- and 2-bedroom suites in a contemporary hotel offering a gym & complimentary hot breakfast.",
+      "link": "https://www.marriott.com/en-us/hotels/lonrk-residence-inn-london-kensington/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0",
+      "property_token": "ChkI9ZGc6Z_ezNpqGg0vZy8xMWYzcmY1eHhsEAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChkI9ZGc6Z_ezNpqGg0vZy8xMWYzcmY1eHhsEAE&q=London",
+      "gps_coordinates": {
+        "latitude": 51.493606199999995,
+        "longitude": -0.20220059999999998
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "12:00\u202fPM",
+      "rate_per_night": {
+        "lowest": "$175",
+        "extracted_lowest": 175,
+        "before_taxes_fees": "$146",
+        "extracted_before_taxes_fees": 146
+      },
+      "total_rate": {
+        "lowest": "$1,226",
+        "extracted_lowest": 1226,
+        "before_taxes_fees": "$1,022",
+        "extracted_before_taxes_fees": 1022
+      },
+      "nearby_places": [
+        {
+          "name": "Natural History Museum",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "7 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "33 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "48 min"
+            }
+          ]
+        },
+        {
+          "name": "Cacciari's Restaurant",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "2 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "4-star hotel",
+      "extracted_hotel_class": 4,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOsL0cd-vapUcpxNI0z6w2cH_gUbUJPCG-Imgn8=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOsL0cd-vapUcpxNI0z6w2cH_gUbUJPCG-Imgn8=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMSuHEmmK44ebwgYT8m-pXhyCtMhs9rxEvJkExD=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMSuHEmmK44ebwgYT8m-pXhyCtMhs9rxEvJkExD=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipM0y_8IePaxNRGc9-xihD45Vd3s_K-nox7L6u4Q=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipM0y_8IePaxNRGc9-xihD45Vd3s_K-nox7L6u4Q=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNxQPzPbKVXCyEMVjoknNYMjwwHponMC_dSlh0Z=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNxQPzPbKVXCyEMVjoknNYMjwwHponMC_dSlh0Z=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMRs14XXbG9K6xoQlVNEUG6AoZoDEfavPgDfVF3=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMRs14XXbG9K6xoQlVNEUG6AoZoDEfavPgDfVF3=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN__8uVAzOs0LGK9ZsKYpMFc8dmsLLrIvpjfcuN=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN__8uVAzOs0LGK9ZsKYpMFc8dmsLLrIvpjfcuN=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPZ2FZjwHXYd4Mvgtl44XfSqBEtaLFAqwY1dbub=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPZ2FZjwHXYd4Mvgtl44XfSqBEtaLFAqwY1dbub=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/VIBYixmdfeO_smzllCPd6mfzg_oOqxIqCp36ifkCN3xzm_ZyyDjV94cr1_7mL9WrSkLGoaAhnxF5At-7ZFsCdwzvgx7VV7tCx3y0ZuB1o7a5aVnnyiMgweHfYcQK5HjEkhJzn93mBoldYYqHJVV6T8LoEvshCLA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/39/394145/394145a_hb_a_019.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/yjsV-SnPqmNekveO4LGSKeK1XZkqJhcbiAr2uyGr4M8wGqN9Yonjj_3XCFLWo-MZSbnzqfvahSkvZEUA4L9u_NBn8u_fwGmU-feMiuWYv5w4hdSaGgKLKQP3Ir5ktp8Nm41FED58W_MS9KvIfze2GklOkuztVzI=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/39/394145/394145a_hb_w_008.jpg"
+        }
+      ],
+      "overall_rating": 4.3,
+      "reviews": 2632,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 1712
+        },
+        {
+          "stars": 4,
+          "count": 460
+        },
+        {
+          "stars": 3,
+          "count": 178
+        },
+        {
+          "stars": 2,
+          "count": 100
+        },
+        {
+          "stars": 1,
+          "count": 182
+        }
+      ],
+      "location_rating": 3.7,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 1082,
+          "positive": 887,
+          "negative": 156,
+          "neutral": 39
+        },
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 512,
+          "positive": 407,
+          "negative": 68,
+          "neutral": 37
+        },
+        {
+          "name": "Accessibility",
+          "description": "Accessibility",
+          "total_mentioned": 203,
+          "positive": 42,
+          "negative": 135,
+          "neutral": 26
+        },
+        {
+          "name": "Restaurant",
+          "description": "Restaurant",
+          "total_mentioned": 250,
+          "positive": 202,
+          "negative": 32,
+          "neutral": 16
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 617,
+          "positive": 412,
+          "negative": 155,
+          "neutral": 50
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 444,
+          "positive": 347,
+          "negative": 37,
+          "neutral": 60
+        }
+      ],
+      "amenities": [
+        "Free breakfast",
+        "Free Wi-Fi",
+        "Air conditioning",
+        "Pet-friendly",
+        "Fitness center",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Kitchen",
+        "Full-service laundry",
+        "Accessible",
+        "Business center",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "eco_certified": true
+    },
+    {
+      "type": "hotel",
+      "name": "ibis budget London Whitechapel - Brick Lane",
+      "description": "Colourful, utilitarian rooms in a high-rise block, with free Wi-Fi.",
+      "link": "https://all.accor.com/lien_externe.svlt?goto=fiche_hotel&code_hotel=8033&merchantid=seo-maps-GB-8033&sourceid=aw-cen&utm_medium=seo%20maps&utm_source=google%20Maps&utm_campaign=seo%20maps",
+      "property_token": "ChkIp5Cbk92PnPLQARoML2cvMTFyOHc2YzlkEAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChkIp5Cbk92PnPLQARoML2cvMTFyOHc2YzlkEAE&q=London",
+      "gps_coordinates": {
+        "latitude": 51.5176545,
+        "longitude": -0.0647938
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "12:00\u202fPM",
+      "rate_per_night": {
+        "lowest": "$68",
+        "extracted_lowest": 68,
+        "before_taxes_fees": "$57",
+        "extracted_before_taxes_fees": 57
+      },
+      "total_rate": {
+        "lowest": "$476",
+        "extracted_lowest": 476,
+        "before_taxes_fees": "$396",
+        "extracted_before_taxes_fees": 396
+      },
+      "deal": "16% less than usual",
+      "deal_description": "Deal",
+      "nearby_places": [
+        {
+          "name": "Tower of London",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "7 min"
+            }
+          ]
+        },
+        {
+          "name": "Old Street",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "10 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Public transport",
+              "duration": "50 min"
+            },
+            {
+              "type": "Taxi",
+              "duration": "1 hr 13 min"
+            }
+          ]
+        },
+        {
+          "name": "Alhambra Restaurant",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "1 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "2-star hotel",
+      "extracted_hotel_class": 2,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/gspBbakcY6u82SL1Jhxj7Aft-ImrZJDfL2SZkvAzGLQnAx6BhqhHamvpLciVOU2YpigsTSV43a3IrAufL_gZPhsTFxyUV5FwnDxPzkwMGJnsavVjAUFzF6s6bgGGGA7UbRYdG0UZNmwTqS_ByU13jWsHVCpKGrc=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/91/0e/7b/hotel-ibis-budget-london.jpg?w=2100&h=1400&s=1"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/WuJ4-BDpjoJ_KfXPbkJaxdBgyWbZygY5thgYekclrXmNcLd0xkeZDtYLYZ2B0sdIJO3u_vPD3f8v-Q4S5O7VXJbLY8iQOLq--ogBdSP1BSkzfXSR1h2j1Ei3tfSGN-wxibdo5RnrH5H90CGKrg2KhfTtHqJTLCY=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/17/179527/179527a_hb_ro_013.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/LLyOrNb8nujn_ARtpfn8waJsCbRDUeptaCEaXL2mfV_FMdnd3AULu2GcnVy8wFEwH87DAiDNw2LpQLSR34-RefXFwfS10t8Vx4lkzAvE0vtoHHgqj-Ut2P0Acu4h_SODG5v-AqGG1B0tjDuZfrOhIqp9OgxkoQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/17/179527/179527a_hb_r_004.jpg?20250110133945?20250416203919?20250705133319"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/fj8M-b9jw56ppG9_xIVwstS7hqRkAcapEa_SygKLxXDPOy4XFWmFKNLiyj2Q-laiLHU4qQWfCkYO1p8SgqUYaETdeC56poPAdoWsgw9Zgy6_4RBhlUze4rkYeRNpu8IFDpRYgNR1h7hsDnFKhz4POVCYdXj8cGI=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://i.giatamedia.com/m.php?m=AQABAAAAla4KAMqHDQcFALdezoWfyay4YbU3SJHJETk"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxJyMwVgz7FLztUHh1x5ADk61JMbzjMyve9gPOFgG3IJJQKAYxo1p3EUtifDvMp0bmJa0VRHvuD3JSkNzZ4dJByefpFw7TfFp2wsmYp6KG7P2h5H25UOlQYl9WjcG8myFe3UHjtag=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgICKyuC7twE=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz5FsPUxba-p7F9PKKOWlNuEmTCMnvttGJEmYsIPmWDEstWqgLSc6Zuzu1k1CHA1ym6e1J54cxSJ1jpzgKWveXnT_CGTfBLxLZDDxfc9eycBNAAq8k9BHt5WX_agn7-xf6wq-cwutemzqA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIABIhDgLUTXL9X3MXS9jApuGY8t=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzqJiosYZHhSISM3RzO6JkWxPDhRoAPrWJtDsmJ3CsWfOaDpq4Puz4imLzCmsFQIVtiaBXwvc84WRC7XBpnHhHtFrVIjHeDUwi5PbL7f5MssXyIPa1mAdLVNIaiJefv5uKWUoP5=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgID56triUQ=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz1O0kTbsBR9Wa72hPcSuD3rDsNNQ6GvYx3LSPR1bjQXmvgZJicwQ5bah9b6JW8E8a7n1JrKomxoXMd6OdDyeJgRnTg_lj2rfW6uUxG2AiQ6lbAnrCabaqNiW5khIv6owqq_4fLKg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgICEg8fo_gE=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyyjnEPwH67qL5BnjadP3NuwQ4tvqtaEi7r9Ds1MEj8OICLFMG_5AHdvIn6pwcXJSCVKxZilOYwaXpX0ZKlRkV_6jEgJ3mC-XJZs5hE5pR0vUYGEN6SDPWqwQrnpYD06ivZY_XF=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgICMjM_kZg=s10000"
+        }
+      ],
+      "overall_rating": 4,
+      "reviews": 3492,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 1359
+        },
+        {
+          "stars": 4,
+          "count": 1281
+        },
+        {
+          "stars": 3,
+          "count": 529
+        },
+        {
+          "stars": 2,
+          "count": 178
+        },
+        {
+          "stars": 1,
+          "count": 145
+        }
+      ],
+      "location_rating": 4.3,
+      "reviews_breakdown": [
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 261,
+          "positive": 163,
+          "negative": 65,
+          "neutral": 33
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 518,
+          "positive": 421,
+          "negative": 72,
+          "neutral": 25
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 482,
+          "positive": 372,
+          "negative": 61,
+          "neutral": 49
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 594,
+          "positive": 390,
+          "negative": 120,
+          "neutral": 84
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 474,
+          "positive": 380,
+          "negative": 30,
+          "neutral": 64
+        },
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 266,
+          "positive": 85,
+          "negative": 142,
+          "neutral": 39
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Free Wi-Fi",
+        "Air conditioning",
+        "Pet-friendly",
+        "Restaurant",
+        "Accessible",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "eco_certified": true
+    },
+    {
+      "type": "hotel",
+      "name": "London Marriott Hotel Canary Wharf",
+      "description": "Warm studios & 1- to 2-bedroom apartments in a contemporary hotel with a steakhouse & water views.",
+      "link": "https://www.marriott.com/en-us/hotels/loncw-london-marriott-hotel-canary-wharf/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0",
+      "property_token": "ChcIg669v7HD4IjjARoKL20vMDlrNzMwcBAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChcIg669v7HD4IjjARoKL20vMDlrNzMwcBAB&q=London",
+      "gps_coordinates": {
+        "latitude": 51.5072859,
+        "longitude": -0.0210762
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "12:00\u202fPM",
+      "rate_per_night": {
+        "lowest": "$202",
+        "extracted_lowest": 202,
+        "before_taxes_fees": "$168",
+        "extracted_before_taxes_fees": 168
+      },
+      "total_rate": {
+        "lowest": "$1,414",
+        "extracted_lowest": 1414,
+        "before_taxes_fees": "$1,178",
+        "extracted_before_taxes_fees": 1178
+      },
+      "deal": "21% less than usual",
+      "deal_description": "Deal",
+      "nearby_places": [
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Public transport",
+              "duration": "51 min"
+            },
+            {
+              "type": "Taxi",
+              "duration": "1 hr 18 min"
+            }
+          ]
+        },
+        {
+          "name": "COCO Canary Wharf - Restaurant & Lounge",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "3 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "5-star hotel",
+      "extracted_hotel_class": 5,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNCPl33FqrSPHCCYeoq8ro8N63hJ0M7PenT7aPl=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNCPl33FqrSPHCCYeoq8ro8N63hJ0M7PenT7aPl=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPZq89Fv8ut1eRFrNi-SrGQPrQFcB3TyyPTGank=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPZq89Fv8ut1eRFrNi-SrGQPrQFcB3TyyPTGank=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipM766zwqGp2ZCo9YW9pUK28TFgoVLMZfF4rG4Uz=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipM766zwqGp2ZCo9YW9pUK28TFgoVLMZfF4rG4Uz=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPg2-xFH4gye8T7ek0KjZhlhr9hnyRio53h38uW=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPg2-xFH4gye8T7ek0KjZhlhr9hnyRio53h38uW=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNHfMPzo6V9dxWxD8Bodh2If5WdrcdO6zwf203B=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNHfMPzo6V9dxWxD8Bodh2If5WdrcdO6zwf203B=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPOE2IxuNNJpsmj6C7KThoFWPlRDKKUMO26IoSZ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPOE2IxuNNJpsmj6C7KThoFWPlRDKKUMO26IoSZ=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipND61b4jSsbdcogR-OAcYxkPlHxYNWER3ZcVqW3=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipND61b4jSsbdcogR-OAcYxkPlHxYNWER3ZcVqW3=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNQP-4bEtuNMZ0Pji4b-fSxoGp84kAlLwn_XOJd=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNQP-4bEtuNMZ0Pji4b-fSxoGp84kAlLwn_XOJd=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMXHCj0X8TE6wFbKBovXVJMWsYekorBenoMKgje=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMXHCj0X8TE6wFbKBovXVJMWsYekorBenoMKgje=s10000"
+        }
+      ],
+      "overall_rating": 4.3,
+      "reviews": 1925,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 1167
+        },
+        {
+          "stars": 4,
+          "count": 470
+        },
+        {
+          "stars": 3,
+          "count": 130
+        },
+        {
+          "stars": 2,
+          "count": 59
+        },
+        {
+          "stars": 1,
+          "count": 99
+        }
+      ],
+      "location_rating": 4.5,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 528,
+          "positive": 410,
+          "negative": 90,
+          "neutral": 28
+        },
+        {
+          "name": "Bar",
+          "description": "Bar or lounge",
+          "total_mentioned": 167,
+          "positive": 117,
+          "negative": 32,
+          "neutral": 18
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 460,
+          "positive": 352,
+          "negative": 78,
+          "neutral": 30
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 321,
+          "positive": 273,
+          "negative": 29,
+          "neutral": 19
+        },
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 160,
+          "positive": 119,
+          "negative": 22,
+          "neutral": 19
+        },
+        {
+          "name": "Business",
+          "description": "Business",
+          "total_mentioned": 79,
+          "positive": 52,
+          "negative": 11,
+          "neutral": 16
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Free Wi-Fi",
+        "Air conditioning",
+        "Fitness center",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Kitchen",
+        "Full-service laundry",
+        "Accessible",
+        "Business center",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "eco_certified": true
+    },
+    {
+      "type": "hotel",
+      "name": "Radisson Blu Hotel, London South Kensington",
+      "description": "Polished hotel in converted 1800s townhouses, with a fashionable British restaurant and a 24/7 gym.",
+      "link": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-london-vanderbilt",
+      "property_token": "ChgI7MqnpPmqho61ARoLL2cvMXYyN3R6cXkQAQ",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChgI7MqnpPmqho61ARoLL2cvMXYyN3R6cXkQAQ&q=London",
+      "gps_coordinates": {
+        "latitude": 51.495371399999996,
+        "longitude": -0.18189729999999998
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "12:00\u202fPM",
+      "rate_per_night": {
+        "lowest": "$146",
+        "extracted_lowest": 146,
+        "before_taxes_fees": "$122",
+        "extracted_before_taxes_fees": 122
+      },
+      "total_rate": {
+        "lowest": "$1,023",
+        "extracted_lowest": 1023,
+        "before_taxes_fees": "$852",
+        "extracted_before_taxes_fees": 852
+      },
+      "nearby_places": [
+        {
+          "name": "Natural History Museum",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "6 min"
+            }
+          ]
+        },
+        {
+          "name": "Gloucester Road",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "3 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "38 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "44 min"
+            }
+          ]
+        },
+        {
+          "name": "Baba Ghanouj",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "4 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "4-star hotel",
+      "extracted_hotel_class": 4,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMZZ2gKkL0jyQdu2aa69rViLfbfaf07OkfDc1g=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMZZ2gKkL0jyQdu2aa69rViLfbfaf07OkfDc1g=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/UMulqw5uir98LGGzcFmMhvkBm780X3jGaD7BJADGKRMud0RNPTPLYpIy4F8QoscWA6lDToK16rlFcf83iemQdqWnVJbBgsj6CUzZijHCNtIaJlV9lT73aIX-BVjo8S4ZV_guJwUBQPHqYVxeMAxB97uwRJbhQ6w=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/00/006627/006627a_hb_a_003.jpg?20250107120535?20250620085729"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN7Cxnc-ZgHy51ujX0_zA_2-4u_L6UQZ-Kk1uI=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipN7Cxnc-ZgHy51ujX0_zA_2-4u_L6UQZ-Kk1uI=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipM7qoJc5XiSX_WlQrQkNl6YSDQaChcDjN99fWA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipM7qoJc5XiSX_WlQrQkNl6YSDQaChcDjN99fWA=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/Qodd3V-FX8v8Mx37OBfGfMs2HD9_UX_7fzt8XPugAPUgqtF3wyM7jTMw8YvwNMX4UAwxmzryRNf6JZzl6G5BXavoGEgZCyQnKSrVBbQOBmGR9W1EuDoUlYWY20hUAipsAiqX9Mt12WPmmoG49GHt8_HeJAYLt28=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://www.iceportal.com/data/2813-116493-f63021013_XXLejpg/United-Kingdom-of-Great-Britain-and-Northern-Ireland/London-City-of/London/Radisson-Blu-Hotel-London-South-Kensington/Photo/Radisson-Blu-Hotel-London-South-Kensington-London-Undefined-Superior-Individual-Room.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipO7NIDkvxODaPsx3TkI6H9hF5HHADp_CEubYxs=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipO7NIDkvxODaPsx3TkI6H9hF5HHADp_CEubYxs=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPmZ380q9Q3ao84xQ1wvG33OSi0JKxeQCGwwPY=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPmZ380q9Q3ao84xQ1wvG33OSi0JKxeQCGwwPY=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/7YXYP_1dpAnhHFz5eocyVixR0b0tNCHcXvQN2PSjLaokK3Xeae5vAuxZkS8rK8DLcisJLtHBgRm5Gfht-lF1UhbW9Ohmo8lKkWF9YmVJXGq-dzyyX6iR3ArcN0kU3foEEaeu34BhudXr6fOZvdxBrwsJsh_HGA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://www.iceportal.com/data/2813-116493-f84965174_XXLejpg/United-Kingdom-of-Great-Britain-and-Northern-Ireland/London-City-of/London/Radisson-Blu-Hotel-London-South-Kensington/Photo/Radisson-Blu-Hotel-London-South-Kensington-London-Undefined-Scoff-and-Banter-Tiramisu.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMKkNZv83VMZ3Z0HJya4il8_5tCQhWuXtllzK4=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMKkNZv83VMZ3Z0HJya4il8_5tCQhWuXtllzK4=s10000"
+        }
+      ],
+      "overall_rating": 4,
+      "reviews": 1508,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 662
+        },
+        {
+          "stars": 4,
+          "count": 436
+        },
+        {
+          "stars": 3,
+          "count": 214
+        },
+        {
+          "stars": 2,
+          "count": 67
+        },
+        {
+          "stars": 1,
+          "count": 129
+        }
+      ],
+      "location_rating": 4.6,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 411,
+          "positive": 319,
+          "negative": 74,
+          "neutral": 18
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 444,
+          "positive": 245,
+          "negative": 145,
+          "neutral": 54
+        },
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 193,
+          "positive": 150,
+          "negative": 26,
+          "neutral": 17
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 302,
+          "positive": 258,
+          "negative": 21,
+          "neutral": 23
+        },
+        {
+          "name": "Bathroom",
+          "description": "Bathroom and toiletries",
+          "total_mentioned": 125,
+          "positive": 36,
+          "negative": 76,
+          "neutral": 13
+        },
+        {
+          "name": "Restaurant",
+          "description": "Restaurant",
+          "total_mentioned": 104,
+          "positive": 83,
+          "negative": 10,
+          "neutral": 11
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Free Wi-Fi",
+        "Air conditioning",
+        "Fitness center",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Full-service laundry",
+        "Business center",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "eco_certified": true
+    },
+    {
+      "type": "hotel",
+      "name": "Wilde Aparthotels, London, Paddington",
+      "description": "Genteel accommodations in an upscale apartment hotel featuring a stylish bar & an exercise room.",
+      "link": "https://www.wilde.com/london/paddington/?utm_source=google&utm_medium=Organic&utm_campaign=googlemybusiness_london_paddington",
+      "property_token": "ChkI_ObR3_3c_f0aGg0vZy8xMXJ5MnhjMHJoEAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChkI_ObR3_3c_f0aGg0vZy8xMXJ5MnhjMHJoEAE&q=London",
+      "gps_coordinates": {
+        "latitude": 51.519586,
+        "longitude": -0.1733297
+      },
+      "check_in_time": "3:00\u202fPM",
+      "check_out_time": "11:00\u202fAM",
+      "rate_per_night": {
+        "lowest": "$176",
+        "extracted_lowest": 176,
+        "before_taxes_fees": "$147",
+        "extracted_before_taxes_fees": 147
+      },
+      "total_rate": {
+        "lowest": "$1,232",
+        "extracted_lowest": 1232,
+        "before_taxes_fees": "$1,027",
+        "extracted_before_taxes_fees": 1027
+      },
+      "nearby_places": [
+        {
+          "name": "Kensington Palace",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "9 min"
+            }
+          ]
+        },
+        {
+          "name": "Edgware Road",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "5 min"
+            }
+          ]
+        },
+        {
+          "name": "Heathrow Airport",
+          "transportations": [
+            {
+              "type": "Public transport",
+              "duration": "36 min"
+            },
+            {
+              "type": "Taxi",
+              "duration": "43 min"
+            }
+          ]
+        },
+        {
+          "name": "Fantasia Grill House",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "4 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "4-star hotel",
+      "extracted_hotel_class": 4,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOXFD4AieZt5OZrbd5AdRMn7tlSf-_LtmxtrrNA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOXFD4AieZt5OZrbd5AdRMn7tlSf-_LtmxtrrNA=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipO_-5tMknvNJMC6qYfNGjBy038eNRTb5ttIIqUQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipO_-5tMknvNJMC6qYfNGjBy038eNRTb5ttIIqUQ=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipONPzK0RbRgZ2EMkYPMRER8brWw_FDLKNtW22f7=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipONPzK0RbRgZ2EMkYPMRER8brWw_FDLKNtW22f7=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipP2498Q5RK-uksr_ehCB5iMaFnd661S9S6tdkwM=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipP2498Q5RK-uksr_ehCB5iMaFnd661S9S6tdkwM=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMCew7EpbPEB3vrVTdzQ7Hlim-6aq_jovUQj2j6=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMCew7EpbPEB3vrVTdzQ7Hlim-6aq_jovUQj2j6=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/YOOut2hX2pqypoZQ0AgsuaIrVFNOFpZThCH_IAHtpMdpJaeBNgLv3-BKEgp9i25KDbhS1V-13fEkZJde2jkatQSwyXgG58dWP2P9Qu_jO6BPBlPs1xcPY7eAclvn9zLTev33O3w2XjxTOyQ5UOVIJcm1ZRzEo1g=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/7/0/141/148/248/One_Bedroom_Apartment_O.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMOljueSEXlrgr9ne-JbHoMNsvFLD4jym6Qp1pQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipMOljueSEXlrgr9ne-JbHoMNsvFLD4jym6Qp1pQ=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipOvH0Ldg2ZIGoWaInUVXQ3IYdq-H9FxpthC9RGN=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOvH0Ldg2ZIGoWaInUVXQ3IYdq-H9FxpthC9RGN=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPy_9l8eZERRE4RUby14IweDucYXD48m4onl-8E=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipPy_9l8eZERRE4RUby14IweDucYXD48m4onl-8E=s10000"
+        }
+      ],
+      "overall_rating": 4.8,
+      "reviews": 3313,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 2965
+        },
+        {
+          "stars": 4,
+          "count": 225
+        },
+        {
+          "stars": 3,
+          "count": 43
+        },
+        {
+          "stars": 2,
+          "count": 24
+        },
+        {
+          "stars": 1,
+          "count": 56
+        }
+      ],
+      "location_rating": 4.3,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 1553,
+          "positive": 1489,
+          "negative": 43,
+          "neutral": 21
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 975,
+          "positive": 903,
+          "negative": 46,
+          "neutral": 26
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 694,
+          "positive": 652,
+          "negative": 12,
+          "neutral": 30
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 437,
+          "positive": 397,
+          "negative": 29,
+          "neutral": 11
+        },
+        {
+          "name": "Atmosphere",
+          "description": "Atmosphere",
+          "total_mentioned": 293,
+          "positive": 292,
+          "negative": 1,
+          "neutral": 0
+        },
+        {
+          "name": "Kitchen",
+          "description": "Kitchen",
+          "total_mentioned": 141,
+          "positive": 117,
+          "negative": 13,
+          "neutral": 11
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Free Wi-Fi",
+        "Parking",
+        "Air conditioning",
+        "Pet-friendly",
+        "Fitness center",
+        "Bar",
+        "Restaurant",
+        "Accessible",
+        "Smoke-free property"
+      ]
+    }
+  ],
+  "brands": [
+    {
+      "id": 33,
+      "name": "Accor Live Limitless",
+      "children": [
+        {
+          "id": 15,
+          "name": "Adagio"
+        },
+        {
+          "id": 8,
+          "name": "Fairmont Hotels and Resorts"
+        },
+        {
+          "id": 451,
+          "name": "Hyde"
+        },
+        {
+          "id": 21,
+          "name": "Ibis"
+        },
+        {
+          "id": 13,
+          "name": "Ibis Budget"
+        },
+        {
+          "id": 103,
+          "name": "Ibis Styles"
+        },
+        {
+          "id": 94,
+          "name": "Mama Shelter"
+        },
+        {
+          "id": 91,
+          "name": "Mercure"
+        },
+        {
+          "id": 47,
+          "name": "Novotel"
+        },
+        {
+          "id": 90,
+          "name": "Pullman Hotels and Resorts"
+        },
+        {
+          "id": 268,
+          "name": "Raffles"
+        },
+        {
+          "id": 84,
+          "name": "Sofitel"
+        },
+        {
+          "id": 374,
+          "name": "Tribe"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Best Western International",
+      "children": [
+        {
+          "id": 155,
+          "name": "Best Western"
+        },
+        {
+          "id": 104,
+          "name": "Best Western Plus"
+        },
+        {
+          "id": 109,
+          "name": "SureStay Collection"
+        }
+      ]
+    },
+    {
+      "id": 258,
+      "name": "Bvlgari"
+    },
+    {
+      "id": 20,
+      "name": "Choice Hotels",
+      "children": [
+        {
+          "id": 27,
+          "name": "Comfort"
+        },
+        {
+          "id": 82,
+          "name": "Quality Inn"
+        }
+      ]
+    },
+    {
+      "id": 466,
+      "name": "Fattal Hotel Group",
+      "children": [
+        {
+          "id": 354,
+          "name": "Leonardo Hotels"
+        },
+        {
+          "id": 467,
+          "name": "NYX hotels"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "Four Seasons"
+    },
+    {
+      "id": 313,
+      "name": "H10 Hotels Group",
+      "children": [
+        {
+          "id": 336,
+          "name": "H10 Hotels"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Hilton Honors",
+      "children": [
+        {
+          "id": 114,
+          "name": "Canopy"
+        },
+        {
+          "id": 7,
+          "name": "Conrad"
+        },
+        {
+          "id": 151,
+          "name": "Curio Collection"
+        },
+        {
+          "id": 81,
+          "name": "DoubleTree by Hilton"
+        },
+        {
+          "id": 115,
+          "name": "Hampton by Hilton"
+        },
+        {
+          "id": 54,
+          "name": "Hilton Hotels & Resorts"
+        },
+        {
+          "id": 41,
+          "name": "Waldorf Astoria"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Hyatt",
+      "children": [
+        {
+          "id": 116,
+          "name": "Andaz"
+        },
+        {
+          "id": 120,
+          "name": "Hyatt House"
+        },
+        {
+          "id": 121,
+          "name": "Hyatt Place"
+        },
+        {
+          "id": 122,
+          "name": "Hyatt Regency"
+        },
+        {
+          "id": 118,
+          "name": "Park Hyatt"
+        },
+        {
+          "id": 262,
+          "name": "Unbound Collection"
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "name": "IHCL",
+      "children": [
+        {
+          "id": 203,
+          "name": "Taj Hotels"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "IHG Hotels & Resorts",
+      "children": [
+        {
+          "id": 42,
+          "name": "Crowne Plaza"
+        },
+        {
+          "id": 64,
+          "name": "Holiday Inn"
+        },
+        {
+          "id": 56,
+          "name": "Holiday Inn Express"
+        },
+        {
+          "id": 87,
+          "name": "Hotel Indigo"
+        },
+        {
+          "id": 2,
+          "name": "InterContinental Hotels & Resorts"
+        },
+        {
+          "id": 127,
+          "name": "Kimpton Hotels & Restaurants"
+        },
+        {
+          "id": 297,
+          "name": "Regent"
+        },
+        {
+          "id": 389,
+          "name": "Six Senses"
+        },
+        {
+          "id": 43,
+          "name": "Staybridge Suites"
+        },
+        {
+          "id": 298,
+          "name": "Voco"
+        }
+      ]
+    },
+    {
+      "id": 332,
+      "name": "Jumeirah Hotels and Resorts"
+    },
+    {
+      "id": 46,
+      "name": "Marriott Bonvoy",
+      "children": [
+        {
+          "id": 60,
+          "name": "Aloft Hotels"
+        },
+        {
+          "id": 59,
+          "name": "Autograph Collection"
+        },
+        {
+          "id": 86,
+          "name": "Courtyard by Marriott"
+        },
+        {
+          "id": 287,
+          "name": "Design Hotels"
+        },
+        {
+          "id": 256,
+          "name": "Edition"
+        },
+        {
+          "id": 415,
+          "name": "Four Points Flex by Sheraton"
+        },
+        {
+          "id": 26,
+          "name": "JW Marriott Hotels"
+        },
+        {
+          "id": 257,
+          "name": "Marriott Executive Apartments"
+        },
+        {
+          "id": 61,
+          "name": "Marriott Hotels & Resorts"
+        },
+        {
+          "id": 129,
+          "name": "Moxy"
+        },
+        {
+          "id": 75,
+          "name": "Residence Inn by Marriott"
+        },
+        {
+          "id": 12,
+          "name": "Sheraton Hotels and Resorts"
+        },
+        {
+          "id": 143,
+          "name": "The Luxury Collection"
+        },
+        {
+          "id": 137,
+          "name": "W Hotels"
+        },
+        {
+          "id": 39,
+          "name": "Westin Hotels & Resorts"
+        }
+      ]
+    },
+    {
+      "id": 174,
+      "name": "Melia Hotels International",
+      "children": [
+        {
+          "id": 176,
+          "name": "ME by Melia"
+        },
+        {
+          "id": 178,
+          "name": "Melia Hotels & Resorts"
+        }
+      ]
+    },
+    {
+      "id": 167,
+      "name": "Motel One"
+    },
+    {
+      "id": 169,
+      "name": "NH Hotel Group",
+      "children": [
+        {
+          "id": 172,
+          "name": "NHow Hotels"
+        }
+      ]
+    },
+    {
+      "id": 353,
+      "name": "OYO",
+      "children": [
+        {
+          "id": 99,
+          "name": "OYO Rooms"
+        },
+        {
+          "id": 350,
+          "name": "OYO Townhouse"
+        }
+      ]
+    },
+    {
+      "id": 445,
+      "name": "Premier Inn Hotels",
+      "children": [
+        {
+          "id": 266,
+          "name": "Hub by Premier Inn"
+        },
+        {
+          "id": 70,
+          "name": "Premier Inn"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "name": "Radisson Hotel Group",
+      "children": [
+        {
+          "id": 45,
+          "name": "Park Plaza"
+        },
+        {
+          "id": 76,
+          "name": "Radisson"
+        },
+        {
+          "id": 79,
+          "name": "Radisson Blu"
+        },
+        {
+          "id": 264,
+          "name": "Radisson Collection"
+        },
+        {
+          "id": 133,
+          "name": "Radisson Red"
+        }
+      ]
+    },
+    {
+      "id": 163,
+      "name": "RIU Hotels & Resorts",
+      "children": [
+        {
+          "id": 164,
+          "name": "Plaza by RIU"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Travelodge UK"
+    },
+    {
+      "id": 53,
+      "name": "Wyndham Hotels & Resorts",
+      "children": [
+        {
+          "id": 19,
+          "name": "Days Inn"
+        },
+        {
+          "id": 16,
+          "name": "Travelodge"
+        },
+        {
+          "id": 150,
+          "name": "Wyndham"
+        }
+      ]
+    }
+  ],
+  "serpapi_pagination": {
+    "current_from": 1,
+    "current_to": 20,
+    "next_page_token": "CBI=",
+    "next": "https://serpapi.com/search.json?adults=1&check_in_date=2026-01-05&check_out_date=2026-01-12&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&next_page_token=CBI%3D&q=London"
+  }
+}

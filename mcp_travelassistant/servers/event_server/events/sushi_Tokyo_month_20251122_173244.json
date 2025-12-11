@@ -1,0 +1,280 @@
+{
+  "search_metadata": {
+    "search_id": "sushi_Tokyo_month_20251122_173244",
+    "query": "sushi",
+    "location": "Tokyo",
+    "date_filter": "month",
+    "event_type": null,
+    "language": "en",
+    "country": "jp",
+    "search_timestamp": "2025-11-22T17:32:44.488945",
+    "total_results": 7
+  },
+  "search_parameters": {
+    "q": "sushi in Tokyo",
+    "engine": "google_events",
+    "htichips": "date:month",
+    "hl": "en",
+    "gl": "jp"
+  },
+  "search_information": {
+    "events_results_state": "Results for exact spelling"
+  },
+  "events_results": [
+    {
+      "title": "Sushi Making Workshop with Local HAMA-WINE: An Intimate Yokohama Wine and Cuisine Experience",
+      "date": {
+        "start_date": "Nov 24",
+        "when": "Mon, Nov 24"
+      },
+      "address": [
+        "Motomachi-Chukagai Station",
+        ""
+      ],
+      "link": "https://www.peek.com/yokohama-kanagawa-japan/r09g8aw/sushi-making-workshop-with-local-hama-wine-an-intimate-yokohama-wine-and-cuisine-experience/a0kkrae",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=rX-qqvn7XJSLbfjG9zlm-jDspF9uhggHdoLUZ5NUdvxIIYzoE6wPq_AuQxFylYixiCsgTDTdBEY1U8awLKRyG9ObUONaJz8bAFGIW2JWP_Iov08-MV4",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x60185d1df91d7985:0x963c87a4ddfa7260?sa=X&ved=2ahUKEwiG2Y7Wl4aRAxU2M0QIHaYQFwQQ9eIBegQIAxAA&hl=en&gl=jp",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x60185d1df91d7985%3A0x963c87a4ddfa7260&engine=google_maps&gl=jp&google_domain=google.com&hl=en&q=sushi+in+Tokyo&type=place"
+      },
+      "description": "Join us for a unique and intimate sushi making workshop with local HAMA-WINE in Yokohama. Learn the art of sushi making while enjoying the taste of exquisite Yokohama wine.",
+      "ticket_info": [
+        {
+          "source": "Peek",
+          "link": "https://www.peek.com/yokohama-kanagawa-japan/r09g8aw/sushi-making-workshop-with-local-hama-wine-an-intimate-yokohama-wine-and-cuisine-experience/a0kkrae",
+          "link_type": "more info"
+        }
+      ],
+      "venue": {
+        "name": "Motomachi-Chukagai Station",
+        "rating": 4.0,
+        "reviews": 667,
+        "link": "https://www.google.com/search?sca_esv=326a9b3488e82af6&hl=en&gl=jp&q=Motomachi-Chukagai+Station&ludocid=10825676746460394080&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8i9C-97At2Z-Jt2aZnIu325oM5DpaafLJPpKtPvH2ceF4FPdvclQ0uUQ&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQmmKv3gH0noimd6-k0jpsmLZbtBSyzPIbBQepq1M94Q&s=10"
+    },
+    {
+      "title": "\u30cf\u30c3\u30d4\u30fc\u30c9\u30ea\u30fc\u30e0\u30b5\u30fc\u30ab\u30b9\u5e55\u5f35\u516c\u6f14 \uff11\uff11\u6708",
+      "date": {
+        "start_date": "Nov 23",
+        "when": "Sun, Nov 23, 10:00 \u2013 13:00"
+      },
+      "address": [
+        "AEON MALL Makuhari New City, \u4ed6 1-1 Toyosuna, Mihama Ward",
+        "Chiba"
+      ],
+      "link": "https://www.stubhub.com/E-159528175?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528175%7Ccy-1462&ps_ev=159528175",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=lBgvddNxNqAYFG9xY4uOcG0cxnepG__e6WYR10rHb4K6xjNjbnpHcCuNukjVENnOseSMOk3uR9iHRVo7QX7iSdudxbiDCr7OSEUA8L1V5xEPNhvGCUU",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x602281e5c84065dd:0x2ee1c25a0aea6f3e?sa=X&ved=2ahUKEwiG2Y7Wl4aRAxU2M0QIHaYQFwQQ9eIBegQICxAA&hl=en&gl=jp",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x602281e5c84065dd%3A0x2ee1c25a0aea6f3e&engine=google_maps&gl=jp&google_domain=google.com&hl=en&q=sushi+in+Tokyo&type=place"
+      },
+      "ticket_info": [
+        {
+          "source": "Stubhub.com",
+          "link": "https://www.stubhub.com/_C-150577495?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528175%7Ccy-1462&ps_ev=159528175",
+          "link_type": "tickets"
+        },
+        {
+          "source": "Viagogo.com",
+          "link": "https://www.viagogo.com/_C-150577495?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528175%7Ccy-1462&ps_ev=159528175",
+          "link_type": "tickets"
+        }
+      ],
+      "venue": {
+        "name": "AEON MALL Makuhari New City",
+        "rating": 4.0,
+        "reviews": 17859,
+        "link": "https://www.google.com/search?sca_esv=326a9b3488e82af6&hl=en&gl=jp&q=AEON+MALL+Makuhari+New+City&ludocid=3378194887490563902&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMu3OgBNm-6aX36ZkVH5WzMZwuQ1jZyrPKutXp-mhajVOM6Ons2oir1g&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6BF9AgZBAj4O0FE2vfzLL46iaXXwZ-R8lHMEHSUeCg&s=10"
+    },
+    {
+      "title": "\u30cf\u30c3\u30d4\u30fc\u30c9\u30ea\u30fc\u30e0\u30b5\u30fc\u30ab\u30b9\u5e55\u5f35\u516c\u6f14 \uff11\uff11\u6708",
+      "date": {
+        "start_date": "Nov 28",
+        "when": "Fri, Nov 28, 11:00 \u2013 14:00"
+      },
+      "address": [
+        "AEON MALL Makuhari New City, \u4ed6 1-1 Toyosuna, Mihama Ward",
+        "Chiba"
+      ],
+      "link": "https://www.stubhub.com/E-159528192?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528192%7Ccy-1462&ps_ev=159528192",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=lBgvddNxNqAYFG9xY4uOcG0cxnepG__e6WYR10rHb4K6xjNjbnpHcCuNukjVENnOseSMOk3uR9iHRVo7QX7iSdudxbiDCr7OSEUA8L1V5xEPNhvGCUU",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x602281e5c84065dd:0x2ee1c25a0aea6f3e?sa=X&ved=2ahUKEwiG2Y7Wl4aRAxU2M0QIHaYQFwQQ9eIBegQIExAA&hl=en&gl=jp",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x602281e5c84065dd%3A0x2ee1c25a0aea6f3e&engine=google_maps&gl=jp&google_domain=google.com&hl=en&q=sushi+in+Tokyo&type=place"
+      },
+      "ticket_info": [
+        {
+          "source": "Stubhub.com",
+          "link": "https://www.stubhub.com/_C-150577495?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528192%7Ccy-1462&ps_ev=159528192",
+          "link_type": "tickets"
+        },
+        {
+          "source": "Viagogo.com",
+          "link": "https://www.viagogo.com/_C-150577495?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528192%7Ccy-1462&ps_ev=159528192",
+          "link_type": "tickets"
+        }
+      ],
+      "venue": {
+        "name": "AEON MALL Makuhari New City",
+        "rating": 4.0,
+        "reviews": 17859,
+        "link": "https://www.google.com/search?sca_esv=326a9b3488e82af6&hl=en&gl=jp&q=AEON+MALL+Makuhari+New+City&ludocid=3378194887490563902&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMu3OgBNm-6aX36ZkVH5WzMZwuQ1jZyrPKutXp-mhajVOM6Ons2oir1g&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6BF9AgZBAj4O0FE2vfzLL46iaXXwZ-R8lHMEHSUeCg&s=10"
+    },
+    {
+      "title": "\u30cf\u30c3\u30d4\u30fc\u30c9\u30ea\u30fc\u30e0\u30b5\u30fc\u30ab\u30b9\u5e55\u5f35\u516c\u6f14 \uff11\uff11\u6708",
+      "date": {
+        "start_date": "Nov 27",
+        "when": "Thu, Nov 27, 11:00 \u2013 14:00"
+      },
+      "address": [
+        "AEON MALL Makuhari New City, \u4ed6 1-1 Toyosuna, Mihama Ward",
+        "Chiba"
+      ],
+      "link": "https://www.stubhub.com/E-159528195?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528195%7Ccy-1462&ps_ev=159528195",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=lBgvddNxNqAYFG9xY4uOcG0cxnepG__e6WYR10rHb4K6xjNjbnpHcCuNukjVENnOseSMOk3uR9iHRVo7QX7iSdudxbiDCr7OSEUA8L1V5xEPNhvGCUU",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x602281e5c84065dd:0x2ee1c25a0aea6f3e?sa=X&ved=2ahUKEwiG2Y7Wl4aRAxU2M0QIHaYQFwQQ9eIBegQIGxAA&hl=en&gl=jp",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x602281e5c84065dd%3A0x2ee1c25a0aea6f3e&engine=google_maps&gl=jp&google_domain=google.com&hl=en&q=sushi+in+Tokyo&type=place"
+      },
+      "ticket_info": [
+        {
+          "source": "Stubhub.com",
+          "link": "https://www.stubhub.com/_C-150577495?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528195%7Ccy-1462&ps_ev=159528195",
+          "link_type": "tickets"
+        },
+        {
+          "source": "Viagogo.com",
+          "link": "https://www.viagogo.com/_C-150577495?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528195%7Ccy-1462&ps_ev=159528195",
+          "link_type": "tickets"
+        }
+      ],
+      "venue": {
+        "name": "AEON MALL Makuhari New City",
+        "rating": 4.0,
+        "reviews": 17859,
+        "link": "https://www.google.com/search?sca_esv=326a9b3488e82af6&hl=en&gl=jp&q=AEON+MALL+Makuhari+New+City&ludocid=3378194887490563902&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMu3OgBNm-6aX36ZkVH5WzMZwuQ1jZyrPKutXp-mhajVOM6Ons2oir1g&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6BF9AgZBAj4O0FE2vfzLL46iaXXwZ-R8lHMEHSUeCg&s=10"
+    },
+    {
+      "title": "\u30cf\u30c3\u30d4\u30fc\u30c9\u30ea\u30fc\u30e0\u30b5\u30fc\u30ab\u30b9\u5e55\u5f35\u516c\u6f14 \uff11\uff11\u6708",
+      "date": {
+        "start_date": "Nov 30",
+        "when": "Sun, Nov 30, 10:00 \u2013 13:00"
+      },
+      "address": [
+        "AEON MALL Makuhari New City, \u4ed6 1-1 Toyosuna, Mihama Ward",
+        "Chiba"
+      ],
+      "link": "https://www.stubhub.com/E-159528194?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528194%7Ccy-1462&ps_ev=159528194",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=lBgvddNxNqAYFG9xY4uOcG0cxnepG__e6WYR10rHb4K6xjNjbnpHcCuNukjVENnOseSMOk3uR9iHRVo7QX7iSdudxbiDCr7OSEUA8L1V5xEPNhvGCUU",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x602281e5c84065dd:0x2ee1c25a0aea6f3e?sa=X&ved=2ahUKEwiG2Y7Wl4aRAxU2M0QIHaYQFwQQ9eIBegQIIxAA&hl=en&gl=jp",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x602281e5c84065dd%3A0x2ee1c25a0aea6f3e&engine=google_maps&gl=jp&google_domain=google.com&hl=en&q=sushi+in+Tokyo&type=place"
+      },
+      "ticket_info": [
+        {
+          "source": "Stubhub.com",
+          "link": "https://www.stubhub.com/_C-150577495?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528194%7Ccy-1462&ps_ev=159528194",
+          "link_type": "tickets"
+        },
+        {
+          "source": "Viagogo.com",
+          "link": "https://www.viagogo.com/_C-150577495?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528194%7Ccy-1462&ps_ev=159528194",
+          "link_type": "tickets"
+        }
+      ],
+      "venue": {
+        "name": "AEON MALL Makuhari New City",
+        "rating": 4.0,
+        "reviews": 17859,
+        "link": "https://www.google.com/search?sca_esv=326a9b3488e82af6&hl=en&gl=jp&q=AEON+MALL+Makuhari+New+City&ludocid=3378194887490563902&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMu3OgBNm-6aX36ZkVH5WzMZwuQ1jZyrPKutXp-mhajVOM6Ons2oir1g&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6BF9AgZBAj4O0FE2vfzLL46iaXXwZ-R8lHMEHSUeCg&s=10"
+    },
+    {
+      "title": "\u30cf\u30c3\u30d4\u30fc\u30c9\u30ea\u30fc\u30e0\u30b5\u30fc\u30ab\u30b9\u5e55\u5f35\u516c\u6f14 \uff11\uff11\u6708",
+      "date": {
+        "start_date": "Nov 25",
+        "when": "Tue, Nov 25, 11:00 \u2013 14:00"
+      },
+      "address": [
+        "AEON MALL Makuhari New City, \u4ed6 1-1 Toyosuna, Mihama Ward",
+        "Chiba"
+      ],
+      "link": "https://www.stubhub.com/E-159528187?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528187%7Ccy-1462&ps_ev=159528187",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=lBgvddNxNqAYFG9xY4uOcG0cxnepG__e6WYR10rHb4K6xjNjbnpHcCuNukjVENnOseSMOk3uR9iHRVo7QX7iSdudxbiDCr7OSEUA8L1V5xEPNhvGCUU",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x602281e5c84065dd:0x2ee1c25a0aea6f3e?sa=X&ved=2ahUKEwiG2Y7Wl4aRAxU2M0QIHaYQFwQQ9eIBegQIKxAA&hl=en&gl=jp",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x602281e5c84065dd%3A0x2ee1c25a0aea6f3e&engine=google_maps&gl=jp&google_domain=google.com&hl=en&q=sushi+in+Tokyo&type=place"
+      },
+      "ticket_info": [
+        {
+          "source": "Stubhub.com",
+          "link": "https://www.stubhub.com/_C-150577495?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528187%7Ccy-1462&ps_ev=159528187",
+          "link_type": "tickets"
+        },
+        {
+          "source": "Viagogo.com",
+          "link": "https://www.viagogo.com/_C-150577495?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528187%7Ccy-1462&ps_ev=159528187",
+          "link_type": "tickets"
+        }
+      ],
+      "venue": {
+        "name": "AEON MALL Makuhari New City",
+        "rating": 4.0,
+        "reviews": 17859,
+        "link": "https://www.google.com/search?sca_esv=326a9b3488e82af6&hl=en&gl=jp&q=AEON+MALL+Makuhari+New+City&ludocid=3378194887490563902&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMu3OgBNm-6aX36ZkVH5WzMZwuQ1jZyrPKutXp-mhajVOM6Ons2oir1g&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6BF9AgZBAj4O0FE2vfzLL46iaXXwZ-R8lHMEHSUeCg&s=10"
+    },
+    {
+      "title": "\u30cf\u30c3\u30d4\u30fc\u30c9\u30ea\u30fc\u30e0\u30b5\u30fc\u30ab\u30b9\u5e55\u5f35\u516c\u6f14 \uff11\uff11\u6708",
+      "date": {
+        "start_date": "Nov 24",
+        "when": "Mon, Nov 24, 10:00 \u2013 13:00"
+      },
+      "address": [
+        "AEON MALL Makuhari New City, \u4ed6 1-1 Toyosuna, Mihama Ward",
+        "Chiba"
+      ],
+      "link": "https://www.stubhub.com/E-159528186?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528186%7Ccy-1462&ps_ev=159528186",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=lBgvddNxNqAYFG9xY4uOcG0cxnepG__e6WYR10rHb4K6xjNjbnpHcCuNukjVENnOseSMOk3uR9iHRVo7QX7iSdudxbiDCr7OSEUA8L1V5xEPNhvGCUU",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x602281e5c84065dd:0x2ee1c25a0aea6f3e?sa=X&ved=2ahUKEwiG2Y7Wl4aRAxU2M0QIHaYQFwQQ9eIBegQIMxAA&hl=en&gl=jp",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x602281e5c84065dd%3A0x2ee1c25a0aea6f3e&engine=google_maps&gl=jp&google_domain=google.com&hl=en&q=sushi+in+Tokyo&type=place"
+      },
+      "ticket_info": [
+        {
+          "source": "Stubhub.com",
+          "link": "https://www.stubhub.com/_C-150577495?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528186%7Ccy-1462&ps_ev=159528186",
+          "link_type": "tickets"
+        },
+        {
+          "source": "Viagogo.com",
+          "link": "https://www.viagogo.com/_C-150577495?pcid=PSUSAEVECONALLEF426C5CF9E&ps_p=8&ps_placement=eventfeed&ps=vn-150063729%7Cev-159528186%7Ccy-1462&ps_ev=159528186",
+          "link_type": "tickets"
+        }
+      ],
+      "venue": {
+        "name": "AEON MALL Makuhari New City",
+        "rating": 4.0,
+        "reviews": 17859,
+        "link": "https://www.google.com/search?sca_esv=326a9b3488e82af6&hl=en&gl=jp&q=AEON+MALL+Makuhari+New+City&ludocid=3378194887490563902&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMu3OgBNm-6aX36ZkVH5WzMZwuQ1jZyrPKutXp-mhajVOM6Ons2oir1g&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6BF9AgZBAj4O0FE2vfzLL46iaXXwZ-R8lHMEHSUeCg&s=10"
+    }
+  ]
+}

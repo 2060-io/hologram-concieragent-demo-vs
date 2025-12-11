@@ -1,0 +1,92 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# Manual Deployment Workflow
+# Allows manual deployment to specific environments
+# ═══════════════════════════════════════════════════════════════════════════
+
+name: Manual Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        required: true
+        default: 'development'
+        type: choice
+        options:
+          - development
+          - production
+      version:
+        description: 'Image version to deploy (e.g., v1.0.0 or latest)'
+        required: true
+        default: 'latest'
+      dry_run:
+        description: 'Dry run (template only, no deploy)'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  deploy:
+    name: Deploy to ${{ inputs.environment }}
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Kubernetes
+        uses: 2060-io/devops/actions/setup-kube@main
+        with:
+          kubeconfig: ${{ secrets.KUBECONFIG }}
+
+      - name: Setup Helm
+        uses: azure/setup-helm@v3
+        with:
+          version: 'v3.14.0'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Display Deployment Config
+        run: |
+          echo "🎯 Deployment Configuration"
+          echo "   Environment: ${{ inputs.environment }}"
+          echo "   Version: ${{ inputs.version }}"
+          echo "   Dry Run: ${{ inputs.dry_run }}"
+          echo "   Domain: ${{ vars.DOMAIN }}"
+
+      - name: Helm Template (Dry Run)
+        if: inputs.dry_run == 'true'
+        run: |
+          helm template concieragent ./charts \
+            --namespace demos \
+            --set global.domain=${{ vars.DOMAIN }} \
+            --set image.tag=${{ inputs.version }} \
+            --set existingSecret=concieragent-api-keys \
+            --debug
+
+      - name: Deploy with Helm
+        if: inputs.dry_run != 'true'
+        run: |
+          REPLICAS=${{ inputs.environment == 'production' && '2' || '1' }}
+          
+          helm upgrade --install concieragent ./charts \
+            --namespace demos \
+            --create-namespace \
+            --set global.domain=${{ vars.DOMAIN }} \
+            --set image.tag=${{ inputs.version }} \
+            --set replicas=$REPLICAS \
+            --set existingSecret=concieragent-api-keys \
+            --wait \
+            --timeout 10m
+
+      - name: Verify Deployment
+        if: inputs.dry_run != 'true'
+        run: |
+          kubectl get pods -n demos -l app=concieragent
+          kubectl get ingress -n demos | grep concieragent || true
+          
+          echo ""
+          echo "📱 Invitation URL: https://concieragent.${{ vars.DOMAIN }}/invitation"
+          echo "🔗 Health Check: https://concieragent.${{ vars.DOMAIN }}/health"

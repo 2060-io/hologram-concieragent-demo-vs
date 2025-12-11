@@ -1,0 +1,43 @@
+{
+  "success": true,
+  "query": "Bordeaux, France",
+  "multiple_results": false,
+  "location_data": {
+    "latitude": 44.841225,
+    "longitude": -0.5800364,
+    "display_name": "Bordeaux, Gironde, Nouvelle-Aquitaine, Metropolitan France, France",
+    "raw_data": {
+      "place_id": 397819803,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 105270,
+      "lat": "44.8412250",
+      "lon": "-0.5800364",
+      "class": "boundary",
+      "type": "administrative",
+      "place_rank": 16,
+      "importance": 0.7196150314349161,
+      "addresstype": "city",
+      "name": "Bordeaux",
+      "display_name": "Bordeaux, Gironde, Nouvelle-Aquitaine, Metropolitan France, France",
+      "address": {
+        "city": "Bordeaux",
+        "municipality": "Bordeaux",
+        "county": "Gironde",
+        "ISO3166-2-lvl6": "FR-33",
+        "state": "Nouvelle-Aquitaine",
+        "ISO3166-2-lvl4": "FR-NAQ",
+        "region": "Metropolitan France",
+        "country": "France",
+        "country_code": "fr"
+      },
+      "boundingbox": [
+        "44.8107826",
+        "44.9161806",
+        "-0.6386987",
+        "-0.5336838"
+      ]
+    }
+  },
+  "timestamp": "2025-11-22T17:19:29.046407"
+}

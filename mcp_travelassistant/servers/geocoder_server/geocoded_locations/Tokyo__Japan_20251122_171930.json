@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "query": "Tokyo, Japan",
+  "multiple_results": false,
+  "location_data": {
+    "latitude": 35.6768601,
+    "longitude": 139.7638947,
+    "display_name": "Tokyo, Japan",
+    "raw_data": {
+      "place_id": 241611141,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1543125,
+      "lat": "35.6768601",
+      "lon": "139.7638947",
+      "class": "boundary",
+      "type": "administrative",
+      "place_rank": 8,
+      "importance": 0.82108616521785,
+      "addresstype": "province",
+      "name": "Tokyo",
+      "display_name": "Tokyo, Japan",
+      "address": {
+        "province": "Tokyo",
+        "ISO3166-2-lvl4": "JP-13",
+        "country": "Japan",
+        "country_code": "jp"
+      },
+      "boundingbox": [
+        "20.2145811",
+        "35.8984245",
+        "135.8536855",
+        "154.2055410"
+      ]
+    }
+  },
+  "timestamp": "2025-11-22T17:19:30.465205"
+}

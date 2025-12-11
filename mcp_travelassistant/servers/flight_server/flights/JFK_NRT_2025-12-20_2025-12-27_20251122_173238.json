@@ -1,0 +1,1199 @@
+{
+  "search_metadata": {
+    "search_id": "JFK_NRT_2025-12-20_2025-12-27_20251122_173238",
+    "departure": "JFK",
+    "arrival": "NRT",
+    "outbound_date": "2025-12-20",
+    "return_date": "2025-12-27",
+    "trip_type": "Round trip",
+    "passengers": {
+      "adults": 2,
+      "children": 0,
+      "infants_in_seat": 0,
+      "infants_on_lap": 0
+    },
+    "travel_class": "Economy",
+    "currency": "USD",
+    "search_timestamp": "2025-11-22T17:32:38.516702"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "John F. Kennedy International Airport",
+            "id": "JFK",
+            "time": "2025-12-20 09:45"
+          },
+          "arrival_airport": {
+            "name": "Toronto Pearson International Airport",
+            "id": "YYZ",
+            "time": "2025-12-20 11:30"
+          },
+          "duration": 105,
+          "airplane": "Embraer 175",
+          "airline": "Air Canada",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
+          "travel_class": "Economy",
+          "flight_number": "AC 8553",
+          "ticket_also_sold_by": [
+            "United"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 213 kg"
+          ],
+          "plane_and_crew_by": "Air Canada Express - Jazz"
+        },
+        {
+          "departure_airport": {
+            "name": "Toronto Pearson International Airport",
+            "id": "YYZ",
+            "time": "2025-12-20 12:40"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2025-12-21 16:30"
+          },
+          "duration": 830,
+          "airplane": "Boeing 777",
+          "airline": "Air Canada",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
+          "travel_class": "Economy",
+          "flight_number": "AC 9",
+          "ticket_also_sold_by": [
+            "ANA"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 1145 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 70,
+          "name": "Toronto Pearson International Airport",
+          "id": "YYZ"
+        }
+      ],
+      "total_duration": 1005,
+      "carbon_emissions": {
+        "this_flight": 1359000,
+        "typical_for_this_route": 1400000,
+        "difference_percent": -3
+      },
+      "price": 5326,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
+      "departure_token": "WyJDalJJWjA1bGJ6ZFdNMms1ZUhkQlNuRkZWVUZDUnkwdExTMHRMUzB0TFMxM1ptdHFOMEZCUVVGQlIydG9OV0ZWVGpGeGJtZEJFZ3BCUXpnMU5UTjhRVU01R2dzSThzQWdFQUlhQTFWVFJEZ2NjUExBSUE9PSIsW1siSkZLIiwiMjAyNS0xMi0yMCIsIllZWiIsbnVsbCwiQUMiLCI4NTUzIl0sWyJZWVoiLCIyMDI1LTEyLTIwIiwiTlJUIixudWxsLCJBQyIsIjkiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "John F. Kennedy International Airport",
+            "id": "JFK",
+            "time": "2025-12-20 16:58"
+          },
+          "arrival_airport": {
+            "name": "Dallas Fort Worth International Airport",
+            "id": "DFW",
+            "time": "2025-12-20 20:10"
+          },
+          "duration": 252,
+          "airplane": "Boeing 737",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 1953",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 375 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Dallas Fort Worth International Airport",
+            "id": "DFW",
+            "time": "2025-12-21 10:30"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2025-12-22 15:30"
+          },
+          "duration": 840,
+          "airplane": "Boeing 777",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Premium Economy",
+          "flight_number": "AA 61",
+          "extensions": [
+            "Extra reclining seat",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 1889 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 860,
+          "name": "Dallas Fort Worth International Airport",
+          "id": "DFW",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1952,
+      "carbon_emissions": {
+        "this_flight": 2265000,
+        "typical_for_this_route": 1400000,
+        "difference_percent": 62
+      },
+      "price": 6559,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+      "departure_token": "WyJDalJJWjA1bGJ6ZFdNMms1ZUhkQlNuRkZWVUZDUnkwdExTMHRMUzB0TFMxM1ptdHFOMEZCUVVGQlIydG9OV0ZWVGpGeGJtZEJFZ3RCUVRFNU5UTjhRVUUyTVJvTENOU0RLQkFDR2dOVlUwUTRISERVZ3lnPSIsW1siSkZLIiwiMjAyNS0xMi0yMCIsIkRGVyIsbnVsbCwiQUEiLCIxOTUzIl0sWyJERlciLCIyMDI1LTEyLTIxIiwiTlJUIixudWxsLCJBQSIsIjYxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "John F. Kennedy International Airport",
+            "id": "JFK",
+            "time": "2025-12-20 07:00"
+          },
+          "arrival_airport": {
+            "name": "Seattle\u2013Tacoma International Airport",
+            "id": "SEA",
+            "time": "2025-12-20 10:14"
+          },
+          "duration": 374,
+          "airplane": "Boeing 737",
+          "airline": "Alaska",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AS.png",
+          "travel_class": "Economy",
+          "flight_number": "AS 21",
+          "ticket_also_sold_by": [
+            "Hawaiian"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 633 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Seattle\u2013Tacoma International Airport",
+            "id": "SEA",
+            "time": "2025-12-20 12:30"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2025-12-21 16:00"
+          },
+          "duration": 630,
+          "airplane": "Airbus A330",
+          "airline": "Hawaiian",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HA.png",
+          "travel_class": "Economy",
+          "flight_number": "HA 823",
+          "ticket_also_sold_by": [
+            "Alaska"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 1116 kg"
+          ],
+          "often_delayed_by_over_30_min": true,
+          "plane_and_crew_by": "Alaska as Hawaiian Airlines"
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 136,
+          "name": "Seattle\u2013Tacoma International Airport",
+          "id": "SEA"
+        }
+      ],
+      "total_duration": 1140,
+      "carbon_emissions": {
+        "this_flight": 1750000,
+        "typical_for_this_route": 1400000,
+        "difference_percent": 25
+      },
+      "price": 6589,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJWjA1bGJ6ZFdNMms1ZUhkQlNuRkZWVUZDUnkwdExTMHRMUzB0TFMxM1ptdHFOMEZCUVVGQlIydG9OV0ZWVGpGeGJtZEJFZ3BCVXpJeGZFaEJPREl6R2dzSWlwc29FQUlhQTFWVFJEZ2NjSXFiS0E9PSIsW1siSkZLIiwiMjAyNS0xMi0yMCIsIlNFQSIsbnVsbCwiQVMiLCIyMSJdLFsiU0VBIiwiMjAyNS0xMi0yMCIsIk5SVCIsbnVsbCwiSEEiLCI4MjMiXV1d"
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "John F. Kennedy International Airport",
+            "id": "JFK",
+            "time": "2025-12-20 10:05"
+          },
+          "arrival_airport": {
+            "name": "Montr\u00e9al-Pierre Elliott Trudeau International Airport",
+            "id": "YUL",
+            "time": "2025-12-20 11:35"
+          },
+          "duration": 90,
+          "airplane": "Embraer 175",
+          "airline": "Air Canada",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
+          "travel_class": "Economy",
+          "flight_number": "AC 8899",
+          "ticket_also_sold_by": [
+            "United"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 195 kg"
+          ],
+          "plane_and_crew_by": "Air Canada Express - Jazz"
+        },
+        {
+          "departure_airport": {
+            "name": "Montr\u00e9al-Pierre Elliott Trudeau International Airport",
+            "id": "YUL",
+            "time": "2025-12-21 12:30"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2025-12-22 16:30"
+          },
+          "duration": 840,
+          "airplane": "Boeing 777",
+          "airline": "Air Canada",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
+          "travel_class": "Economy",
+          "flight_number": "AC 5",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 1151 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 1495,
+          "name": "Montr\u00e9al-Pierre Elliott Trudeau International Airport",
+          "id": "YUL",
+          "overnight": true
+        }
+      ],
+      "total_duration": 2425,
+      "carbon_emissions": {
+        "this_flight": 1347000,
+        "typical_for_this_route": 1400000,
+        "difference_percent": -4
+      },
+      "price": 5008,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
+      "departure_token": "WyJDalJJWjA1bGJ6ZFdNMms1ZUhkQlNuRkZWVUZDUnkwdExTMHRMUzB0TFMxM1ptdHFOMEZCUVVGQlIydG9OV0ZWVGpGeGJtZEJFZ3BCUXpnNE9UbDhRVU0xR2dzSWdNZ2VFQUlhQTFWVFJEZ2NjSURJSGc9PSIsW1siSkZLIiwiMjAyNS0xMi0yMCIsIllVTCIsbnVsbCwiQUMiLCI4ODk5Il0sWyJZVUwiLCIyMDI1LTEyLTIxIiwiTlJUIixudWxsLCJBQyIsIjUiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "John F. Kennedy International Airport",
+            "id": "JFK",
+            "time": "2025-12-20 20:00"
+          },
+          "arrival_airport": {
+            "name": "Raleigh-Durham International Airport",
+            "id": "RDU",
+            "time": "2025-12-20 22:08"
+          },
+          "duration": 128,
+          "airplane": "Embraer 175",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 4380",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 224 kg"
+          ],
+          "plane_and_crew_by": "Republic Airways as American Eagle"
+        },
+        {
+          "departure_airport": {
+            "name": "Raleigh-Durham International Airport",
+            "id": "RDU",
+            "time": "2025-12-21 06:38"
+          },
+          "arrival_airport": {
+            "name": "Dallas Fort Worth International Airport",
+            "id": "DFW",
+            "time": "2025-12-21 09:03"
+          },
+          "duration": 205,
+          "airplane": "Airbus A321",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 802",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 333 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Dallas Fort Worth International Airport",
+            "id": "DFW",
+            "time": "2025-12-21 10:30"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2025-12-22 15:30"
+          },
+          "duration": 840,
+          "airplane": "Boeing 777",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 61",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 1259 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 510,
+          "name": "Raleigh-Durham International Airport",
+          "id": "RDU",
+          "overnight": true
+        },
+        {
+          "duration": 87,
+          "name": "Dallas Fort Worth International Airport",
+          "id": "DFW"
+        }
+      ],
+      "total_duration": 1770,
+      "carbon_emissions": {
+        "this_flight": 1817000,
+        "typical_for_this_route": 1400000,
+        "difference_percent": 30
+      },
+      "price": 5847,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+      "departure_token": "WyJDalJJWjA1bGJ6ZFdNMms1ZUhkQlNuRkZWVUZDUnkwdExTMHRMUzB0TFMxM1ptdHFOMEZCUVVGQlIydG9OV0ZWVGpGeGJtZEJFaEZCUVRRek9EQjhRVUU0TURKOFFVRTJNUm9MQ083WEl4QUNHZ05WVTBRNEhIRHUxeU09IixbWyJKRksiLCIyMDI1LTEyLTIwIiwiUkRVIixudWxsLCJBQSIsIjQzODAiXSxbIlJEVSIsIjIwMjUtMTItMjEiLCJERlciLG51bGwsIkFBIiwiODAyIl0sWyJERlciLCIyMDI1LTEyLTIxIiwiTlJUIixudWxsLCJBQSIsIjYxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "John F. Kennedy International Airport",
+            "id": "JFK",
+            "time": "2025-12-20 18:59"
+          },
+          "arrival_airport": {
+            "name": "Seattle\u2013Tacoma International Airport",
+            "id": "SEA",
+            "time": "2025-12-20 22:17"
+          },
+          "duration": 378,
+          "airplane": "Boeing 737MAX 9 Passenger",
+          "airline": "Alaska",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AS.png",
+          "travel_class": "Economy",
+          "flight_number": "AS 17",
+          "ticket_also_sold_by": [
+            "Hawaiian"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 544 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Seattle\u2013Tacoma International Airport",
+            "id": "SEA",
+            "time": "2025-12-21 12:30"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2025-12-22 16:00"
+          },
+          "duration": 630,
+          "airplane": "Airbus A330",
+          "airline": "Hawaiian",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HA.png",
+          "travel_class": "Economy",
+          "flight_number": "HA 823",
+          "ticket_also_sold_by": [
+            "Alaska"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 1116 kg"
+          ],
+          "often_delayed_by_over_30_min": true,
+          "plane_and_crew_by": "Alaska as Hawaiian Airlines"
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 853,
+          "name": "Seattle\u2013Tacoma International Airport",
+          "id": "SEA",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1861,
+      "carbon_emissions": {
+        "this_flight": 1661000,
+        "typical_for_this_route": 1400000,
+        "difference_percent": 19
+      },
+      "price": 6349,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJWjA1bGJ6ZFdNMms1ZUhkQlNuRkZWVUZDUnkwdExTMHRMUzB0TFMxM1ptdHFOMEZCUVVGQlIydG9OV0ZWVGpGeGJtZEJFZ3BCVXpFM2ZFaEJPREl6R2dzSXh0OG1FQUlhQTFWVFJEZ2NjTWJmSmc9PSIsW1siSkZLIiwiMjAyNS0xMi0yMCIsIlNFQSIsbnVsbCwiQVMiLCIxNyJdLFsiU0VBIiwiMjAyNS0xMi0yMSIsIk5SVCIsbnVsbCwiSEEiLCI4MjMiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "John F. Kennedy International Airport",
+            "id": "JFK",
+            "time": "2025-12-20 21:33"
+          },
+          "arrival_airport": {
+            "name": "Ronald Reagan Washington National Airport",
+            "id": "DCA",
+            "time": "2025-12-20 23:00"
+          },
+          "duration": 87,
+          "airplane": "Embraer 175",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 4546",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 282 kg"
+          ],
+          "often_delayed_by_over_30_min": true,
+          "plane_and_crew_by": "Republic Airways as American Eagle"
+        },
+        {
+          "departure_airport": {
+            "name": "Ronald Reagan Washington National Airport",
+            "id": "DCA",
+            "time": "2025-12-21 06:30"
+          },
+          "arrival_airport": {
+            "name": "Dallas Fort Worth International Airport",
+            "id": "DFW",
+            "time": "2025-12-21 09:14"
+          },
+          "duration": 224,
+          "airplane": "Airbus A321",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 634",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 370 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Dallas Fort Worth International Airport",
+            "id": "DFW",
+            "time": "2025-12-21 10:30"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2025-12-22 15:30"
+          },
+          "duration": 840,
+          "airplane": "Boeing 777",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Premium Economy",
+          "flight_number": "AA 61",
+          "extensions": [
+            "Extra reclining seat",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 1889 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 450,
+          "name": "Ronald Reagan Washington National Airport",
+          "id": "DCA",
+          "overnight": true
+        },
+        {
+          "duration": 76,
+          "name": "Dallas Fort Worth International Airport",
+          "id": "DFW"
+        }
+      ],
+      "total_duration": 1677,
+      "carbon_emissions": {
+        "this_flight": 2542000,
+        "typical_for_this_route": 1400000,
+        "difference_percent": 82
+      },
+      "price": 6497,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+      "departure_token": "WyJDalJJWjA1bGJ6ZFdNMms1ZUhkQlNuRkZWVUZDUnkwdExTMHRMUzB0TFMxM1ptdHFOMEZCUVVGQlIydG9OV0ZWVGpGeGJtZEJFaEZCUVRRMU5EWjhRVUUyTXpSOFFVRTJNUm9MQ05iVEp4QUNHZ05WVTBRNEhIRFcweWM9IixbWyJKRksiLCIyMDI1LTEyLTIwIiwiRENBIixudWxsLCJBQSIsIjQ1NDYiXSxbIkRDQSIsIjIwMjUtMTItMjEiLCJERlciLG51bGwsIkFBIiwiNjM0Il0sWyJERlciLCIyMDI1LTEyLTIxIiwiTlJUIixudWxsLCJBQSIsIjYxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "John F. Kennedy International Airport",
+            "id": "JFK",
+            "time": "2025-12-20 20:55"
+          },
+          "arrival_airport": {
+            "name": "Toronto Pearson International Airport",
+            "id": "YYZ",
+            "time": "2025-12-20 22:56"
+          },
+          "duration": 121,
+          "airplane": "Canadair RJ 900",
+          "airline": "Delta",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+          "travel_class": "Economy",
+          "flight_number": "DL 5077",
+          "ticket_also_sold_by": [
+            "WestJet"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 210 kg"
+          ],
+          "plane_and_crew_by": "Endeavor Air DBA Delta Connection"
+        },
+        {
+          "departure_airport": {
+            "name": "Toronto Pearson International Airport",
+            "id": "YYZ",
+            "time": "2025-12-21 10:00"
+          },
+          "arrival_airport": {
+            "name": "Calgary International Airport",
+            "id": "YYC",
+            "time": "2025-12-21 12:36"
+          },
+          "duration": 276,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "WestJet",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WS.png",
+          "travel_class": "Economy",
+          "flight_number": "WS 655",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 386 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Calgary International Airport",
+            "id": "YYC",
+            "time": "2025-12-21 13:40"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2025-12-22 16:30"
+          },
+          "duration": 650,
+          "airplane": "Boeing 787",
+          "airline": "WestJet",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WS.png",
+          "travel_class": "Economy",
+          "flight_number": "WS 80",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 885 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 664,
+          "name": "Toronto Pearson International Airport",
+          "id": "YYZ",
+          "overnight": true
+        },
+        {
+          "duration": 64,
+          "name": "Calgary International Airport",
+          "id": "YYC"
+        }
+      ],
+      "total_duration": 1775,
+      "carbon_emissions": {
+        "this_flight": 1483000,
+        "typical_for_this_route": 1400000,
+        "difference_percent": 6
+      },
+      "price": 6741,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJWjA1bGJ6ZFdNMms1ZUhkQlNuRkZWVUZDUnkwdExTMHRMUzB0TFMxM1ptdHFOMEZCUVVGQlIydG9OV0ZWVGpGeGJtZEJFaEZFVERVd056ZDhWMU0yTlRWOFYxTTRNQm9MQ0tLU0tSQUNHZ05WVTBRNEhIQ2lraWs9IixbWyJKRksiLCIyMDI1LTEyLTIwIiwiWVlaIixudWxsLCJETCIsIjUwNzciXSxbIllZWiIsIjIwMjUtMTItMjEiLCJZWUMiLG51bGwsIldTIiwiNjU1Il0sWyJZWUMiLCIyMDI1LTEyLTIxIiwiTlJUIixudWxsLCJXUyIsIjgwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "John F. Kennedy International Airport",
+            "id": "JFK",
+            "time": "2025-12-20 20:55"
+          },
+          "arrival_airport": {
+            "name": "Toronto Pearson International Airport",
+            "id": "YYZ",
+            "time": "2025-12-20 22:56"
+          },
+          "duration": 121,
+          "airplane": "Canadair RJ 900",
+          "airline": "Delta",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+          "travel_class": "Economy",
+          "flight_number": "DL 5077",
+          "ticket_also_sold_by": [
+            "WestJet"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 210 kg"
+          ],
+          "plane_and_crew_by": "Endeavor Air DBA Delta Connection"
+        },
+        {
+          "departure_airport": {
+            "name": "Toronto Pearson International Airport",
+            "id": "YYZ",
+            "time": "2025-12-21 06:30"
+          },
+          "arrival_airport": {
+            "name": "Calgary International Airport",
+            "id": "YYC",
+            "time": "2025-12-21 09:05"
+          },
+          "duration": 275,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "WestJet",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WS.png",
+          "travel_class": "Economy",
+          "flight_number": "WS 627",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 386 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Calgary International Airport",
+            "id": "YYC",
+            "time": "2025-12-21 13:40"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2025-12-22 16:30"
+          },
+          "duration": 650,
+          "airplane": "Boeing 787",
+          "airline": "WestJet",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WS.png",
+          "travel_class": "Economy",
+          "flight_number": "WS 80",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 885 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 454,
+          "name": "Toronto Pearson International Airport",
+          "id": "YYZ",
+          "overnight": true
+        },
+        {
+          "duration": 275,
+          "name": "Calgary International Airport",
+          "id": "YYC"
+        }
+      ],
+      "total_duration": 1775,
+      "carbon_emissions": {
+        "this_flight": 1483000,
+        "typical_for_this_route": 1400000,
+        "difference_percent": 6
+      },
+      "price": 6741,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJWjA1bGJ6ZFdNMms1ZUhkQlNuRkZWVUZDUnkwdExTMHRMUzB0TFMxM1ptdHFOMEZCUVVGQlIydG9OV0ZWVGpGeGJtZEJFaEZFVERVd056ZDhWMU0yTWpkOFYxTTRNQm9MQ0tLU0tSQUNHZ05WVTBRNEhIQ2lraWs9IixbWyJKRksiLCIyMDI1LTEyLTIwIiwiWVlaIixudWxsLCJETCIsIjUwNzciXSxbIllZWiIsIjIwMjUtMTItMjEiLCJZWUMiLG51bGwsIldTIiwiNjI3Il0sWyJZWUMiLCIyMDI1LTEyLTIxIiwiTlJUIixudWxsLCJXUyIsIjgwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "John F. Kennedy International Airport",
+            "id": "JFK",
+            "time": "2025-12-20 20:55"
+          },
+          "arrival_airport": {
+            "name": "Toronto Pearson International Airport",
+            "id": "YYZ",
+            "time": "2025-12-20 22:56"
+          },
+          "duration": 121,
+          "airplane": "Canadair RJ 900",
+          "airline": "Delta",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+          "travel_class": "Economy",
+          "flight_number": "DL 5077",
+          "ticket_also_sold_by": [
+            "WestJet"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 210 kg"
+          ],
+          "plane_and_crew_by": "Endeavor Air DBA Delta Connection"
+        },
+        {
+          "departure_airport": {
+            "name": "Toronto Pearson International Airport",
+            "id": "YYZ",
+            "time": "2025-12-21 07:45"
+          },
+          "arrival_airport": {
+            "name": "Calgary International Airport",
+            "id": "YYC",
+            "time": "2025-12-21 10:20"
+          },
+          "duration": 275,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "WestJet",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WS.png",
+          "travel_class": "Economy",
+          "flight_number": "WS 629",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 386 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Calgary International Airport",
+            "id": "YYC",
+            "time": "2025-12-21 13:40"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2025-12-22 16:30"
+          },
+          "duration": 650,
+          "airplane": "Boeing 787",
+          "airline": "WestJet",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WS.png",
+          "travel_class": "Economy",
+          "flight_number": "WS 80",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 885 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 529,
+          "name": "Toronto Pearson International Airport",
+          "id": "YYZ",
+          "overnight": true
+        },
+        {
+          "duration": 200,
+          "name": "Calgary International Airport",
+          "id": "YYC"
+        }
+      ],
+      "total_duration": 1775,
+      "carbon_emissions": {
+        "this_flight": 1483000,
+        "typical_for_this_route": 1400000,
+        "difference_percent": 6
+      },
+      "price": 6741,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJWjA1bGJ6ZFdNMms1ZUhkQlNuRkZWVUZDUnkwdExTMHRMUzB0TFMxM1ptdHFOMEZCUVVGQlIydG9OV0ZWVGpGeGJtZEJFaEZFVERVd056ZDhWMU0yTWpsOFYxTTRNQm9MQ0tLU0tSQUNHZ05WVTBRNEhIQ2lraWs9IixbWyJKRksiLCIyMDI1LTEyLTIwIiwiWVlaIixudWxsLCJETCIsIjUwNzciXSxbIllZWiIsIjIwMjUtMTItMjEiLCJZWUMiLG51bGwsIldTIiwiNjI5Il0sWyJZWUMiLCIyMDI1LTEyLTIxIiwiTlJUIixudWxsLCJXUyIsIjgwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "John F. Kennedy International Airport",
+            "id": "JFK",
+            "time": "2025-12-20 20:55"
+          },
+          "arrival_airport": {
+            "name": "Toronto Pearson International Airport",
+            "id": "YYZ",
+            "time": "2025-12-20 22:56"
+          },
+          "duration": 121,
+          "airplane": "Canadair RJ 900",
+          "airline": "Delta",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+          "travel_class": "Economy",
+          "flight_number": "DL 5077",
+          "ticket_also_sold_by": [
+            "WestJet"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 210 kg"
+          ],
+          "plane_and_crew_by": "Endeavor Air DBA Delta Connection"
+        },
+        {
+          "departure_airport": {
+            "name": "Toronto Pearson International Airport",
+            "id": "YYZ",
+            "time": "2025-12-21 00:30"
+          },
+          "arrival_airport": {
+            "name": "Guangzhou Baiyun International Airport",
+            "id": "CAN",
+            "time": "2025-12-22 05:10"
+          },
+          "duration": 940,
+          "airplane": "Boeing 777",
+          "airline": "China Southern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CZ.png",
+          "travel_class": "Economy",
+          "flight_number": "CZ 312",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 2098 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Guangzhou Baiyun International Airport",
+            "id": "CAN",
+            "time": "2025-12-22 08:15"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2025-12-22 13:20"
+          },
+          "duration": 245,
+          "airplane": "Airbus A321neo",
+          "airline": "China Southern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CZ.png",
+          "travel_class": "Economy",
+          "flight_number": "CZ 8101",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 461 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 94,
+          "name": "Toronto Pearson International Airport",
+          "id": "YYZ"
+        },
+        {
+          "duration": 185,
+          "name": "Guangzhou Baiyun International Airport",
+          "id": "CAN"
+        }
+      ],
+      "total_duration": 1585,
+      "carbon_emissions": {
+        "this_flight": 2770000,
+        "typical_for_this_route": 1400000,
+        "difference_percent": 98
+      },
+      "price": 7560,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJWjA1bGJ6ZFdNMms1ZUhkQlNuRkZWVUZDUnkwdExTMHRMUzB0TFMxM1ptdHFOMEZCUVVGQlIydG9OV0ZWVGpGeGJtZEJFaE5FVERVd056ZDhRMW96TVRKOFExbzRNVEF4R2dzSTNwRXVFQUlhQTFWVFJEZ2NjTjZSTGc9PSIsW1siSkZLIiwiMjAyNS0xMi0yMCIsIllZWiIsbnVsbCwiREwiLCI1MDc3Il0sWyJZWVoiLCIyMDI1LTEyLTIxIiwiQ0FOIixudWxsLCJDWiIsIjMxMiJdLFsiQ0FOIiwiMjAyNS0xMi0yMiIsIk5SVCIsbnVsbCwiQ1oiLCI4MTAxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "John F. Kennedy International Airport",
+            "id": "JFK",
+            "time": "2025-12-20 09:00"
+          },
+          "arrival_airport": {
+            "name": "Hong Kong International Airport",
+            "id": "HKG",
+            "time": "2025-12-21 14:10"
+          },
+          "duration": 970,
+          "airplane": "Airbus A350",
+          "airline": "Cathay Pacific",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+          "travel_class": "Business Class",
+          "flight_number": "CX 841",
+          "extensions": [
+            "Lie flat seat",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 6908 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Hong Kong International Airport",
+            "id": "HKG",
+            "time": "2025-12-21 15:25"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2025-12-21 20:20"
+          },
+          "duration": 235,
+          "airplane": "Airbus A330",
+          "airline": "Cathay Pacific",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+          "travel_class": "Business Class",
+          "flight_number": "CX 500",
+          "extensions": [
+            "Lie flat seat",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 1723 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 75,
+          "name": "Hong Kong International Airport",
+          "id": "HKG"
+        }
+      ],
+      "total_duration": 1280,
+      "carbon_emissions": {
+        "this_flight": 8633000,
+        "typical_for_this_route": 1400000,
+        "difference_percent": 517
+      },
+      "price": 34076,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+      "departure_token": "WyJDalJJWjA1bGJ6ZFdNMms1ZUhkQlNuRkZWVUZDUnkwdExTMHRMUzB0TFMxM1ptdHFOMEZCUVVGQlIydG9OV0ZWVGpGeGJtZEJFZ3REV0RnME1YeERXRFV3TUJvTUNMcjl6d0VRQWhvRFZWTkVPQnh3dXYzUEFRPT0iLFtbIkpGSyIsIjIwMjUtMTItMjAiLCJIS0ciLG51bGwsIkNYIiwiODQxIl0sWyJIS0ciLCIyMDI1LTEyLTIxIiwiTlJUIixudWxsLCJDWCIsIjUwMCJdXV0="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 5008,
+    "price_level": "high",
+    "typical_price_range": [
+      1900,
+      4600
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "JFK",
+            "name": "John F. Kennedy International Airport"
+          },
+          "city": "New York",
+          "country": "United States",
+          "country_code": "US",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRa1dwH1NZQk4dsbPiyA9Vrq2RX75jXSZ-OkHn7NkLHl-11HercqDXoZ4p2cDxJkH6vca2degawrCzHEQ",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEaUa9NsdPWGpAUGkTApkZDT_4M6_6V8wTcC0v1b1wJAJX-BuMSiipXbsoznGgcI1xLOc5QiTcR_xovexgjdOz0gqQe0tRQ9h0bUkZ07Q"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "NRT",
+            "name": "Narita International Airport"
+          },
+          "city": "Tokyo",
+          "country": "Japan",
+          "country_code": "JP",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqHkzEeI2bSglPzmSGZL7bxXmn0wJgOn2ZtEN8I47uBnzY1CnHzGtD-YseJXqyexcAcw_uJp-D5HTkCg",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLnIToEgwiM_jV3cbw5eQZoUAIg6XqdrJAiClDyyg0w-JBSRN5ZeOT-iFb3SvwkwP1uoBCmT-gKE5VcyCYf-xq4guL4NAFICSaNyOnYOA"
+        }
+      ]
+    },
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "NRT",
+            "name": "Narita International Airport"
+          },
+          "city": "Tokyo",
+          "country": "Japan",
+          "country_code": "JP",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqHkzEeI2bSglPzmSGZL7bxXmn0wJgOn2ZtEN8I47uBnzY1CnHzGtD-YseJXqyexcAcw_uJp-D5HTkCg",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLnIToEgwiM_jV3cbw5eQZoUAIg6XqdrJAiClDyyg0w-JBSRN5ZeOT-iFb3SvwkwP1uoBCmT-gKE5VcyCYf-xq4guL4NAFICSaNyOnYOA"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "JFK",
+            "name": "John F. Kennedy International Airport"
+          },
+          "city": "New York",
+          "country": "United States",
+          "country_code": "US",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRa1dwH1NZQk4dsbPiyA9Vrq2RX75jXSZ-OkHn7NkLHl-11HercqDXoZ4p2cDxJkH6vca2degawrCzHEQ",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEaUa9NsdPWGpAUGkTApkZDT_4M6_6V8wTcC0v1b1wJAJX-BuMSiipXbsoznGgcI1xLOc5QiTcR_xovexgjdOz0gqQe0tRQ9h0bUkZ07Q"
+        }
+      ]
+    }
+  ]
+}

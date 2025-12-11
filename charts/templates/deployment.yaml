@@ -1,0 +1,162 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# Concieragent Kubernetes Deployment
+# ═══════════════════════════════════════════════════════════════════════════
+---
+# Secret for API keys (if not using existing secret)
+{{- if not .Values.existingSecret }}
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{ .Values.name }}-secrets
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ .Values.name }}
+type: Opaque
+stringData:
+  OPENAI_API_KEY: {{ .Values.secrets.openaiApiKey | quote }}
+  ANTHROPIC_API_KEY: {{ .Values.secrets.anthropicApiKey | quote }}
+  SERPAPI_KEY: {{ .Values.secrets.serpapiKey | quote }}
+  OPENWEATHER_API_KEY: {{ .Values.secrets.openweatherApiKey | quote }}
+{{- end }}
+---
+# Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.name }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ .Values.name }}
+spec:
+  selector:
+    app: {{ .Values.name }}
+  ports:
+    - name: http
+      port: {{ .Values.containerPort }}
+      targetPort: {{ .Values.containerPort }}
+      protocol: TCP
+---
+# Ingress - Main application with invitation routing to VS Agent
+{{- if .Values.ingress.enabled }}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ .Values.name }}
+  namespace: {{ .Release.Namespace }}
+  annotations:
+    {{- range $key, $value := .Values.ingress.annotations }}
+    {{ $key }}: {{ $value | quote }}
+    {{- end }}
+spec:
+  ingressClassName: {{ .Values.ingress.className }}
+  tls:
+    - hosts:
+        - {{ tpl .Values.ingress.host . }}
+      secretName: {{ tpl .Values.ingress.tlsSecret . }}
+  rules:
+    - host: {{ tpl .Values.ingress.host . }}
+      http:
+        paths:
+          {{- if index .Values "vs-agent-chart" "enabled" }}
+          # Route /invitation to VS Agent (public port 3001)
+          - path: /invitation
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ index .Values "vs-agent-chart" "name" }}-public
+                port:
+                  number: 3001
+          {{- end }}
+          # Route everything else to Concieragent bot
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ .Values.name }}
+                port:
+                  number: {{ .Values.containerPort }}
+{{- end }}
+---
+# StatefulSet (for persistent wallet storage with VS Agent)
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ .Values.name }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ .Values.name }}
+spec:
+  serviceName: {{ .Values.name }}
+  replicas: {{ .Values.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.name }}
+    spec:
+      containers:
+        - name: {{ .Values.name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: {{ .Values.containerPort }}
+              name: http
+          env:
+            # Application configuration
+            - name: NODE_ENV
+              value: "production"
+            - name: PORT
+              value: "{{ .Values.containerPort }}"
+            - name: VS_AGENT_URL
+              value: "{{ .Values.env.vsAgentUrl }}"
+            - name: LLM_PROVIDER
+              value: "{{ .Values.env.llmProvider }}"
+            {{- if .Values.env.openaiModel }}
+            - name: OPENAI_MODEL
+              value: "{{ .Values.env.openaiModel }}"
+            {{- end }}
+            {{- if .Values.env.claudeModel }}
+            - name: CLAUDE_MODEL
+              value: "{{ .Values.env.claudeModel }}"
+            {{- end }}
+            {{- if .Values.env.ollamaBaseUrl }}
+            - name: OLLAMA_BASE_URL
+              value: "{{ .Values.env.ollamaBaseUrl }}"
+            {{- end }}
+            {{- if .Values.env.ollamaModel }}
+            - name: OLLAMA_MODEL
+              value: "{{ .Values.env.ollamaModel }}"
+            {{- end }}
+            # API Keys from secret
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.existingSecret | default (printf "%s-secrets" .Values.name) }}
+                  key: OPENAI_API_KEY
+                  optional: true
+            - name: ANTHROPIC_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.existingSecret | default (printf "%s-secrets" .Values.name) }}
+                  key: ANTHROPIC_API_KEY
+                  optional: true
+            - name: SERPAPI_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.existingSecret | default (printf "%s-secrets" .Values.name) }}
+                  key: SERPAPI_KEY
+                  optional: true
+            - name: OPENWEATHER_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.existingSecret | default (printf "%s-secrets" .Values.name) }}
+                  key: OPENWEATHER_API_KEY
+                  optional: true
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          livenessProbe:
+            {{- toYaml .Values.livenessProbe | nindent 12 }}
+          readinessProbe:
+            {{- toYaml .Values.readinessProbe | nindent 12 }}

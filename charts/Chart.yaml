@@ -1,0 +1,32 @@
+apiVersion: v2
+name: concieragent-chart
+description: A Helm chart for Concieragent - Multilingual AI Travel Concierge for Hologram
+type: application
+
+# Chart version - updated by CI/CD
+version: 0.1.0
+
+# Application version - matches the Docker image tag
+appVersion: "0.1.0"
+
+keywords:
+  - hologram
+  - chatbot
+  - travel
+  - ai
+  - mcp
+
+home: https://github.com/your-org/concieragent
+sources:
+  - https://github.com/your-org/concieragent
+
+maintainers:
+  - name: Maxime Mansiet
+    email: maxime@example.com
+
+# Dependencies - VS Agent chart for DIDComm/Hologram protocol handling
+dependencies:
+  - name: vs-agent-chart
+    version: ">=1.5.5"
+    repository: "oci://registry-1.docker.io/io2060"
+    condition: vs-agent-chart.enabled
