@@ -14,8 +14,6 @@ replicas: 1
 containerPort: 4001
 
 image:
-  repository: io2060/hologram-concieragent-demo-app
-  tag: "" # Set by CI/CD, defaults to Chart.appVersion
   pullPolicy: Always
 
 # ───────────────────────────────────────────────────────────────────────────
@@ -92,7 +90,7 @@ readinessProbe:
 # VS Agent Sidecar Configuration
 # ───────────────────────────────────────────────────────────────────────────
 vs-agent-chart:
-  enabled: true
+  enabled: false # Enable VS Agent only when needed
   name: concieragent-vsa
   
   # DIDComm/Hologram configuration
