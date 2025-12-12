@@ -90,7 +90,7 @@ readinessProbe:
 # VS Agent Sidecar Configuration
 # ───────────────────────────────────────────────────────────────────────────
 vs-agent-chart:
-  enabled: false # Enable VS Agent only when needed
+  enabled: true
   name: concieragent-vsa
   
   # DIDComm/Hologram configuration
