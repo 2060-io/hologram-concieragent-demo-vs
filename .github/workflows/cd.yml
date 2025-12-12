@@ -7,7 +7,7 @@
 name: CD - Build & Deploy
 
 env:
-  IMAGE_NAME: concieragent
+  IMAGE_NAME: hologram-concieragent-demo-app
 
 on:
   push:
