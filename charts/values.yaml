@@ -9,7 +9,7 @@ global:
 # ───────────────────────────────────────────────────────────────────────────
 # Application Configuration
 # ───────────────────────────────────────────────────────────────────────────
-name: concieragent-vs
+name: concieragent-app
 replicas: 1
 containerPort: 4001
 
@@ -32,7 +32,7 @@ ingress:
 # ───────────────────────────────────────────────────────────────────────────
 env:
   # VS Agent connection (internal Kubernetes service)
-  vsAgentUrl: http://concieragent-vsa:3000
+  vsAgentUrl: http://{{ .Values.vs-agent-chart.name }}:3000
   
   # LLM Provider configuration
   llmProvider: openai
@@ -95,7 +95,7 @@ vs-agent-chart:
   
   # DIDComm/Hologram configuration
   didcommLabel: "Concieragent"
-  eventsBaseUrl: "http://concieragent:4001"
+  eventsBaseUrl: "http://{{ .Values.name }}:4001"
   didcommInvitationImageUrl: "https://raw.githubusercontent.com/AirKyzzZ/concieragent-hologram-demo/refs/heads/feat-mcp-travel-assistant/logo.png"
   
   # Ingress for VS Agent (DIDComm endpoint)
