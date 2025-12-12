@@ -17,7 +17,7 @@ on:
       deploy_only:
         description: 'Skip build and only deploy'
         required: false
-        default: 'false'
+        default: false
         type: boolean
 
 jobs:
@@ -33,7 +33,8 @@ jobs:
   build:
     name: Build & Push Docker Image
     runs-on: ubuntu-latest
-    if: github.event.inputs.deploy_only != 'true'
+    needs: [resolve-version]
+    if: github.event.inputs.deploy_only != 'true' && needs.resolve-version.outputs.new-release-published == 'true'
     env:
       RELEASE_TYPE: ${{ needs.resolve-version.outputs.release-type }}
       RELEASE_VERSION: ${{ needs.resolve-version.outputs.release-version }}
