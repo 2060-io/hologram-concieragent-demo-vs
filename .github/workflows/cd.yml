@@ -41,8 +41,6 @@ jobs:
       RELEASE_MAJOR: ${{ needs.resolve-version.outputs.release-major }}
       RELEASE_MINOR: ${{ needs.resolve-version.outputs.release-minor }}
       RELEASE_PATCH: ${{ needs.resolve-version.outputs.release-patch }}
-    outputs:
-      image_tag: ${{ steps.version.outputs.image_tag }}
 
     steps:
       - name: Checkout Code
@@ -62,7 +60,6 @@ jobs:
             echo "RELEASE_PATCH_SHORT=${RELEASE_PATCH:0:1}" >> $GITHUB_ENV
           fi
 
-          echo "image_tag=$IMAGE_TAG" >> $GITHUB_OUTPUT
           echo "📦 Version: $RELEASE_VERSION"
           echo "🏷️ Image Tag: $IMAGE_TAG"
 
@@ -86,7 +83,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ steps.version.outputs.image_tag }}
+            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
             ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:v${{ env.RELEASE_MAJOR }}${{ env.SUFFIX }}
             ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:v${{ env.RELEASE_MAJOR }}.${{ env.RELEASE_MINOR }}${{ env.SUFFIX }}
             ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:v${{ env.RELEASE_MAJOR }}.${{ env.RELEASE_MINOR }}.${{ env.RELEASE_PATCH_SHORT }}${{ env.SUFFIX }}
@@ -106,7 +103,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ steps.version.outputs.image_tag }}
+            ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
             ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:v${{ env.RELEASE_MAJOR }}
             ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:v${{ env.RELEASE_MAJOR }}.${{ env.RELEASE_MINOR }}
             ${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ needs.resolve-version.outputs.release-version }}
@@ -123,7 +120,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "| Tag | Image |" >> $GITHUB_STEP_SUMMARY
           echo "|-----|-------|" >> $GITHUB_STEP_SUMMARY
-          echo "| \`${{ steps.version.outputs.image_tag }}\` | \`${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ steps.version.outputs.image_tag }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| \`${{ env.IMAGE_TAG }}\` | \`${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}\` |" >> $GITHUB_STEP_SUMMARY
           echo "| \`${{ needs.resolve-version.outputs.release-version }}\` | \`${{ secrets.DOCKER_HUB_LOGIN }}/${{ env.IMAGE_NAME }}:${{ needs.resolve-version.outputs.release-version }}\` |" >> $GITHUB_STEP_SUMMARY
 
   # ─────────────────────────────────────────────────────────────────────────
