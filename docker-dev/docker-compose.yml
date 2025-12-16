@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  vs-agent:
+    image: io2060/vs-agent:dev
+    restart: always
+    networks:
+      - chatbot
+    ports:
+      - 3000:3000
+      - 3001:3001
+    environment:
+      - AGENT_PUBLIC_DID=did:webvh:your-ngrok-domain.ngrok-free.app
+      - AGENT_INVITATION_IMAGE_URL=https://your-ngrok-domain.ngrok-free.app/logo.png
+      - AGENT_LABEL=Concieragent
+      - USE_CORS=true
+      - EVENTS_BASE_URL=https://your-ngrok-domain.ngrok-free.app
+
+  concieragent-app:
+    build: 
+      context: ..
+      dockerfile: Dockerfile
+    image: concieragent-app
+    container_name: concieragent-app
+    restart: always
+    networks:
+      - chatbot
+    ports:
+      - 4001:4001
+    environment:
+      - VS_AGENT_URL=http://vs-agent:3000
+      - LLM_PROVIDER=openai
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - SERPAPI_KEY=${SERPAPI_KEY}
+      - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY}
+
+networks:
+  chatbot:

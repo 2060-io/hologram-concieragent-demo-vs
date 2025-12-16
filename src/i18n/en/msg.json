@@ -1,0 +1,5 @@
+{
+  "WELCOME": "Welcome to Concieragent!\n\nI'm your personal travel concierge, powered by MCP (Model Context Protocol) for real-time travel data.\n\nI can help you with:\n- Flight searches and bookings\n- Hotel recommendations\n- Weather forecasts for your destination\n- Local events and activities\n- Currency conversions\n\nWhere would you like to travel? Just tell me your destination and dates, and I'll find the best options for you!",
+  "HELP": "I can help you with:\n- Flight searches and bookings\n- Hotel recommendations\n- Weather forecasts\n- Local events and activities\n- Currency conversions\n\nJust ask me about your travel plans!",
+  "ERROR": "I'm sorry, I encountered an error. Please try again."
+}

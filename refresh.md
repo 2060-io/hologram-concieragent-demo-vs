@@ -104,7 +104,7 @@ Content-Type: image/png
 
 If you get a `404 Not Found`, check:
 1. Bot server is running (`pnpm start`)
-2. Logo file exists at project root: `ls -la logo.png`
+2. Logo file exists in assets folder: `ls -la assets/logo.png`
 3. Static file serving is configured in `src/bot.ts`
 
 ---
@@ -171,7 +171,7 @@ Use this checklist to ensure everything is updated:
 
 4. **Verify logo file exists**:
    ```bash
-   ls -la logo.png
+   ls -la assets/logo.png
    ```
 
 ### Old Name Still Appearing
