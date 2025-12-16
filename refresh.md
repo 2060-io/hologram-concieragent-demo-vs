@@ -35,7 +35,7 @@ docker ps --filter name=vs-agent
 If your bot server is running, stop it (press `Ctrl+C` in that terminal) and restart it to apply any code changes:
 
 ```bash
-npm start
+pnpm start
 ```
 
 **Wait for the success message:**
@@ -103,7 +103,7 @@ Content-Type: image/png
 ```
 
 If you get a `404 Not Found`, check:
-1. Bot server is running (`npm start`)
+1. Bot server is running (`pnpm start`)
 2. Logo file exists at project root: `ls -la logo.png`
 3. Static file serving is configured in `src/bot.ts`
 
@@ -136,7 +136,7 @@ If you get a `404 Not Found`, check:
 Use this checklist to ensure everything is updated:
 
 - [ ] VS Agent container stopped and restarted
-- [ ] Bot server restarted (`npm start` shows "✅ Travel Agent ready!")
+- [ ] Bot server restarted (`pnpm start` shows "✅ Travel Agent ready!")
 - [ ] Current ngrok URL used in `./scripts/docker-run.sh`
 - [ ] Logo accessible: `https://<ngrok-url>/logo.png` returns 200
 - [ ] New QR code scanned in Hologram app
@@ -250,7 +250,7 @@ lsof -ti:4001
 
 # Restart bot server
 # (Ctrl+C to stop, then:)
-npm start
+pnpm start
 ```
 
 ---
@@ -291,7 +291,7 @@ If you're still experiencing problems after following this guide:
 2. Review VS Agent logs: `docker logs -f vs-agent`
 3. Check bot server console output for errors
 4. Verify all environment variables are set correctly
-5. Ensure all dependencies are installed (`npm install` and `uv sync` in each MCP server)
+5. Ensure all dependencies are installed (`pnpm install` and `uv sync` in each MCP server)
 
 ---
 
