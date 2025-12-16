@@ -1,4 +1,4 @@
 // Enum definitions
 // Add enums here as needed
 
-export {};
+export {}

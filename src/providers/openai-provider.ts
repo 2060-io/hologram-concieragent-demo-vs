@@ -3,57 +3,50 @@
  * Adapter for OpenAI's GPT models
  */
 
-import { OpenAI } from "openai";
-import type { ChatCompletionMessageParam, ChatCompletionTool } from "openai/resources/chat/completions";
-import type { 
-  LLMProvider, 
-  LLMProviderConfig, 
-  LLMMessage, 
-  LLMTool, 
-  LLMResponse,
-  LLMToolCall 
-} from "./types";
+import { OpenAI } from 'openai'
+import type { ChatCompletionMessageParam, ChatCompletionTool } from 'openai/resources/chat/completions'
+import type { LLMProvider, LLMProviderConfig, LLMMessage, LLMTool, LLMResponse, LLMToolCall } from './types'
 
 export class OpenAIProvider implements LLMProvider {
-  readonly name = 'openai' as const;
-  readonly model: string;
-  private client: OpenAI;
+  readonly name = 'openai' as const
+  readonly model: string
+  private client: OpenAI
 
   constructor(config?: LLMProviderConfig) {
-    const apiKey = config?.apiKey || process.env.OPENAI_API_KEY;
-    
+    const apiKey = config?.apiKey || process.env.OPENAI_API_KEY
+
     if (!apiKey) {
-      console.warn('⚠️ OpenAI API key not configured');
+      console.warn('⚠️ OpenAI API key not configured')
     }
 
     this.client = new OpenAI({
       apiKey: apiKey,
       baseURL: config?.baseUrl,
-    });
+    })
 
-    this.model = config?.model || process.env.OPENAI_MODEL || 'gpt-4o';
+    this.model = config?.model || process.env.OPENAI_MODEL || 'gpt-4o'
   }
 
   isConfigured(): boolean {
-    return !!process.env.OPENAI_API_KEY;
+    return !!process.env.OPENAI_API_KEY
   }
 
   async chat(messages: LLMMessage[], tools?: LLMTool[]): Promise<LLMResponse> {
     // Convert to OpenAI format
-    const openaiMessages = this.convertMessages(messages);
-    const openaiTools = tools ? this.convertTools(tools) : undefined;
+    const openaiMessages = this.convertMessages(messages)
+    const openaiTools = tools ? this.convertTools(tools) : undefined
 
     const response = await this.client.chat.completions.create({
       model: this.model,
       messages: openaiMessages,
       tools: openaiTools,
-    });
+    })
 
-    const choice = response.choices[0];
-    const message = choice.message;
+    const choice = response.choices[0]
+    const message = choice.message
 
     // Convert tool calls back to our format
-    const toolCalls: LLMToolCall[] = [];
+    const toolCalls: LLMToolCall[] = []
     if (message.tool_calls) {
       for (const tc of message.tool_calls) {
         // Type guard: check if this is a function tool call (not custom)
@@ -62,7 +55,7 @@ export class OpenAIProvider implements LLMProvider {
             id: tc.id,
             name: tc.function.name,
             arguments: JSON.parse(tc.function.arguments),
-          });
+          })
         }
       }
     }
@@ -70,9 +63,13 @@ export class OpenAIProvider implements LLMProvider {
     return {
       content: message.content,
       toolCalls,
-      finishReason: choice.finish_reason === 'tool_calls' ? 'tool_calls' : 
-                    choice.finish_reason === 'length' ? 'length' : 'stop',
-    };
+      finishReason:
+        choice.finish_reason === 'tool_calls'
+          ? 'tool_calls'
+          : choice.finish_reason === 'length'
+            ? 'length'
+            : 'stop',
+    }
   }
 
   private convertMessages(messages: LLMMessage[]): ChatCompletionMessageParam[] {
@@ -82,9 +79,9 @@ export class OpenAIProvider implements LLMProvider {
           role: 'tool' as const,
           content: msg.content,
           tool_call_id: msg.toolCallId!,
-        };
+        }
       }
-      
+
       if (msg.role === 'assistant' && msg.toolCalls && msg.toolCalls.length > 0) {
         return {
           role: 'assistant' as const,
@@ -97,14 +94,14 @@ export class OpenAIProvider implements LLMProvider {
               arguments: JSON.stringify(tc.arguments),
             },
           })),
-        };
+        }
       }
 
       return {
         role: msg.role as 'system' | 'user' | 'assistant',
         content: msg.content,
-      };
-    });
+      }
+    })
   }
 
   private convertTools(tools: LLMTool[]): ChatCompletionTool[] {
@@ -115,7 +112,6 @@ export class OpenAIProvider implements LLMProvider {
         description: tool.description,
         parameters: tool.parameters,
       },
-    }));
+    }))
   }
 }
-

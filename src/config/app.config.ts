@@ -5,37 +5,37 @@
 
 export interface AppConfig {
   /** Port number on which the application will run */
-  port: number;
-  
+  port: number
+
   /** VS Agent Admin API URL */
-  vsAgentUrl: string;
-  
+  vsAgentUrl: string
+
   /** LLM Provider type */
-  llmProvider: 'openai' | 'claude' | 'ollama';
-  
+  llmProvider: 'openai' | 'claude' | 'ollama'
+
   /** OpenAI configuration */
   openai?: {
-    apiKey: string;
-    model?: string;
-  };
-  
+    apiKey: string
+    model?: string
+  }
+
   /** Claude configuration */
   claude?: {
-    apiKey: string;
-    model?: string;
-  };
-  
+    apiKey: string
+    model?: string
+  }
+
   /** Ollama configuration */
   ollama?: {
-    baseUrl?: string;
-    model?: string;
-  };
-  
+    baseUrl?: string
+    model?: string
+  }
+
   /** MCP Server API Keys */
   mcp?: {
-    serpapiKey?: string;
-    openweatherApiKey?: string;
-  };
+    serpapiKey?: string
+    openweatherApiKey?: string
+  }
 }
 
 /**
@@ -66,5 +66,5 @@ export function getAppConfig(): AppConfig {
       serpapiKey: process.env.SERPAPI_KEY,
       openweatherApiKey: process.env.OPENWEATHER_API_KEY,
     },
-  };
+  }
 }

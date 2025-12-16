@@ -45,10 +45,10 @@ jobs:
 
       - name: Check for Build Errors
         run: |
-          if [ -d "dist" ]; then
+          if [ -d "build" ]; then
             echo "✅ TypeScript build successful"
           else
-            echo "❌ Build failed - dist directory not created"
+            echo "❌ Build failed - build directory not created"
             exit 1
           fi
 
