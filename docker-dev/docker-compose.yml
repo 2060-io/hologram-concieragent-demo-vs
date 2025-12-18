@@ -9,6 +9,8 @@ services:
     ports:
       - 3000:3000
       - 3001:3001
+    depends_on:
+      - postgres
     environment:
       - AGENT_PUBLIC_DID=did:webvh:${NGROK_DOMAIN:-your-ngrok-domain.ngrok-free.app}
       - AGENT_INVITATION_IMAGE_URL=https://${NGROK_DOMAIN:-your-ngrok-domain.ngrok-free.app}/logo.png
@@ -17,6 +19,9 @@ services:
       - EVENTS_BASE_URL=${EVENTS_BASE_URL:-https://${NGROK_DOMAIN:-your-ngrok-domain.ngrok-free.app}}
       - AGENT_WALLET_ID=${AGENT_WALLET_ID:-Concieragent}
       - AGENT_WALLET_KEY=${AGENT_WALLET_KEY:-Concieragent}
+      - POSTGRES_HOST=postgres
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
 
   concieragent-app:
     build: 
