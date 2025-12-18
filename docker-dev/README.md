@@ -41,18 +41,26 @@ POSTGRES_USER=postgres
 POSTGRES_PASSWORD=your-secure-password-here
 POSTGRES_DB=concieragent
 POSTGRES_PORT=5432
+
+# VS Agent Wallet Configuration (optional, defaults provided)
+AGENT_WALLET_ID=Concieragent
+AGENT_WALLET_KEY=your-wallet-key-here
+
+# VS Agent Configuration
+NGROK_DOMAIN=your-ngrok-domain.ngrok-free.app
+EVENTS_BASE_URL=https://your-ngrok-domain.ngrok-free.app
 ```
 
 **⚠️ Important**: Never commit the `.env` file to git. Use environment variables for all sensitive credentials.
 
-### 3. Update docker-compose.yml
+### 3. Configure Environment Variables (continued)
 
-Update the `docker-compose.yml` file with your ngrok domain:
+Set the following in your `.env` file (or export them):
 
-- Replace `your-ngrok-domain.ngrok-free.app` with your actual ngrok domain
-- Update `AGENT_PUBLIC_DID` with your ngrok domain
-- Update `AGENT_INVITATION_IMAGE_URL` with your ngrok domain
-- Update `EVENTS_BASE_URL` with your ngrok domain
+- `NGROK_DOMAIN` - Your ngrok domain (e.g., `abc123.ngrok-free.app`)
+- `EVENTS_BASE_URL` - Base URL for events (defaults to `https://${NGROK_DOMAIN}` if not set)
+
+**Note**: The docker-compose.yml now uses environment variables, so you no longer need to manually edit the file. Just set `NGROK_DOMAIN` in your `.env` file.
 
 ### 4. Start Services
 
