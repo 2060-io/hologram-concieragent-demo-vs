@@ -26,7 +26,26 @@ ngrok start --config=ngrok-config.yml --all
 
 Note the ngrok URLs that are generated (e.g., `https://xxxxx.ngrok-free.app`).
 
-### 2. Update docker-compose.yml
+### 2. Configure Environment Variables
+
+Create a `.env` file in the `docker-dev` directory (or use the parent `.env` file) with the following variables:
+
+```bash
+# API Keys
+OPENAI_API_KEY=your-openai-key
+SERPAPI_KEY=your-serpapi-key
+OPENWEATHER_API_KEY=your-openweather-key
+
+# Postgres Database (required for message persistence)
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=your-secure-password-here
+POSTGRES_DB=concieragent
+POSTGRES_PORT=5432
+```
+
+**⚠️ Important**: Never commit the `.env` file to git. Use environment variables for all sensitive credentials.
+
+### 3. Update docker-compose.yml
 
 Update the `docker-compose.yml` file with your ngrok domain:
 
@@ -35,13 +54,13 @@ Update the `docker-compose.yml` file with your ngrok domain:
 - Update `AGENT_INVITATION_IMAGE_URL` with your ngrok domain
 - Update `EVENTS_BASE_URL` with your ngrok domain
 
-### 3. Start Services
+### 4. Start Services
 
 ```bash
 docker-compose up -d
 ```
 
-### 4. Verify Services
+### 5. Verify Services
 
 ```bash
 docker ps
@@ -50,8 +69,9 @@ docker ps
 You should see:
 - `vs-agent` container running on ports 3000 and 3001
 - `concieragent-app` container running on port 4001
+- `concieragent-postgres` container running on port 5432 (or your configured POSTGRES_PORT)
 
-### 5. Connect with Hologram App
+### 6. Connect with Hologram App
 
 1. Open your browser to `https://your-ngrok-domain.ngrok-free.app/invitation`
 2. Scan the QR code with the Hologram app
@@ -59,6 +79,8 @@ You should see:
 
 ## Troubleshooting
 
-- **Containers won't start**: Check that ports 3000, 3001, and 4001 are not already in use
+- **Containers won't start**: Check that ports 3000, 3001, 4001, and 5432 are not already in use
 - **ngrok connection issues**: Verify your authtoken is correct in `ngrok-config.yml`
 - **API errors**: Ensure all required API keys are set in your `.env` file
+- **Database connection errors**: Verify `POSTGRES_PASSWORD` is set in your `.env` file and the postgres container is healthy
+- **Message loss**: Ensure the Postgres service is running and accessible. Messages are persisted to prevent loss across service restarts
