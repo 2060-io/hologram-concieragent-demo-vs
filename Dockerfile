@@ -11,10 +11,10 @@ FROM node:24-slim AS node-deps
 WORKDIR /app
 
 # Install pnpm
-RUN npm install -g pnpm
+RUN corepack enable
 
 # Copy package files
-COPY package.json pnpm-lock.yaml* ./
+COPY package.json pnpm-lock.yaml ./
 
 # Install production dependencies only
 RUN pnpm install --prod --frozen-lockfile && \
@@ -31,7 +31,7 @@ WORKDIR /app
 RUN npm install -g pnpm
 
 # Copy package files and install all deps (including devDependencies)
-COPY package.json pnpm-lock.yaml* ./
+COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 
 # Copy source code
