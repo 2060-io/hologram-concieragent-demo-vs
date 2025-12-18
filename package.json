@@ -14,6 +14,7 @@
     "check-format": "prettier --check \"src/**/*.ts\"",
     "format": "prettier --write \"src/**/*.ts\"",
     "check-types": "tsc --noEmit",
+    "test": "pnpm run check-types && pnpm run lint && pnpm run check-format && pnpm run build",
     "docker:build": "docker build -t concieragent:local .",
     "docker:run": "docker run -p 4001:4001 --env-file .env concieragent:local",
     "helm:lint": "helm lint ./charts",
