@@ -59,7 +59,7 @@ if [ $? -eq 0 ]; then
   echo -e "${GREEN}✅ VS Agent started successfully!${NC}"
   echo ""
   echo -e "${GREEN}📱 Next steps:${NC}"
-  echo -e "  1. Make sure your bot server is running: ${YELLOW}npm start${NC}"
+  echo -e "  1. Make sure your bot server is running: ${YELLOW}pnpm start${NC}"
   echo -e "  2. Open invitation URL: ${YELLOW}http://localhost:3001/invitation${NC}"
   echo -e "  3. Scan QR code with Hologram app on your iPhone"
   echo -e "  4. Send a message and see the test response!"

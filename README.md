@@ -149,7 +149,7 @@ git clone https://github.com/your-org/concieragent.git
 cd concieragent
 
 # 2. Install Node.js dependencies
-npm install
+pnpm install
 
 # 3. Install Python dependencies for all MCP servers
 for server in flight hotel event geocoder weather finance; do
@@ -171,7 +171,7 @@ ngrok http 3001
 # Note the URL: https://xxxxx.ngrok-free.app
 
 # Terminal 2: Start bot server
-npm start
+pnpm start
 # Wait for: ✅ Travel Agent ready!
 
 # Terminal 3: Start VS Agent
@@ -559,7 +559,7 @@ SERPAPI_KEY=your-key          # Get from serpapi.com
 
 ```bash
 # 1. Install dependencies
-npm install
+pnpm install
 
 # 2. Set up environment
 cp .env.example .env
@@ -574,7 +574,7 @@ done
 ngrok http 3001
 
 # 5. Start bot server
-npm run dev
+pnpm run dev
 
 # 6. Start VS Agent
 ./scripts/docker-run.sh your-ngrok-url
@@ -584,10 +584,10 @@ npm run dev
 
 ```bash
 # Build image
-npm run docker:build
+pnpm run docker:build
 
 # Run with environment file
-npm run docker:run
+pnpm run docker:run
 
 # Or with explicit env vars
 docker run -p 4001:4001 \

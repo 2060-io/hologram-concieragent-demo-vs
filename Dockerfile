@@ -10,12 +10,15 @@ FROM node:24-slim AS node-deps
 
 WORKDIR /app
 
+# Install pnpm
+RUN corepack enable
+
 # Copy package files
-COPY package.json package-lock.json ./
+COPY package.json pnpm-lock.yaml* ./
 
 # Install production dependencies only
-RUN npm ci --only=production && \
-    npm cache clean --force
+RUN pnpm install --prod --frozen-lockfile && \
+    pnpm store prune
 
 # ───────────────────────────────────────────────────────────────────────────
 # Stage 2: TypeScript Build
@@ -24,16 +27,19 @@ FROM node:24-slim AS node-builder
 
 WORKDIR /app
 
+# Install pnpm
+RUN npm install -g pnpm
+
 # Copy package files and install all deps (including devDependencies)
-COPY package.json package-lock.json ./
-RUN npm ci
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
 
 # Copy source code
 COPY tsconfig.json ./
 COPY src/ ./src/
 
 # Build TypeScript
-RUN npm run build
+RUN pnpm run build
 
 # ───────────────────────────────────────────────────────────────────────────
 # Stage 3: Production Runtime

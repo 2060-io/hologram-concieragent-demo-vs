@@ -34,7 +34,7 @@ To deploy the service locally, ensure that the environment variables are configu
 Once everything is set up correctly, you can start the bot server using:
 
 ```bash
-npm start
+pnpm start
 ```
 
 For Docker deployment, use the provided Dockerfile or docker-compose configuration.
