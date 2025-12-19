@@ -1,0 +1,14 @@
+authtoken: <your ngrok token>
+tunnels:
+    serviceagent:
+        addr: 3001
+        proto: http
+        schemes:
+            - https
+    backend:
+        addr: 4001
+        proto: http
+        schemes:
+            - https
+version: "2"
+region: us

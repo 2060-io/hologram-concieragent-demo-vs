@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./logo.png" alt="Concieragent Logo" width="200"/>
+<img src="./assets/logo.png" alt="Concieragent Logo" width="200"/>
 
 # 🌍 Concieragent
 
@@ -133,6 +133,8 @@ Language detection happens automatically based on the user's message patterns.
 | ngrok | Public URL tunnel | [Get free](https://ngrok.com) |
 | Hologram App | Mobile client | [Download](https://hologram.zone) |
 
+> 💡 **Windows Users**: See [WINDOWS_SETUP.md](./WINDOWS_SETUP.md) for Windows-specific setup instructions and PowerShell scripts.
+
 ### API Keys Needed
 
 | Service | Purpose | Free Tier |
@@ -165,6 +167,7 @@ cp .env.example .env
 
 You need **3 terminals**:
 
+**On macOS/Linux:**
 ```bash
 # Terminal 1: Start ngrok
 ngrok http 3001
@@ -176,6 +179,23 @@ pnpm start
 
 # Terminal 3: Start VS Agent
 ./scripts/docker-run.sh xxxxx.ngrok-free.app
+```
+
+**On Windows (PowerShell):**
+```powershell
+# Terminal 1: Start ngrok
+ngrok http 3001
+# Note the URL: https://xxxxx.ngrok-free.app
+
+# Terminal 2: Start bot server
+pnpm run dev
+# Wait for: ✅ Travel Agent ready!
+
+# Terminal 3: Start VS Agent (PowerShell)
+.\scripts\docker-run.ps1 xxxxx.ngrok-free.app
+
+# OR use Batch file (Command Prompt)
+scripts\docker-run.bat xxxxx.ngrok-free.app
 ```
 
 ### Connect & Test
@@ -346,7 +366,7 @@ While Kubernetes is not mandatory, here's an example architecture for production
                     └──────────────┘
 ```
 
-For Kubernetes deployment, use the provided Helm charts in the `charts/` directory. See [docs/deployment.md](docs/deployment.md) for detailed deployment instructions.
+For Kubernetes deployment, use the provided Helm charts in the `charts/` directory. See [doc/deployment.md](doc/deployment.md) for detailed deployment instructions.
 
 ---
 
@@ -614,7 +634,7 @@ helm upgrade --install concieragent ./charts \
   --set existingSecret=concieragent-api-keys
 ```
 
-See [docs/deployment.md](docs/deployment.md) for detailed API documentation and deployment instructions.
+See [doc/deployment.md](doc/deployment.md) for detailed API documentation and deployment instructions.
 
 ---
 
@@ -659,16 +679,33 @@ kubectl get ingress -n demos | grep concieragent
 ```
 concieragent/
 ├── 📄 src/
-│   ├── bot.ts                    # Express server, webhooks, endpoints
+│   ├── bot.ts                    # Express server entry point
 │   ├── agent/
 │   │   ├── TravelAgent.ts        # Main orchestration logic
 │   │   └── McpClient.ts          # MCP protocol client
-│   └── providers/
-│       ├── types.ts              # Provider interfaces
-│       ├── openai-provider.ts    # OpenAI adapter
-│       ├── claude-provider.ts    # Claude adapter
-│       ├── ollama-provider.ts    # Ollama adapter
-│       └── index.ts              # Provider factory
+│   ├── providers/
+│   │   ├── types.ts              # Provider interfaces
+│   │   ├── openai-provider.ts   # OpenAI adapter
+│   │   ├── claude-provider.ts    # Claude adapter
+│   │   ├── ollama-provider.ts    # Ollama adapter
+│   │   └── index.ts              # Provider factory
+│   ├── controllers/              # Route handlers
+│   │   ├── health.controller.ts  # Health check endpoint
+│   │   ├── message.controller.ts # Message webhook handler
+│   │   ├── connection.controller.ts # Connection webhook handler
+│   │   └── index.ts              # Controller exports
+│   ├── config/                   # Configuration modules
+│   │   ├── app.config.ts         # Application configuration
+│   │   └── index.ts              # Config exports
+│   ├── dto/                      # Data Transfer Objects
+│   │   └── index.ts              # DTO definitions
+│   ├── common/                   # Shared utilities
+│   │   ├── enums/                # Enum definitions
+│   │   └── index.ts              # Common exports
+│   └── i18n/                     # Internationalization
+│       ├── en/msg.json           # English messages
+│       ├── es/msg.json           # Spanish messages
+│       └── fr/msg.json           # French messages
 ├── 🐍 mcp_travelassistant/
 │   └── servers/
 │       ├── flight_server/        # ✈️ Flight search
@@ -680,8 +717,16 @@ concieragent/
 ├── 📜 scripts/
 │   ├── docker-run.sh             # VS Agent startup
 │   └── entrypoint.sh             # Docker entrypoint script
+├── 🐳 docker-dev/                # Development Docker setup
+│   ├── docker-compose.yml        # Docker compose config
+│   ├── ngrok-config.yml          # Ngrok configuration
+│   └── README.md                 # Dev setup instructions
 ├── 📋 package.json               # Dependencies
 ├── ⚙️ tsconfig.json              # TypeScript config
+├── ⚙️ tsconfig.build.json        # Build-specific TypeScript config
+├── 📝 .eslintrc.js               # ESLint configuration
+├── 📝 .prettierrc                # Prettier configuration
+├── 📝 .npmrc                     # pnpm configuration
 └── 📖 README.md                  # You are here!
 ```
 

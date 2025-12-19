@@ -1,0 +1,3 @@
+# Local docker-dev files
+.env
+*.log

@@ -1,0 +1,76 @@
+version: '3'
+
+services:
+  vs-agent:
+    image: io2060/vs-agent:dev
+    restart: always
+    networks:
+      - chatbot
+    ports:
+      - 3000:3000
+      - 3001:3001
+    depends_on:
+      - postgres
+    environment:
+      - AGENT_PUBLIC_DID=did:webvh:${NGROK_DOMAIN:-your-ngrok-domain.ngrok-free.app}
+      - AGENT_INVITATION_IMAGE_URL=https://${NGROK_DOMAIN:-your-ngrok-domain.ngrok-free.app}/logo.png
+      - AGENT_LABEL=Concieragent
+      - USE_CORS=true
+      - EVENTS_BASE_URL=${EVENTS_BASE_URL:-https://${NGROK_DOMAIN:-your-ngrok-domain.ngrok-free.app}}
+      - AGENT_WALLET_ID=${AGENT_WALLET_ID:-Concieragent}
+      - AGENT_WALLET_KEY=${AGENT_WALLET_KEY:-Concieragent}
+      - POSTGRES_HOST=postgres
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+
+  concieragent-app:
+    build: 
+      context: ..
+      dockerfile: Dockerfile
+    image: concieragent-app
+    container_name: concieragent-app
+    restart: always
+    networks:
+      - chatbot
+    ports:
+      - 4001:4001
+    environment:
+      - VS_AGENT_URL=http://vs-agent:3000
+      - LLM_PROVIDER=openai
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - SERPAPI_KEY=${SERPAPI_KEY}
+      - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY}
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-concieragent}
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB:-concieragent}
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: concieragent-postgres
+    restart: always
+    networks:
+      - chatbot
+    ports:
+      - ${POSTGRES_PORT:-5432}:5432
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB:-concieragent}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
+
+networks:
+  chatbot:

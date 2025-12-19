@@ -14,7 +14,7 @@ WORKDIR /app
 RUN corepack enable
 
 # Copy package files
-COPY package.json pnpm-lock.yaml* ./
+COPY package.json pnpm-lock.yaml ./
 
 # Install production dependencies only
 RUN pnpm install --prod --frozen-lockfile && \
@@ -35,7 +35,7 @@ COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 
 # Copy source code
-COPY tsconfig.json ./
+COPY tsconfig.json tsconfig.build.json ./
 COPY src/ ./src/
 
 # Build TypeScript
@@ -64,11 +64,11 @@ WORKDIR /app
 # Copy Node.js application
 # ───────────────────────────────────────────────────────────────────────────
 COPY --from=node-deps /app/node_modules ./node_modules
-COPY --from=node-builder /app/dist ./dist
+COPY --from=node-builder /app/build ./build
 COPY package.json ./
 
 # Copy static assets
-COPY logo.png ./
+COPY assets/ ./assets/
 
 # ───────────────────────────────────────────────────────────────────────────
 # Copy and setup Python MCP servers
@@ -111,4 +111,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
     CMD curl -f http://localhost:4001/health || exit 1
 
 ENTRYPOINT ["/app/entrypoint.sh"]
-CMD ["node", "dist/bot.js"]
+CMD ["node", "build/bot.js"]
