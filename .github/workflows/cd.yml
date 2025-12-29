@@ -131,6 +131,12 @@ jobs:
     runs-on: ubuntu-latest
     needs: [resolve-version, build]
     if: always() && (needs.build.result == 'success' || github.event.inputs.deploy_only == 'true')
+    env:
+      RELEASE_TYPE: ${{ needs.resolve-version.outputs.release-type }}
+      RELEASE_VERSION: ${{ needs.resolve-version.outputs.release-version }}
+      RELEASE_MAJOR: ${{ needs.resolve-version.outputs.release-major }}
+      RELEASE_MINOR: ${{ needs.resolve-version.outputs.release-minor }}
+      RELEASE_PATCH: ${{ needs.resolve-version.outputs.release-patch }}
 
     steps:
       - name: Checkout Code
@@ -143,33 +149,45 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Update Chart Version
-        run: |
-          VERSION="${{ needs.resolve-version.outputs.release-version }}"
-          sed -i "s/^version:.*/version: $VERSION/" ./charts/Chart.yaml
-          sed -i "s/^appVersion:.*/appVersion: \"$VERSION\"/" ./charts/Chart.yaml
-          echo "📋 Updated Chart.yaml with version: $VERSION"
-          cat ./charts/Chart.yaml
-
       - name: Log in to Docker Hub Helm Registry
         run: |
           echo "${{ secrets.DOCKER_HUB_PWD }}" | helm registry login -u "${{ secrets.DOCKER_HUB_LOGIN }}" --password-stdin docker.io
 
       - name: Package and Push Helm Chart
         run: |
-          VERSION="${{ needs.resolve-version.outputs.release-version }}"
+          # Determine tags based on release type (matches vs-agent pattern)
+          if [ "$RELEASE_TYPE" = "stable" ]; then
+            TAGS=("${RELEASE_VERSION}")
+          else
+            TAGS=(
+              "v${RELEASE_MAJOR}.${RELEASE_MINOR}.${RELEASE_PATCH:0:1}-dev"
+              "${RELEASE_VERSION}"
+            )
+          fi
+          
           CHART_NAME=$(grep '^name:' ./charts/Chart.yaml | awk '{print $2}')
-          
-          # Update dependencies
-          helm dependency update ./charts 2>/dev/null || true
-          
-          # Package chart
-          helm package ./charts -d ./charts
-          
-          # Push to OCI registry
-          helm push ./charts/$CHART_NAME-$VERSION.tgz oci://docker.io/${{ secrets.DOCKER_HUB_LOGIN }}
           
           echo "### 📦 Helm Chart Published" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "\`oci://docker.io/${{ secrets.DOCKER_HUB_LOGIN }}/$CHART_NAME:$VERSION\`" >> $GITHUB_STEP_SUMMARY
+          echo "| Tag | Registry |" >> $GITHUB_STEP_SUMMARY
+          echo "|-----|----------|" >> $GITHUB_STEP_SUMMARY
+          
+          for tag in "${TAGS[@]}"; do
+            # Update Chart.yaml with current tag
+            sed -i "s/^version:.*/version: $tag/" ./charts/Chart.yaml
+            sed -i "s/^appVersion:.*/appVersion: \"$tag\"/" ./charts/Chart.yaml
+            
+            echo "📋 Building chart with version: $tag"
+            
+            # Update dependencies
+            helm dependency update ./charts 2>/dev/null || true
+            
+            # Package chart
+            helm package ./charts -d ./charts
+            
+            # Push to OCI registry
+            helm push ./charts/${CHART_NAME}-${tag}.tgz oci://docker.io/${{ secrets.DOCKER_HUB_LOGIN }}
+            
+            echo "| \`$tag\` | \`oci://docker.io/${{ secrets.DOCKER_HUB_LOGIN }}/$CHART_NAME:$tag\` |" >> $GITHUB_STEP_SUMMARY
+          done
 
