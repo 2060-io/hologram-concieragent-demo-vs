@@ -357,13 +357,6 @@ export class TravelAgent {
     let totalTools = 0
     for (const server of servers) {
       try {
-        // Check if file exists before connecting, handle different naming conventions if needed
-        // In the file list provided earlier:
-        // hotel_server.py, event_server.py, geocoder_server.py, finance_search_server.py seem correct
-        // flight_server.py is correct
-        // weather_server/weather_search_server.py might be weather_server.py or weatherstack_server.py
-        // Let's assume the paths from the plan/readme are mostly correct but verify against file list
-
         const client = new McpClient(server.path, server.env)
         await client.connect()
         this.mcpClients.push(client)
@@ -604,6 +597,19 @@ ${info.language ? `- User language: ${info.language}` : ''}
 
 CURRENT DATE: ${currentDate}
 
+=== DATE HANDLING & LOGIC (CRITICAL) ===
+
+1. LOGICAL FUTURE ASSUMPTION:
+   - Users often refer to dates (e.g., "January") that might be in the next year relative to the CURRENT DATE.
+   - RULE: If a user mentions a month or date that has already passed in the current year, YOU MUST ASSUME they mean the NEXT YEAR.
+   - Example: If CURRENT DATE is 2025-12-31 and user asks for "January 15", strictly interpret this as 2026-01-15.
+   - NEVER query tools with dates in the past. It will cause 400 errors.
+
+2. TOOL DATE FORMATS:
+   - ALWAYS format dates in MCP tool arguments as YYYY-MM-DD.
+   - Ensure "departure_date" is strictly before "return_date".
+   - Use the CURRENT DATE as the anchor for all "next week", "this weekend" calculations.
+
 === LANGUAGE & LOCALIZATION ===
 
 ${this.getLanguageInstructions(userLanguage)}
@@ -676,10 +682,11 @@ FINANCE:
    - If dates were mentioned, use them - don't ask again
 
 2. MAKE SMART ASSUMPTIONS
-   - If user says "next weekend", calculate the dates
-   - If user says "a week", assume 7 days
-   - If no party size mentioned, assume 1-2 adults
-   - Default to user's currency based on their language/region
+   - If user says "next weekend", calculate the dates based on CURRENT DATE.
+   - If user says "January" and it's currently "December", assume next year (see DATE HANDLING above).
+   - If user says "a week", assume 7 days.
+   - If no party size mentioned, assume 1-2 adults.
+   - Default to user's currency based on their language/region.
 
 3. USE CONVERSATION CONTEXT
    - Remember destinations, dates, preferences from earlier messages
