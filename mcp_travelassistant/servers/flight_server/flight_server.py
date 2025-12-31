@@ -18,6 +18,38 @@ def get_serpapi_key() -> str:
         raise ValueError("SERPAPI_KEY environment variable is required")
     return api_key
 
+def normalize_date(date_str: str) -> datetime:
+    """Parse date string to datetime object."""
+    try:
+        return datetime.strptime(date_str, "%Y-%m-%d")
+    except ValueError:
+        raise ValueError(f"Invalid date format: {date_str}. Expected YYYY-MM-DD")
+
+def ensure_future_date(date_obj: datetime, reference_date: Optional[datetime] = None) -> datetime:
+    """
+    Ensure the date is in the future relative to now. 
+    If it's in the past, assume it belongs to the next year.
+    """
+    now = datetime.now()
+    # If the date is strictly in the past (yesterday or before), add a year
+    # We allow 'today' to pass
+    if date_obj.date() < now.date():
+        try:
+            return date_obj.replace(year=date_obj.year + 1)
+        except ValueError:
+            # Handle Feb 29 on non-leap years
+            return date_obj + timedelta(days=365)
+    
+    # If a reference date is provided (e.g., outbound date for a return flight),
+    # ensure this date is not before the reference date
+    if reference_date and date_obj.date() < reference_date.date():
+        try:
+            return date_obj.replace(year=date_obj.year + 1)
+        except ValueError:
+            return date_obj + timedelta(days=365)
+            
+    return date_obj
+
 @mcp.tool()
 def search_flights(
     departure_id: str,
@@ -61,13 +93,38 @@ def search_flights(
     try:
         api_key = get_serpapi_key()
         
+        # --- DATE VALIDATION AND CORRECTION START ---
+        # Parse and correct dates to ensure they are not in the past
+        out_dt = normalize_date(outbound_date)
+        corrected_out_dt = ensure_future_date(out_dt)
+        final_outbound_date = corrected_out_dt.strftime("%Y-%m-%d")
+        
+        final_return_date = None
+        if return_date:
+            ret_dt = normalize_date(return_date)
+            # Ensure return date is in future AND after outbound date
+            corrected_ret_dt = ensure_future_date(ret_dt, reference_date=corrected_out_dt)
+            
+            # Double check: if return is still before outbound (e.g. user error), fix it
+            if corrected_ret_dt < corrected_out_dt:
+                corrected_ret_dt = corrected_ret_dt.replace(year=corrected_ret_dt.year + 1)
+                
+            final_return_date = corrected_ret_dt.strftime("%Y-%m-%d")
+            
+        if final_outbound_date != outbound_date:
+            print(f"⚠️ Auto-corrected past outbound date from {outbound_date} to {final_outbound_date}")
+            
+        if return_date and final_return_date != return_date:
+            print(f"⚠️ Auto-corrected return date from {return_date} to {final_return_date}")
+        # --- DATE VALIDATION AND CORRECTION END ---
+        
         # Build search parameters
         params = {
             "engine": "google_flights",
             "api_key": api_key,
             "departure_id": departure_id,
             "arrival_id": arrival_id,
-            "outbound_date": outbound_date,
+            "outbound_date": final_outbound_date,
             "type": trip_type,
             "adults": adults,
             "children": children,
@@ -80,21 +137,26 @@ def search_flights(
         }
         
         # Add return date for round trips
-        if trip_type == 1 and return_date:
-            params["return_date"] = return_date
-        elif trip_type == 1 and not return_date:
+        if trip_type == 1 and final_return_date:
+            params["return_date"] = final_return_date
+        elif trip_type == 1 and not final_return_date:
             return {"error": "Return date is required for round trip flights"}
         
         # Make API request
+        print(f"✈️ Searching flights: {departure_id} -> {arrival_id} on {final_outbound_date}")
         response = requests.get("https://serpapi.com/search", params=params)
         response.raise_for_status()
         
         flight_data = response.json()
         
+        # Check for error in JSON response (SerpApi sometimes returns 200 but with 'error' field)
+        if "error" in flight_data:
+             return {"error": f"SerpApi Error: {flight_data['error']}"}
+        
         # Create search identifier
-        search_id = f"{departure_id}_{arrival_id}_{outbound_date}"
-        if return_date:
-            search_id += f"_{return_date}"
+        search_id = f"{departure_id}_{arrival_id}_{final_outbound_date}"
+        if final_return_date:
+            search_id += f"_{final_return_date}"
         search_id += f"_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         
         # Create directory structure
@@ -106,8 +168,8 @@ def search_flights(
                 "search_id": search_id,
                 "departure": departure_id,
                 "arrival": arrival_id,
-                "outbound_date": outbound_date,
-                "return_date": return_date,
+                "outbound_date": final_outbound_date,
+                "return_date": final_return_date,
                 "trip_type": "Round trip" if trip_type == 1 else "One way" if trip_type == 2 else "Multi-city",
                 "passengers": {
                     "adults": adults,
@@ -146,6 +208,16 @@ def search_flights(
         
         return summary
         
+    except requests.exceptions.HTTPError as e:
+        error_msg = f"API request failed: {str(e)}"
+        # Try to extract more details from response if possible
+        try:
+            error_details = e.response.json()
+            if 'error' in error_details:
+                error_msg += f" - Details: {error_details['error']}"
+        except:
+            pass
+        return {"error": error_msg}
     except requests.exceptions.RequestException as e:
         return {"error": f"API request failed: {str(e)}"}
     except ValueError as e:
