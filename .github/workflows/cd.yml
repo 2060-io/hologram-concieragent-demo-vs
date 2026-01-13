@@ -155,7 +155,7 @@ jobs:
 
       - name: Package and Push Helm Chart
         run: |
-          # Determine tags based on release type (matches vs-agent pattern)
+          # Determine tags based on release type 
           if [ "$RELEASE_TYPE" = "stable" ]; then
             TAGS=("${RELEASE_VERSION}")
           else
