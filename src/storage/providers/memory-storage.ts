@@ -23,7 +23,10 @@ export class MemoryStorageProvider implements StorageProvider {
   async initialize(): Promise<void> {
     console.log('💾 Memory storage initialized')
 
-    // Start cleanup interval (every 5 minutes)
+    // Start cleanup interval (every 5 minutes) - clear any existing interval first
+    if (this.cleanupInterval) {
+      clearInterval(this.cleanupInterval)
+    }
     this.cleanupInterval = setInterval(
       () => {
         this.cleanupExpiredSessions().catch(console.error)

@@ -165,6 +165,11 @@ export class PostgresStorageProvider implements StorageProvider {
       return context
     }
 
+    // Delete expired session if it exists (to avoid unique constraint violation)
+    if (session) {
+      await sessions.delete({ id: session.id })
+    }
+
     // Create new session
     const now = new Date()
     const expiresAt = new Date(now.getTime() + this.config.sessionExpirationDays * 24 * 60 * 60 * 1000)
