@@ -43,7 +43,7 @@ app.get('/logo.png', (req, res) => {
   })
 })
 
-app.use(express.json())
+app.use(express.json({ limit: '10mb' }))
 
 // Routes
 app.get('/health', HealthController.getHealth)

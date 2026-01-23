@@ -28,12 +28,40 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
 
 # ───────────────────────────────────────────────────────────────────────────
+# Database Configuration
+# PostgreSQL sidecar for persistent session storage
+# ───────────────────────────────────────────────────────────────────────────
+database:
+  enabled: true
+  host: localhost  # Sidecar in same pod
+  name: concieragent
+  user: concieragent
+
+# ───────────────────────────────────────────────────────────────────────────
+# Redis Configuration
+# Redis sidecar for session caching
+# ───────────────────────────────────────────────────────────────────────────
+redis:
+  enabled: true
+  host: localhost  # Sidecar in same pod
+  port: 6379
+
+# ───────────────────────────────────────────────────────────────────────────
+# Persistence Configuration
+# PersistentVolumeClaim for PostgreSQL data
+# ───────────────────────────────────────────────────────────────────────────
+persistence:
+  enabled: true
+  size: 5Gi
+  storageClass: ""  # Use cluster default
+
+# ───────────────────────────────────────────────────────────────────────────
 # Environment Variables
 # ───────────────────────────────────────────────────────────────────────────
 env:
   # VS Agent connection (internal Kubernetes service)
   vsAgentUrl: http://{{ .Values.vs-agent-chart.name }}:3000
-  
+
   # LLM Provider configuration
   llmProvider: openai
   # openaiModel: gpt-4o
@@ -41,15 +69,28 @@ env:
   # ollamaBaseUrl: http://ollama:11434
   # ollamaModel: llama3.1
 
+  # Storage configuration
+  storageProvider: postgres
+  postgresHost: localhost
+  postgresPort: "5432"
+  postgresDatabase: concieragent
+  postgresUser: concieragent
+  redisHost: localhost
+  redisPort: "6379"
+  sessionExpirationDays: "7"
+
 # Secrets - these should be set via Kubernetes secrets or CI/CD
 secrets:
   # LLM API Keys (at least one required)
   openaiApiKey: ""
   anthropicApiKey: ""
-  
+
   # MCP Server API Keys
   serpapiKey: ""
   openweatherApiKey: ""
+
+  # Database password
+  postgresPassword: ""
 
 # Use existing Kubernetes secret instead of creating one
 existingSecret: ""
