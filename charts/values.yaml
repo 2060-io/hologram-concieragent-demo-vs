@@ -96,7 +96,7 @@ vs-agent-chart:
   # DIDComm/Hologram configuration
   didcommLabel: "Concieragent"
   eventsBaseUrl: "http://{{ .Values.name }}:4001"
-  didcommInvitationImageUrl: "https://raw.githubusercontent.com/AirKyzzZ/concieragent-hologram-demo/refs/heads/feat-mcp-travel-assistant/logo.png"
+  didcommInvitationImageUrl: "https://raw.githubusercontent.com/2060-io/hologram-concieragent-demo-vs/main/logo.png"
   
   # Ingress for VS Agent (DIDComm endpoint)
   ingress:
