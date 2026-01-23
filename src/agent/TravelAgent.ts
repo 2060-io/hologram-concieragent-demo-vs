@@ -9,18 +9,9 @@ import {
   type LLMTool,
   type LLMProviderType,
 } from '../providers'
+import type { StorageProvider, ConversationContext, SupportedLanguage } from '../storage/types'
 
 dotenv.config()
-
-// Conversation context storage per connection
-interface ConversationContext {
-  messages: LLMMessage[]
-  extractedInfo: ExtractedUserInfo
-  lastUpdated: number
-}
-
-// Supported languages
-type SupportedLanguage = 'en' | 'es' | 'fr'
 
 // Language detection patterns
 const LANGUAGE_PATTERNS: { lang: SupportedLanguage; patterns: RegExp[] }[] = [
@@ -42,26 +33,14 @@ const LANGUAGE_PATTERNS: { lang: SupportedLanguage; patterns: RegExp[] }[] = [
   },
 ]
 
-// Information extracted from the conversation
-interface ExtractedUserInfo {
-  name?: string
-  currentLocation?: string
-  destinations?: string[]
-  travelDates?: { start?: string; end?: string }
-  budget?: { amount?: number; currency?: string }
-  preferences?: string[]
-  partySize?: number
-  interests?: string[]
-  recentSearches?: string[]
-  language?: SupportedLanguage // Detected language
-}
-
 export class TravelAgent {
   private provider: LLMProvider
   private mcpClients: McpClient[] = []
   private tools: LLMTool[] = []
   private toolMap: Map<string, McpClient> = new Map()
-  // Store conversation history per connection
+  // Storage provider for conversation persistence
+  private storage: StorageProvider | null = null
+  // Fallback in-memory storage
   private conversationContexts: Map<string, ConversationContext> = new Map()
   // Maximum messages to keep in history
   private readonly MAX_HISTORY_MESSAGES = 20
@@ -72,7 +51,8 @@ export class TravelAgent {
   private readonly MAX_TOTAL_CONTEXT_CHARS = 24000 // ~6000 tokens total context
   private readonly MAX_HISTORY_CHARS = 8000 // ~2000 tokens for history
 
-  constructor(providerType?: LLMProviderType) {
+  constructor(storage?: StorageProvider, providerType?: LLMProviderType) {
+    this.storage = storage || null
     // Log available providers
     const available = getAvailableProviders()
     console.log('📋 Available LLM providers:')
@@ -83,6 +63,15 @@ export class TravelAgent {
     // Create the provider
     this.provider = createProvider(providerType)
     console.log(`🤖 Using LLM: ${this.provider.name} (${this.provider.model})`)
+  }
+
+  /**
+   * Set storage provider after construction
+   * Useful when storage is initialized asynchronously
+   */
+  setStorage(storage: StorageProvider): void {
+    this.storage = storage
+    console.log(`💾 Storage provider set: ${storage.name}`)
   }
 
   /**
@@ -395,7 +384,13 @@ export class TravelAgent {
   /**
    * Get or create conversation context for a connection
    */
-  private getOrCreateContext(connectionId: string): ConversationContext {
+  private async getOrCreateContext(connectionId: string): Promise<ConversationContext> {
+    // Use storage provider if available
+    if (this.storage) {
+      return this.storage.getOrCreateContext(connectionId)
+    }
+
+    // Fallback to in-memory storage
     const existing = this.conversationContexts.get(connectionId)
     const now = Date.now()
 
@@ -412,6 +407,19 @@ export class TravelAgent {
     }
     this.conversationContexts.set(connectionId, newContext)
     return newContext
+  }
+
+  /**
+   * Save conversation context
+   */
+  private async saveContext(connectionId: string, context: ConversationContext): Promise<void> {
+    if (this.storage) {
+      await this.storage.saveContext(connectionId, context)
+    } else {
+      // In-memory storage is updated by reference, but update lastUpdated
+      context.lastUpdated = Date.now()
+      this.conversationContexts.set(connectionId, context)
+    }
   }
 
   /**
@@ -719,7 +727,7 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
 
   async processMessage(userMessage: string, connectionId: string): Promise<string> {
     // Get or create conversation context
-    const context = this.getOrCreateContext(connectionId)
+    const context = await this.getOrCreateContext(connectionId)
 
     // Update extracted info from the new message
     this.updateExtractedInfo(context, userMessage)
@@ -936,10 +944,13 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
       context.messages.push({ role: 'assistant', content: cleanedResponse })
       context.lastUpdated = Date.now()
 
-      // Prune old messages if needed
-      if (context.messages.length > this.MAX_HISTORY_MESSAGES * 2) {
+      // Prune old messages if needed (only for in-memory, storage handles its own pruning)
+      if (!this.storage && context.messages.length > this.MAX_HISTORY_MESSAGES * 2) {
         context.messages = context.messages.slice(-this.MAX_HISTORY_MESSAGES)
       }
+
+      // Save context to storage
+      await this.saveContext(connectionId, context)
 
       console.log(`💬 Response generated for connection ${connectionId} (${cleanedResponse.length} chars)`)
       return cleanedResponse
@@ -952,21 +963,12 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
   /**
    * Clear conversation context for a connection
    */
-  clearContext(connectionId: string): void {
-    this.conversationContexts.delete(connectionId)
-    console.log(`🧹 Cleared context for connection ${connectionId}`)
-  }
-
-  /**
-   * Clean up expired contexts
-   */
-  private cleanupExpiredContexts(): void {
-    const now = Date.now()
-    for (const [connectionId, context] of this.conversationContexts) {
-      if (now - context.lastUpdated > this.CONTEXT_EXPIRATION_MS) {
-        this.conversationContexts.delete(connectionId)
-        console.log(`🧹 Expired context removed for ${connectionId}`)
-      }
+  async clearContext(connectionId: string): Promise<void> {
+    if (this.storage) {
+      await this.storage.clearContext(connectionId)
+    } else {
+      this.conversationContexts.delete(connectionId)
+      console.log(`🧹 Cleared context for connection ${connectionId}`)
     }
   }
 
@@ -1045,6 +1047,10 @@ Où souhaitez-vous voyager ? Indiquez-moi simplement votre destination et vos da
   async cleanup() {
     for (const client of this.mcpClients) {
       await client.close()
+    }
+    // Close storage provider if available
+    if (this.storage) {
+      await this.storage.close()
     }
   }
 }

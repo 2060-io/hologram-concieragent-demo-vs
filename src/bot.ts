@@ -3,10 +3,16 @@ import { TravelAgent } from './agent/TravelAgent'
 import path from 'path'
 import { HealthController, MessageController, ConnectionController } from './controllers'
 import { getAppConfig } from './config'
+import { createStorageProvider, type StorageProvider } from './storage'
 
 const app = express()
 const config = getAppConfig()
 const port = config.port
+
+// Storage provider (initialized async)
+let storage: StorageProvider | null = null
+
+// Create agent (storage will be set after initialization)
 const agent = new TravelAgent()
 
 // Initialize controllers
@@ -45,21 +51,36 @@ app.get('/welcome', (req, res) => connectionController.getWelcome(req, res))
 app.post('/message-received', (req, res) => messageController.handleMessageReceived(req, res))
 app.post('/connection-established', (req, res) => connectionController.handleConnectionEstablished(req, res))
 
+/**
+ * Initialize all services (storage + MCP tools)
+ */
+async function initializeServices(): Promise<void> {
+  // Initialize storage provider (optional - falls back to memory if it fails)
+  try {
+    storage = createStorageProvider()
+    await storage.initialize()
+    agent.setStorage(storage)
+    console.log('✅ Storage provider initialized')
+  } catch (error) {
+    console.warn('⚠️ Failed to initialize storage provider, using in-memory fallback:', error)
+    storage = null
+  }
+
+  // Initialize Travel Agent (MCP servers)
+  console.log('🔄 Initializing Travel Agent (connecting to MCP servers)...')
+  await agent.initialize()
+  console.log('✅ Travel Agent ready!')
+}
+
 app.listen(port, () => {
   console.log(`🤖 Concieragent server listening at http://localhost:${port}`)
   console.log(`📡 VS Agent URL: ${config.vsAgentUrl}`)
 
-  // Initialize Travel Agent asynchronously (don't block server startup)
-  console.log('🔄 Initializing Travel Agent (connecting to MCP servers)...')
-  agent
-    .initialize()
-    .then(() => {
-      console.log('✅ Travel Agent ready!')
-    })
-    .catch(error => {
-      console.error('❌ Failed to initialize Travel Agent:', error)
-      console.log('⚠️ Bot will continue but MCP features may not work')
-    })
+  // Initialize services asynchronously (don't block server startup)
+  initializeServices().catch(error => {
+    console.error('❌ Failed to initialize services:', error)
+    console.log('⚠️ Bot will continue but some features may not work')
+  })
 })
 
 // Keep process alive
@@ -69,5 +90,8 @@ process.stdin.resume()
 process.on('SIGINT', async () => {
   console.log('🛑 Shutting down...')
   await agent.cleanup()
+  if (storage) {
+    await storage.close()
+  }
   process.exit(0)
 })
