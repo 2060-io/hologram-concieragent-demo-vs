@@ -48,7 +48,6 @@ export class TravelAgent {
   private readonly CONTEXT_EXPIRATION_MS = 60 * 60 * 1000
   // Token limits for context management
   private readonly MAX_TOOL_RESULT_CHARS = 6000 // ~1500 tokens per tool result
-  private readonly MAX_TOTAL_CONTEXT_CHARS = 24000 // ~6000 tokens total context
   private readonly MAX_HISTORY_CHARS = 8000 // ~2000 tokens for history
 
   constructor(storage?: StorageProvider, providerType?: LLMProviderType) {
@@ -72,14 +71,6 @@ export class TravelAgent {
   setStorage(storage: StorageProvider): void {
     this.storage = storage
     console.log(`💾 Storage provider set: ${storage.name}`)
-  }
-
-  /**
-   * Estimate token count from character count (rough approximation)
-   * GPT models use ~4 chars per token on average
-   */
-  private estimateTokens(text: string): number {
-    return Math.ceil(text.length / 4)
   }
 
   /**
@@ -1020,17 +1011,6 @@ Où souhaitez-vous voyager ? Indiquez-moi simplement votre destination et vos da
     }
 
     return welcomeMessages[lang]
-  }
-
-  /**
-   * Detect language from a message and return appropriate welcome
-   */
-  getWelcomeMessageForUser(userMessage?: string): string {
-    if (userMessage) {
-      const detectedLang = this.detectLanguage(userMessage)
-      return this.getWelcomeMessage(detectedLang)
-    }
-    return this.getWelcomeMessage('en')
   }
 
   /**

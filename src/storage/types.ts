@@ -22,28 +22,6 @@ export interface ExtractedUserInfo {
   language?: SupportedLanguage
 }
 
-// Session data stored in the database
-export interface SessionData {
-  id: string
-  connectionId: string
-  extractedInfo: ExtractedUserInfo
-  lastUpdated: Date
-  createdAt: Date
-  expiresAt: Date
-}
-
-// Message data stored in the database
-export interface MessageData {
-  id: string
-  sessionId: string
-  role: LLMMessage['role']
-  content: string
-  toolCallId?: string
-  toolCalls?: LLMMessage['toolCalls']
-  sequenceNumber: number
-  createdAt: Date
-}
-
 // Conversation context (used by TravelAgent)
 export interface ConversationContext {
   messages: LLMMessage[]
@@ -112,6 +90,3 @@ export interface StorageProvider {
    */
   close(): Promise<void>
 }
-
-// Factory function type
-export type StorageProviderFactory = (config?: StorageProviderConfig) => StorageProvider

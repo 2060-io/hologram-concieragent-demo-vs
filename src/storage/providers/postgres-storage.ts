@@ -193,71 +193,81 @@ export class PostgresStorageProvider implements StorageProvider {
   }
 
   async saveContext(connectionId: string, context: ConversationContext): Promise<void> {
-    const { sessions, messages } = this.ensureInitialized()
+    this.ensureInitialized()
 
-    const session = await sessions.findOne({
-      where: { connectionId },
+    if (!this.dataSource) {
+      throw new Error('DataSource not initialized')
+    }
+
+    // Use a transaction to ensure atomicity and prevent race conditions
+    await this.dataSource.transaction(async manager => {
+      const sessions = manager.getRepository(SessionEntity)
+      const messages = manager.getRepository(MessageEntity)
+
+      const session = await sessions.findOne({
+        where: { connectionId },
+      })
+
+      if (!session) {
+        throw new Error(
+          `Session not found for connection ${connectionId}. Context save failed - potential data loss.`,
+        )
+      }
+
+      // Update session metadata
+      session.extractedInfo = context.extractedInfo
+      session.expiresAt = new Date(Date.now() + this.config.sessionExpirationDays * 24 * 60 * 60 * 1000)
+      await sessions.save(session)
+
+      // Get the highest sequence number in DB for this session (with row lock to prevent race conditions)
+      const maxSeqResult = await messages
+        .createQueryBuilder('msg')
+        .select('MAX(msg.sequenceNumber)', 'maxSeq')
+        .where('msg.sessionId = :sessionId', { sessionId: session.id })
+        .setLock('pessimistic_write')
+        .getRawOne<{ maxSeq: number | null }>()
+
+      const existingMaxSeq = maxSeqResult?.maxSeq ?? -1
+      const existingCount = existingMaxSeq + 1
+
+      // Only save new messages (those beyond existing count)
+      const newMessages = context.messages.slice(existingCount)
+
+      if (newMessages.length > 0) {
+        const messageEntities: MessageEntity[] = newMessages.map((msg, index) => {
+          const entity = new MessageEntity()
+          entity.role = msg.role
+          entity.content = msg.content ?? ''
+          entity.toolCallId = msg.toolCallId
+          entity.toolCalls = msg.toolCalls
+          entity.sequenceNumber = existingCount + index
+          entity.sessionId = session.id
+          return entity
+        })
+
+        await messages.save(messageEntities)
+      }
+
+      // Prune old messages if exceeding limit (2x threshold triggers pruning to 1x)
+      const totalMessages = existingCount + newMessages.length
+      if (totalMessages > this.config.maxHistoryMessages * 2) {
+        const deleteCount = totalMessages - this.config.maxHistoryMessages
+        // Find oldest messages to delete
+        const messagesToDelete = await messages.find({
+          where: { sessionId: session.id },
+          order: { sequenceNumber: 'ASC' },
+          take: deleteCount,
+          select: ['id'],
+        })
+
+        if (messagesToDelete.length > 0) {
+          const idsToDelete = messagesToDelete.map(m => m.id)
+          await messages.delete(idsToDelete)
+        }
+      }
     })
 
-    if (!session) {
-      throw new Error(
-        `Session not found for connection ${connectionId}. Context save failed - potential data loss.`,
-      )
-    }
-
-    // Update session metadata
-    session.extractedInfo = context.extractedInfo
-    session.expiresAt = new Date(Date.now() + this.config.sessionExpirationDays * 24 * 60 * 60 * 1000)
-    await sessions.save(session)
-
-    // Get the highest sequence number in DB for this session
-    const maxSeqResult = await messages
-      .createQueryBuilder('msg')
-      .select('MAX(msg.sequenceNumber)', 'maxSeq')
-      .where('msg.sessionId = :sessionId', { sessionId: session.id })
-      .getRawOne()
-
-    const existingMaxSeq = maxSeqResult?.maxSeq ?? -1
-    const existingCount = existingMaxSeq + 1
-
-    // Only save new messages (those beyond existing count)
-    const newMessages = context.messages.slice(existingCount)
-
-    if (newMessages.length > 0) {
-      const messageEntities = newMessages.map((msg, index) => {
-        const entity = messages.create({
-          role: msg.role,
-          content: msg.content ?? '',
-          toolCallId: msg.toolCallId,
-          toolCalls: msg.toolCalls,
-          sequenceNumber: existingCount + index,
-          session: session,
-        })
-        return entity
-      })
-
-      await messages.save(messageEntities)
-    }
-
-    // Prune old messages if exceeding limit
-    const totalMessages = existingCount + newMessages.length
-    if (totalMessages > this.config.maxHistoryMessages * 2) {
-      const deleteCount = totalMessages - this.config.maxHistoryMessages
-      // Find oldest messages to delete
-      const messagesToDelete = await messages.find({
-        where: { sessionId: session.id },
-        order: { sequenceNumber: 'ASC' },
-        take: deleteCount,
-        select: ['id'],
-      })
-
-      if (messagesToDelete.length > 0) {
-        const idsToDelete = messagesToDelete.map(m => m.id)
-        await messages.delete(idsToDelete)
-      }
-    }
-
-    // Update cache (removed duplicate session save)
+    // Update cache only after successful transaction
     context.lastUpdated = Date.now()
     await this.cacheContext(connectionId, context)
   }
@@ -356,13 +366,34 @@ export class PostgresStorageProvider implements StorageProvider {
     try {
       const cached = await this.redis.get(this.cacheKey(connectionId))
       if (cached) {
-        return JSON.parse(cached)
+        const parsed: unknown = JSON.parse(cached)
+        // Validate the parsed data has the expected structure
+        if (this.isValidConversationContext(parsed)) {
+          return parsed
+        }
+        // Invalid cache data, invalidate it
+        console.warn('⚠️ Invalid cache data structure, invalidating')
+        await this.invalidateCache(connectionId)
       }
     } catch (error) {
       console.warn('⚠️ Redis cache read failed:', error)
     }
 
     return null
+  }
+
+  /**
+   * Type guard to validate ConversationContext structure from cache
+   */
+  private isValidConversationContext(data: unknown): data is ConversationContext {
+    if (!data || typeof data !== 'object') return false
+    const obj = data as Record<string, unknown>
+    return (
+      Array.isArray(obj.messages) &&
+      typeof obj.extractedInfo === 'object' &&
+      obj.extractedInfo !== null &&
+      typeof obj.lastUpdated === 'number'
+    )
   }
 
   private async cacheContext(connectionId: string, context: ConversationContext): Promise<void> {

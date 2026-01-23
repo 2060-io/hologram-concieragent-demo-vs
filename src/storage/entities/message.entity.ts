@@ -6,25 +6,25 @@ import {
   Index,
   ManyToOne,
   JoinColumn,
-  RelationId,
 } from 'typeorm'
 import { SessionEntity } from './session.entity'
 import type { LLMToolCall, MessageRole } from '../../providers/types'
 
 @Entity('messages')
-@Index('idx_messages_session_id', ['sessionId'])
+@Index('idx_messages_session_sequence', ['sessionId', 'sequenceNumber'])
 export class MessageEntity {
   @PrimaryGeneratedColumn('uuid')
   id!: string
+
+  @Column({ type: 'uuid' })
+  @Index('idx_messages_session_id')
+  sessionId!: string
 
   @ManyToOne(() => SessionEntity, session => session.messages, {
     onDelete: 'CASCADE',
   })
   @JoinColumn({ name: 'sessionId' })
   session!: SessionEntity
-
-  @RelationId((message: MessageEntity) => message.session)
-  sessionId!: string
 
   @Column({ type: 'varchar', length: 20 })
   role!: MessageRole

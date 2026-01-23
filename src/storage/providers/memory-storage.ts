@@ -23,10 +23,12 @@ export class MemoryStorageProvider implements StorageProvider {
   async initialize(): Promise<void> {
     console.log('💾 Memory storage initialized')
 
-    // Start cleanup interval (every 5 minutes) - clear any existing interval first
+    // Clear any existing cleanup interval to prevent memory leaks on re-initialization
     if (this.cleanupInterval) {
       clearInterval(this.cleanupInterval)
     }
+
+    // Start cleanup interval (every 5 minutes)
     this.cleanupInterval = setInterval(
       () => {
         this.cleanupExpiredSessions().catch(console.error)
@@ -55,13 +57,18 @@ export class MemoryStorageProvider implements StorageProvider {
   }
 
   async saveContext(connectionId: string, context: ConversationContext): Promise<void> {
-    // Prune old messages if needed
-    if (context.messages.length > this.maxHistoryMessages * 2) {
-      context.messages = context.messages.slice(-this.maxHistoryMessages)
+    // Create a copy to avoid mutating the input parameter
+    const contextToSave: ConversationContext = {
+      ...context,
+      messages:
+        context.messages.length > this.maxHistoryMessages * 2
+          ? context.messages.slice(-this.maxHistoryMessages)
+          : [...context.messages],
+      extractedInfo: { ...context.extractedInfo },
+      lastUpdated: Date.now(),
     }
 
-    context.lastUpdated = Date.now()
-    this.contexts.set(connectionId, context)
+    this.contexts.set(connectionId, contextToSave)
   }
 
   async clearContext(connectionId: string): Promise<void> {

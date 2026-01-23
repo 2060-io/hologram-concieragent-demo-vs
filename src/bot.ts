@@ -89,9 +89,7 @@ process.stdin.resume()
 // Handle cleanup on exit
 process.on('SIGINT', async () => {
   console.log('🛑 Shutting down...')
+  // Note: agent.cleanup() already closes storage, no need to call storage.close() separately
   await agent.cleanup()
-  if (storage) {
-    await storage.close()
-  }
   process.exit(0)
 })

@@ -32,19 +32,3 @@ export function createStorageProvider(
       return new MemoryStorageProvider(config)
   }
 }
-
-/**
- * Check which storage providers are available based on configuration
- */
-export function getAvailableStorageProviders(): { type: StorageProviderType; configured: boolean }[] {
-  return [
-    {
-      type: 'memory',
-      configured: true, // Always available
-    },
-    {
-      type: 'postgres',
-      configured: !!(process.env.POSTGRES_HOST && process.env.POSTGRES_DATABASE && process.env.POSTGRES_USER),
-    },
-  ]
-}
