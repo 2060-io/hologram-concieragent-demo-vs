@@ -1,3 +1,4 @@
+import logger from '../../utils/logger'
 /**
  * PostgreSQL Storage Provider
  * Persistent storage with TypeORM and optional Redis caching.
@@ -62,7 +63,7 @@ export class PostgresStorageProvider implements StorageProvider {
   }
 
   async initialize(): Promise<void> {
-    console.log('🗄️ Initializing PostgreSQL storage...')
+    logger.info('🗄️ Initializing PostgreSQL storage...')
 
     // Initialize TypeORM DataSource
     this.dataSource = new DataSource({
@@ -78,7 +79,7 @@ export class PostgresStorageProvider implements StorageProvider {
     })
 
     await this.dataSource.initialize()
-    console.log(
+    logger.info(
       `✅ PostgreSQL connected to ${this.config.postgresHost}:${this.config.postgresPort}/${this.config.postgresDatabase}`,
     )
 
@@ -101,12 +102,12 @@ export class PostgresStorageProvider implements StorageProvider {
           this.consecutiveCleanupFailures = 0
         } catch (error) {
           this.consecutiveCleanupFailures++
-          console.error(
-            `❌ Cleanup failed (attempt ${this.consecutiveCleanupFailures}/${this.MAX_CLEANUP_FAILURES}):`,
-            error,
+          logger.error(
+            { err: error },
+            `❌ Cleanup failed (attempt ${this.consecutiveCleanupFailures}/${this.MAX_CLEANUP_FAILURES})`,
           )
           if (this.consecutiveCleanupFailures >= this.MAX_CLEANUP_FAILURES) {
-            console.error(
+            logger.error(
               '💀 CRITICAL: Session cleanup has failed repeatedly. Manual intervention may be required.',
             )
           }
@@ -115,7 +116,7 @@ export class PostgresStorageProvider implements StorageProvider {
       60 * 60 * 1000,
     )
 
-    console.log('🗄️ PostgreSQL storage initialized')
+    logger.info('🗄️ PostgreSQL storage initialized')
   }
 
   private async initializeRedis(): Promise<void> {
@@ -127,12 +128,12 @@ export class PostgresStorageProvider implements StorageProvider {
       this.redis = createClient({ url: redisUrl })
 
       this.redis.on('error', err => {
-        console.error('❌ Redis error, disabling cache:', err)
+        logger.error({ err }, '❌ Redis error, disabling cache')
         this.redis = null
       })
 
       await this.redis.connect()
-      console.log(`✅ Redis connected to ${this.config.redisHost}:${this.config.redisPort}`)
+      logger.info(`✅ Redis connected to ${this.config.redisHost}:${this.config.redisPort}`)
     } catch (error) {
       console.warn('⚠️ Redis connection failed, continuing without cache:', error)
       this.redis = null
@@ -276,7 +277,7 @@ export class PostgresStorageProvider implements StorageProvider {
     const { sessions } = this.ensureInitialized()
     await sessions.delete({ connectionId })
     await this.invalidateCache(connectionId)
-    console.log(`🧹 Cleared context for connection ${connectionId}`)
+    logger.info(`🧹 Cleared context for connection ${connectionId}`)
   }
 
   async cleanupExpiredSessions(): Promise<number> {
@@ -287,7 +288,7 @@ export class PostgresStorageProvider implements StorageProvider {
 
     const deleted = result.affected ?? 0
     if (deleted > 0) {
-      console.log(`🧹 Cleaned up ${deleted} expired sessions`)
+      logger.info(`🧹 Cleaned up ${deleted} expired sessions`)
     }
 
     return deleted
@@ -328,13 +329,13 @@ export class PostgresStorageProvider implements StorageProvider {
     this.messageRepository = null
 
     if (errors.length > 0) {
-      console.error(
-        '⚠️ Errors during storage shutdown:',
-        errors.map(e => e.message),
+      logger.error(
+        { errors: errors.map(e => e.message) },
+        '⚠️ Errors during storage shutdown',
       )
     }
 
-    console.log('🗄️ PostgreSQL storage closed')
+    logger.info('🗄️ PostgreSQL storage closed')
   }
 
   // ─────────────────────────────────────────────────────────────────────────────

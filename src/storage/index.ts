@@ -1,3 +1,4 @@
+import logger from '../utils/logger'
 /**
  * Storage Providers
  * Factory and exports for multi-storage support
@@ -21,7 +22,7 @@ export function createStorageProvider(
   // Determine provider type from env or parameter
   const providerType = type || (process.env.STORAGE_PROVIDER as StorageProviderType) || 'memory'
 
-  console.log(`💾 Creating storage provider: ${providerType}`)
+  logger.info(`💾 Creating storage provider: ${providerType}`)
 
   switch (providerType) {
     case 'postgres':

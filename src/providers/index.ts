@@ -1,3 +1,4 @@
+import logger from '../utils/logger'
 /**
  * LLM Providers
  * Factory and exports for multi-provider support
@@ -20,7 +21,7 @@ export function createProvider(type?: LLMProviderType, config?: LLMProviderConfi
   // Determine provider type from env or parameter
   const providerType = type || (process.env.LLM_PROVIDER as LLMProviderType) || 'openai'
 
-  console.log(`🤖 Creating LLM provider: ${providerType}`)
+  logger.info(`🤖 Creating LLM provider: ${providerType}`)
 
   switch (providerType) {
     case 'openai':

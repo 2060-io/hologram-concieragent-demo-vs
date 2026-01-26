@@ -1,3 +1,4 @@
+import logger from '../utils/logger'
 import { Request, Response } from 'express'
 import { TravelAgent } from '../agent/TravelAgent'
 import { ConnectionEstablishedDto, WelcomeResponseDto } from '../dto'
@@ -18,7 +19,7 @@ export class ConnectionController {
       const connectionId = body.connectionId
       const preferredLanguage = (body.language || 'en') as 'en' | 'es' | 'fr'
 
-      console.log(`🤝 New connection established: ${connectionId}`)
+      logger.info(`🤝 New connection established: ${connectionId}`)
 
       // Get localized welcome message
       const welcomeMessage = this.agent.getWelcomeMessage(preferredLanguage)
@@ -40,14 +41,14 @@ export class ConnectionController {
       })
 
       if (!response.ok) {
-        console.error(`❌ Failed to send welcome message: ${response.statusText}`)
+        logger.error(`❌ Failed to send welcome message: ${response.statusText}`)
       } else {
-        console.log(`✅ Sent welcome message to connection ${connectionId} (${preferredLanguage})`)
+        logger.info(`✅ Sent welcome message to connection ${connectionId} (${preferredLanguage})`)
       }
 
       res.status(200).json({ success: true, language: preferredLanguage })
     } catch (error) {
-      console.error('❌ Error sending welcome message:', error)
+      logger.error({ err: error }, '❌ Error sending welcome message')
       res.status(500).json({ error: 'Internal server error' })
     }
   }

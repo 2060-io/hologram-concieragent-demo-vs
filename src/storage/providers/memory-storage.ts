@@ -1,3 +1,4 @@
+import logger from '../../utils/logger'
 /**
  * Memory Storage Provider
  * In-memory storage for development and local testing.
@@ -21,7 +22,7 @@ export class MemoryStorageProvider implements StorageProvider {
   }
 
   async initialize(): Promise<void> {
-    console.log('💾 Memory storage initialized')
+    logger.info('💾 Memory storage initialized')
 
     // Clear any existing cleanup interval to prevent memory leaks on re-initialization
     if (this.cleanupInterval) {
@@ -73,7 +74,7 @@ export class MemoryStorageProvider implements StorageProvider {
 
   async clearContext(connectionId: string): Promise<void> {
     this.contexts.delete(connectionId)
-    console.log(`🧹 Cleared context for connection ${connectionId}`)
+    logger.info(`🧹 Cleared context for connection ${connectionId}`)
   }
 
   async cleanupExpiredSessions(): Promise<number> {
@@ -84,12 +85,12 @@ export class MemoryStorageProvider implements StorageProvider {
       if (now - context.lastUpdated > this.contextExpirationMs) {
         this.contexts.delete(connectionId)
         cleaned++
-        console.log(`🧹 Expired context removed for ${connectionId}`)
+        logger.info(`🧹 Expired context removed for ${connectionId}`)
       }
     }
 
     if (cleaned > 0) {
-      console.log(`🧹 Cleaned up ${cleaned} expired sessions`)
+      logger.info(`🧹 Cleaned up ${cleaned} expired sessions`)
     }
 
     return cleaned
@@ -105,6 +106,6 @@ export class MemoryStorageProvider implements StorageProvider {
       this.cleanupInterval = null
     }
     this.contexts.clear()
-    console.log('💾 Memory storage closed')
+    logger.info('💾 Memory storage closed')
   }
 }

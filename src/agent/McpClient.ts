@@ -1,3 +1,4 @@
+import logger from '../utils/logger'
 import { Client } from '@modelcontextprotocol/sdk/client/index.js'
 import { StdioClientTransport } from '@modelcontextprotocol/sdk/client/stdio.js'
 import { CallToolResult, ListToolsResult } from '@modelcontextprotocol/sdk/types.js'
@@ -60,7 +61,7 @@ export class McpClient {
     const pythonCmd = getPythonCommand()
     const serverFileName = path.basename(serverPath)
 
-    console.log(`🔧 Using command: ${pythonCmd.command} ${pythonCmd.args.join(' ')} ${serverFileName}`)
+    logger.info(`🔧 Using command: ${pythonCmd.command} ${pythonCmd.args.join(' ')} ${serverFileName}`)
 
     const transport = new StdioClientTransport({
       command: pythonCmd.command,

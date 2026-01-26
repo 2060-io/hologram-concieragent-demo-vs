@@ -1,3 +1,4 @@
+import logger from '../utils/logger'
 import { McpClient } from './McpClient'
 import path from 'path'
 import dotenv from 'dotenv'
@@ -54,14 +55,14 @@ export class TravelAgent {
     this.storage = storage || null
     // Log available providers
     const available = getAvailableProviders()
-    console.log('📋 Available LLM providers:')
+    logger.info('📋 Available LLM providers:')
     for (const p of available) {
-      console.log(`   ${p.configured ? '✅' : '⚪'} ${p.type}${p.configured ? '' : ' (not configured)'}`)
+      logger.info(`   ${p.configured ? '✅' : '⚪'} ${p.type}${p.configured ? '' : ' (not configured)'}`)
     }
 
     // Create the provider
     this.provider = createProvider(providerType)
-    console.log(`🤖 Using LLM: ${this.provider.name} (${this.provider.model})`)
+    logger.info(`🤖 Using LLM: ${this.provider.name} (${this.provider.model})`)
   }
 
   /**
@@ -70,7 +71,7 @@ export class TravelAgent {
    */
   setStorage(storage: StorageProvider): void {
     this.storage = storage
-    console.log(`💾 Storage provider set: ${storage.name}`)
+    logger.info(`💾 Storage provider set: ${storage.name}`)
   }
 
   /**
@@ -81,7 +82,7 @@ export class TravelAgent {
       return content
     }
 
-    console.log(
+    logger.info(
       `📏 Truncating ${toolName} result from ${content.length} to ~${this.MAX_TOOL_RESULT_CHARS} chars`,
     )
 
@@ -242,7 +243,7 @@ export class TravelAgent {
       return messages
     }
 
-    console.log(`📏 Trimming history from ${totalChars} chars to fit limit`)
+    logger.info(`📏 Trimming history from ${totalChars} chars to fit limit`)
 
     // Strategy: Remove oldest messages first, but keep system prompt
     const trimmed = [...messages]
@@ -252,7 +253,7 @@ export class TravelAgent {
       totalChars -= removed.content?.length || 0
     }
 
-    console.log(`📏 History trimmed to ${trimmed.length} messages, ${totalChars} chars`)
+    logger.info(`📏 History trimmed to ${trimmed.length} messages, ${totalChars} chars`)
     return trimmed
   }
 
@@ -314,7 +315,7 @@ export class TravelAgent {
     const mcpBasePath = path.resolve(__dirname, '../../mcp_travelassistant/servers')
     const serpApiKey = process.env.SERPAPI_KEY || ''
 
-    console.log(`🔍 MCP Base Path: ${mcpBasePath}`)
+    logger.info(`🔍 MCP Base Path: ${mcpBasePath}`)
 
     const servers: Array<{ path: string; env: Record<string, string> }> = [
       { path: path.join(mcpBasePath, 'flight_server/flight_server.py'), env: { SERPAPI_KEY: serpApiKey } },
@@ -355,21 +356,21 @@ export class TravelAgent {
               parameters: sanitizedSchema,
             })
             this.toolMap.set(tool.name, client)
-            console.log(`  ✅ Registered tool: ${tool.name}`)
+            logger.info(`  ✅ Registered tool: ${tool.name}`)
           } catch (error) {
             console.warn(`⚠️ Failed to add tool ${tool.name}:`, error)
             // Skip this tool but continue with others
           }
         }
         totalTools += toolsResult.tools.length
-        console.log(`✅ Connected to MCP server at ${server.path} (${toolsResult.tools.length} tools)`)
+        logger.info(`✅ Connected to MCP server at ${server.path} (${toolsResult.tools.length} tools)`)
       } catch (error) {
         console.warn(`⚠️ Failed to connect to MCP server at ${server.path}:`, error)
         // Continue even if one server fails
       }
     }
-    console.log(`🎯 Total MCP tools registered: ${totalTools} tools from ${this.mcpClients.length} servers`)
-    console.log(`📋 Available tools: ${Array.from(this.toolMap.keys()).join(', ')}`)
+    logger.info(`🎯 Total MCP tools registered: ${totalTools} tools from ${this.mcpClients.length} servers`)
+    logger.info(`📋 Available tools: ${Array.from(this.toolMap.keys()).join(', ')}`)
   }
 
   /**
@@ -540,7 +541,7 @@ export class TravelAgent {
     for (const { lang, patterns } of LANGUAGE_PATTERNS) {
       for (const pattern of patterns) {
         if (pattern.test(message)) {
-          console.log(`🌍 Detected language: ${lang}`)
+          logger.info(`🌍 Detected language: ${lang}`)
           return lang
         }
       }
@@ -772,7 +773,7 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
               const client = this.toolMap.get(toolName)
 
               if (client) {
-                console.log(`🛠️ Calling tool: ${toolName}`, toolArgs)
+                logger.info({ toolArgs }, `🛠️ Calling tool: ${toolName}`)
                 try {
                   const result = await client.callTool(toolName, toolArgs)
 
@@ -797,19 +798,19 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
                   }
 
                   // Log the result for debugging
-                  console.log(`✅ Tool ${toolName} returned ${content.length} characters of content`)
+                  logger.info(`✅ Tool ${toolName} returned ${content.length} characters of content`)
 
                   // TRUNCATE large results to prevent token overflow
                   const truncatedContent = this.truncateToolResult(content, toolName)
 
                   if (truncatedContent.length !== content.length) {
-                    console.log(`📏 Truncated from ${content.length} to ${truncatedContent.length} chars`)
+                    logger.info(`📏 Truncated from ${content.length} to ${truncatedContent.length} chars`)
                   }
 
                   if (truncatedContent.length > 500) {
-                    console.log(`📄 Content preview: ${truncatedContent.substring(0, 200)}...`)
+                    logger.info(`📄 Content preview: ${truncatedContent.substring(0, 200)}...`)
                   } else {
-                    console.log(`📄 Full content: ${truncatedContent}`)
+                    logger.info(`📄 Full content: ${truncatedContent}`)
                   }
 
                   // Check if the result contains an error
@@ -834,7 +835,7 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
                     toolCallId: toolCall.id,
                   })
                 } catch (err: any) {
-                  console.error(`❌ Tool execution failed: ${err.message}`)
+                  logger.error(`❌ Tool execution failed: ${err.message}`)
                   messages.push({
                     role: 'tool',
                     content: `Error executing tool: ${err.message}`,
@@ -870,7 +871,7 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
               retryCount++
 
               // Aggressively trim context to reduce tokens
-              console.log('📏 Aggressively trimming context to retry...')
+              logger.info('📏 Aggressively trimming context to retry...')
 
               // Remove older tool results (they're usually the largest)
               const trimmedMessages: LLMMessage[] = []
@@ -903,7 +904,7 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
               messages.length = 0
               messages.push(...trimmedMessages)
 
-              console.log(`📏 Trimmed to ${messages.length} messages for retry`)
+              logger.info(`📏 Trimmed to ${messages.length} messages for retry`)
 
               // Wait a bit before retrying
               await new Promise(resolve => setTimeout(resolve, 1000))
@@ -943,10 +944,10 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
       // Save context to storage
       await this.saveContext(connectionId, context)
 
-      console.log(`💬 Response generated for connection ${connectionId} (${cleanedResponse.length} chars)`)
+      logger.info(`💬 Response generated for connection ${connectionId} (${cleanedResponse.length} chars)`)
       return cleanedResponse
     } catch (error) {
-      console.error('Error in TravelAgent processMessage:', error)
+      logger.error({ err: error }, 'Error in TravelAgent processMessage')
       return "I'm having trouble processing your request right now. Please try again later."
     }
   }
@@ -959,7 +960,7 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
       await this.storage.clearContext(connectionId)
     } else {
       this.conversationContexts.delete(connectionId)
-      console.log(`🧹 Cleared context for connection ${connectionId}`)
+      logger.info(`🧹 Cleared context for connection ${connectionId}`)
     }
   }
 

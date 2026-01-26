@@ -1,3 +1,4 @@
+import logger from './utils/logger'
 import express from 'express'
 import { TravelAgent } from './agent/TravelAgent'
 import path from 'path'
@@ -22,7 +23,7 @@ const connectionController = new ConnectionController(agent)
 // Define the root path explicitly based on where the code is running
 // src/bot.ts is in src/, so we go up two levels to get to the root
 const projectRoot = path.join(__dirname, '../..')
-console.log(`📂 Serving static files from: ${projectRoot}`)
+logger.info(`📂 Serving static files from: ${projectRoot}`)
 
 // Serve static files from the project root
 app.use(express.static(projectRoot))
@@ -35,10 +36,10 @@ app.get('/logo.png', (req, res) => {
   const logoPath = path.join(projectRoot, 'assets', 'logo.png')
   res.sendFile(logoPath, err => {
     if (err) {
-      console.error('❌ Error sending logo.png:', err)
+      logger.error({ err }, '❌ Error sending logo.png')
       res.status(404).send('Logo not found')
     } else {
-      console.log('✅ Served logo.png')
+      logger.info('✅ Served logo.png')
     }
   })
 })
@@ -60,26 +61,26 @@ async function initializeServices(): Promise<void> {
     storage = createStorageProvider()
     await storage.initialize()
     agent.setStorage(storage)
-    console.log('✅ Storage provider initialized')
+    logger.info('✅ Storage provider initialized')
   } catch (error) {
     console.warn('⚠️ Failed to initialize storage provider, using in-memory fallback:', error)
     storage = null
   }
 
   // Initialize Travel Agent (MCP servers)
-  console.log('🔄 Initializing Travel Agent (connecting to MCP servers)...')
+  logger.info('🔄 Initializing Travel Agent (connecting to MCP servers)...')
   await agent.initialize()
-  console.log('✅ Travel Agent ready!')
+  logger.info('✅ Travel Agent ready!')
 }
 
 app.listen(port, () => {
-  console.log(`🤖 Concieragent server listening at http://localhost:${port}`)
-  console.log(`📡 VS Agent URL: ${config.vsAgentUrl}`)
+  logger.info(`🤖 Concieragent server listening at http://localhost:${port}`)
+  logger.info(`📡 VS Agent URL: ${config.vsAgentUrl}`)
 
   // Initialize services asynchronously (don't block server startup)
   initializeServices().catch(error => {
-    console.error('❌ Failed to initialize services:', error)
-    console.log('⚠️ Bot will continue but some features may not work')
+    logger.error({ err: error }, '❌ Failed to initialize services')
+    logger.info('⚠️ Bot will continue but some features may not work')
   })
 })
 
@@ -88,7 +89,7 @@ process.stdin.resume()
 
 // Handle cleanup on exit
 process.on('SIGINT', async () => {
-  console.log('🛑 Shutting down...')
+  logger.info('🛑 Shutting down...')
   // Note: agent.cleanup() already closes storage, no need to call storage.close() separately
   await agent.cleanup()
   process.exit(0)
