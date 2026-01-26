@@ -329,10 +329,7 @@ export class PostgresStorageProvider implements StorageProvider {
     this.messageRepository = null
 
     if (errors.length > 0) {
-      logger.error(
-        { errors: errors.map(e => e.message) },
-        '⚠️ Errors during storage shutdown',
-      )
+      logger.error({ errors: errors.map(e => e.message) }, '⚠️ Errors during storage shutdown')
     }
 
     logger.info('🗄️ PostgreSQL storage closed')
