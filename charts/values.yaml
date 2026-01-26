@@ -53,7 +53,7 @@ redis:
 persistence:
   enabled: true
   size: 5Gi
-  storageClass: ""  # Use cluster default
+  storageClass: "csi-cinder-high-speed"
 
 # ───────────────────────────────────────────────────────────────────────────
 # Environment Variables
