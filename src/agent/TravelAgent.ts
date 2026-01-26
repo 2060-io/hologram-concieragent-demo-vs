@@ -1,3 +1,4 @@
+import logger from '../utils/logger'
 import { McpClient } from './McpClient'
 import path from 'path'
 import dotenv from 'dotenv'
@@ -9,18 +10,9 @@ import {
   type LLMTool,
   type LLMProviderType,
 } from '../providers'
+import type { StorageProvider, ConversationContext, SupportedLanguage } from '../storage/types'
 
 dotenv.config()
-
-// Conversation context storage per connection
-interface ConversationContext {
-  messages: LLMMessage[]
-  extractedInfo: ExtractedUserInfo
-  lastUpdated: number
-}
-
-// Supported languages
-type SupportedLanguage = 'en' | 'es' | 'fr'
 
 // Language detection patterns
 const LANGUAGE_PATTERNS: { lang: SupportedLanguage; patterns: RegExp[] }[] = [
@@ -42,26 +34,14 @@ const LANGUAGE_PATTERNS: { lang: SupportedLanguage; patterns: RegExp[] }[] = [
   },
 ]
 
-// Information extracted from the conversation
-interface ExtractedUserInfo {
-  name?: string
-  currentLocation?: string
-  destinations?: string[]
-  travelDates?: { start?: string; end?: string }
-  budget?: { amount?: number; currency?: string }
-  preferences?: string[]
-  partySize?: number
-  interests?: string[]
-  recentSearches?: string[]
-  language?: SupportedLanguage // Detected language
-}
-
 export class TravelAgent {
   private provider: LLMProvider
   private mcpClients: McpClient[] = []
   private tools: LLMTool[] = []
   private toolMap: Map<string, McpClient> = new Map()
-  // Store conversation history per connection
+  // Storage provider for conversation persistence
+  private storage: StorageProvider | null = null
+  // Fallback in-memory storage
   private conversationContexts: Map<string, ConversationContext> = new Map()
   // Maximum messages to keep in history
   private readonly MAX_HISTORY_MESSAGES = 20
@@ -69,28 +49,29 @@ export class TravelAgent {
   private readonly CONTEXT_EXPIRATION_MS = 60 * 60 * 1000
   // Token limits for context management
   private readonly MAX_TOOL_RESULT_CHARS = 6000 // ~1500 tokens per tool result
-  private readonly MAX_TOTAL_CONTEXT_CHARS = 24000 // ~6000 tokens total context
   private readonly MAX_HISTORY_CHARS = 8000 // ~2000 tokens for history
 
-  constructor(providerType?: LLMProviderType) {
+  constructor(storage?: StorageProvider, providerType?: LLMProviderType) {
+    this.storage = storage || null
     // Log available providers
     const available = getAvailableProviders()
-    console.log('📋 Available LLM providers:')
+    logger.info('📋 Available LLM providers:')
     for (const p of available) {
-      console.log(`   ${p.configured ? '✅' : '⚪'} ${p.type}${p.configured ? '' : ' (not configured)'}`)
+      logger.info(`   ${p.configured ? '✅' : '⚪'} ${p.type}${p.configured ? '' : ' (not configured)'}`)
     }
 
     // Create the provider
     this.provider = createProvider(providerType)
-    console.log(`🤖 Using LLM: ${this.provider.name} (${this.provider.model})`)
+    logger.info(`🤖 Using LLM: ${this.provider.name} (${this.provider.model})`)
   }
 
   /**
-   * Estimate token count from character count (rough approximation)
-   * GPT models use ~4 chars per token on average
+   * Set storage provider after construction
+   * Useful when storage is initialized asynchronously
    */
-  private estimateTokens(text: string): number {
-    return Math.ceil(text.length / 4)
+  setStorage(storage: StorageProvider): void {
+    this.storage = storage
+    logger.info(`💾 Storage provider set: ${storage.name}`)
   }
 
   /**
@@ -101,7 +82,7 @@ export class TravelAgent {
       return content
     }
 
-    console.log(
+    logger.info(
       `📏 Truncating ${toolName} result from ${content.length} to ~${this.MAX_TOOL_RESULT_CHARS} chars`,
     )
 
@@ -262,7 +243,7 @@ export class TravelAgent {
       return messages
     }
 
-    console.log(`📏 Trimming history from ${totalChars} chars to fit limit`)
+    logger.info(`📏 Trimming history from ${totalChars} chars to fit limit`)
 
     // Strategy: Remove oldest messages first, but keep system prompt
     const trimmed = [...messages]
@@ -272,7 +253,7 @@ export class TravelAgent {
       totalChars -= removed.content?.length || 0
     }
 
-    console.log(`📏 History trimmed to ${trimmed.length} messages, ${totalChars} chars`)
+    logger.info(`📏 History trimmed to ${trimmed.length} messages, ${totalChars} chars`)
     return trimmed
   }
 
@@ -334,7 +315,7 @@ export class TravelAgent {
     const mcpBasePath = path.resolve(__dirname, '../../mcp_travelassistant/servers')
     const serpApiKey = process.env.SERPAPI_KEY || ''
 
-    console.log(`🔍 MCP Base Path: ${mcpBasePath}`)
+    logger.info(`🔍 MCP Base Path: ${mcpBasePath}`)
 
     const servers: Array<{ path: string; env: Record<string, string> }> = [
       { path: path.join(mcpBasePath, 'flight_server/flight_server.py'), env: { SERPAPI_KEY: serpApiKey } },
@@ -375,27 +356,33 @@ export class TravelAgent {
               parameters: sanitizedSchema,
             })
             this.toolMap.set(tool.name, client)
-            console.log(`  ✅ Registered tool: ${tool.name}`)
+            logger.info(`  ✅ Registered tool: ${tool.name}`)
           } catch (error) {
             console.warn(`⚠️ Failed to add tool ${tool.name}:`, error)
             // Skip this tool but continue with others
           }
         }
         totalTools += toolsResult.tools.length
-        console.log(`✅ Connected to MCP server at ${server.path} (${toolsResult.tools.length} tools)`)
+        logger.info(`✅ Connected to MCP server at ${server.path} (${toolsResult.tools.length} tools)`)
       } catch (error) {
         console.warn(`⚠️ Failed to connect to MCP server at ${server.path}:`, error)
         // Continue even if one server fails
       }
     }
-    console.log(`🎯 Total MCP tools registered: ${totalTools} tools from ${this.mcpClients.length} servers`)
-    console.log(`📋 Available tools: ${Array.from(this.toolMap.keys()).join(', ')}`)
+    logger.info(`🎯 Total MCP tools registered: ${totalTools} tools from ${this.mcpClients.length} servers`)
+    logger.info(`📋 Available tools: ${Array.from(this.toolMap.keys()).join(', ')}`)
   }
 
   /**
    * Get or create conversation context for a connection
    */
-  private getOrCreateContext(connectionId: string): ConversationContext {
+  private async getOrCreateContext(connectionId: string): Promise<ConversationContext> {
+    // Use storage provider if available
+    if (this.storage) {
+      return this.storage.getOrCreateContext(connectionId)
+    }
+
+    // Fallback to in-memory storage
     const existing = this.conversationContexts.get(connectionId)
     const now = Date.now()
 
@@ -412,6 +399,19 @@ export class TravelAgent {
     }
     this.conversationContexts.set(connectionId, newContext)
     return newContext
+  }
+
+  /**
+   * Save conversation context
+   */
+  private async saveContext(connectionId: string, context: ConversationContext): Promise<void> {
+    if (this.storage) {
+      await this.storage.saveContext(connectionId, context)
+    } else {
+      // In-memory storage is updated by reference, but update lastUpdated
+      context.lastUpdated = Date.now()
+      this.conversationContexts.set(connectionId, context)
+    }
   }
 
   /**
@@ -541,7 +541,7 @@ export class TravelAgent {
     for (const { lang, patterns } of LANGUAGE_PATTERNS) {
       for (const pattern of patterns) {
         if (pattern.test(message)) {
-          console.log(`🌍 Detected language: ${lang}`)
+          logger.info(`🌍 Detected language: ${lang}`)
           return lang
         }
       }
@@ -719,7 +719,7 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
 
   async processMessage(userMessage: string, connectionId: string): Promise<string> {
     // Get or create conversation context
-    const context = this.getOrCreateContext(connectionId)
+    const context = await this.getOrCreateContext(connectionId)
 
     // Update extracted info from the new message
     this.updateExtractedInfo(context, userMessage)
@@ -773,7 +773,7 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
               const client = this.toolMap.get(toolName)
 
               if (client) {
-                console.log(`🛠️ Calling tool: ${toolName}`, toolArgs)
+                logger.info({ toolArgs }, `🛠️ Calling tool: ${toolName}`)
                 try {
                   const result = await client.callTool(toolName, toolArgs)
 
@@ -798,19 +798,19 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
                   }
 
                   // Log the result for debugging
-                  console.log(`✅ Tool ${toolName} returned ${content.length} characters of content`)
+                  logger.info(`✅ Tool ${toolName} returned ${content.length} characters of content`)
 
                   // TRUNCATE large results to prevent token overflow
                   const truncatedContent = this.truncateToolResult(content, toolName)
 
                   if (truncatedContent.length !== content.length) {
-                    console.log(`📏 Truncated from ${content.length} to ${truncatedContent.length} chars`)
+                    logger.info(`📏 Truncated from ${content.length} to ${truncatedContent.length} chars`)
                   }
 
                   if (truncatedContent.length > 500) {
-                    console.log(`📄 Content preview: ${truncatedContent.substring(0, 200)}...`)
+                    logger.info(`📄 Content preview: ${truncatedContent.substring(0, 200)}...`)
                   } else {
-                    console.log(`📄 Full content: ${truncatedContent}`)
+                    logger.info(`📄 Full content: ${truncatedContent}`)
                   }
 
                   // Check if the result contains an error
@@ -835,7 +835,7 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
                     toolCallId: toolCall.id,
                   })
                 } catch (err: any) {
-                  console.error(`❌ Tool execution failed: ${err.message}`)
+                  logger.error(`❌ Tool execution failed: ${err.message}`)
                   messages.push({
                     role: 'tool',
                     content: `Error executing tool: ${err.message}`,
@@ -871,7 +871,7 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
               retryCount++
 
               // Aggressively trim context to reduce tokens
-              console.log('📏 Aggressively trimming context to retry...')
+              logger.info('📏 Aggressively trimming context to retry...')
 
               // Remove older tool results (they're usually the largest)
               const trimmedMessages: LLMMessage[] = []
@@ -904,7 +904,7 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
               messages.length = 0
               messages.push(...trimmedMessages)
 
-              console.log(`📏 Trimmed to ${messages.length} messages for retry`)
+              logger.info(`📏 Trimmed to ${messages.length} messages for retry`)
 
               // Wait a bit before retrying
               await new Promise(resolve => setTimeout(resolve, 1000))
@@ -936,15 +936,18 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
       context.messages.push({ role: 'assistant', content: cleanedResponse })
       context.lastUpdated = Date.now()
 
-      // Prune old messages if needed
-      if (context.messages.length > this.MAX_HISTORY_MESSAGES * 2) {
+      // Prune old messages if needed (only for in-memory, storage handles its own pruning)
+      if (!this.storage && context.messages.length > this.MAX_HISTORY_MESSAGES * 2) {
         context.messages = context.messages.slice(-this.MAX_HISTORY_MESSAGES)
       }
 
-      console.log(`💬 Response generated for connection ${connectionId} (${cleanedResponse.length} chars)`)
+      // Save context to storage
+      await this.saveContext(connectionId, context)
+
+      logger.info(`💬 Response generated for connection ${connectionId} (${cleanedResponse.length} chars)`)
       return cleanedResponse
     } catch (error) {
-      console.error('Error in TravelAgent processMessage:', error)
+      logger.error({ err: error }, 'Error in TravelAgent processMessage')
       return "I'm having trouble processing your request right now. Please try again later."
     }
   }
@@ -952,21 +955,12 @@ Remember: You exist to demonstrate MCP tools. ALWAYS use them for data! Respond 
   /**
    * Clear conversation context for a connection
    */
-  clearContext(connectionId: string): void {
-    this.conversationContexts.delete(connectionId)
-    console.log(`🧹 Cleared context for connection ${connectionId}`)
-  }
-
-  /**
-   * Clean up expired contexts
-   */
-  private cleanupExpiredContexts(): void {
-    const now = Date.now()
-    for (const [connectionId, context] of this.conversationContexts) {
-      if (now - context.lastUpdated > this.CONTEXT_EXPIRATION_MS) {
-        this.conversationContexts.delete(connectionId)
-        console.log(`🧹 Expired context removed for ${connectionId}`)
-      }
+  async clearContext(connectionId: string): Promise<void> {
+    if (this.storage) {
+      await this.storage.clearContext(connectionId)
+    } else {
+      this.conversationContexts.delete(connectionId)
+      logger.info(`🧹 Cleared context for connection ${connectionId}`)
     }
   }
 
@@ -1021,17 +1015,6 @@ Où souhaitez-vous voyager ? Indiquez-moi simplement votre destination et vos da
   }
 
   /**
-   * Detect language from a message and return appropriate welcome
-   */
-  getWelcomeMessageForUser(userMessage?: string): string {
-    if (userMessage) {
-      const detectedLang = this.detectLanguage(userMessage)
-      return this.getWelcomeMessage(detectedLang)
-    }
-    return this.getWelcomeMessage('en')
-  }
-
-  /**
    * Get all supported languages
    */
   getSupportedLanguages(): { code: SupportedLanguage; name: string }[] {
@@ -1045,6 +1028,10 @@ Où souhaitez-vous voyager ? Indiquez-moi simplement votre destination et vos da
   async cleanup() {
     for (const client of this.mcpClients) {
       await client.close()
+    }
+    // Close storage provider if available
+    if (this.storage) {
+      await this.storage.close()
     }
   }
 }

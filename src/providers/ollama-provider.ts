@@ -1,3 +1,4 @@
+import logger from '../utils/logger'
 /**
  * Ollama Provider
  * Adapter for local Ollama models
@@ -50,7 +51,7 @@ export class OllamaProvider implements LLMProvider {
     this.baseUrl = config?.baseUrl || process.env.OLLAMA_BASE_URL || 'http://localhost:11434'
     this.model = config?.model || process.env.OLLAMA_MODEL || 'llama3.1'
 
-    console.log(`🦙 Ollama provider initialized: ${this.model} @ ${this.baseUrl}`)
+    logger.info(`🦙 Ollama provider initialized: ${this.model} @ ${this.baseUrl}`)
   }
 
   isConfigured(): boolean {
